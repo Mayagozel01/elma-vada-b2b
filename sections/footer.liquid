@@ -1,0 +1,146 @@
+{%- assign services_menu = section.settings.services_menu -%}
+{%- assign company_menu = section.settings.company_menu -%}
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+
+    <div class="footer__grid">
+
+      <!-- Brand col -->
+      <div class="footer__brand">
+        <a href="{{ routes.root_url }}" class="footer__logo" aria-label="{{ shop.name }}">
+          <div class="footer__logo-badge">EV</div>
+          <div>
+            <div class="footer__logo-name">Elma Vada Studio</div>
+          </div>
+        </a>
+        <p class="footer__tagline">
+          {{ section.settings.tagline | default: 'Local DFW production & branding studio. Custom engraving, UV printing, and branded products for businesses — from 10 to 5,000+ units.' }}
+        </p>
+        <a href="/pages/request-a-quote" class="btn btn--gold" style="align-self: flex-start; margin-top: var(--space-2);">
+          Request a Quote
+        </a>
+      </div>
+
+      <!-- Solutions col -->
+      <div>
+        <div class="footer__col-title">Solutions</div>
+        <ul class="footer__links">
+          {% if services_menu != blank %}
+            {% for link in services_menu.links %}<li><a href="{{ link.url }}" class="footer__link">{{ link.title }}</a></li>{% endfor %}
+          {% else %}
+          <li><a href="/pages/corporate-gifts" class="footer__link">Corporate Gifts</a></li>
+          <li><a href="/pages/bulk-orders" class="footer__link">Bulk Orders</a></li>
+          <li><a href="/pages/branded-merchandise" class="footer__link">Branded Merchandise</a></li>
+          <li><a href="/pages/custom-engraving" class="footer__link">Custom Engraving</a></li>
+          <li><a href="/pages/promotional-products" class="footer__link">Promotional Products</a></li>
+          <li><a href="/pages/client-gifting" class="footer__link">Client Gifting</a></li>
+          <li><a href="/pages/service-awards" class="footer__link">Service Awards</a></li>
+          <li><a href="/pages/faq" class="footer__link">FAQ</a></li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <!-- Company col -->
+      <div>
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__links">
+          {% if company_menu != blank %}
+            {% for link in company_menu.links %}<li><a href="{{ link.url }}" class="footer__link">{{ link.title }}</a></li>{% endfor %}
+          {% else %}
+          <li><a href="/pages/business-solutions" class="footer__link">Business Solutions</a></li>
+          <li><a href="{{ routes.all_products_collection_url }}" class="footer__link">Shop Products</a></li>
+          <li><a href="/pages/about" class="footer__link">About Our Studio</a></li>
+          <li><a href="/pages/production-capabilities" class="footer__link">Capabilities</a></li>
+          <li><a href="/pages/industries" class="footer__link">Industries We Serve</a></li>
+          <li><a href="/pages/our-work" class="footer__link">Portfolio / Our Work</a></li>
+          <li><a href="/pages/request-a-quote" class="footer__link">Request a Quote</a></li>
+          <li><a href="/policies/privacy-policy" class="footer__link">Privacy Policy</a></li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <!-- Contact col -->
+      <div>
+        <div class="footer__col-title">Contact</div>
+
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Email</span>
+          <a href="mailto:{{ section.settings.email | default: 'elmavadastudio@gmail.com' }}" class="footer__contact-value footer__link">
+            {{ section.settings.email | default: 'elmavadastudio@gmail.com' }}
+          </a>
+        </div>
+
+        {% if section.settings.phone != blank %}
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Phone</span>
+            <a href="tel:{{ section.settings.phone | replace: ' ', '' | replace: '(', '' | replace: ')', '' | replace: '-', '' }}" class="footer__contact-value footer__link">{{ section.settings.phone }}</a>
+          </div>
+        {% endif %}
+
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Location</span>
+          <span class="footer__contact-value">{{ section.settings.location | default: 'Plano, Texas' }}<br>{{ section.settings.service_area | default: 'Dallas–Fort Worth Area' }}</span>
+        </div>
+
+        {% if section.settings.hours != blank %}
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Hours</span>
+            <span class="footer__contact-value">{{ section.settings.hours }}</span>
+          </div>
+        {% endif %}
+
+        <div class="footer__contact-item">
+          <span class="footer__contact-label">Orders</span>
+          <span class="footer__contact-value">{{ section.settings.orders_line_one | default: '10 – 5,000+ Units' }}<br>{{ section.settings.orders_line_two | default: 'Local & Nationwide Shipping' }}</span>
+        </div>
+
+        <!-- Social -->
+        <div style="display: flex; gap: var(--space-3); margin-top: var(--space-6);">
+          {% if settings.social_etsy != blank %}<a href="{{ settings.social_etsy }}" class="footer__link" aria-label="Etsy shop" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color: rgba(255,255,255,0.5);">
+              <path d="M10.15 0v.003C6.094.003 2.81 3.287 2.81 7.343v9.314C2.81 20.713 6.094 24 10.15 24h3.7c4.056 0 7.34-3.287 7.34-7.343V7.343C21.19 3.287 17.906 0 13.85 0h-3.7zm-.01 5.04h.01c.97 0 1.762.792 1.762 1.762v.012a1.762 1.762 0 01-3.524 0V6.8c0-.97.792-1.762 1.762-1.762zM8.4 10.15h7.2c.97 0 1.762.792 1.762 1.762v.012a1.762 1.762 0 01-1.762 1.762H8.4a1.762 1.762 0 01-1.762-1.762V11.9c0-.97.792-1.762 1.762-1.762zm1.74 4.81h3.72c.97 0 1.762.793 1.762 1.762v.012a1.762 1.762 0 01-3.525 0v-.012a1.762 1.762 0 011.763-1.762z"/>
+            </svg>
+          </a>{% endif %}
+          {% if settings.social_instagram != blank %}<a href="{{ settings.social_instagram }}" class="footer__link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>{% endif %}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">
+        &copy; {{ 'now' | date: '%Y' }} Elma Vada Studio. All rights reserved. Local DFW production studio.
+      </p>
+      <div style="display: flex; gap: var(--space-6);">
+        <a href="/policies/terms-of-service" class="footer__link" style="font-size: var(--fs-xs);">Terms</a>
+        <a href="/policies/privacy-policy" class="footer__link" style="font-size: var(--fs-xs);">Privacy</a>
+        <a href="/policies/shipping-policy" class="footer__link" style="font-size: var(--fs-xs);">Shipping</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {"type":"textarea","id":"tagline","label":"Tagline","default":"Local DFW production & branding studio. Custom engraving, UV printing, and branded products for businesses — from 10 to 5,000+ units."},
+    {"type":"link_list","id":"services_menu","label":"Services menu"},
+    {"type":"link_list","id":"company_menu","label":"Company menu"},
+    {"type":"text","id":"email","label":"Email","default":"elmavadastudio@gmail.com"},
+    {"type":"text","id":"phone","label":"Phone"},
+    {"type":"text","id":"location","label":"Location","default":"Plano, Texas"},
+    {"type":"text","id":"service_area","label":"Service area","default":"Dallas–Fort Worth Area"},
+    {"type":"text","id":"hours","label":"Business hours","placeholder":"Mon–Fri, 9 AM–6 PM"},
+    {"type":"text","id":"orders_line_one","label":"Orders line one","default":"10 – 5,000+ Units"},
+    {"type":"text","id":"orders_line_two","label":"Orders line two","default":"Local & Nationwide Shipping"}
+  ]
+}
+{% endschema %}

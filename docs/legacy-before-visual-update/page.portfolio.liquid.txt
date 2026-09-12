@@ -1,0 +1,224 @@
+<!-- page.portfolio.liquid -->
+<div class="page-width">
+
+  <!-- HERO SECTION -->
+  <section class="section bg-navy" style="text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 900px;">
+      <h1 class="page-title" style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1rem; color: #fff;">Our Work</h1>
+      <p style="font-size: 1.25rem; color: var(--color-gold); margin-bottom: 1.5rem; font-weight: 500;">
+        Real projects from our local DFW production studio.
+      </p>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); line-height: 1.6;">
+        Selected corporate and bulk orders — from employee appreciation to large branded runs.
+      </p>
+    </div>
+  </section>
+
+  <!-- OVERVIEW (AEO) -->
+  <section class="section bg-beige" style="padding: 3.5rem 1rem;">
+    <div class="container" style="max-width: 850px; text-align: center; border-left: 4px solid var(--color-navy); background: #fff; padding: 2.5rem; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+      <p style="font-size: 1.15rem; font-weight: 500; color: var(--color-navy); line-height: 1.7; margin: 0;">
+        Elma Vada produces custom branded products and corporate gifts for businesses in the DFW area. Below are real projects that show our production capabilities, materials, and attention to detail across different volumes and industries.
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECT -->
+  <section class="section" style="padding: 4rem 1rem; background: #fff;">
+    <div class="container">
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy); margin-bottom: 2rem; text-align: center;">Featured Production Run</h2>
+      
+      <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; background: #fafafa; border: 1px solid #eaeaea; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.04); @media(min-width: 900px){ grid-template-columns: 1fr 1fr; }">
+        
+        <!-- Photos placeholder -->
+        <div style="background: #e1e1e1; min-height: 400px; display: flex; align-items: center; justify-content: center; color: #999; flex-direction: column; padding: 2rem;">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          <p style="margin-top: 1rem;">Replace with strong production / close-up photos in Customizer</p>
+        </div>
+
+        <!-- Case Study Details -->
+        <div style="padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 2rem;">Custom Hardware Onboarding Kits</h3>
+          
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">Client Type</div>
+              <div style="font-size: 1.1rem; color: var(--color-navy); font-weight: 500;">Texas Inspection Company</div>
+            </div>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">Business Need</div>
+              <div style="font-size: 1.1rem; color: var(--color-navy); font-weight: 500;">Standardized, highly durable welcome kits for new field technicians that wouldn't degrade on active job sites.</div>
+            </div>
+            <div style="display: flex; gap: 2rem;">
+              <div>
+                <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">Quantity</div>
+                <div style="font-size: 1.1rem; color: var(--color-navy); font-weight: 500;">850 Units</div>
+              </div>
+              <div>
+                <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">Materials & Method</div>
+                <div style="font-size: 1.1rem; color: var(--color-navy); font-weight: 500;">Fiber Laser Engraved Steel & UV Print</div>
+              </div>
+            </div>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-gold); text-transform: uppercase; letter-spacing: 0.05em;">The Result</div>
+              <div style="font-size: 1.1rem; color: var(--color-text-primary); line-height: 1.6;">Delivered a consistent, heavy-duty onboarding solution that elevated field morale and presented a unified, rugged brand image across all sites.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GRID -->
+  <section class="section bg-beige" style="padding: 4rem 1rem;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Project Gallery</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+        
+        <!-- Case 1 -->
+        <div style="background: #fff; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
+          <div style="height: 220px; background: #e9e9e9; display: flex; align-items:center; justify-content:center; color:#999; font-size: 0.9rem;">[Photo: Drinkware]</div>
+          <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 1rem;">Bulk Engraved Drinkware</h3>
+            <div style="font-size: 0.9rem; color: var(--color-navy); margin-bottom: 1rem; border-left: 3px solid var(--color-gold); padding-left: 0.75rem;">
+              <strong>Client:</strong> Corporate Headquarters<br>
+              <strong>Qty:</strong> 1,500 units<br>
+              <strong>Method:</strong> CO₂ Laser Engraving
+            </div>
+            <p style="font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary); margin: 0;">Perfectly aligned and cleanly etched drinkware scaled rapidly for an annual all-hands company summit.</p>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div style="background: #fff; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
+          <div style="height: 220px; background: #e9e9e9; display: flex; align-items:center; justify-content:center; color:#999; font-size: 0.9rem;">[Photo: Custom Pens]</div>
+          <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 1rem;">Custom Branded Pens</h3>
+            <div style="font-size: 0.9rem; color: var(--color-navy); margin-bottom: 1rem; border-left: 3px solid var(--color-gold); padding-left: 0.75rem;">
+              <strong>Client:</strong> Financial Services<br>
+              <strong>Qty:</strong> 500 units<br>
+              <strong>Method:</strong> Fiber Laser Engraving
+            </div>
+            <p style="font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary); margin: 0;">High-contrast permanent metal marking onto executive pens for a structured mid-year employee appreciation program.</p>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div style="background: #fff; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
+          <div style="height: 220px; background: #e9e9e9; display: flex; align-items:center; justify-content:center; color:#999; font-size: 0.9rem;">[Photo: Awards]</div>
+          <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 1rem;">Acrylic Medical Awards</h3>
+            <div style="font-size: 0.9rem; color: var(--color-navy); margin-bottom: 1rem; border-left: 3px solid var(--color-gold); padding-left: 0.75rem;">
+              <strong>Client:</strong> Medical Clinics Network<br>
+              <strong>Qty:</strong> 85 units<br>
+              <strong>Method:</strong> Laser Cut & Layered Acrylic
+            </div>
+            <p style="font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary); margin: 0;">Custom-designed milestone awards blending precise frosted lettering with clean, polished acrylic edges for top staff.</p>
+          </div>
+        </div>
+
+        <!-- Case 4 -->
+        <div style="background: #fff; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
+          <div style="height: 220px; background: #e9e9e9; display: flex; align-items:center; justify-content:center; color:#999; font-size: 0.9rem;">[Photo: Onboarding Kits]</div>
+          <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 1rem;">Onboarding Welcome Kits</h3>
+            <div style="font-size: 0.9rem; color: var(--color-navy); margin-bottom: 1rem; border-left: 3px solid var(--color-gold); padding-left: 0.75rem;">
+              <strong>Client:</strong> Tech Startup<br>
+              <strong>Qty:</strong> 250 units<br>
+              <strong>Method:</strong> UV Printing & Assembly
+            </div>
+            <p style="font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary); margin: 0;">Vibrant, full-color printed tech accessories and notebooks forming a cohesive, modern welcome package.</p>
+          </div>
+        </div>
+
+        <!-- Case 5 -->
+        <div style="background: #fff; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
+          <div style="height: 220px; background: #e9e9e9; display: flex; align-items:center; justify-content:center; color:#999; font-size: 0.9rem;">[Photo: Merch]</div>
+          <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 1rem;">Event Merchandise</h3>
+            <div style="font-size: 0.9rem; color: var(--color-navy); margin-bottom: 1rem; border-left: 3px solid var(--color-gold); padding-left: 0.75rem;">
+              <strong>Client:</strong> Real Estate Agency<br>
+              <strong>Qty:</strong> 1,200 units<br>
+              <strong>Method:</strong> Wood Engraving & Metal Work
+            </div>
+            <p style="font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary); margin: 0;">Produced thousands of customized wooden keychains and VIP closing gift sets efficiently ahead of a major industry conference.</p>
+          </div>
+        </div>
+
+        <!-- Case 6 -->
+        <div style="background: #fff; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column;">
+          <div style="height: 220px; background: #e9e9e9; display: flex; align-items:center; justify-content:center; color:#999; font-size: 0.9rem;">[Photo: VIP Gifts]</div>
+          <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 1rem;">Client VIP Gift Sets</h3>
+            <div style="font-size: 0.9rem; color: var(--color-navy); margin-bottom: 1rem; border-left: 3px solid var(--color-gold); padding-left: 0.75rem;">
+              <strong>Client:</strong> Law Firm<br>
+              <strong>Qty:</strong> 50 units<br>
+              <strong>Method:</strong> Leather Etching & Glass
+            </div>
+            <p style="font-size: 0.95rem; line-height: 1.5; color: var(--color-text-primary); margin: 0;">An exclusive selection of personalized crystal barware and leather portfolios reserved for the firm's highest-tier clients.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE DOCUMENT PROJECTS -->
+  <section class="section" style="background: #fff; padding: 4rem 1rem;">
+    <div class="container" style="max-width: 800px; text-align: center; border: 2px solid var(--color-beige); padding: 3rem; border-radius: 8px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 1.5rem;">How we document projects</h2>
+      <p style="font-size: 1.125rem; line-height: 1.7; color: var(--color-text-primary); margin: 0;">
+        We show real production photos, macro close-ups, packaging, and finished batches — so you can verify our equipment and exact results before we begin a project together.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ (AEO) -->
+  <section class="section" style="background: var(--color-beige); padding: 4rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy); margin-bottom: 2.5rem; text-align: center;">Portfolio FAQ</h2>
+      
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can I see more detailed case studies?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes, if you reach out with details about your specific project, we can provide targeted material samples and in-depth examples of similar runs we have executed for other clients.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you work with both small and large volume projects?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Absolutely. Our production scales fluidly, allowing us to seamlessly handle custom batches of 50 VIP gifts right alongside extensive runs of 1,500+ items for corporate summits.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you match the style of previous projects for our brand?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. We can replicate the physical materials and production methods of any past project in our portfolio, substituting your specific brand guidelines and vector logos.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you provide photos of the production process?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">For large corporate orders, we maintain complete transparency. We always provide digital proofs and, upon request, can provide batch approval photos as items move through our DFW facility.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">How do you handle logo application on different materials?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">We select the exact piece of hardware needed for the job—using UV printing for flat color logos, fiber lasers for raw metal contrast, and CO2 lasers for wood or glass etching—ensuring optimal, permanent application.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background: var(--color-navy); text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 600px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.2rem; color: #fff; margin-bottom: 1rem;">Want results like these?</h2>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; line-height: 1.6;">
+        Tell us your volume, materials, and deadline — we’ll prepare a clear quote.
+      </p>
+      <a href="/pages/request-a-quote" class="btn btn--primary" style="padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 4px;">Request a Quote</a>
+    </div>
+  </section>
+
+</div>

@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Plano, Texas",
+        "heading": "Tell us the occasion. Let’s plan the details.",
+        "text": "<p>Share your idea, estimated quantity and target date. We will review the project and discuss suitable products, personalization and next steps.</p>",
+        "photo_note": "",
+        "button_label": "",
+        "button_link": "/pages/request-a-quote",
+        "secondary_label": "",
+        "secondary_link": "/pages/our-work",
+        "show_image": false
+      }
+    },
+    "form": {
+      "type": "b2b-quote",
+      "settings": {}
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "settings": {
+        "heading": "What else would you like to know?"
+      },
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Ask about digital mockup and physical sample options. Availability, cost and timing are confirmed for your project before you commit.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "form",
+    "questions"
+  ]
+}

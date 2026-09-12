@@ -1,0 +1,76 @@
+<section class="trust" aria-label="Trust indicators">
+  <div class="container">
+    <div class="trust__inner">
+
+      <div class="trust__item">
+        <svg class="trust__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <div class="trust__item-text">Local DFW<br><span style="font-weight:400;color:var(--color-text-muted)">Production Studio</span></div>
+      </div>
+
+      <div class="trust__item">
+        <svg class="trust__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="color:var(--color-gold)">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+        <div class="trust__item-text">
+          {% if section.settings.review_url != blank %}<a href="{{ section.settings.review_url }}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">{{ section.settings.review_label }}</a>{% else %}{{ section.settings.review_label }}{% endif %}<br>
+          <span style="font-weight:400;color:var(--color-text-muted)">{{ section.settings.review_detail }}</span>
+        </div>
+      </div>
+
+      <div class="trust__item">
+        <svg class="trust__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+        <div class="trust__item-text">Experienced<br><span style="font-weight:400;color:var(--color-text-muted)">Production Team</span></div>
+      </div>
+
+      <div class="trust__item">
+        <svg class="trust__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+        <div class="trust__item-text">Professional<br><span style="font-weight:400;color:var(--color-text-muted)">Multi-Material Tech</span></div>
+      </div>
+
+      <div class="trust__item">
+        <svg class="trust__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+        </svg>
+        <div class="trust__item-text">Quality Control<br><span style="font-weight:400;color:var(--color-text-muted)">On Every Order</span></div>
+      </div>
+
+      <div class="trust__item">
+        <svg class="trust__item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+          <line x1="12" y1="22.08" x2="12" y2="12"></line>
+        </svg>
+        <div class="trust__item-text">Bulk Specialists<br><span style="font-weight:400;color:var(--color-text-muted)">Thousands of Units</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Trust Bar",
+  "tag": "section",
+  "settings": [
+    {"type":"text","id":"review_label","label":"Review proof headline","default":"Marketplace reviews"},
+    {"type":"text","id":"review_detail","label":"Review proof detail","default":"Add verified rating and order count"},
+    {"type":"url","id":"review_url","label":"Review profile link"}
+  ],
+  "presets": [
+    {
+      "name": "Trust Bar"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,81 @@
+[
+    {
+        "name": "theme_info",
+        "theme_name": "Elma Vada B2B",
+        "theme_author": "Elma Vada Studio",
+        "theme_version": "1.0.0",
+        "theme_documentation_url": "https://engravedpens.shop/",
+        "theme_support_url": "mailto:elmavadastudio@gmail.com"
+    },
+    {
+        "name": "Colors",
+        "settings": [
+            {
+                "type": "color",
+                "id": "color_primary",
+                "label": "Primary (Navy)",
+                "default": "#1E252B"
+            },
+            {
+                "type": "color",
+                "id": "color_accent",
+                "label": "Accent (Gold)",
+                "default": "#C09858"
+            },
+            {
+                "type": "color",
+                "id": "color_background",
+                "label": "Background (Cream)",
+                "default": "#F4F2ED"
+            }
+        ]
+    },
+    {
+        "name": "Favicon",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "favicon",
+                "label": "Favicon image"
+            }
+        ]
+    },
+    {
+        "name": "Social Media",
+        "settings": [
+            {
+                "type": "url",
+                "id": "social_instagram",
+                "label": "Instagram URL"
+            },
+            {
+                "type": "url",
+                "id": "social_etsy",
+                "label": "Etsy Shop URL"
+            }
+        ]
+    },
+    {
+        "name": "Analytics & verification",
+        "settings": [
+            {
+                "type": "text",
+                "id": "google_search_console_verification",
+                "label": "Google Search Console verification code",
+                "info": "Paste only the verification code, not the full meta tag."
+            },
+            {
+                "type": "text",
+                "id": "ga4_measurement_id",
+                "label": "Google Analytics 4 measurement ID",
+                "placeholder": "G-XXXXXXXXXX"
+            },
+            {
+                "type": "text",
+                "id": "meta_pixel_id",
+                "label": "Meta Pixel ID",
+                "placeholder": "123456789012345"
+            }
+        ]
+    }
+]

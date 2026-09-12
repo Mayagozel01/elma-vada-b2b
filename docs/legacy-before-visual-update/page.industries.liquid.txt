@@ -1,0 +1,202 @@
+<!-- page.industries.liquid -->
+<div class="page-width">
+
+  <!-- HERO SECTION -->
+  <section class="section bg-navy" style="text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 900px;">
+      <h1 class="page-title" style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1rem; color: #fff;">Industries We Serve</h1>
+      <p style="font-size: 1.25rem; color: var(--color-gold); margin-bottom: 1.5rem; font-weight: 500;">
+        Local DFW production solutions tailored to the needs of different industries.
+      </p>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); line-height: 1.6;">
+        From medical offices and construction teams to real estate, hospitality, and corporate offices — we deliver branded products and corporate gifts that fit real business needs.
+      </p>
+    </div>
+  </section>
+
+  <!-- OVERVIEW (AEO) -->
+  <section class="section bg-beige" style="padding: 3.5rem 1rem;">
+    <div class="container" style="max-width: 850px; text-align: center; border-left: 4px solid var(--color-gold); background: #fff; padding: 2.5rem; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+      <p style="font-size: 1.15rem; font-weight: 500; color: var(--color-navy); line-height: 1.7; margin: 0;">
+        Elma Vada works with companies across multiple industries in the DFW area that need reliable local production of branded merchandise, corporate gifts, employee appreciation items, and event products. We adapt materials, volumes, and branding approaches to each industry’s requirements.
+      </p>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES GRID -->
+  <section class="section" style="padding: 4rem 1rem; background: #fafafa;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Solutions by Industry & Department</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        
+        <!-- 1 -->
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px; border-top: 3px solid var(--color-navy);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.75rem;">1. Corporate Offices & HQ</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1.25rem;">
+            We provide high-volume branding solutions supporting both daily office essentials and grand executive gifting objectives.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);"><span style="color:var(--color-gold);">Examples:</span> Leather portfolios, metal pens, premium drinkware.</div>
+        </div>
+
+        <!-- 2 -->
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px; border-top: 3px solid var(--color-navy);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.75rem;">2. HR & People Operations</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1.25rem;">
+            Helping teams scale culture safely through structured appreciation, welcome programs, and milestone recognition.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);"><span style="color:var(--color-gold);">Examples:</span> Onboarding kits, anniversary awards, personalized tumblers.</div>
+        </div>
+
+        <!-- 3 -->
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px; border-top: 3px solid var(--color-navy);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.75rem;">3. Procurement & Purchasing</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1.25rem;">
+            Reliable, localized supplier for bulk internal orders with strict adherence to budget and corporate brand compliance.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);"><span style="color:var(--color-gold);">Examples:</span> Bulk event merch, standardized office gifts, product sourcing.</div>
+        </div>
+
+        <!-- 4 -->
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px; border-top: 3px solid var(--color-navy);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.75rem;">4. Real Estate</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1.25rem;">
+            Memorable closing gifts and high-quality branding to keep agents top-of-mind with homebuyers and commercial clients.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);"><span style="color:var(--color-gold);">Examples:</span> Engraved cutting boards, custom keychains, premium wine boxes.</div>
+        </div>
+
+        <!-- 5 -->
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px; border-top: 3px solid var(--color-navy);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.75rem;">5. Medical Offices & Healthcare</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1.25rem;">
+            Professional branding for staff recognition and clinic marketing, ensuring polished, durable, and clean results.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);"><span style="color:var(--color-gold);">Examples:</span> Desk nameplates, custom thermoses, staff appreciation gifts.</div>
+        </div>
+
+        <!-- 6 -->
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px; border-top: 3px solid var(--color-navy);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.75rem;">6. Construction & Inspection</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1.25rem;">
+            Rugged, durable custom products that withstand field environments while elevating the company’s professional image.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);"><span style="color:var(--color-gold);">Examples:</span> Heavy-duty thermoses, custom multi-tools, safety gear tags.</div>
+        </div>
+
+        <!-- 7 -->
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px; border-top: 3px solid var(--color-navy);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.75rem;">7. Hospitality & Events</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1.25rem;">
+            High-speed, high-volume production to supply conferences, hotels, and retreats with consistent guest merchandise.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);"><span style="color:var(--color-gold);">Examples:</span> Custom glassware, bulk tote bags, VIP attendee gifts.</div>
+        </div>
+
+        <!-- 8 -->
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px; border-top: 3px solid var(--color-navy);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.75rem;">8. Sales & Client Relations</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1.25rem;">
+            Strategic, high-end gifts designed to impress top-tier prospects and reward long-standing client loyalty.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);"><span style="color:var(--color-gold);">Examples:</span> Executive gift sets, leather accessories, VIP milestone awards.</div>
+        </div>
+
+        <!-- 9 -->
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px; border-top: 3px solid var(--color-navy);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.75rem;">9. Professional Services</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1.25rem;">
+            Crisp, corporate-grade branding for law firms, financial institutions, and agencies where professional image is everything.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);"><span style="color:var(--color-gold);">Examples:</span> Engraved brass pens, bespoke folders, crystal awards.</div>
+        </div>
+
+        <!-- 10 -->
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px; border-top: 3px solid var(--color-navy);">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.75rem;">10. Teams & Internal Depts.</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1.25rem;">
+            Custom gear to build unity and celebrate specific team milestones, project launches, or offsite retreats.
+          </p>
+          <div style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-secondary);"><span style="color:var(--color-gold);">Examples:</span> Department-specific apparel, offsite event shirts, project awards.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE ADAPT -->
+  <section class="section" style="background: var(--color-beige); padding: 4rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      
+      <div style="background: #fff; padding: 3rem; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.04);">
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 2rem; text-align: center;">How we adapt to your industry</h2>
+        
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.1rem; line-height: 1.8; color: var(--color-text-primary);">
+          <li style="display: flex; gap: 1rem; margin-bottom: 1.25rem; align-items: flex-start;">
+            <span style="color: var(--color-navy); font-size: 1.2rem;">&#10004;</span> Мы подбираем материалы и технологии под конкретную задачу бизнеса. (We select materials and technologies to fit specific business goals).
+          </li>
+          <li style="display: flex; gap: 1rem; margin-bottom: 1.25rem; align-items: flex-start;">
+            <span style="color: var(--color-navy); font-size: 1.2rem;">&#10004;</span> Мы учитываем объёмы и сроки, актуальные именно для вашей отрасли. (We accommodate the volumes and deadlines specific to your sector).
+          </li>
+          <li style="display: flex; gap: 1rem; margin-bottom: 1.25rem; align-items: flex-start;">
+            <span style="color: var(--color-navy); font-size: 1.2rem;">&#10004;</span> Мы строго работаем с существующими бренд-гайдами вашей компании. (We strictly adhere to your existing brand guidelines).
+          </li>
+          <li style="display: flex; gap: 1rem; margin-bottom: 1.25rem; align-items: flex-start;">
+            <span style="color: var(--color-navy); font-size: 1.2rem;">&#10004;</span> Мы можем изготовить физический sample (образец) перед запуском полной партии. (We provide physical samples before running full production batches).
+          </li>
+          <li style="display: flex; gap: 1rem; margin-bottom: 1.25rem; align-items: flex-start;">
+            <span style="color: var(--color-navy); font-size: 1.2rem;">&#10004;</span> Мы обеспечиваем строгий локальный контроль качества прямо здесь, в DFW. (We guarantee meticulous local quality control right here in DFW).
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ (AEO) -->
+  <section class="section" style="background: #fff; padding: 4rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy); margin-bottom: 2.5rem; text-align: center;">Industry FAQ</h2>
+      
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you work with small local businesses or only large companies?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">We work with businesses of all sizes throughout the DFW area. Whether you need 10 closing gifts for your boutique real estate agency or 5000+ onboarding kits for a corporate headquarters, our production scales to fit your needs.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you handle industry-specific requirements (medical, construction, etc.)?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. We frequently select highly durable, rugged items for construction sites or specialized sterile-friendly merchandise for medical offices, adapting the product specs to your exact environment.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What is the typical order volume by industry?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Volumes vary widely. For example, real estate agents may order batches of 20 premium cutting boards for client closings, while HR departments may order batches of 1,000+ custom tumblers for annual employee events.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you offer branded items for employee recognition programs?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes, this is one of our core specialties. We help HR and People Ops teams develop tiered appreciation gifts and bulk onboarding kits that build internal culture.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you produce items for client gifts and events?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Absolutely. From high-end VIP client gifts to high-volume trade show giveaways and hospitality products, we have both the technology and the hardware to meet marketing objectives directly.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background: var(--color-navy); text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 600px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.2rem; color: #fff; margin-bottom: 1rem;">Don’t see your industry?</h2>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; line-height: 1.6;">
+        Tell us about your company and goals — we’ll recommend the right solution and volume.
+      </p>
+      <a href="/pages/request-a-quote" class="btn btn--primary" style="padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 4px;">Request a Quote</a>
+    </div>
+  </section>
+
+</div>

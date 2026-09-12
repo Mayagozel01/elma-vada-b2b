@@ -1,0 +1,365 @@
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Plano, Texas",
+        "heading": "See the detail behind a personalized gift",
+        "text": "<p>Explore engraving, presentation and personalization through selected work. Tell us which details you like and we can discuss a direction for your own occasion.</p>",
+        "photo_note": "Лучший реальный проект целиком, с разрешением клиента.",
+        "button_label": "Request a Quote",
+        "button_link": "/pages/request-a-quote",
+        "secondary_label": "Explore Solutions",
+        "secondary_link": "/pages/business-solutions"
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "Project stories",
+        "columns": 4,
+        "color_scheme": "cream",
+        "layout": "grid",
+        "require_photo": true
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Engraved Glass Project",
+            "text": "<p>Add the approved client type, project need, quantity, material, production method and outcome before publishing this case.</p>",
+            "show_image": true,
+            "photo_note": "Общий кадр стеклянного изделия + детали гравировки.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Individually Named Pen Batch",
+            "text": "<p>Add verified project details and explain how recipient personalization was organized.</p>",
+            "show_image": true,
+            "photo_note": "Партия ручек с разными именами.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Recognition Award Project",
+            "text": "<p>Describe the approved occasion, material choice and finished recognition piece.</p>",
+            "show_image": true,
+            "photo_note": "Настоящая награда крупно и общий вид.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Packing & Fulfillment Project",
+            "text": "<p>Describe the verified packing requirements and delivery scope without exposing recipient details.</p>",
+            "show_image": true,
+            "photo_note": "Ваши реальные упакованные заказы или доставка.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "gallery": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "Details from our studio",
+        "require_photo": true,
+        "columns": 4
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Recognition award",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Recognition award. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Engraved wooden piece",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Engraved wooden piece. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Desk keepsake",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Desk keepsake. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Named pen batch",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Named pen batch. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "title": "Metal engraving detail",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Metal engraving detail. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_6": {
+          "type": "item",
+          "settings": {
+            "title": "Glass engraving detail",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Glass engraving detail. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_7": {
+          "type": "item",
+          "settings": {
+            "title": "Pen gift set",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Pen gift set. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_8": {
+          "type": "item",
+          "settings": {
+            "title": "Personalized everyday pen",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Personalized everyday pen. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_9": {
+          "type": "item",
+          "settings": {
+            "title": "Presentation packaging",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Presentation packaging. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_10": {
+          "type": "item",
+          "settings": {
+            "title": "Wood engraving detail",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Wood engraving detail. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_11": {
+          "type": "item",
+          "settings": {
+            "title": "Recipient personalization",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Recipient personalization. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "item_12": {
+          "type": "item",
+          "settings": {
+            "title": "Packed order",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Packed order. Только с разрешением на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5",
+        "item_6",
+        "item_7",
+        "item_8",
+        "item_9",
+        "item_10",
+        "item_11",
+        "item_12"
+      ]
+    },
+    "related": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "Where would you like to go next?",
+        "columns": 3,
+        "color_scheme": "cream"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Business Solutions",
+            "text": "<p></p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "/pages/business-solutions",
+            "link_label": "Explore this service"
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Production Capabilities",
+            "text": "<p></p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "/pages/production-capabilities",
+            "link_label": "Explore this service"
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2"
+      ]
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "settings": {
+        "heading": "What else would you like to know?"
+      },
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Ask about digital mockup and physical sample options. Availability, cost and timing are confirmed for your project before you commit.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Timing depends on product availability, quantity, artwork approval and fulfillment. Your quote will set out the proposed schedule; please share any fixed event date.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ]
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "button_label": "Discuss Your Project",
+        "button_link": "/pages/request-a-quote",
+        "color_scheme": "navy"
+      },
+      "blocks": {},
+      "block_order": []
+    }
+  },
+  "order": [
+    "hero",
+    "examples",
+    "gallery",
+    "related",
+    "questions",
+    "cta"
+  ]
+}

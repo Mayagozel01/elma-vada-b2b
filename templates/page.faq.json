@@ -1,0 +1,141 @@
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Plano, Texas",
+        "heading": "Questions before your next project",
+        "text": "<p>Find practical information about artwork, personalization, ordering and project planning. For a product-specific answer, send us your project details.</p>",
+        "photo_note": "",
+        "button_label": "Request a Quote",
+        "button_link": "/pages/request-a-quote",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work",
+        "show_image": false
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "settings": {
+        "heading": "What else would you like to know?"
+      },
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "Where is Elma Vada based?",
+            "answer": "<p>Our studio is based in Plano, Texas, in the Dallas–Fort Worth area. Contact us to discuss your project and any visit or collection arrangements.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Ask about digital mockup and physical sample options. Availability, cost and timing are confirmed for your project before you commit.</p>"
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Timing depends on product availability, quantity, artwork approval and fulfillment. Your quote will set out the proposed schedule; please share any fixed event date.</p>"
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "question": "What is the minimum order quantity?",
+            "answer": "<p>Minimums depend on the product, material and production method. Send your estimated quantity so we can confirm suitability and pricing.</p>"
+          }
+        },
+        "question_7": {
+          "type": "question",
+          "settings": {
+            "question": "Can you work with my existing artwork?",
+            "answer": "<p>Share your logo or design and any brand guidelines. Vector files are helpful; we will review the file and confirm any preparation needed.</p>"
+          }
+        },
+        "question_8": {
+          "type": "question",
+          "settings": {
+            "question": "Can you engrave items I already own?",
+            "answer": "<p>Send the exact product, material, dimensions and quantity before bringing or shipping items. Suitability and any risks need to be reviewed first.</p>"
+          }
+        },
+        "question_9": {
+          "type": "question",
+          "settings": {
+            "question": "Can I request gift packaging?",
+            "answer": "<p>Yes, include presentation and packing requirements in your inquiry so available options can be discussed and included in the quote.</p>"
+          }
+        },
+        "question_10": {
+          "type": "question",
+          "settings": {
+            "question": "Can gifts be sent to different recipients?",
+            "answer": "<p>Tell us how many destinations are involved and the required dates. Availability, address handling and fulfillment charges must be confirmed for the project.</p>"
+          }
+        },
+        "question_11": {
+          "type": "question",
+          "settings": {
+            "question": "Do you handle repeat orders?",
+            "answer": "<p>Tell us which project or design you want to repeat. We will review current product availability, quantities and any changes before quoting.</p>"
+          }
+        },
+        "question_12": {
+          "type": "question",
+          "settings": {
+            "question": "Can you meet a fixed event date?",
+            "answer": "<p>Share the date at the start. We will review material availability and production requirements before confirming a schedule; do not assume a rush order is available.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6",
+        "question_7",
+        "question_8",
+        "question_9",
+        "question_10",
+        "question_11",
+        "question_12"
+      ]
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "button_label": "Discuss Your Project",
+        "button_link": "/pages/request-a-quote",
+        "color_scheme": "navy"
+      },
+      "blocks": {},
+      "block_order": []
+    }
+  },
+  "order": [
+    "hero",
+    "questions",
+    "cta"
+  ]
+}

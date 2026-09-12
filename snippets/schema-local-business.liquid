@@ -1,0 +1,65 @@
+{%- comment -%}
+  LocalBusiness JSON-LD — sitewide for local EEAT / Maps / AI answers
+{%- endcomment -%}
+{%- liquid
+  assign business_image = ''
+  if settings.favicon != blank
+    assign business_image = settings.favicon | image_url: width: 512
+  endif
+-%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": {{ shop.url | append: '#localbusiness' | json }},
+  "name": "Elma Vada Studio",
+  "alternateName": "Elma Vada",
+  "url": {{ shop.url | json }},
+  {%- if business_image != blank -%}
+  "image": {{ business_image | prepend: 'https:' | json }},
+  {%- endif -%}
+  "email": "elmavadastudio@gmail.com",
+  "description": "Local DFW production and branding studio specializing in custom laser engraving, UV printing, corporate gifts, branded merchandise, and bulk orders from 10 to 5000+ units.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Plano",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Dallas–Fort Worth" },
+    { "@type": "City", "name": "Dallas" },
+    { "@type": "City", "name": "Plano" },
+    { "@type": "State", "name": "Texas" }
+  ],
+  "priceRange": "$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Invoice, Credit Card",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ]
+  {%- if settings.social_instagram != blank or settings.social_etsy != blank -%}
+  ,"sameAs": [
+    {%- if settings.social_instagram != blank -%}{{ settings.social_instagram | json }}{%- endif -%}
+    {%- if settings.social_instagram != blank and settings.social_etsy != blank -%},{%- endif -%}
+    {%- if settings.social_etsy != blank -%}{{ settings.social_etsy | json }}{%- endif -%}
+  ]
+  {%- endif -%}
+  ,"hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Production services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate gifts" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom laser engraving" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Branded merchandise" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bulk branding orders" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Promotional products" } }
+    ]
+  }
+}
+</script>

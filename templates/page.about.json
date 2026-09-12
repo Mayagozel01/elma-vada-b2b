@@ -1,0 +1,178 @@
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Plano, Texas",
+        "heading": "Thoughtful gifts begin with people who care about the details",
+        "text": "<p>Elma Vada is a Plano-based studio focused on personalized gifts and engraving for business occasions. Our approach starts with who the gift is for and the message it should carry.</p>",
+        "photo_note": "Реальный основатель или команда в мастерской; с разрешением на публикацию.",
+        "button_label": "Request a Quote",
+        "button_link": "/pages/request-a-quote",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work"
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "Who is behind the work?",
+        "columns": 3,
+        "color_scheme": "cream",
+        "layout": "stories",
+        "require_photo": false
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "The People Behind Your Project",
+            "text": "<p>Clear communication matters as much as the finished piece. We work through the occasion, artwork and practical details with you.</p>",
+            "show_image": true,
+            "photo_note": "Портрет основателя; в тексте затем добавьте имя и настоящую историю.",
+            "link": "",
+            "link_label": ""
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Inside the Studio",
+            "text": "<p>Material samples and production details help turn an idea into a defined project.</p>",
+            "show_image": true,
+            "photo_note": "Общий вид вашей мастерской.",
+            "link": "",
+            "link_label": ""
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Care in the Small Details",
+            "text": "<p>Names, messages and presentation deserve attention from the first brief to the finished gift.</p>",
+            "show_image": true,
+            "photo_note": "Команда за проверкой качества или упаковкой.",
+            "link": "",
+            "link_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ]
+    },
+    "testimonials": {"type":"testimonials","settings":{}},
+    "related": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "Where would you like to go next?",
+        "columns": 3,
+        "color_scheme": "cream"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Business Solutions",
+            "text": "<p></p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "/pages/business-solutions",
+            "link_label": "Explore this service"
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Production Capabilities",
+            "text": "<p></p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "/pages/production-capabilities",
+            "link_label": "Explore this service"
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Our Work",
+            "text": "<p></p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "/pages/our-work",
+            "link_label": "Explore this service"
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ]
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "settings": {
+        "heading": "What else would you like to know?"
+      },
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Ask about digital mockup and physical sample options. Availability, cost and timing are confirmed for your project before you commit.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Timing depends on product availability, quantity, artwork approval and fulfillment. Your quote will set out the proposed schedule; please share any fixed event date.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ]
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "button_label": "Discuss Your Project",
+        "button_link": "/pages/request-a-quote",
+        "color_scheme": "navy"
+      },
+      "blocks": {},
+      "block_order": []
+    }
+  },
+  "order": [
+    "hero",
+    "examples",
+    "testimonials",
+    "related",
+    "questions",
+    "cta"
+  ]
+}

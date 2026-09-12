@@ -1,0 +1,75 @@
+<section class="b2b-section">
+  <div class="container b2b-split b2b-quote">
+    <div>
+      <h2>{{ section.settings.heading | escape }}</h2>
+      <div class="b2b-rte">{{ section.settings.text }}</div>
+      {% if section.settings.image != blank or request.design_mode %}
+        <div style="margin-top:2rem">{% render 'b2b-image', photo: section.settings.image, alt: section.settings.image_alt, title: section.settings.heading, note: section.settings.photo_note %}</div>
+      {% endif %}
+      <div class="b2b-rte" style="margin-top:2rem">{{ section.settings.after_text }}</div>
+    </div>
+    <div>
+      {% for block in section.blocks %}{% render block %}{% endfor %}
+      {% if section.settings.show_native_form %}
+        {% assign form_id = 'B2BQuote-' | append: section.id %}
+        {% form 'contact', id: form_id, class: 'b2b-form' %}
+          <h2>{{ section.settings.form_heading | escape }}</h2>
+          {% if form.posted_successfully? %}<p class="b2b-form__message" role="status" tabindex="-1">{{ section.settings.success_message | escape }}</p>{% endif %}
+          {% if form.errors %}<div class="b2b-form__message" role="alert" tabindex="-1">{{ form.errors | default_errors }}</div>{% endif %}
+          <div class="b2b-form__fields">
+            <div><label for="{{ form_id }}-name">{{ section.settings.name_label | escape }} *</label><input id="{{ form_id }}-name" name="contact[name]" autocomplete="name" value="{{ form.name | default: customer.name | escape }}" required></div>
+            <div><label for="{{ form_id }}-company">{{ section.settings.company_label | escape }} *</label><input id="{{ form_id }}-company" name="contact[company]" autocomplete="organization" value="{{ form.company | escape }}" required></div>
+            <div><label for="{{ form_id }}-email">{{ section.settings.email_label | escape }} *</label><input type="email" id="{{ form_id }}-email" name="contact[email]" autocomplete="email" value="{{ form.email | default: customer.email | escape }}" required {% if form.errors contains 'email' %}aria-invalid="true"{% endif %}></div>
+            <div><label for="{{ form_id }}-phone">{{ section.settings.phone_label | escape }}</label><input type="tel" id="{{ form_id }}-phone" name="contact[phone]" autocomplete="tel" value="{{ form.phone | default: customer.phone | escape }}"></div>
+            <div><label for="{{ form_id }}-project">{{ section.settings.project_label | escape }}</label><select id="{{ form_id }}-project" name="contact[project_type]">{% assign options = section.settings.project_options | newline_to_br | split: '<br />' %}{% for option in options %}{% assign option_value = option | strip %}{% if option_value != blank %}<option value="{{ option_value | escape }}" {% if form.project_type == option_value %}selected{% endif %}>{{ option_value | escape }}</option>{% endif %}{% endfor %}</select></div>
+            <div><label for="{{ form_id }}-quantity">{{ section.settings.quantity_label | escape }}</label><input type="number" min="1" step="1" id="{{ form_id }}-quantity" name="contact[quantity]" value="{{ form.quantity | escape }}"></div>
+            <div><label for="{{ form_id }}-date">{{ section.settings.deadline_label | escape }}</label><input type="date" id="{{ form_id }}-date" name="contact[deadline]" value="{{ form.deadline | escape }}"></div>
+            <div><label for="{{ form_id }}-budget">{{ section.settings.budget_label | escape }}</label><input id="{{ form_id }}-budget" name="contact[budget_range]" value="{{ form.budget_range | escape }}"></div>
+            <div><label for="{{ form_id }}-delivery">{{ section.settings.delivery_label | escape }}</label><select id="{{ form_id }}-delivery" name="contact[delivery]">{% assign options = section.settings.delivery_options | newline_to_br | split: '<br />' %}{% for option in options %}{% assign option_value = option | strip %}{% if option_value != blank %}<option value="{{ option_value | escape }}" {% if form.delivery == option_value %}selected{% endif %}>{{ option_value | escape }}</option>{% endif %}{% endfor %}</select></div>
+            <div><label for="{{ form_id }}-city">{{ section.settings.city_label | escape }}</label><input id="{{ form_id }}-city" name="contact[delivery_city_zip]" value="{{ form.delivery_city_zip | escape }}"></div>
+            <div class="b2b-field--full"><label for="{{ form_id }}-artwork">{{ section.settings.artwork_label | escape }}</label><input type="url" id="{{ form_id }}-artwork" name="contact[artwork_link]" placeholder="https://" value="{{ form.artwork_link | escape }}" aria-describedby="{{ form_id }}-artwork-help"><div id="{{ form_id }}-artwork-help" class="b2b-rte">{{ section.settings.artwork_help }}</div></div>
+            <div class="b2b-field--full"><label for="{{ form_id }}-body">{{ section.settings.notes_label | escape }}</label><textarea id="{{ form_id }}-body" name="contact[body]" rows="6">{{ form.body | escape }}</textarea></div>
+          </div>
+          <div class="b2b-rte">{{ section.settings.privacy_text }}</div>
+          {% if shop.privacy_policy != blank %}<p><a class="b2b-link" href="{{ shop.privacy_policy.url }}">{{ shop.privacy_policy.title | escape }}</a></p>{% endif %}
+          <button class="btn btn--primary" type="submit" style="width:100%;margin-top:1rem">{{ section.settings.submit_label | escape }}</button>
+        {% endform %}
+      {% elsif section.blocks.size == 0 and request.design_mode %}
+        <p class="b2b-editor-note">Добавьте блок приложения формы или включите встроенную форму.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+ "name":"B2B quote form","limit":1,"enabled_on":{"templates":["page"]},
+ "settings":[
+  {"type":"text","id":"heading","label":"Side heading","default":"What happens after your request?"},
+  {"type":"richtext","id":"text","label":"Side text","default":"<ol><li>We review your occasion, quantities and target date.</li><li>We discuss suitable products, personalization and packaging.</li><li>You receive a quote with the proposed scope and timing.</li><li>Artwork and recipient details are approved before production.</li></ol>"},
+  {"type":"image_picker","id":"image","label":"Optional sample photo"},
+  {"type":"text","id":"image_alt","label":"Photo description (alt)"},
+  {"type":"textarea","id":"photo_note","label":"Photo brief (editor only)","default":"Один реальный готовый подарок рядом с согласованным эскизом. Не обязательно."},
+  {"type":"richtext","id":"after_text","label":"Additional information","default":"<p>Not sure where to start? Tell us who the gift is for and what you want it to communicate. Ask about mockup and sample options for your project.</p>"},
+  {"type":"checkbox","id":"show_native_form","label":"Show built-in contact form","default":true,"info":"For actual file uploads, add a form app block and disable this form after testing the app."},
+  {"type":"text","id":"form_heading","label":"Form heading","default":"Tell us about your project"},
+  {"type":"text","id":"name_label","label":"Name label","default":"Full name"},
+  {"type":"text","id":"company_label","label":"Company label","default":"Company"},
+  {"type":"text","id":"email_label","label":"Email label","default":"Work email"},
+  {"type":"text","id":"phone_label","label":"Phone label","default":"Phone (optional)"},
+  {"type":"text","id":"project_label","label":"Project label","default":"Project type"},
+  {"type":"textarea","id":"project_options","label":"Project options (one per line)","default":"Not sure yet\nDigital mockup request\nPhysical sample request\nCorporate gifts\nEmployee recognition\nClient gifts\nEvents and awards\nOnboarding kits\nMilestone program\nBulk engraving\nPromotional products"},
+  {"type":"text","id":"quantity_label","label":"Quantity label","default":"Estimated quantity"},
+  {"type":"text","id":"deadline_label","label":"Deadline label","default":"Needed by"},
+  {"type":"text","id":"budget_label","label":"Budget label","default":"Budget range (optional)"},
+  {"type":"text","id":"delivery_label","label":"Delivery label","default":"Preferred fulfillment"},
+  {"type":"textarea","id":"delivery_options","label":"Delivery options (one per line)","default":"Please advise\nPickup inquiry\nLocal delivery inquiry\nShipping inquiry\nMultiple recipient addresses"},
+  {"type":"text","id":"city_label","label":"City label","default":"Delivery city / ZIP"},
+  {"type":"text","id":"artwork_label","label":"Artwork label","default":"Logo / artwork link (optional)"},
+  {"type":"richtext","id":"artwork_help","label":"Artwork instructions","default":"<p>Share a viewable link to your artwork, or send files when we reply. Do not include private recipient lists in a public link.</p>"},
+  {"type":"text","id":"notes_label","label":"Notes label","default":"Occasion, materials, names and project details"},
+  {"type":"richtext","id":"privacy_text","label":"Privacy note","default":"<p>We use the details you share to respond to your project inquiry.</p>"},
+  {"type":"text","id":"submit_label","label":"Submit button","default":"Send My Request"},
+  {"type":"text","id":"success_message","label":"Success message","default":"Thank you. Your request has been sent. We will contact you to discuss the next step."}
+ ],"blocks":[{"type":"@app"}],"presets":[{"name":"B2B quote form"}]
+}
+{% endschema %}

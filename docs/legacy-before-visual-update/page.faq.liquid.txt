@@ -1,0 +1,152 @@
+<!-- page.faq.liquid -->
+<div class="page-width">
+
+  <!-- 1. HERO -->
+  <section class="section bg-navy" style="text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h1 class="page-title" style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1rem; color: #fff;">Frequently Asked Questions</h1>
+      <p style="font-size: 1.25rem; color: var(--color-gold); margin-bottom: 0; font-weight: 500;">
+        Clear answers about our local DFW production studio, volumes, process, and capabilities.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. FAQ CATEGORIES -->
+  <section class="section" style="padding: 4rem 1rem; background: #fff;">
+    <div class="container" style="max-width: 800px;">
+
+      <!-- About the studio & location -->
+      <div style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--color-gold);">About the studio &amp; location</h2>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Where is Elma Vada located?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Elma Vada Studio is based in Plano, Texas, in the Dallas–Fort Worth (DFW) area. We serve local businesses across DFW and ship statewide and nationwide when needed.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Are you a local production studio or do you outsource?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">We are a local production studio. Engraving, branding, and quality control happen in-house — we are not a marketplace that outsources overseas.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you offer local pickup in the DFW area?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. Local pickup is available in Plano, Texas. We can also arrange DFW delivery or shipping outside the area.</p>
+        </details>
+      </div>
+
+      <!-- Volumes & orders -->
+      <div style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--color-gold);">Volumes &amp; orders</h2>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What is your minimum order quantity?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Most custom engraving and branding projects start at 10 units. Exact minimums can vary by product and method — we’ll confirm in your quote.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you handle both small batches and large bulk orders (up to 5000+ units)?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. We work with small batches and pilot runs as well as mid-volume corporate orders and large bulk or event runs up to 5,000+ units — with the same quality control at every volume.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you do rush orders?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Often yes. Local DFW production gives more flexibility than overseas suppliers. Share your deadline in the quote request and we’ll confirm what’s possible.</p>
+        </details>
+      </div>
+
+      <!-- Process -->
+      <div style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--color-gold);">Process</h2>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">How does the ordering process work?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Send a quote request with quantity, materials, and deadline. We confirm the method and pricing, you approve a digital proof, then we produce, quality-check, and arrange pickup, local delivery, or shipping.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you provide digital proofs before production?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. We prepare a digital proof so you can approve logo placement, size, and artwork before production starts.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you offer samples?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. For many projects we can produce a sample so you approve material, method, and finish before launching the full run.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">How long does production usually take?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Timing depends on quantity, materials, and proof approval. Many mid-size orders complete within a few business days to a couple of weeks after you approve the proof. We’ll give you a clear timeline with your quote.</p>
+        </details>
+      </div>
+
+      <!-- Capabilities -->
+      <div style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--color-gold);">Capabilities</h2>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What materials can you engrave and brand?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">We work with metal (including stainless steel, aluminum, and brass), acrylic, wood, leather, glass, drinkware, and many promotional products.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What technologies do you use (CO2, Fiber, UV, etc.)?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">We use CO₂ laser engraving, fiber laser engraving, UV printing, and glass engraving. We match the method to the material and the finish your brand needs.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you work with our existing logo and brand guidelines?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. Send vector artwork (.ai, .eps, or .svg) and any brand guidelines. We respect logo proportions, clear space, and approved finishes for each material.</p>
+        </details>
+      </div>
+
+      <!-- Differences -->
+      <div style="margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--color-gold);">How we’re different</h2>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Why choose a local DFW studio over overseas suppliers?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Local production means faster communication, easier samples, real-time quality control, quicker revisions, and less risk on deadlines — without waiting on overseas shipping or middlemen.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">How are you different from regular local print shops?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">We are a production studio focused on precision engraving, multi-material branding, and corporate volumes — not a typical print shop or gift store. We own the full cycle from method selection to quality control and handoff.</p>
+        </details>
+      </div>
+
+      <!-- Delivery & quotes -->
+      <div style="margin-bottom: 1rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--color-gold);">Delivery &amp; quotes</h2>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you offer local delivery in DFW?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. In addition to local pickup in Plano, we can arrange delivery within the Dallas–Fort Worth area for many orders.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you ship outside of Texas?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. We ship statewide and nationwide when local pickup or DFW delivery isn’t needed.</p>
+        </details>
+
+        <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What information do you need to prepare a quote?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Share product type, quantity, materials (if known), deadline, budget range if you have one, and logo files if available. The more detail you include, the faster we can send a clear proposal.</p>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. CTA -->
+  <section class="section" style="background: var(--color-navy); text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 600px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.2rem; color: #fff; margin-bottom: 1rem;">Didn’t find your answer?</h2>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; line-height: 1.6;">
+        Write to us — we’ll reply and help with a quote.
+      </p>
+      <a href="/pages/request-a-quote" class="btn btn--primary" style="padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 4px;">Request a Quote</a>
+    </div>
+  </section>
+
+</div>

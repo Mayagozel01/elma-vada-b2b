@@ -1,0 +1,139 @@
+<section class="hero" id="Hero">
+  <!-- Left: Content -->
+  <div class="hero__content">
+    <span class="hero__eyebrow">
+      {{ section.settings.eyebrow | default: 'Corporate Gifts · In-House Engraving · Plano, Texas' }}
+    </span>
+
+    <h1 class="hero__title">
+      {{ section.settings.heading | default: 'Local DFW Production & Branding Studio' }}
+    </h1>
+
+    <div class="hero__divider" aria-hidden="true"></div>
+
+    <p class="hero__subheading" style="font-size: 1.25rem; font-weight: 500; color: var(--color-navy); margin-bottom: 1rem; line-height: 1.5;">
+      {{ section.settings.subheading | default: 'Custom branded products, gifts, and merchandise for businesses — from 10 to 5,000+ units.' }}
+    </p>
+
+    <p class="hero__body">
+      {{ section.settings.body_text | default: "We go beyond simple customization to deliver complete business solutions tailored to your company's objectives. Whether you are scaling premium corporate and client gifts, developing cohesive employee appreciation kits, or sourcing high-volume event products, our local facility ensures precision at every step. Partner with us for reliable, in-house production of your branded merchandise." }}
+    </p>
+
+    <div class="hero__actions">
+      <a href="{{ section.settings.primary_cta_url | default: '/pages/request-a-quote' }}" class="btn btn--primary">
+        {{ section.settings.primary_cta_text | default: 'Request a Quote' }}
+      </a>
+      <a href="{{ section.settings.secondary_cta_url | default: '/pages/our-work' }}" class="btn btn--outline">
+        {{ section.settings.secondary_cta_text | default: 'View Our Work' }}
+      </a>
+    </div>
+  </div>
+
+  <!-- Right: Image -->
+  <div class="hero__image-wrapper">
+    {%- if section.settings.hero_image != blank -%}
+      <img
+        class="hero__image"
+        src="{{ section.settings.hero_image | image_url: width: 1200 }}"
+        alt="{{ section.settings.hero_image.alt | default: 'Elma Vada Studio — precision laser engraving' }}"
+        width="1200"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
+      >
+    {%- else -%}
+      <!-- Placeholder when no image is set -->
+      <div class="hero__image" style="background: linear-gradient(135deg, #2A333B 0%, #1E252B 50%, #161D22 100%); min-height: 600px; display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center; padding: 2rem;">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(192,152,88,0.6)" stroke-width="1" style="margin: 0 auto 1rem;">
+            <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+            <circle cx="12" cy="13" r="3"/>
+          </svg>
+          <p style="color: rgba(255,255,255,0.4); font-size: 0.875rem; font-family: var(--font-body);">Upload hero image<br>in theme settings</p>
+        </div>
+      </div>
+    {%- endif -%}
+
+    <!-- Badge overlay -->
+    <div class="hero__badge">
+      <div class="hero__badge-eyebrow">Produced In-House</div>
+      <div class="hero__badge-text">
+        Plano, Texas · CO₂ &amp; Fiber Laser<br>
+        UV Print · Precision Engraving
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "Corporate Gifts · In-House Engraving · Plano, Texas"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Local DFW Production & Branding Studio"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Custom branded products, gifts, and merchandise for businesses — from 10 to 5,000+ units."
+    },
+    {
+      "type": "textarea",
+      "id": "body_text",
+      "label": "Body Text",
+      "default": "We go beyond simple customization to deliver complete business solutions tailored to your company's objectives. Whether you are scaling premium corporate and client gifts, developing cohesive employee appreciation kits, or sourcing high-volume event products, our local facility ensures precision at every step. Partner with us for reliable, in-house production of your branded merchandise."
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image"
+    },
+    {
+      "type": "header",
+      "content": "Primary CTA"
+    },
+    {
+      "type": "text",
+      "id": "primary_cta_text",
+      "label": "Button text",
+      "default": "Request a Quote"
+    },
+    {
+      "type": "url",
+      "id": "primary_cta_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "header",
+      "content": "Secondary CTA"
+    },
+    {
+      "type": "text",
+      "id": "secondary_cta_text",
+      "label": "Button text",
+      "default": "View Our Work"
+    },
+    {
+      "type": "url",
+      "id": "secondary_cta_url",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}

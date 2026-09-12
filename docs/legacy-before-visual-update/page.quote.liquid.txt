@@ -1,0 +1,204 @@
+<div class="page-width container" style="max-width: 1200px; margin: 0 auto; padding: 4rem 1rem;">
+  
+  <!-- Hero / Page Header -->
+  <div style="text-align: center; margin-bottom: 4rem;">
+    <h1 class="page-title" style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 3.5rem); color: var(--color-navy); margin-bottom: 1rem;">Request a Quote</h1>
+    <p style="font-size: 1.125rem; color: var(--color-text-secondary); max-width: 700px; margin: 0 auto; line-height: 1.6;">
+      Tell us about your project — volume, materials, deadline. We’ll reply with a clear quote and timeline.
+    </p>
+    <p style="font-weight: 600; font-size: 1rem; color: var(--color-gold); margin-top: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">
+      Local DFW production studio. From 10 to 5000+ units. Precision engraving & branding.
+    </p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: start;">
+    
+    <!-- LEFT COLUMN: Content & Trust -->
+    <div class="quote-info">
+      
+      <!-- Trust summary -->
+      <div style="background: var(--color-beige); padding: 2rem; border-left: 4px solid var(--color-navy); margin-bottom: 3rem; font-size: 1rem; line-height: 1.6; color: var(--color-navy);">
+        <p style="margin-bottom: 0.5rem; font-weight: 500;">We support corporate projects from 10 to 5,000+ units.</p>
+        <p style="margin-bottom: 0.5rem;">Share your occasion, quantity, and deadline for a clear production recommendation.</p>
+        <p style="margin: 0;">Ask about a <strong>digital mockup or physical sample</strong> before full production.</p>
+      </div>
+
+      <!-- Что происходит после отправки -->
+      <div style="margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 1.75rem; color: var(--color-navy); margin-bottom: 1.5rem;">What happens next?</h2>
+        <ol style="padding-left: 1.25rem; margin: 0; display: flex; flex-direction: column; gap: 1rem; color: var(--color-text-secondary); font-size: 1rem;">
+          <li><strong>We review your request</strong> (usually within 1 business day).</li>
+          <li><strong>We ask clarifying questions</strong> or request your logo file.</li>
+          <li><strong>You receive a clear quote</strong> + production timeline.</li>
+          <li><strong>After approval</strong>, we prepare a digital proof.</li>
+          <li><strong>Production starts</strong> in our local facility.</li>
+        </ol>
+      </div>
+
+      <!-- Дополнительный trust-блок -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 4rem; padding-top: 2rem; border-top: 1px solid #eee;">
+        <div style="display: flex; align-items: flex-start; gap: 0.5rem; font-weight: 500; font-size: 0.95rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold);">✔</span> Local DFW studio
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 0.5rem; font-weight: 500; font-size: 0.95rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold);">✔</span> Thousands of completed orders
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 0.5rem; font-weight: 500; font-size: 0.95rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold);">✔</span> Experienced production team
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 0.5rem; font-weight: 500; font-size: 0.95rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold);">✔</span> Quality control on every project
+        </div>
+      </div>
+
+      <!-- FAQ (AEO) -->
+      <div>
+        <h2 style="font-family: var(--font-heading); font-size: 1.75rem; color: var(--color-navy); margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
+        
+        <details style="padding: 1rem 0; border-bottom: 1px solid #eee;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer;">How fast do you reply to quote requests?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.5;">We prioritize all incoming B2B requests and typically respond within 1 business day with a detailed outline or any clarifying questions.</p>
+        </details>
+
+        <details style="padding: 1rem 0; border-bottom: 1px solid #eee;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer;">Do you offer samples?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.5;">Yes! For bulk and corporate orders, we highly recommend physical samples so you can evaluate the material and engraving quality before full production.</p>
+        </details>
+
+        <details style="padding: 1rem 0; border-bottom: 1px solid #eee;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer;">What is the minimum order quantity?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.5;">Our custom branding services generally start at 10 units, scaling upwards to 5,000+ units for large corporate applications.</p>
+        </details>
+
+        <details style="padding: 1rem 0; border-bottom: 1px solid #eee;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer;">Can you work with our existing logo/brand guidelines?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.5;">Absolutely. We accept vector formats (.ai, .eps, .svg) and strictly adhere to your brand guidelines to ensure perfect representation.</p>
+        </details>
+
+        <details style="padding: 1rem 0; border-bottom: 1px solid #eee;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer;">Do you offer local pickup in DFW?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.5;">Yes, local pickup is available at our Plano, Texas facility. We also offer local delivery courier services and nationwide shipping.</p>
+        </details>
+
+        <details style="padding: 1rem 0; border-bottom: 1px solid #eee;">
+          <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer;">How long does production usually take?</summary>
+          <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.5;">Turnaround times vary based on quantity and material sourcing, but standard runs typically take 5-10 business days after digital proof approval.</p>
+        </details>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN: The Form -->
+    <div class="quote-form" style="background: #fff; padding: 2.5rem; border-radius: 8px; border: 1px solid #eaeaea; box-shadow: 0 10px 40px rgba(0,0,0,0.04);">
+      
+      {% form 'contact', id: 'RequestAQuoteForm', enctype: 'multipart/form-data' %}
+        
+        {% if form.posted_successfully? %}
+          <div style="background: #e6f6ee; color: #166534; padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem; text-align: center;">
+            <strong>Thank you!</strong> Your project request has been submitted successfully. We will contact you within 1 business day.
+          </div>
+        {% endif %}
+        
+        {{ form.errors | default_errors }}
+        <style>
+          .quote-form input:not([type="file"]), .quote-form select, .quote-form textarea { width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; margin-top: 0.25rem; font-size: 1rem; }
+          .quote-form label { display: block; font-weight: 600; font-size: 0.9rem; color: var(--color-navy); margin-bottom: 0.25rem; }
+          .quote-form .field-group { margin-bottom: 1.5rem; }
+          .quote-form .flex-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+          .quote-form .flex-group > div { flex: 1; min-width: 200px; }
+        </style>
+
+        <div class="flex-group">
+          <div class="field-group">
+            <label for="ContactForm-name">Name *</label>
+            <input type="text" id="ContactForm-name" name="contact[name]" required>
+          </div>
+          <div class="field-group">
+            <label for="ContactForm-company">Company *</label>
+            <input type="text" id="ContactForm-company" name="contact[company]" required>
+          </div>
+        </div>
+
+        <div class="flex-group">
+          <div class="field-group">
+            <label for="ContactForm-email">Email *</label>
+            <input type="email" id="ContactForm-email" name="contact[email]" required>
+          </div>
+          <div class="field-group">
+            <label for="ContactForm-phone">Phone</label>
+            <input type="tel" id="ContactForm-phone" name="contact[phone]">
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="ContactForm-project-type">Project Type</label>
+          <select id="ContactForm-project-type" name="contact[project_type]">
+            <option value="Free Digital Mockup">Free Digital Mockup</option>
+            <option value="Physical Sample">Physical Sample</option>
+            <option value="Corporate Gifts">Corporate Gifts</option>
+            <option value="Employee Appreciation">Employee Appreciation</option>
+            <option value="Client Gifts">Client Gifts</option>
+            <option value="Event Merchandise">Event Merchandise</option>
+            <option value="Onboarding Kits">Onboarding Kits</option>
+            <option value="Promotional Products">Promotional Products</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="flex-group">
+          <div class="field-group">
+            <label for="ContactForm-quantity">Quantity</label>
+            <select id="ContactForm-quantity" name="contact[quantity]">
+              <option value="10-50">10 – 50</option>
+              <option value="51-100">51 – 100</option>
+              <option value="101-500">101 – 500</option>
+              <option value="501-1000">501 – 1000</option>
+              <option value="1001-5000">1001 – 5,000</option>
+              <option value="5000+">5,000+</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="ContactForm-deadline">Deadline</label>
+            <input type="date" id="ContactForm-deadline" name="contact[deadline]">
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="ContactForm-budget">Budget Range (Optional)</label>
+          <select id="ContactForm-budget" name="contact[budget_range]">
+            <option value="To be determined">To be determined</option>
+            <option value="Under $1,000">Under $1,000</option>
+            <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+            <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+            <option value="$10,000+">$10,000+</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="ContactForm-logo">Logo Upload (Optional)</label>
+          <input type="file" id="ContactForm-logo" name="contact[logo]" accept=".ai,.eps,.svg,.png,.jpg,.pdf" style="font-size: 0.9rem; margin-top: 0.5rem; display: block; border: none; padding: 0;">
+          <small style="color: #666;">Accepted formats: AI, EPS, SVG, PDF, PNG</small>
+        </div>
+
+        <div class="field-group">
+          <label for="ContactForm-delivery">Delivery Preference</label>
+          <select id="ContactForm-delivery" name="contact[delivery]">
+            <option value="Shipping (Nationwide)">Shipping (Nationwide)</option>
+            <option value="Local Delivery (DFW)">Local Delivery (DFW)</option>
+            <option value="Pickup (Plano, TX)">Pickup (Plano, TX)</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="ContactForm-body">Notes / Project Description</label>
+          <textarea id="ContactForm-body" name="contact[body]" rows="5" placeholder="Share any specific materials, ideas, or questions you have."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary" style="width: 100%; border-radius: 4px; padding: 1rem; font-size: 1.1rem;">Submit Project Request</button>
+
+      {% endform %}
+      
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "carousel_label": "Featured services",
+        "autoplay": true,
+        "autoplay_speed": 6
+      },
+      "blocks": {
+        "hero_slide_1": {"type":"slide","settings":{"eyebrow":"Corporate Gifts · In-House Engraving · Plano, Texas","heading":"Local DFW Production & Branding Studio","subheading":"Custom branded products, gifts, and merchandise for businesses — from 10 to 5,000+ units.","body_text":"We deliver complete business solutions with precise, reliable in-house production.","primary_cta_text":"Request a Quote","primary_cta_url":"/pages/request-a-quote","secondary_cta_text":"View Our Work","secondary_cta_url":"/pages/our-work","badge_title":"Produced In-House","badge_text":"Plano, Texas · CO₂ & Fiber Laser\nUV Print · Precision Engraving"}},
+        "hero_slide_2": {"type":"slide","settings":{"eyebrow":"Corporate Gifts · Employee Recognition","heading":"Gifts Your Team and Clients Keep","subheading":"Premium branded gifts made locally with precision engraving and thoughtful presentation.","body_text":"From executive gifts to employee milestones, we turn your brand into something people value.","primary_cta_text":"Explore Corporate Gifts","primary_cta_url":"/pages/corporate-gifts","secondary_cta_text":"Request a Quote","secondary_cta_url":"/pages/request-a-quote","badge_title":"Premium Gifting","badge_text":"Custom branding · Local quality control"}},
+        "hero_slide_3": {"type":"slide","settings":{"eyebrow":"Bulk Orders · Fast Local Production","heading":"Built for Business-Scale Orders","subheading":"From 10 to 5,000+ units, we manage proofs, production, quality control, and delivery.","body_text":"Bring us your quantity, deadline, and artwork. We will recommend the right materials and production method.","primary_cta_text":"Explore Bulk Orders","primary_cta_url":"/pages/bulk-orders","secondary_cta_text":"Request a Quote","secondary_cta_url":"/pages/request-a-quote","badge_title":"From 10 to 5,000+","badge_text":"Proofing · Production · Delivery"}}
+      },
+      "block_order": ["hero_slide_1", "hero_slide_2", "hero_slide_3"]
+    },
+    "stats_bar": { "type": "stats-bar", "settings": {} },
+    "trust_bar": { "type": "trust-bar", "settings": {} },
+    "industries": { "type": "industries", "settings": {} },
+    "business_solutions": {
+      "type": "business-solutions",
+      "settings": {},
+      "blocks": {
+        "corporate_gifts": {"type":"solution","settings":{"title":"Corporate Gifts","text":"Premium engraved drinkware, pens, and desk accessories for executives and VIPs.","link_label":"Explore corporate gifts","link":"/pages/corporate-gifts"}},
+        "employee_appreciation": {"type":"solution","settings":{"title":"Employee Appreciation","text":"Meaningful, personalized gear to recognize milestones and reward your team.","link_label":"Explore merchandise","link":"/pages/branded-merchandise"}},
+        "client_gifts": {"type":"solution","settings":{"title":"Client Gifts","text":"Memorable branded merchandise that keeps your company top-of-mind.","link_label":"Explore corporate gifts","link":"/pages/corporate-gifts"}},
+        "event_merchandise": {"type":"solution","settings":{"title":"Event Merchandise","text":"High-volume, consistent-quality gifts for trade shows and events.","link_label":"Explore promotional products","link":"/pages/promotional-products"}},
+        "onboarding_kits": {"type":"solution","settings":{"title":"Branded Onboarding Kits","text":"Cohesive, personalized welcome boxes for new hires.","link_label":"Explore merchandise","link":"/pages/branded-merchandise"}},
+        "promotional_products": {"type":"solution","settings":{"title":"Promotional Products","text":"Accessories and products branded with precision and speed.","link_label":"Explore promotional products","link":"/pages/promotional-products"}}
+      },
+      "block_order": ["corporate_gifts","employee_appreciation","client_gifts","event_merchandise","onboarding_kits","promotional_products"]
+    },
+    "capabilities": { "type": "production-capabilities", "settings": {} },
+    "why_us": { "type": "why-choose-us", "settings": {} },
+    "volume": { "type": "volume", "settings": {} },
+    "comparison": { "type": "comparison", "settings": {} },
+    "portfolio": {
+      "type": "portfolio",
+      "settings": {},
+      "blocks": {
+        "featured_project": {"type":"project","settings":{"title":"Bulk engraved drinkware for Texas inspection company — 850 units"}},
+        "project_2": {"type":"project","settings":{"title":"Custom material corporate project — 250 units"}},
+        "project_3": {"type":"project","settings":{"title":"Custom branded project"}},
+        "project_4": {"type":"project","settings":{"title":"Custom branded project"}},
+        "project_5": {"type":"project","settings":{"title":"Custom branded project"}},
+        "project_6": {"type":"project","settings":{"title":"Custom branded project"}}
+      },
+      "block_order": ["featured_project","project_2","project_3","project_4","project_5","project_6"]
+    },
+    "featured_products": { "type": "featured-products", "settings": {} },
+    "testimonials": { "type": "testimonials", "settings": {} },
+    "how_it_works": { "type": "how-it-works", "settings": {} },
+    "cta_banner": { "type": "cta-banner", "settings": {} }
+  },
+  "order": [
+    "hero",
+    "stats_bar",
+    "trust_bar",
+    "industries",
+    "business_solutions",
+    "capabilities",
+    "why_us",
+    "volume",
+    "comparison",
+    "portfolio",
+    "featured_products",
+    "testimonials",
+    "how_it_works",
+    "cta_banner"
+  ]
+}

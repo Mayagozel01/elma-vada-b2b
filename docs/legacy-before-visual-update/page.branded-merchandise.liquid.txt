@@ -1,0 +1,200 @@
+<!-- page.branded-merchandise.liquid -->
+<div class="page-width">
+
+  <!-- 1. HERO -->
+  <section class="section bg-navy" style="text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h1 class="page-title" style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1rem; color: #fff;">Branded Merchandise DFW</h1>
+      <p style="font-size: 1.25rem; color: var(--color-gold); margin-bottom: 1.5rem; font-weight: 500;">
+        Custom branded merchandise produced locally in Dallas-Fort Worth.
+      </p>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); line-height: 1.6;">
+        Precision engraving and branding for businesses — from small runs to bulk orders of 5000+ units.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. DIRECT ANSWER (AEO) -->
+  <section class="section bg-beige" style="padding: 3.5rem 1rem;">
+    <div class="container" style="max-width: 800px; text-align: center; border-left: 4px solid var(--color-gold); background: #fff; padding: 2.5rem; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+      <p style="font-size: 1.15rem; font-weight: 500; color: var(--color-navy); line-height: 1.7; margin: 0;">
+        Elma Vada is a local DFW production studio that creates custom branded merchandise for companies. We produce logo-branded products, promotional items, employee and client gifts using UV printing, laser engraving, and multi-material techniques.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. WHAT BRANDED MERCHANDISE WE PRODUCE -->
+  <section class="section" style="padding: 4rem 1rem; background: #fafafa;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Branded merchandise we produce</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Branded pens &amp; writing instruments</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Permanently engraved pens and desk sets for teams, clients, and everyday brand visibility.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Drinkware</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Tumblers, bottles, and mugs branded with laser engraving or UV print for offices and events.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Acrylic awards &amp; desk items</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Custom awards, signage, and desktop pieces with clean edges and precise marking.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Leather &amp; wood products</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Portfolios, key tags, and wood gifts with durable engraving that matches your brand tone.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Onboarding &amp; welcome kits</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Cohesive branded kits that introduce new hires to your culture from day one.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Event &amp; promotional merchandise</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">High-volume giveaways and campaign merch with consistent branding across every unit.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Custom metal, glass &amp; acrylic</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Specialty items marked with the method that fits the substrate and your brand finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. WHO NEEDS BRANDED MERCHANDISE -->
+  <section class="section" style="padding: 4rem 1rem; background: #fff; border-top: 1px solid #eaeaea;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Who orders branded merchandise from us</h2>
+      </div>
+
+      <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Companies building brand visibility
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> HR teams for employee programs
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Sales teams for client gifts
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Event organizers
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Procurement departments
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Local DFW businesses that want reliable local production
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. MATERIALS & BRANDING METHODS -->
+  <section class="section bg-beige" style="padding: 4rem 1rem;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Materials and branding methods</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Laser engraving (CO₂ &amp; Fiber)</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Permanent marking for metal, wood, acrylic, leather, and more — clean contrast and durable results.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">UV printing</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Full-color logos and graphics when your brand needs precise color matching on flat or curved surfaces.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Multi-material production</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">We work with metal, acrylic, wood, leather, and glass — and match the method to each substrate.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Method matched to your brand</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">We recommend the right process for durability, finish, and brand guidelines — not a one-size approach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ADVANTAGES OF LOCAL BRANDING -->
+  <section class="section" style="padding: 4rem 1rem; background: #fff;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Why order branded merchandise locally in DFW</h2>
+      </div>
+
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fafafa; padding: 1.25rem 1.5rem; border-radius: 4px; border: 1px solid #eaeaea; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Faster communication and proofing
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fafafa; padding: 1.25rem 1.5rem; border-radius: 4px; border: 1px solid #eaeaea; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Ability to request samples
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fafafa; padding: 1.25rem 1.5rem; border-radius: 4px; border: 1px solid #eaeaea; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Better quality control
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fafafa; padding: 1.25rem 1.5rem; border-radius: 4px; border: 1px solid #eaeaea; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Flexible volumes
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fafafa; padding: 1.25rem 1.5rem; border-radius: 4px; border: 1px solid #eaeaea; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Lower risk compared to overseas suppliers
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. CTA -->
+  <section class="section" style="background: var(--color-navy); text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 600px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.2rem; color: #fff; margin-bottom: 1rem;">Need branded merchandise for your company?</h2>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; line-height: 1.6;">
+        Tell us your volume, product type, and deadline — we’ll prepare a proposal.
+      </p>
+      <a href="/pages/request-a-quote" class="btn btn--primary" style="padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 4px;">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- 8. FAQ -->
+  <section class="section" style="background: var(--color-beige); padding: 4rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy); margin-bottom: 2.5rem; text-align: center;">Branded Merchandise FAQ</h2>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What is the minimum order for branded merchandise?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Most branded merchandise projects start at 10 units. We scale from small brand runs up to bulk orders of 5,000+ units.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you apply our existing logo and brand guidelines?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. Send vector artwork (.ai, .eps, or .svg) and any brand guidelines — we respect logo proportions, clear space, and approved finishes for each material.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What branding methods do you use?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">We use CO₂ and fiber laser engraving, UV printing, and other in-house techniques. The method depends on the material and the look your brand needs.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">How long does production take?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Timeline depends on quantity, materials, and proof approval. Many orders complete within a few business days to a couple of weeks after you approve the proof. We’ll confirm timing with your quote.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you offer packaging for branded items?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. We can pack for pickup, DFW delivery, or shipping — and provide presentation packaging for kits and gift programs when needed.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you handle both small and large volume orders?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. Local production lets us run small branded batches and large bulk merchandise programs with the same quality control.</p>
+      </details>
+
+    </div>
+  </section>
+
+</div>

@@ -1,0 +1,376 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "settings": {
+        "carousel_label": "Featured services",
+        "autoplay": true,
+        "autoplay_speed": 6
+      },
+      "blocks": {
+        "hero_slide_1": {
+          "type": "slide",
+          "settings": {
+            "eyebrow": "Corporate Gifts · In-House Engraving · Plano, Texas",
+            "heading": "Local DFW Production & Branding Studio",
+            "subheading": "Custom branded products, gifts, and merchandise for businesses — from 10 to 5,000+ units.",
+            "body_text": "We deliver complete business solutions with precise, reliable in-house production.",
+            "primary_cta_text": "Request a Quote",
+            "primary_cta_url": "/pages/request-a-quote",
+            "secondary_cta_text": "View Our Work",
+            "secondary_cta_url": "/pages/our-work",
+            "badge_title": "Produced In-House",
+            "badge_text": "Plano, Texas · CO₂ & Fiber Laser\nUV Print · Precision Engraving"
+          }
+        },
+        "hero_slide_2": {
+          "type": "slide",
+          "settings": {
+            "eyebrow": "Corporate Gifts · Employee Recognition",
+            "heading": "Gifts Your Team and Clients Keep",
+            "subheading": "Premium branded gifts made locally with precision engraving and thoughtful presentation.",
+            "body_text": "From executive gifts to employee milestones, we turn your brand into something people value.",
+            "primary_cta_text": "Explore Corporate Gifts",
+            "primary_cta_url": "/pages/corporate-gifts",
+            "secondary_cta_text": "Request a Quote",
+            "secondary_cta_url": "/pages/request-a-quote",
+            "badge_title": "Premium Gifting",
+            "badge_text": "Custom branding · Local quality control"
+          }
+        },
+        "hero_slide_3": {
+          "type": "slide",
+          "settings": {
+            "eyebrow": "Bulk Orders · Fast Local Production",
+            "heading": "Built for Business-Scale Orders",
+            "subheading": "From 10 to 5,000+ units, we manage proofs, production, quality control, and delivery.",
+            "body_text": "Bring us your quantity, deadline, and artwork. We will recommend the right materials and production method.",
+            "primary_cta_text": "Explore Bulk Orders",
+            "primary_cta_url": "/pages/bulk-orders",
+            "secondary_cta_text": "Request a Quote",
+            "secondary_cta_url": "/pages/request-a-quote",
+            "badge_title": "From 10 to 5,000+",
+            "badge_text": "Proofing · Production · Delivery"
+          }
+        }
+      },
+      "block_order": [
+        "hero_slide_1",
+        "hero_slide_2",
+        "hero_slide_3"
+      ]
+    },
+    "stats_bar": {
+      "type": "stats-bar",
+      "settings": {}
+    },
+    "trust_bar": {
+      "type": "trust-bar",
+      "settings": {}
+    },
+    "industries": {
+      "type": "industries",
+      "settings": {}
+    },
+    "business_solutions": {
+      "type": "business-solutions",
+      "settings": {},
+      "blocks": {
+        "corporate_gifts": {
+          "type": "solution",
+          "settings": {
+            "title": "Corporate Gifts",
+            "text": "Premium engraved drinkware, pens, and desk accessories for executives and VIPs.",
+            "link_label": "Explore corporate gifts",
+            "link": "/pages/corporate-gifts"
+          }
+        },
+        "employee_appreciation": {
+          "type": "solution",
+          "settings": {
+            "title": "Employee Appreciation",
+            "text": "Meaningful, personalized gear to recognize milestones and reward your team.",
+            "link_label": "Explore recognition",
+            "link": "/pages/employee-recognition"
+          }
+        },
+        "client_gifts": {
+          "type": "solution",
+          "settings": {
+            "title": "Client Gifts",
+            "text": "Memorable branded merchandise that keeps your company top-of-mind.",
+            "link_label": "Explore client gifts",
+            "link": "/pages/client-gifting"
+          }
+        },
+        "event_merchandise": {
+          "type": "solution",
+          "settings": {
+            "title": "Event Merchandise",
+            "text": "High-volume, consistent-quality gifts for trade shows and events.",
+            "link_label": "Explore event gifts",
+            "link": "/pages/events-awards"
+          }
+        },
+        "onboarding_kits": {
+          "type": "solution",
+          "settings": {
+            "title": "Branded Onboarding Kits",
+            "text": "Cohesive, personalized welcome boxes for new hires.",
+            "link_label": "Explore onboarding",
+            "link": "/pages/onboarding"
+          }
+        },
+        "promotional_products": {
+          "type": "solution",
+          "settings": {
+            "title": "Promotional Products",
+            "text": "Accessories and products branded with precision and speed.",
+            "link_label": "Explore promotional products",
+            "link": "/pages/promotional-products"
+          }
+        }
+      },
+      "block_order": [
+        "corporate_gifts",
+        "employee_appreciation",
+        "client_gifts",
+        "event_merchandise",
+        "onboarding_kits",
+        "promotional_products"
+      ]
+    },
+    "capabilities": {
+      "type": "production-capabilities",
+      "settings": {}
+    },
+    "why_us": {
+      "type": "why-choose-us",
+      "settings": {}
+    },
+    "volume": {
+      "type": "volume",
+      "settings": {}
+    },
+    "comparison": {
+      "type": "comparison",
+      "settings": {}
+    },
+    "portfolio": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "Recent work from our studio",
+        "text": "<p>A closer look at personalization, materials and presentation.</p>",
+        "columns": 4,
+        "require_photo": true,
+        "color_scheme": "cream",
+        "button_label": "View Our Work",
+        "button_link": "/pages/our-work"
+      },
+      "blocks": {
+        "photo_1": {
+          "type": "item",
+          "settings": {
+            "title": "Engraved recognition award",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Engraved recognition award. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_2": {
+          "type": "item",
+          "settings": {
+            "title": "Wooden keepsake",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Wooden keepsake. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_3": {
+          "type": "item",
+          "settings": {
+            "title": "Desk gift",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Desk gift. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_4": {
+          "type": "item",
+          "settings": {
+            "title": "Individually named pens",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Individually named pens. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_5": {
+          "type": "item",
+          "settings": {
+            "title": "Metal engraving detail",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Metal engraving detail. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_6": {
+          "type": "item",
+          "settings": {
+            "title": "Engraved glass",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Engraved glass. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_7": {
+          "type": "item",
+          "settings": {
+            "title": "Pen presentation set",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Pen presentation set. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_8": {
+          "type": "item",
+          "settings": {
+            "title": "Personalized pen",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Personalized pen. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_9": {
+          "type": "item",
+          "settings": {
+            "title": "Gift packaging",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Gift packaging. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_10": {
+          "type": "item",
+          "settings": {
+            "title": "Wood engraving detail",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Wood engraving detail. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_11": {
+          "type": "item",
+          "settings": {
+            "title": "Personal message",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Personal message. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        },
+        "photo_12": {
+          "type": "item",
+          "settings": {
+            "title": "Packed order",
+            "text": "<p></p>",
+            "show_image": true,
+            "photo_note": "Реальное фото: Packed order. Подтвердите разрешение на публикацию.",
+            "link": "",
+            "link_label": "",
+            "requires_approval": true,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "photo_1",
+        "photo_2",
+        "photo_3",
+        "photo_4",
+        "photo_5",
+        "photo_6",
+        "photo_7",
+        "photo_8",
+        "photo_9",
+        "photo_10",
+        "photo_11",
+        "photo_12"
+      ]
+    },
+    "featured_products": {
+      "type": "featured-products",
+      "settings": {}
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {}
+    },
+    "how_it_works": {
+      "type": "how-it-works",
+      "settings": {}
+    },
+    "cta_banner": {
+      "type": "cta-banner",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "stats_bar",
+    "trust_bar",
+    "industries",
+    "business_solutions",
+    "capabilities",
+    "why_us",
+    "volume",
+    "comparison",
+    "portfolio",
+    "featured_products",
+    "testimonials",
+    "how_it_works",
+    "cta_banner"
+  ]
+}

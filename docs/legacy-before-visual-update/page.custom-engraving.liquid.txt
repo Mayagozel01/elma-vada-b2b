@@ -1,0 +1,232 @@
+<!-- page.custom-engraving.liquid -->
+<div class="page-width">
+
+  <!-- 1. HERO -->
+  <section class="section bg-navy" style="text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h1 class="page-title" style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1rem; color: #fff;">Custom Engraving Dallas</h1>
+      <p style="font-size: 1.25rem; color: var(--color-gold); margin-bottom: 1.5rem; font-weight: 500;">
+        Precision laser engraving and branding from our local DFW studio.
+      </p>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); line-height: 1.6;">
+        Custom engraving for businesses — corporate gifts, branded merchandise, awards, and bulk orders from 10 to 5000+ units.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. DIRECT ANSWER (AEO) -->
+  <section class="section bg-beige" style="padding: 3.5rem 1rem;">
+    <div class="container" style="max-width: 800px; text-align: center; border-left: 4px solid var(--color-gold); background: #fff; padding: 2.5rem; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+      <p style="font-size: 1.15rem; font-weight: 500; color: var(--color-navy); line-height: 1.7; margin: 0;">
+        Elma Vada is a local Dallas-Fort Worth production studio specializing in custom laser engraving and branding. We engrave metal, acrylic, wood, leather, glass and promotional products for corporate gifts, employee appreciation, client gifts and bulk business orders.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. TYPES OF CUSTOM ENGRAVING -->
+  <section class="section" style="padding: 4rem 1rem; background: #fafafa;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Types of custom engraving we offer</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Logo engraving</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Permanent company logos on gifts, merchandise, and promotional products with clean, consistent detail.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Name &amp; text personalization</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Individual names, titles, and short messages for awards, kits, and recognition programs.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Bulk engraving for corporate orders</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">High-volume runs from 10 to 5,000+ units with the same precision across every piece.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Awards &amp; recognition items</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Acrylic, crystal, and desk awards engraved for milestones, teams, and leadership recognition.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Branded promotional products</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Logo-marked giveaways and campaign items that hold up beyond a single event.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Multi-material custom projects</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Mixed kits and specialty pieces where we match the right engraving method to each substrate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. MATERIALS WE ENGRAVE -->
+  <section class="section" style="padding: 4rem 1rem; background: #fff; border-top: 1px solid #eaeaea;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Materials we engrave</h2>
+      </div>
+
+      <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Metal (stainless steel, aluminum, brass, and more)
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Acrylic
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Wood
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Leather
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Glass
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Promotional products and drinkware
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. TECHNOLOGIES -->
+  <section class="section bg-beige" style="padding: 4rem 1rem;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Engraving technologies</h2>
+        <p style="font-size: 1.05rem; color: var(--color-text-secondary); max-width: 640px; margin: 1rem auto 0; line-height: 1.6;">
+          Each method suits different materials and finishes — we choose the one that delivers the best durability and brand look for your project.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">CO₂ Laser Engraving</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Ideal for wood, acrylic, leather, and many organics — clean etching with strong contrast on non-metal surfaces.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Fiber Laser Engraving</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Built for metals like stainless steel, aluminum, and brass — permanent high-contrast marking that won’t peel or fade.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">UV Printing</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Used when full-color logos or brand colors are required on selected materials — complements engraving when color matters.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Glass Engraving</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Precise frosting and marking on glass awards, barware, and gift pieces for a refined, permanent finish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. WHO ORDERS CUSTOM ENGRAVING -->
+  <section class="section" style="padding: 4rem 1rem; background: #fff;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Who we work with</h2>
+      </div>
+
+      <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Corporate offices
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> HR and procurement teams
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Medical offices
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Construction and inspection companies
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Real estate
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Hospitality and event teams
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy); grid-column: 1 / -1;">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Local DFW businesses needing reliable production
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. WHY CHOOSE LOCAL ENGRAVING IN DALLAS -->
+  <section class="section bg-beige" style="padding: 4rem 1rem;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Why companies choose local engraving in Dallas</h2>
+      </div>
+
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fff; padding: 1.25rem 1.5rem; border-radius: 4px; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Faster turnaround and communication
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fff; padding: 1.25rem 1.5rem; border-radius: 4px; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Ability to request samples
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fff; padding: 1.25rem 1.5rem; border-radius: 4px; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> In-house quality control
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fff; padding: 1.25rem 1.5rem; border-radius: 4px; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Easier revisions
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fff; padding: 1.25rem 1.5rem; border-radius: 4px; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Better control than overseas suppliers
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 8. CTA -->
+  <section class="section" style="background: var(--color-navy); text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 600px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.2rem; color: #fff; margin-bottom: 1rem;">Need custom engraving in Dallas?</h2>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; line-height: 1.6;">
+        Tell us about your project — material, volume, and deadline. We’ll prepare a proposal.
+      </p>
+      <a href="/pages/request-a-quote" class="btn btn--primary" style="padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 4px;">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- 9. FAQ -->
+  <section class="section" style="background: var(--color-beige); padding: 4rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy); margin-bottom: 2.5rem; text-align: center;">Custom Engraving FAQ</h2>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What materials can you engrave in Dallas?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">We engrave metal (including stainless steel, aluminum, and brass), acrylic, wood, leather, glass, drinkware, and many promotional products at our DFW studio.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What is the minimum order quantity?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Most custom engraving projects start at 10 units. We also handle large bulk runs up to 5,000+ units for corporate programs and events.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you offer laser engraving for logos?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. Logo engraving is one of our core services. Vector files (.ai, .eps, or .svg) give the cleanest results; we’ll confirm the best laser method for your material.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">How long does custom engraving usually take?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Timing depends on quantity, materials, and proof approval. Many mid-size jobs finish within a few business days to a couple of weeks after you approve the proof. We’ll confirm the timeline with your quote.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you provide a digital proof before production?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. We prepare a digital proof for approval before production starts, so placement, size, and artwork are confirmed first.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you offer local pickup in the DFW area?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. Local pickup is available in Plano, Texas, along with DFW delivery and statewide or nationwide shipping when needed.</p>
+      </details>
+
+    </div>
+  </section>
+
+</div>

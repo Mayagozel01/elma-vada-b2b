@@ -1,0 +1,30 @@
+{%- assign main_menu = section.settings.menu -%}
+<header class="site-header" id="SiteHeader" role="banner">
+  <div class="container"><div class="header__inner">
+    <a href="{{ routes.root_url }}" class="header__logo" aria-label="{{ shop.name }}">
+      <div class="header__logo-badge" aria-hidden="true">{{ section.settings.logo_badge | default: 'EV' }}</div>
+      <div class="header__logo-text"><span class="header__logo-name">{{ section.settings.logo_name | default: 'Elma Vada' }}</span><span class="header__logo-sub">{{ section.settings.logo_subtitle | default: 'Studio' }}</span></div>
+    </a>
+    <nav class="header__nav" aria-label="Main navigation">
+      {%- if main_menu != blank -%}
+        {%- for link in main_menu.links -%}<a href="{{ link.url }}" class="header__nav-link">{{ link.title }}</a>{%- endfor -%}
+      {%- else -%}
+        <a href="/pages/business-solutions" class="header__nav-link">Business Solutions</a><a href="/pages/production-capabilities" class="header__nav-link">Capabilities</a><a href="/pages/industries" class="header__nav-link">Industries</a><a href="/pages/our-work" class="header__nav-link">Our Work</a><a href="/pages/about" class="header__nav-link">About</a>
+      {%- endif -%}
+    </nav>
+    <div class="header__cta"><a href="{{ section.settings.cta_url | default: '/pages/request-a-quote' }}" class="btn btn--primary">{{ section.settings.cta_label | default: 'Request a Quote' }}</a></div>
+    <button class="header__hamburger" id="MobileMenuToggle" aria-expanded="false" aria-controls="MobileMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div></div>
+</header>
+<nav class="mobile-menu" id="MobileMenu" aria-label="Mobile navigation">
+  {%- if main_menu != blank -%}
+    {%- for link in main_menu.links -%}<a href="{{ link.url }}" class="mobile-menu__link">{{ link.title }}</a>{%- endfor -%}
+  {%- else -%}
+    <a href="/pages/business-solutions" class="mobile-menu__link">Business Solutions</a><a href="/pages/production-capabilities" class="mobile-menu__link">Capabilities</a><a href="/pages/industries" class="mobile-menu__link">Industries</a><a href="/pages/our-work" class="mobile-menu__link">Our Work</a><a href="/pages/about" class="mobile-menu__link">About</a>
+  {%- endif -%}
+  <a href="{{ section.settings.cta_url | default: '/pages/request-a-quote' }}" class="mobile-menu__link" style="color: var(--color-gold); font-weight: 700;">{{ section.settings.cta_label | default: 'Request a Quote' }} →</a>
+</nav>
+<div style="height: 72px;" aria-hidden="true"></div>
+{% schema %}
+{"name":"Header","settings":[{"type":"link_list","id":"menu","label":"Main menu"},{"type":"text","id":"logo_badge","label":"Logo badge","default":"EV"},{"type":"text","id":"logo_name","label":"Logo name","default":"Elma Vada"},{"type":"text","id":"logo_subtitle","label":"Logo subtitle","default":"Studio"},{"type":"text","id":"cta_label","label":"CTA label","default":"Request a Quote"},{"type":"url","id":"cta_url","label":"CTA link"}]}
+{% endschema %}

@@ -1,0 +1,248 @@
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Plano, Texas",
+        "heading": "Make the first day feel personal",
+        "text": "<p>Welcome new hires and relocating team members with useful, personalized gifts. Bring together names, gift selection and packing instructions before the next start date.</p>",
+        "photo_note": "Открытый welcome-набор на рабочем столе, только ваши реальные товары.",
+        "button_label": "Request a Quote",
+        "button_link": "/pages/request-a-quote",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work"
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "What could your gift look like?",
+        "columns": 4,
+        "color_scheme": "cream",
+        "layout": "grid",
+        "require_photo": false
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Welcome Pen Set",
+            "text": "<p>A named gift to make a new teammate feel expected.</p>",
+            "show_image": true,
+            "photo_note": "Футляр с ручкой для нового сотрудника.",
+            "link": "",
+            "link_label": ""
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Desk Keepsake",
+            "text": "<p>A lasting first-day piece with a name, role or welcome message.</p>",
+            "show_image": true,
+            "photo_note": "Настольный сувенир из дерева.",
+            "link": "",
+            "link_label": ""
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Role-Specific Gift",
+            "text": "<p>Choose useful items that fit the person and their working day.</p>",
+            "show_image": true,
+            "photo_note": "Ручка или изделие с именем и должностью.",
+            "link": "",
+            "link_label": ""
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Coordinated Fulfillment",
+            "text": "<p>Discuss recipient grouping, office delivery or shipping requirements in your quote.</p>",
+            "show_image": true,
+            "photo_note": "Реальные упакованные наборы; адреса скрыть.",
+            "link": "",
+            "link_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "process": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "How does the project come together?",
+        "columns": 4
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Share the Brief",
+            "text": "<p>Tell us the occasion, recipients, quantity and target date.</p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "",
+            "link_label": ""
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Review the Direction",
+            "text": "<p>Discuss products and a digital mockup; ask about physical sample options.</p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "",
+            "link_label": ""
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Approve the Details",
+            "text": "<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "",
+            "link_label": ""
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Produce & Prepare",
+            "text": "<p>Production and packing follow the approved project scope.</p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "",
+            "link_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "related": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "Where would you like to go next?",
+        "columns": 3,
+        "color_scheme": "cream"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Business Solutions",
+            "text": "<p></p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "/pages/business-solutions",
+            "link_label": "Explore this service"
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Production Capabilities",
+            "text": "<p></p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "/pages/production-capabilities",
+            "link_label": "Explore this service"
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Our Work",
+            "text": "<p></p>",
+            "show_image": false,
+            "photo_note": "",
+            "link": "/pages/our-work",
+            "link_label": "Explore this service"
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ]
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "settings": {
+        "heading": "What else would you like to know?"
+      },
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Ask about digital mockup and physical sample options. Availability, cost and timing are confirmed for your project before you commit.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Timing depends on product availability, quantity, artwork approval and fulfillment. Your quote will set out the proposed schedule; please share any fixed event date.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ]
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "button_label": "Discuss Your Project",
+        "button_link": "/pages/request-a-quote",
+        "color_scheme": "navy"
+      },
+      "blocks": {},
+      "block_order": []
+    }
+  },
+  "order": [
+    "hero",
+    "examples",
+    "process",
+    "related",
+    "questions",
+    "cta"
+  ]
+}

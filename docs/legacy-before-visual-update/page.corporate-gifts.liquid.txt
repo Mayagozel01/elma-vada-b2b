@@ -1,0 +1,201 @@
+<!-- page.corporate-gifts.liquid -->
+<div class="page-width">
+
+  <!-- 1. HERO -->
+  <section class="section bg-navy" style="text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h1 class="page-title" style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1rem; color: #fff;">Corporate Gifts DFW</h1>
+      <p style="font-size: 1.25rem; color: var(--color-gold); margin-bottom: 1.5rem; font-weight: 500;">
+        Custom branded corporate gifts produced locally in Dallas-Fort Worth.
+      </p>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); line-height: 1.6;">
+        From employee appreciation to client gifts and event giveaways — precision engraved and branded products from 10 to 5000+ units.
+      </p>
+    </div>
+  </section>
+
+  <!-- 2. DIRECT ANSWER (AEO) -->
+  <section class="section bg-beige" style="padding: 3.5rem 1rem;">
+    <div class="container" style="max-width: 800px; text-align: center; border-left: 4px solid var(--color-gold); background: #fff; padding: 2.5rem; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+      <p style="font-size: 1.15rem; font-weight: 500; color: var(--color-navy); line-height: 1.7; margin: 0;">
+        Elma Vada is a local DFW production studio that creates custom corporate gifts for businesses. We produce branded merchandise, employee appreciation items, client gifts, and event products with in-house engraving and quality control.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. TYPES OF CORPORATE GIFTS -->
+  <section class="section" style="padding: 4rem 1rem; background: #fafafa;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Types of corporate gifts we produce</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Employee Appreciation Gifts</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Recognize milestones, performance, and culture with personalized branded gifts teams actually keep.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Client &amp; Partner Gifts</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Premium engraved sets that reinforce relationships and reflect your company’s standards.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Executive Gifts</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">High-end pens, awards, and presentation pieces for leadership, VIPs, and board-level gifting.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Event &amp; Conference Giveaways</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Consistent, high-volume branded items for trade shows, retreats, and corporate gatherings.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Onboarding &amp; Welcome Kits</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Cohesive new-hire kits with engraved drinkware, pens, notebooks, and branded accessories.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Holiday Corporate Gifts</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Seasonal gifting programs for employees, clients, and partners — produced on a reliable timeline.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2rem; border-radius: 4px;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-navy); margin: 0 0 0.75rem;">Branded Promotional Items</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary); margin: 0;">Logo-marked merchandise for campaigns, outreach, and everyday brand visibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. WHO ORDERS FROM US -->
+  <section class="section" style="padding: 4rem 1rem; background: #fff; border-top: 1px solid #eaeaea;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Who we work with</h2>
+      </div>
+
+      <ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> HR and People Operations teams
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Procurement
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Sales and Client Success teams
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Event organizers
+        </li>
+        <li style="background: #fafafa; border: 1px solid #eaeaea; padding: 1.25rem 1.5rem; border-radius: 4px; display: flex; gap: 0.75rem; align-items: flex-start; font-size: 1rem; color: var(--color-navy); grid-column: 1 / -1;">
+          <span style="color: var(--color-gold); font-weight: 700;">&#8226;</span> Medical offices, real estate, construction, hospitality, and corporate offices
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. WHY LOCAL PRODUCTION MATTERS -->
+  <section class="section bg-beige" style="padding: 4rem 1rem;">
+    <div class="container" style="max-width: 900px;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Why companies in DFW choose local production for corporate gifts</h2>
+      </div>
+
+      <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fff; padding: 1.25rem 1.5rem; border-radius: 4px; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Faster turnaround
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fff; padding: 1.25rem 1.5rem; border-radius: 4px; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Easy communication and revisions
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fff; padding: 1.25rem 1.5rem; border-radius: 4px; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Ability to request samples
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fff; padding: 1.25rem 1.5rem; border-radius: 4px; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Better quality control
+        </li>
+        <li style="display: flex; gap: 0.75rem; align-items: flex-start; background: #fff; padding: 1.25rem 1.5rem; border-radius: 4px; font-size: 1.05rem; color: var(--color-navy);">
+          <span style="color: var(--color-gold); font-weight: 700;">✔</span> Less risk than ordering overseas
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. PROCESS -->
+  <section class="section" style="padding: 4rem 1rem; background: #fff;">
+    <div class="container" style="max-width: 800px;">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">How it works</h2>
+      </div>
+
+      <ol style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1rem;">
+        <li style="display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.25rem 1.5rem; background: #fafafa; border-radius: 4px; border: 1px solid #eaeaea;">
+          <span style="flex-shrink: 0; width: 2rem; height: 2rem; background: var(--color-navy); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;">1</span>
+          <span style="font-size: 1.05rem; color: var(--color-navy); line-height: 1.5; padding-top: 0.25rem;">Request a quote</span>
+        </li>
+        <li style="display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.25rem 1.5rem; background: #fafafa; border-radius: 4px; border: 1px solid #eaeaea;">
+          <span style="flex-shrink: 0; width: 2rem; height: 2rem; background: var(--color-navy); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;">2</span>
+          <span style="font-size: 1.05rem; color: var(--color-navy); line-height: 1.5; padding-top: 0.25rem;">Choose products and branding method</span>
+        </li>
+        <li style="display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.25rem 1.5rem; background: #fafafa; border-radius: 4px; border: 1px solid #eaeaea;">
+          <span style="flex-shrink: 0; width: 2rem; height: 2rem; background: var(--color-navy); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;">3</span>
+          <span style="font-size: 1.05rem; color: var(--color-navy); line-height: 1.5; padding-top: 0.25rem;">Approve proof</span>
+        </li>
+        <li style="display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.25rem 1.5rem; background: #fafafa; border-radius: 4px; border: 1px solid #eaeaea;">
+          <span style="flex-shrink: 0; width: 2rem; height: 2rem; background: var(--color-navy); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;">4</span>
+          <span style="font-size: 1.05rem; color: var(--color-navy); line-height: 1.5; padding-top: 0.25rem;">Production</span>
+        </li>
+        <li style="display: flex; gap: 1.25rem; align-items: flex-start; padding: 1.25rem 1.5rem; background: #fafafa; border-radius: 4px; border: 1px solid #eaeaea;">
+          <span style="flex-shrink: 0; width: 2rem; height: 2rem; background: var(--color-navy); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700;">5</span>
+          <span style="font-size: 1.05rem; color: var(--color-navy); line-height: 1.5; padding-top: 0.25rem;">Pickup, local delivery or shipping</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 7. CTA -->
+  <section class="section" style="background: var(--color-navy); text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 600px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.2rem; color: #fff; margin-bottom: 1rem;">Need corporate gifts for your team or clients?</h2>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; line-height: 1.6;">
+        Tell us your volume, budget, and deadline — we’ll recommend options.
+      </p>
+      <a href="/pages/request-a-quote" class="btn btn--primary" style="padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 4px;">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- 8. FAQ -->
+  <section class="section" style="background: var(--color-beige); padding: 4rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy); margin-bottom: 2.5rem; text-align: center;">Corporate Gifts FAQ</h2>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What is the minimum order for corporate gifts?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Most corporate gift projects start at 10 units. We also handle larger programs up to 5,000+ units for events and company-wide gifting.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you brand items with our company logo?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. We engrave or print your logo using the method best suited to the material — fiber laser, CO₂ laser, UV print, and more. Vector artwork (.ai, .eps, .svg) works best.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you offer gift packaging?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. We can provide presentation packaging for kits and gift sets, or ship items ready for your internal distribution.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">How long does production take for corporate gifts?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Timing depends on quantity, materials, and proof approval. Many mid-size orders complete within a few business days to a couple of weeks after you approve the proof. We’ll confirm the timeline in your quote.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you help us choose gifts for different budgets?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Absolutely. Share your budget range and audience (employees, clients, executives), and we’ll recommend products and branding methods that fit.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you deliver within the DFW area?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. Local pickup in Plano is available, along with DFW delivery and statewide or nationwide shipping when needed.</p>
+      </details>
+
+    </div>
+  </section>
+
+</div>

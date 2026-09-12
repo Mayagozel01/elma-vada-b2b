@@ -1,0 +1,16 @@
+{%- comment -%} Archived: internal links now live in each JSON template's related section. {%- endcomment -%}
+<section class="section" style="padding: 3.5rem 1rem; background: #fafafa; border-top: 1px solid #eaeaea;">
+  <div class="container" style="max-width: 1000px;">
+    <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 1.5rem; text-align: center;">Explore our services</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+      <a href="/pages/corporate-gifts" style="display: block; padding: 1.25rem; background: #fff; color: var(--color-navy); font-weight: 600; border: 1px solid #eaeaea; text-decoration: none;">Corporate Gifts <span aria-hidden="true">→</span></a>
+      <a href="/pages/bulk-orders" style="display: block; padding: 1.25rem; background: #fff; color: var(--color-navy); font-weight: 600; border: 1px solid #eaeaea; text-decoration: none;">Bulk Orders <span aria-hidden="true">→</span></a>
+      <a href="/pages/branded-merchandise" style="display: block; padding: 1.25rem; background: #fff; color: var(--color-navy); font-weight: 600; border: 1px solid #eaeaea; text-decoration: none;">Branded Merchandise <span aria-hidden="true">→</span></a>
+      <a href="/pages/custom-engraving" style="display: block; padding: 1.25rem; background: #fff; color: var(--color-navy); font-weight: 600; border: 1px solid #eaeaea; text-decoration: none;">Custom Engraving <span aria-hidden="true">→</span></a>
+      <a href="/pages/promotional-products" style="display: block; padding: 1.25rem; background: #fff; color: var(--color-navy); font-weight: 600; border: 1px solid #eaeaea; text-decoration: none;">Promotional Products <span aria-hidden="true">→</span></a>
+      <a href="/pages/client-gifting" style="display: block; padding: 1.25rem; background: #fff; color: var(--color-navy); font-weight: 600; border: 1px solid #eaeaea; text-decoration: none;">Client &amp; Relationship Gifting <span aria-hidden="true">→</span></a>
+      <a href="/pages/service-awards" style="display: block; padding: 1.25rem; background: #fff; color: var(--color-navy); font-weight: 600; border: 1px solid #eaeaea; text-decoration: none;">Service Awards <span aria-hidden="true">→</span></a>
+      <a href="/pages/faq" style="display: block; padding: 1.25rem; background: #fff; color: var(--color-navy); font-weight: 600; border: 1px solid #eaeaea; text-decoration: none;">Frequently Asked Questions <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>

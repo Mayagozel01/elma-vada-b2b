@@ -1,0 +1,24 @@
+# Local agent/editor state and Shopify authentication/cache
+.agents/
+.codex/
+.shopify/
+.idea/
+.vscode/
+
+# Credentials and environment-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+shopify.theme.toml
+config.yml
+
+# Dependencies, generated packages and temporary output
+node_modules/
+*.zip
+*.log
+test-results/
+playwright-report/
+.DS_Store
+Thumbs.db

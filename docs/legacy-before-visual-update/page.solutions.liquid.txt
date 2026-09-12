@@ -1,0 +1,207 @@
+<!-- page.solutions.liquid -->
+<div class="page-width">
+
+  <!-- HERO SECTION -->
+  <section class="section bg-navy" style="text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h1 class="page-title" style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1rem; color: #fff;">Business Solutions</h1>
+      <p style="font-size: 1.25rem; color: var(--color-gold); margin-bottom: 1.5rem; font-weight: 500;">
+        Complete branding and gift solutions for companies — from 10 to 5000+ units.
+      </p>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); line-height: 1.6;">
+        We help businesses create corporate gifts, employee appreciation programs, client gifts, event merchandise, and branded onboarding kits through local DFW production.
+      </p>
+    </div>
+  </section>
+
+  <!-- OVERVIEW (AEO) -->
+  <section class="section bg-beige" style="padding: 3.5rem 1rem;">
+    <div class="container" style="max-width: 800px; text-align: center; border-left: 4px solid var(--color-gold); background: #fff; padding: 2.5rem; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+      <p style="font-size: 1.15rem; font-weight: 500; color: var(--color-navy); line-height: 1.7; margin: 0;">
+        Elma Vada provides business solutions for companies that need reliable local production of branded products and corporate gifts. We handle everything from small personalized batches to large bulk orders with precision engraving and multi-material capabilities.
+      </p>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS GRID -->
+  <section class="section" style="padding: 4rem 1rem; background: #fafafa;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3.5rem;">
+        <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy);">Our Core Solutions</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+        
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2.5rem; border-radius: 4px; display: flex; flex-direction: column;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-navy); margin-bottom: 1rem;">1. Corporate Gifts</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1rem;">
+            Elevate your brand with premium, permanently engraved gifts that executives and VIPs actually want to keep. We solve the problem of generic gifting by delivering precision-marked merchandise that deeply reflects your company's high standards.
+          </p>
+          <div style="background: var(--color-beige); padding: 0.75rem; border-radius: 4px; margin-bottom: 1.5rem; flex-grow: 1;">
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--color-navy); margin: 0;">Best for: <span style="font-weight:400; color:var(--color-text-secondary);">Executive Assistants, Operations, Procurement</span></p>
+          </div>
+          <a href="/pages/corporate-gifts" style="display: inline-block; color: var(--color-gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; align-self: flex-start;">Explore Corporate Gifts &rarr;</a>
+        </div>
+
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2.5rem; border-radius: 4px; display: flex; flex-direction: column;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-navy); margin-bottom: 1rem;">2. Employee Appreciation</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1rem;">
+            Boost retention and morale by recognizing milestones with personalized gear. We make it easy to scale individualized gifts for birthdays, anniversaries, and performance awards without losing the personal touch.
+          </p>
+          <div style="background: var(--color-beige); padding: 0.75rem; border-radius: 4px; margin-bottom: 1.5rem; flex-grow: 1;">
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--color-navy); margin: 0;">Best for: <span style="font-weight:400; color:var(--color-text-secondary);">HR, People Ops, Department Heads</span></p>
+          </div>
+          <a href="/pages/branded-merchandise" style="display: inline-block; color: var(--color-gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; align-self: flex-start;">Explore Branded Merchandise &rarr;</a>
+        </div>
+
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2.5rem; border-radius: 4px; display: flex; flex-direction: column;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-navy); margin-bottom: 1rem;">3. Client Gifts</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1rem;">
+            Keep your services top-of-mind by delivering memorable, high-quality merchandise to your most valuable partners. A well-crafted client gift builds loyalty and encourages repeat business year-round.
+          </p>
+          <div style="background: var(--color-beige); padding: 0.75rem; border-radius: 4px; margin-bottom: 1.5rem; flex-grow: 1;">
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--color-navy); margin: 0;">Best for: <span style="font-weight:400; color:var(--color-text-secondary);">Sales Teams, Account Managers, Agency Directors</span></p>
+          </div>
+          <a href="/pages/corporate-gifts" style="display: inline-block; color: var(--color-gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; align-self: flex-start;">Explore Corporate Gifts &rarr;</a>
+        </div>
+
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2.5rem; border-radius: 4px; display: flex; flex-direction: column;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-navy); margin-bottom: 1rem;">4. Event Merchandise</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1rem;">
+            Ensure your trade shows, conferences, and retreats are unforgettable. We produce high-volume, strictly consistent branded items that attendees will actually use long after the event ends.
+          </p>
+          <div style="background: var(--color-beige); padding: 0.75rem; border-radius: 4px; margin-bottom: 1.5rem; flex-grow: 1;">
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--color-navy); margin: 0;">Best for: <span style="font-weight:400; color:var(--color-text-secondary);">Event Planners, Marketing Teams, Field Operations</span></p>
+          </div>
+          <a href="/pages/promotional-products" style="display: inline-block; color: var(--color-gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; align-self: flex-start;">Explore Promotional Products &rarr;</a>
+        </div>
+
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2.5rem; border-radius: 4px; display: flex; flex-direction: column;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-navy); margin-bottom: 1rem;">5. Branded Onboarding Kits</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1rem;">
+            Start new hires off right with fully cohesive, personalized welcome boxes that immediately build company culture. We handle the production of everything from engraved tumblers to branded notebooks.
+          </p>
+          <div style="background: var(--color-beige); padding: 0.75rem; border-radius: 4px; margin-bottom: 1.5rem; flex-grow: 1;">
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--color-navy); margin: 0;">Best for: <span style="font-weight:400; color:var(--color-text-secondary);">Talent Acquisition, HR, Office Managers</span></p>
+          </div>
+          <a href="/pages/branded-merchandise" style="display: inline-block; color: var(--color-gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; align-self: flex-start;">Explore Branded Merchandise &rarr;</a>
+        </div>
+
+        <div style="background: #fff; border: 1px solid #eaeaea; padding: 2.5rem; border-radius: 4px; display: flex; flex-direction: column;">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--color-navy); margin-bottom: 1rem;">6. Promotional Products</h3>
+          <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-primary); margin-bottom: 1rem;">
+            Sourcing and branding high-volume accessories when you need them fast. From mass-market giveaways to specific promotional drops, we find and engrave the optimal products for your brand awareness.
+          </p>
+          <div style="background: var(--color-beige); padding: 0.75rem; border-radius: 4px; margin-bottom: 1.5rem; flex-grow: 1;">
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--color-navy); margin: 0;">Best for: <span style="font-weight:400; color:var(--color-text-secondary);">Marketing Teams, PR, Campus Recruiters</span></p>
+          </div>
+          <a href="/pages/promotional-products" style="display: inline-block; color: var(--color-gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; align-self: flex-start;">Explore Promotional Products &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS & EXAMPLES (2 COLUMNS) -->
+  <section class="section" style="background: #fff; padding: 4rem 1rem; border-top: 1px solid #eaeaea;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem;">
+        
+        <!-- Built for Business Orders -->
+        <div>
+          <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 1.5rem;">Built for business orders</h2>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; line-height: 1.6; color: var(--color-text-primary);">
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-navy); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> One point of contact
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-navy); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> Flexible volumes (10–5000+)
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-navy); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> Digital proof before production
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-navy); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> Local quality control
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-navy); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> Fast communication and adjustments
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-navy); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> Pickup, local delivery, or shipping
+            </li>
+          </ul>
+        </div>
+
+        <!-- Examples of Application -->
+        <div>
+          <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-navy); margin-bottom: 1.5rem;">Real-World Applications</h2>
+          <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; line-height: 1.6; color: var(--color-text-primary);">
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-gold); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> Bulk engraved drinkware for inspection teams
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-gold); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> Custom branded pens for employee recognition
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-gold); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> Acrylic awards for medical offices
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-gold); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> Onboarding kits for new hires
+            </li>
+            <li style="display: flex; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start;">
+              <span style="color: var(--color-gold); font-weight: 700; font-size: 1.2rem; line-height: 1;">&#8226;</span> Event merchandise for corporate gatherings
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {% render 'related-services' %}
+
+  <!-- FAQ (AEO) -->
+  <section class="section" style="background: var(--color-beige); padding: 4rem 1rem;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-navy); margin-bottom: 2.5rem; text-align: center;">Solutions FAQ</h2>
+      
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What types of business solutions do you offer?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">We act as a specialized manufacturing partner to deliver corporate gifts, structured employee appreciation programs, event merchandise, client gifts, and fully branded onboarding kits.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">What is the minimum order quantity?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">For custom branded solutions, we generally start at 10 units and have the capacity to scale up to 5,000+ units for large corporate applications.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Can you help us choose the right products for our goal?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Yes. Our team can source and recommend the highest-quality items (tumblers, tech accessories, awards) that fit your specific employee demographic, corporate event, and budget.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">Do you work with existing brand guidelines?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">Absolutely. We process your native vector files (.ai, .eps, or .svg) and respect your internal brand standards to ensure exact logo formatting and scaling on all physical goods.</p>
+      </details>
+
+      <details style="padding: 1.25rem 0; border-bottom: 1px solid #eaeaea;">
+        <summary style="font-weight: 600; color: var(--color-navy); cursor: pointer; font-size: 1.05rem;">How does the process work from quote to delivery?</summary>
+        <p style="margin-top: 1rem; color: var(--color-text-secondary); line-height: 1.6;">You send us your requirements, we provide a quote within 24 hours. Once approved, we provide a digital layout proof. After your final sign-off, our local Texas team produces the order and ships or prepares it for pickup.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background: var(--color-navy); text-align: center; color: #fff; padding: 5rem 1rem;">
+    <div class="container" style="max-width: 600px;">
+      <h2 style="font-family: var(--font-heading); font-size: 2rem; color: #fff; margin-bottom: 1rem;">Ready to build your solution?</h2>
+      <p style="font-size: 1.125rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; line-height: 1.6;">
+        Tell us your goal, volume, and timeline — we’ll recommend the right approach and materials.
+      </p>
+      <a href="/pages/request-a-quote" class="btn btn--primary" style="padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 4px;">Request a Quote</a>
+    </div>
+  </section>
+
+</div>

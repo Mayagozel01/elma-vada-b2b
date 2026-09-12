@@ -1,0 +1,47 @@
+<section class="industries section bg-beige" id="IndustriesWeServe">
+  <div class="container">
+
+    <div class="industries__header" style="text-align: center; margin-bottom: 2.5rem;">
+      <span class="eyebrow" style="display: block; margin-bottom: 1rem;">Who We Help</span>
+      <h2 class="section-title">Who We Help</h2>
+      <p class="section-subtitle" style="max-width: 650px; margin: 0 auto; color: var(--color-text-secondary); font-size: 1.125rem;">We work with companies that need reliable local production for branded products and corporate gifts.</p>
+    </div>
+
+    <div class="industries__grid" role="list" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-bottom: 3rem;">
+      {%- assign industries = "Companies,Events,Teams,HR & People Ops,Procurement,Real Estate,Medical Offices,Construction & Inspection,Hospitality,Corporate Offices" | split: "," -%}
+      {%- for industry in industries -%}
+        <span class="industries__tag" role="listitem" style="padding: 0.75rem 1.5rem; background: #fff; border: 1.5px solid var(--color-navy); font-weight: 500; transition: 0.2s;">{{ industry }}</span>
+      {%- endfor -%}
+    </div>
+
+    <div style="text-align: center;">
+      <a href="/pages/request-a-quote" class="btn btn--primary">Request a Quote</a>
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Industries We Serve",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Branded solutions for every business type."
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Industries We Serve"
+    }
+  ]
+}
+{% endschema %}

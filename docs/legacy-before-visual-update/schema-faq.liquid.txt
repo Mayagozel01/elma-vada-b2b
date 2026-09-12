@@ -1,0 +1,157 @@
+{%- comment -%}
+  Archived: FAQPage JSON-LD — replaced by editable sections/b2b-faq.liquid
+{%- endcomment -%}
+{%- liquid
+  assign suffix = template.suffix | default: ''
+  assign emit_faq = false
+-%}
+
+{%- case suffix -%}
+  {%- when 'faq' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"Where is Elma Vada located?","acceptedAnswer":{"@type":"Answer","text":"Elma Vada Studio is based in Plano, Texas, in the Dallas–Fort Worth (DFW) area. We serve local businesses across DFW and ship statewide and nationwide when needed."}},
+    {"@type":"Question","name":"Are you a local production studio or do you outsource?","acceptedAnswer":{"@type":"Answer","text":"We are a local production studio. Engraving, branding, and quality control happen in-house — we are not a marketplace that outsources overseas."}},
+    {"@type":"Question","name":"Do you offer local pickup in the DFW area?","acceptedAnswer":{"@type":"Answer","text":"Yes. Local pickup is available in Plano, Texas. We can also arrange DFW delivery or shipping outside the area."}},
+    {"@type":"Question","name":"What is your minimum order quantity?","acceptedAnswer":{"@type":"Answer","text":"Most custom engraving and branding projects start at 10 units. Exact minimums can vary by product and method — we confirm in your quote."}},
+    {"@type":"Question","name":"Do you handle both small batches and large bulk orders (up to 5000+ units)?","acceptedAnswer":{"@type":"Answer","text":"Yes. We work with small batches and pilot runs as well as mid-volume corporate orders and large bulk or event runs up to 5,000+ units."}},
+    {"@type":"Question","name":"Can you do rush orders?","acceptedAnswer":{"@type":"Answer","text":"Often yes. Local DFW production gives more flexibility than overseas suppliers. Share your deadline in the quote request and we will confirm what is possible."}},
+    {"@type":"Question","name":"How does the ordering process work?","acceptedAnswer":{"@type":"Answer","text":"Send a quote request with quantity, materials, and deadline. We confirm the method and pricing, you approve a digital proof, then we produce, quality-check, and arrange pickup, local delivery, or shipping."}},
+    {"@type":"Question","name":"Do you provide digital proofs before production?","acceptedAnswer":{"@type":"Answer","text":"Yes. We prepare a digital proof so you can approve logo placement, size, and artwork before production starts."}},
+    {"@type":"Question","name":"Do you offer samples?","acceptedAnswer":{"@type":"Answer","text":"Yes. For many projects we can produce a sample so you approve material, method, and finish before launching the full run."}},
+    {"@type":"Question","name":"How long does production usually take?","acceptedAnswer":{"@type":"Answer","text":"Timing depends on quantity, materials, and proof approval. Many mid-size orders complete within a few business days to a couple of weeks after you approve the proof."}},
+    {"@type":"Question","name":"What materials can you engrave and brand?","acceptedAnswer":{"@type":"Answer","text":"We work with metal (including stainless steel, aluminum, and brass), acrylic, wood, leather, glass, drinkware, and many promotional products."}},
+    {"@type":"Question","name":"What technologies do you use (CO2, Fiber, UV, etc.)?","acceptedAnswer":{"@type":"Answer","text":"We use CO2 laser engraving, fiber laser engraving, UV printing, and glass engraving. We match the method to the material and the finish your brand needs."}},
+    {"@type":"Question","name":"Can you work with our existing logo and brand guidelines?","acceptedAnswer":{"@type":"Answer","text":"Yes. Send vector artwork (.ai, .eps, or .svg) and any brand guidelines. We respect logo proportions, clear space, and approved finishes for each material."}},
+    {"@type":"Question","name":"Why choose a local DFW studio over overseas suppliers?","acceptedAnswer":{"@type":"Answer","text":"Local production means faster communication, easier samples, real-time quality control, quicker revisions, and less risk on deadlines."}},
+    {"@type":"Question","name":"How are you different from regular local print shops?","acceptedAnswer":{"@type":"Answer","text":"We are a production studio focused on precision engraving, multi-material branding, and corporate volumes — not a typical print shop or gift store."}},
+    {"@type":"Question","name":"Do you offer local delivery in DFW?","acceptedAnswer":{"@type":"Answer","text":"Yes. In addition to local pickup in Plano, we can arrange delivery within the Dallas–Fort Worth area for many orders."}},
+    {"@type":"Question","name":"Do you ship outside of Texas?","acceptedAnswer":{"@type":"Answer","text":"Yes. We ship statewide and nationwide when local pickup or DFW delivery is not needed."}},
+    {"@type":"Question","name":"What information do you need to prepare a quote?","acceptedAnswer":{"@type":"Answer","text":"Share product type, quantity, materials if known, deadline, budget range if you have one, and logo files if available."}}
+    {%- endcapture -%}
+
+  {%- when 'bulk-orders' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"What is your minimum order quantity?","acceptedAnswer":{"@type":"Answer","text":"Our typical minimum for custom bulk engraving and branding is 10 units. We scale from small pilot batches up to 5,000+ unit runs."}},
+    {"@type":"Question","name":"How long does a bulk order usually take?","acceptedAnswer":{"@type":"Answer","text":"Timeline depends on quantity, materials, and current production load. After proof approval, many mid-volume orders complete within a few business days to a couple of weeks."}},
+    {"@type":"Question","name":"Do you offer samples before full production?","acceptedAnswer":{"@type":"Answer","text":"Yes. For many projects we can produce a sample so you approve material, method, and finish before launching the full bulk run."}},
+    {"@type":"Question","name":"Can you handle rush bulk orders?","acceptedAnswer":{"@type":"Answer","text":"Often yes — local DFW production gives us more flexibility than overseas suppliers."}},
+    {"@type":"Question","name":"Do you provide packaging for bulk shipments?","acceptedAnswer":{"@type":"Answer","text":"Yes. We can pack for local pickup, DFW delivery, or nationwide shipping. Custom branded packaging is available for kits and gift programs when needed."}},
+    {"@type":"Question","name":"What file formats do you need for logos?","acceptedAnswer":{"@type":"Answer","text":"Vector files work best — .ai, .eps, or .svg. High-resolution PDF or PNG can work for some methods."}}
+    {%- endcapture -%}
+
+  {%- when 'corporate-gifts' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"What is the minimum order for corporate gifts?","acceptedAnswer":{"@type":"Answer","text":"Most corporate gift projects start at 10 units. We also handle larger programs up to 5,000+ units."}},
+    {"@type":"Question","name":"Can you brand items with our company logo?","acceptedAnswer":{"@type":"Answer","text":"Yes. We engrave or print your logo using the method best suited to the material."}},
+    {"@type":"Question","name":"Do you offer gift packaging?","acceptedAnswer":{"@type":"Answer","text":"Yes. We can provide presentation packaging for kits and gift sets, or ship items ready for your internal distribution."}},
+    {"@type":"Question","name":"How long does production take for corporate gifts?","acceptedAnswer":{"@type":"Answer","text":"Timing depends on quantity, materials, and proof approval. Many mid-size orders complete within a few business days to a couple of weeks after you approve the proof."}},
+    {"@type":"Question","name":"Can you help us choose gifts for different budgets?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Share your budget range and audience, and we will recommend products and branding methods that fit."}},
+    {"@type":"Question","name":"Do you deliver within the DFW area?","acceptedAnswer":{"@type":"Answer","text":"Yes. Local pickup in Plano is available, along with DFW delivery and statewide or nationwide shipping when needed."}}
+    {%- endcapture -%}
+
+  {%- when 'branded-merchandise' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"What is the minimum order for branded merchandise?","acceptedAnswer":{"@type":"Answer","text":"Most branded merchandise projects start at 10 units. We scale from small brand runs up to bulk orders of 5,000+ units."}},
+    {"@type":"Question","name":"Can you apply our existing logo and brand guidelines?","acceptedAnswer":{"@type":"Answer","text":"Yes. Send vector artwork and any brand guidelines — we respect logo proportions, clear space, and approved finishes."}},
+    {"@type":"Question","name":"What branding methods do you use?","acceptedAnswer":{"@type":"Answer","text":"We use CO2 and fiber laser engraving, UV printing, and other in-house techniques."}},
+    {"@type":"Question","name":"How long does production take?","acceptedAnswer":{"@type":"Answer","text":"Timeline depends on quantity, materials, and proof approval. Many orders complete within a few business days to a couple of weeks after you approve the proof."}},
+    {"@type":"Question","name":"Do you offer packaging for branded items?","acceptedAnswer":{"@type":"Answer","text":"Yes. We can pack for pickup, DFW delivery, or shipping — and provide presentation packaging for kits when needed."}},
+    {"@type":"Question","name":"Can you handle both small and large volume orders?","acceptedAnswer":{"@type":"Answer","text":"Yes. Local production lets us run small branded batches and large bulk merchandise programs with the same quality control."}}
+    {%- endcapture -%}
+
+  {%- when 'custom-engraving' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"What materials can you engrave in Dallas?","acceptedAnswer":{"@type":"Answer","text":"We engrave metal, acrylic, wood, leather, glass, drinkware, and many promotional products at our DFW studio."}},
+    {"@type":"Question","name":"What is the minimum order quantity?","acceptedAnswer":{"@type":"Answer","text":"Most custom engraving projects start at 10 units. We also handle large bulk runs up to 5,000+ units."}},
+    {"@type":"Question","name":"Do you offer laser engraving for logos?","acceptedAnswer":{"@type":"Answer","text":"Yes. Logo engraving is one of our core services. Vector files give the cleanest results."}},
+    {"@type":"Question","name":"How long does custom engraving usually take?","acceptedAnswer":{"@type":"Answer","text":"Timing depends on quantity, materials, and proof approval. Many mid-size jobs finish within a few business days to a couple of weeks after you approve the proof."}},
+    {"@type":"Question","name":"Can you provide a digital proof before production?","acceptedAnswer":{"@type":"Answer","text":"Yes. We prepare a digital proof for approval before production starts."}},
+    {"@type":"Question","name":"Do you offer local pickup in the DFW area?","acceptedAnswer":{"@type":"Answer","text":"Yes. Local pickup is available in Plano, Texas, along with DFW delivery and shipping when needed."}}
+    {%- endcapture -%}
+
+  {%- when 'promotional-products' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"What is the minimum order for promotional products?","acceptedAnswer":{"@type":"Answer","text":"Most promotional product projects start at 10 units. We also handle large bulk runs up to 5,000+ units."}},
+    {"@type":"Question","name":"Can you brand items with our logo?","acceptedAnswer":{"@type":"Answer","text":"Yes. We apply your logo with laser engraving or UV printing, depending on the material."}},
+    {"@type":"Question","name":"Do you offer better quality than typical overseas promo products?","acceptedAnswer":{"@type":"Answer","text":"In-house engraving, proofing, and quality checks mean more durable branding and fewer surprises than low-cost overseas promo runs."}},
+    {"@type":"Question","name":"How long does production take?","acceptedAnswer":{"@type":"Answer","text":"Timeline depends on quantity, products, and proof approval. Many mid-size orders complete within a few business days to a couple of weeks after you approve the proof."}},
+    {"@type":"Question","name":"Can you handle rush orders for events?","acceptedAnswer":{"@type":"Answer","text":"Often yes — local DFW production gives more flexibility than overseas suppliers."}},
+    {"@type":"Question","name":"Do you provide packaging?","acceptedAnswer":{"@type":"Answer","text":"Yes. We can pack for local pickup, DFW delivery, or shipping — and provide presentation packaging when needed."}}
+    {%- endcapture -%}
+
+  {%- when 'about' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"Where is Elma Vada located?","acceptedAnswer":{"@type":"Answer","text":"Elma Vada Studio is based in Plano, Texas, in the Dallas–Fort Worth (DFW) area."}},
+    {"@type":"Question","name":"Are you a local studio or do you outsource production?","acceptedAnswer":{"@type":"Answer","text":"We are a local production studio. Engraving, printing, and quality control happen in-house."}},
+    {"@type":"Question","name":"How long have you been doing production work?","acceptedAnswer":{"@type":"Answer","text":"Our team works with production equipment daily and has completed thousands of branded orders for businesses."}},
+    {"@type":"Question","name":"Do you only work with large companies?","acceptedAnswer":{"@type":"Answer","text":"No. We work with businesses of all sizes. Typical orders range from 10 to 5,000+ units."}},
+    {"@type":"Question","name":"Can we visit or pick up orders locally?","acceptedAnswer":{"@type":"Answer","text":"Yes. DFW clients can arrange local pickup in Plano, Texas. We also ship statewide and nationwide."}}
+    {%- endcapture -%}
+
+  {%- when 'solutions' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"What types of business solutions do you offer?","acceptedAnswer":{"@type":"Answer","text":"We deliver corporate gifts, employee appreciation programs, event merchandise, client gifts, and branded onboarding kits."}},
+    {"@type":"Question","name":"What is the minimum order quantity?","acceptedAnswer":{"@type":"Answer","text":"For custom branded solutions, we generally start at 10 units and can scale up to 5,000+ units."}},
+    {"@type":"Question","name":"Can you help us choose the right products for our goal?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our team can source and recommend items that fit your audience, event, and budget."}},
+    {"@type":"Question","name":"Do you work with existing brand guidelines?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We process vector files and respect your brand standards."}},
+    {"@type":"Question","name":"How does the process work from quote to delivery?","acceptedAnswer":{"@type":"Answer","text":"You send requirements, we provide a quote, you approve a digital proof, then our local Texas team produces and ships or prepares pickup."}}
+    {%- endcapture -%}
+
+  {%- when 'capabilities' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"What production technologies do you offer?","acceptedAnswer":{"@type":"Answer","text":"We offer CO2 and fiber laser engraving, UV printing, glass engraving, and multi-material branding under one roof."}},
+    {"@type":"Question","name":"What materials can you work with?","acceptedAnswer":{"@type":"Answer","text":"Metal, acrylic, wood, leather, glass, drinkware, and promotional products."}},
+    {"@type":"Question","name":"Do you handle quality control in-house?","acceptedAnswer":{"@type":"Answer","text":"Yes. Quality checks happen locally before pickup, delivery, or shipping."}},
+    {"@type":"Question","name":"Can you match branding method to our material?","acceptedAnswer":{"@type":"Answer","text":"Yes. We recommend the optimal method for durability and brand finish on each substrate."}}
+    {%- endcapture -%}
+
+  {%- when 'industries' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"What industries do you serve?","acceptedAnswer":{"@type":"Answer","text":"We serve corporate teams, HR, medical offices, construction, real estate, hospitality, event planners, and professional services across DFW."}},
+    {"@type":"Question","name":"Can you adapt products to our industry needs?","acceptedAnswer":{"@type":"Answer","text":"Yes. We match materials, durability, and branding methods to your industry and use case."}},
+    {"@type":"Question","name":"Do you work with both small local businesses and larger companies?","acceptedAnswer":{"@type":"Answer","text":"Yes. Orders typically range from 10 to 5,000+ units."}}
+    {%- endcapture -%}
+
+  {%- when 'portfolio' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"Can I see more detailed case studies?","acceptedAnswer":{"@type":"Answer","text":"Yes. Reach out with your project details and we can share targeted samples and similar past runs."}},
+    {"@type":"Question","name":"Do you work with both small and large volume projects?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We handle custom batches of 50 VIP gifts alongside runs of 1,500+ items."}},
+    {"@type":"Question","name":"Can you match the style of previous projects for our brand?","acceptedAnswer":{"@type":"Answer","text":"Yes. We can replicate materials and methods from past projects using your brand guidelines."}},
+    {"@type":"Question","name":"Do you provide photos of the production process?","acceptedAnswer":{"@type":"Answer","text":"For large corporate orders we provide digital proofs and, upon request, batch approval photos."}},
+    {"@type":"Question","name":"How do you handle logo application on different materials?","acceptedAnswer":{"@type":"Answer","text":"We select UV printing, fiber laser, or CO2 laser based on the material for optimal permanent application."}}
+    {%- endcapture -%}
+
+  {%- when 'quote' -%}
+    {%- assign emit_faq = true -%}
+    {%- capture faq_json -%}
+    {"@type":"Question","name":"How fast do you reply to quote requests?","acceptedAnswer":{"@type":"Answer","text":"We typically respond within 1 business day."}},
+    {"@type":"Question","name":"Do you offer samples?","acceptedAnswer":{"@type":"Answer","text":"Yes. For bulk and corporate orders we recommend physical samples before full production."}},
+    {"@type":"Question","name":"What is the minimum order quantity?","acceptedAnswer":{"@type":"Answer","text":"Custom branding services generally start at 10 units, scaling to 5,000+ units."}},
+    {"@type":"Question","name":"Can you work with our existing logo/brand guidelines?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We accept vector formats and adhere to your brand guidelines."}},
+    {"@type":"Question","name":"Do you offer local pickup in DFW?","acceptedAnswer":{"@type":"Answer","text":"Yes, local pickup is available at our Plano, Texas facility."}},
+    {"@type":"Question","name":"How long does production usually take?","acceptedAnswer":{"@type":"Answer","text":"Standard runs typically take 5-10 business days after digital proof approval."}}
+    {%- endcapture -%}
+{%- endcase -%}
+
+{%- if emit_faq -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ faq_json }}
+  ]
+}
+</script>
+{%- endif -%}

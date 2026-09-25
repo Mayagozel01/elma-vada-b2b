@@ -1,0 +1,18 @@
+{% comment %}Editor-only shot guidance; no fake photos or empty frames on the storefront.{% endcomment %}
+{% if photo != blank %}
+  {% assign photo_alt = alt | default: photo.alt | default: title %}
+  <figure class="b2b-media{% if fit == 'contain' %} b2b-media--contain{% endif %}">
+    <img src="{{ photo | image_url: width: 1800 }}"
+      srcset="{{ photo | image_url: width: 400 }} 400w, {{ photo | image_url: width: 750 }} 750w, {{ photo | image_url: width: 1100 }} 1100w, {{ photo | image_url: width: 1800 }} 1800w"
+      sizes="{{ sizes | default: '(min-width: 990px) 40vw, 100vw' }}"
+      alt="{{ photo_alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}"
+      loading="{% if eager %}eager{% else %}lazy{% endif %}" {% if eager %}fetchpriority="high"{% endif %}
+      style="object-position: {{ photo.presentation.focal_point | default: '50% 50%' }};">
+  </figure>
+{% elsif request.design_mode %}
+  <div class="b2b-placeholder">
+    {{ 'image' | placeholder_svg_tag }}
+    <p><strong>{{ title | escape }}</strong><br>{{ note | default: 'Загрузите реальное фото в настройках этого блока.' | escape }}</p>
+    <small>Подсказка видна только в редакторе темы.</small>
+  </div>
+{% endif %}

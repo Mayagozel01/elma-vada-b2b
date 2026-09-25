@@ -1,0 +1,2268 @@
+[
+  {
+    "file": "docs/page-media/01-home.md",
+    "template": "templates/index.json",
+    "sections": 17,
+    "blocks": 35,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "block": "hero_slide_1"
+      },
+      {
+        "section": "hero",
+        "block": "hero_slide_2"
+      },
+      {
+        "section": "hero",
+        "block": "hero_slide_3"
+      },
+      {
+        "section": "hero",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "stats_bar",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "trust_bar",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "business_solutions",
+        "block": "corporate_gifts"
+      },
+      {
+        "section": "business_solutions",
+        "block": "employee_appreciation"
+      },
+      {
+        "section": "business_solutions",
+        "block": "client_gifts"
+      },
+      {
+        "section": "business_solutions",
+        "block": "event_merchandise"
+      },
+      {
+        "section": "business_solutions",
+        "block": "onboarding_kits"
+      },
+      {
+        "section": "business_solutions",
+        "block": "promotional_products"
+      },
+      {
+        "section": "business_solutions",
+        "block": "milestone_program"
+      },
+      {
+        "section": "business_solutions",
+        "blocks": 7,
+        "disabled": false
+      },
+      {
+        "section": "how_it_works",
+        "block": "brief"
+      },
+      {
+        "section": "how_it_works",
+        "block": "mockup"
+      },
+      {
+        "section": "how_it_works",
+        "block": "sample"
+      },
+      {
+        "section": "how_it_works",
+        "block": "proof"
+      },
+      {
+        "section": "how_it_works",
+        "block": "production"
+      },
+      {
+        "section": "how_it_works",
+        "blocks": 5,
+        "disabled": false
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_1"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_2"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_3"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_4"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_5"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_6"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_7"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_8"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_9"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_10"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_11"
+      },
+      {
+        "section": "portfolio",
+        "block": "photo_12"
+      },
+      {
+        "section": "portfolio",
+        "blocks": 12,
+        "disabled": false
+      },
+      {
+        "section": "speed",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "capabilities",
+        "block": "co2"
+      },
+      {
+        "section": "capabilities",
+        "block": "fiber"
+      },
+      {
+        "section": "capabilities",
+        "block": "uv"
+      },
+      {
+        "section": "capabilities",
+        "block": "crystal"
+      },
+      {
+        "section": "capabilities",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "featured_products",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "testimonials",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "meeting",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "minimum"
+      },
+      {
+        "section": "questions",
+        "block": "sample"
+      },
+      {
+        "section": "questions",
+        "block": "speed"
+      },
+      {
+        "section": "questions",
+        "block": "meeting"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta_banner",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "industries",
+        "blocks": 0,
+        "disabled": true
+      },
+      {
+        "section": "why_us",
+        "blocks": 0,
+        "disabled": true
+      },
+      {
+        "section": "volume",
+        "blocks": 0,
+        "disabled": true
+      },
+      {
+        "section": "comparison",
+        "blocks": 0,
+        "disabled": true
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/02-business-solutions.md",
+    "template": "templates/page.solutions.json",
+    "sections": 5,
+    "blocks": 16,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "block": "item_5"
+      },
+      {
+        "section": "examples",
+        "block": "item_6"
+      },
+      {
+        "section": "examples",
+        "blocks": 6,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "block": "item_4"
+      },
+      {
+        "section": "related",
+        "block": "item_5"
+      },
+      {
+        "section": "related",
+        "block": "item_6"
+      },
+      {
+        "section": "related",
+        "blocks": 6,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/03-production-capabilities.md",
+    "template": "templates/page.capabilities.json",
+    "sections": 9,
+    "blocks": 23,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "speed",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "equipment",
+        "block": "co2"
+      },
+      {
+        "section": "equipment",
+        "block": "fiber"
+      },
+      {
+        "section": "equipment",
+        "block": "uv"
+      },
+      {
+        "section": "equipment",
+        "block": "crystal"
+      },
+      {
+        "section": "equipment",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "materials",
+        "block": "item_1"
+      },
+      {
+        "section": "materials",
+        "block": "item_2"
+      },
+      {
+        "section": "materials",
+        "block": "item_3"
+      },
+      {
+        "section": "materials",
+        "block": "item_4"
+      },
+      {
+        "section": "materials",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "milestone"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/04-industries.md",
+    "template": "templates/page.industries.json",
+    "sections": 5,
+    "blocks": 11,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/05-our-work.md",
+    "template": "templates/page.portfolio.json",
+    "sections": 6,
+    "blocks": 22,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "gallery",
+        "block": "item_1"
+      },
+      {
+        "section": "gallery",
+        "block": "item_2"
+      },
+      {
+        "section": "gallery",
+        "block": "item_3"
+      },
+      {
+        "section": "gallery",
+        "block": "item_4"
+      },
+      {
+        "section": "gallery",
+        "block": "item_5"
+      },
+      {
+        "section": "gallery",
+        "block": "item_6"
+      },
+      {
+        "section": "gallery",
+        "block": "item_7"
+      },
+      {
+        "section": "gallery",
+        "block": "item_8"
+      },
+      {
+        "section": "gallery",
+        "block": "item_9"
+      },
+      {
+        "section": "gallery",
+        "block": "item_10"
+      },
+      {
+        "section": "gallery",
+        "block": "item_11"
+      },
+      {
+        "section": "gallery",
+        "block": "item_12"
+      },
+      {
+        "section": "gallery",
+        "blocks": 12,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "blocks": 2,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/06-about.md",
+    "template": "templates/page.about.json",
+    "sections": 7,
+    "blocks": 10,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "testimonials",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "meeting",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/07-request-a-quote.md",
+    "template": "templates/page.quote.json",
+    "sections": 4,
+    "blocks": 4,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "form",
+        "block": "forms_inline_cHRAF8"
+      },
+      {
+        "section": "form",
+        "blocks": 1,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "meeting",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/08-corporate-gifts.md",
+    "template": "templates/page.corporate-gifts.json",
+    "sections": 7,
+    "blocks": 15,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "testimonials",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/09-bulk-orders.md",
+    "template": "templates/page.bulk-orders.json",
+    "sections": 7,
+    "blocks": 15,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "speed",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/10-personalized-merchandise.md",
+    "template": "templates/page.branded-merchandise.json",
+    "sections": 6,
+    "blocks": 15,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/11-custom-engraving.md",
+    "template": "templates/page.custom-engraving.json",
+    "sections": 6,
+    "blocks": 15,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/12-promotional-products.md",
+    "template": "templates/page.promotional-products.json",
+    "sections": 6,
+    "blocks": 15,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/13-faq.md",
+    "template": "templates/page.faq.json",
+    "sections": 3,
+    "blocks": 13,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "block": "question_5"
+      },
+      {
+        "section": "questions",
+        "block": "question_6"
+      },
+      {
+        "section": "questions",
+        "block": "question_7"
+      },
+      {
+        "section": "questions",
+        "block": "question_8"
+      },
+      {
+        "section": "questions",
+        "block": "question_9"
+      },
+      {
+        "section": "questions",
+        "block": "question_10"
+      },
+      {
+        "section": "questions",
+        "block": "question_11"
+      },
+      {
+        "section": "questions",
+        "block": "question_12"
+      },
+      {
+        "section": "questions",
+        "block": "svg"
+      },
+      {
+        "section": "questions",
+        "blocks": 13,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/14-client-gifting.md",
+    "template": "templates/page.client-gifting.json",
+    "sections": 6,
+    "blocks": 15,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/15-service-awards.md",
+    "template": "templates/page.service-awards.json",
+    "sections": 6,
+    "blocks": 15,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/16-employee-recognition.md",
+    "template": "templates/page.employee-recognition.json",
+    "sections": 6,
+    "blocks": 16,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "block": "milestone"
+      },
+      {
+        "section": "related",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/17-events-awards.md",
+    "template": "templates/page.events-awards.json",
+    "sections": 6,
+    "blocks": 15,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/18-onboarding.md",
+    "template": "templates/page.onboarding.json",
+    "sections": 6,
+    "blocks": 16,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "block": "milestone"
+      },
+      {
+        "section": "related",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/19-milestone-program.md",
+    "template": "templates/page.milestone-program.json",
+    "sections": 6,
+    "blocks": 15,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "examples",
+        "block": "item_1"
+      },
+      {
+        "section": "examples",
+        "block": "item_2"
+      },
+      {
+        "section": "examples",
+        "block": "item_3"
+      },
+      {
+        "section": "examples",
+        "block": "item_4"
+      },
+      {
+        "section": "examples",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "process",
+        "block": "item_1"
+      },
+      {
+        "section": "process",
+        "block": "item_2"
+      },
+      {
+        "section": "process",
+        "block": "item_3"
+      },
+      {
+        "section": "process",
+        "block": "item_4"
+      },
+      {
+        "section": "process",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "related",
+        "block": "item_1"
+      },
+      {
+        "section": "related",
+        "block": "item_2"
+      },
+      {
+        "section": "related",
+        "block": "item_3"
+      },
+      {
+        "section": "related",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "block": "question_4"
+      },
+      {
+        "section": "questions",
+        "blocks": 4,
+        "disabled": false
+      },
+      {
+        "section": "cta",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/20-free-mockup.md",
+    "template": "templates/page.free-mockup.json",
+    "sections": 4,
+    "blocks": 3,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "form",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "meeting",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  },
+  {
+    "file": "docs/page-media/21-consultation.md",
+    "template": "templates/page.book-a-call.json",
+    "sections": 4,
+    "blocks": 3,
+    "items": [
+      {
+        "section": "header",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "hero",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "form",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "questions",
+        "block": "question_1"
+      },
+      {
+        "section": "questions",
+        "block": "question_2"
+      },
+      {
+        "section": "questions",
+        "block": "question_3"
+      },
+      {
+        "section": "questions",
+        "blocks": 3,
+        "disabled": false
+      },
+      {
+        "section": "meeting",
+        "blocks": 0,
+        "disabled": false
+      },
+      {
+        "section": "footer",
+        "blocks": 0,
+        "disabled": false
+      }
+    ]
+  }
+]

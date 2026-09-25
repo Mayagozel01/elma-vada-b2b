@@ -1,0 +1,386 @@
+/* ============================================
+   ELMA VADA STUDIO — BASE CSS
+   Design System Variables & Reset
+   ============================================ */
+
+:root {
+  /* Brand Colors */
+  --color-navy:       #1E252B;
+  --color-navy-light: #2A333B;
+  --color-gold:       #C09858;
+  --color-gold-light: #D4AE76;
+  --color-cream:      #F4F2ED;
+  --color-beige:      #EFECE6;
+  --color-beige-dark: #E5E0D8;
+  --color-white:      #FFFFFF;
+
+  /* Text Colors */
+  --color-text-primary:   #1E252B;
+  --color-text-secondary: #4A5568;
+  --color-text-muted:     #718096;
+  --color-text-light:     #F4F2ED;
+
+  /* Typography */
+  --font-heading: 'DM Serif Display', 'Playfair Display', Georgia, serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Font Sizes */
+  --fs-xs:   0.75rem;   /* 12px */
+  --fs-sm:   0.875rem;  /* 14px */
+  --fs-base: 1rem;      /* 16px */
+  --fs-lg:   1.125rem;  /* 18px */
+  --fs-xl:   1.25rem;   /* 20px */
+  --fs-2xl:  1.5rem;    /* 24px */
+  --fs-3xl:  1.875rem;  /* 30px */
+  --fs-4xl:  2.25rem;   /* 36px */
+  --fs-5xl:  3rem;      /* 48px */
+  --fs-6xl:  3.75rem;   /* 60px */
+  --fs-7xl:  4.5rem;    /* 72px */
+
+  /* Spacing */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Layout */
+  --container-max: 1280px;
+  --container-padding: 1.5rem;
+
+  /* Borders & Radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* Transitions */
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.14);
+  --shadow-xl:  0 16px 48px rgba(0,0,0,0.18);
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.section {
+  padding-block: var(--space-24);
+}
+
+.section--lg {
+  padding-block: var(--space-32);
+}
+
+.section--sm {
+  padding-block: var(--space-16);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex--between {
+  justify-content: space-between;
+}
+
+.flex--center {
+  justify-content: center;
+}
+
+.flex--gap-4 { gap: var(--space-4); }
+.flex--gap-6 { gap: var(--space-6); }
+.flex--gap-8 { gap: var(--space-8); }
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.15;
+  color: var(--color-text-primary);
+  font-weight: 400;
+}
+
+h1 { font-size: clamp(var(--fs-4xl), 6vw, var(--fs-7xl)); }
+h2 { font-size: clamp(var(--fs-3xl), 4vw, var(--fs-5xl)); }
+h3 { font-size: clamp(var(--fs-2xl), 3vw, var(--fs-4xl)); }
+h4 { font-size: var(--fs-2xl); }
+h5 { font-size: var(--fs-xl); }
+
+p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(var(--fs-3xl), 4vw, var(--fs-5xl));
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.section-subtitle {
+  font-size: var(--fs-lg);
+  color: var(--color-text-secondary);
+  max-width: 56ch;
+  margin-bottom: var(--space-12);
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.875rem 1.75rem;
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all var(--transition-base);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  border-color: var(--color-navy);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-navy-light);
+  border-color: var(--color-navy-light);
+  color: var(--color-white);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-navy);
+  border-color: var(--color-navy);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+.btn--gold {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  border-color: var(--color-gold);
+}
+
+.btn--gold:hover {
+  background-color: var(--color-gold-light);
+  border-color: var(--color-gold-light);
+}
+
+.btn--outline-light {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: rgba(255,255,255,0.5);
+}
+
+.btn--outline-light:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-color: var(--color-white);
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+
+.card {
+  background: var(--color-beige);
+  padding: var(--space-8);
+  position: relative;
+}
+
+.card--white {
+  background: var(--color-white);
+}
+
+.card--navy {
+  background: var(--color-navy);
+  color: var(--color-text-light);
+}
+
+/* ============================================
+   DIVIDERS
+   ============================================ */
+
+.divider-gold {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-gold);
+  margin: var(--space-4) 0;
+}
+
+/* ============================================
+   BACKGROUND VARIANTS
+   ============================================ */
+
+.bg-cream   { background-color: var(--color-cream); }
+.bg-beige   { background-color: var(--color-beige); }
+.bg-navy    { background-color: var(--color-navy); }
+.bg-white   { background-color: var(--color-white); }
+
+/* ============================================
+   TEXT UTILITIES
+   ============================================ */
+
+.text-gold   { color: var(--color-gold); }
+.text-navy   { color: var(--color-navy); }
+.text-light  { color: var(--color-text-light); }
+.text-muted  { color: var(--color-text-muted); }
+.text-center { text-align: center; }
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1rem;
+  }
+  .section { padding-block: var(--space-16); }
+  .section--lg { padding-block: var(--space-20); }
+  .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; }
+}
+
+/* ============================================
+   SCROLL INDICATOR
+   ============================================ */
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-cream); }
+::-webkit-scrollbar-thumb { background: var(--color-navy); border-radius: 3px; }

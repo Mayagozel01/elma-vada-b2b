@@ -16,6 +16,7 @@ config.yml
 
 # Dependencies, generated packages and temporary output
 node_modules/
+backups/
 *.zip
 *.log
 test-results/

@@ -1,0 +1,82 @@
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "Let’s talk about your gifting project",
+        "text": "<p>Request a project call or an in-person consultation in Dallas–Fort Worth. We will confirm a suitable time with you.</p>",
+        "photo_note": "",
+        "button_label": "",
+        "button_link": "/pages/request-a-quote",
+        "secondary_label": "",
+        "secondary_link": "/pages/our-work",
+        "show_image": false,
+        "compact": true
+      }
+    },
+    "form": {
+      "type": "b2b-quote",
+      "settings": {
+        "default_request": "Consultation",
+        "company_required": false,
+        "form_heading": "Request a consultation",
+        "submit_label": "Request a Consultation",
+        "consultation_mode": true
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "settings": {
+        "heading": "What else would you like to know?"
+      },
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample\">Request a sample</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3"
+      ]
+    },
+    "meeting": {
+      "type": "b2b-feature",
+      "settings": {
+        "heading": "Meet With Us Face to Face",
+        "text": "<p>Planning gifts for your employees, clients, partners, or an upcoming event? Schedule a complimentary in-person consultation in the Dallas–Fort Worth area.</p><p>We’ll discuss your gifting needs, timeline, quantities, and personalization options. You’ll also receive a complimentary pen engraved with your name or company logo as a sample of our work.</p>",
+        "show_address": true,
+        "button_label": "Schedule an In-Person Consultation",
+        "button_link": "/pages/book-a-call?request=in-person",
+        "fine_print": "Visits are arranged by appointment. We will confirm the meeting details with you.",
+        "photo_note": "Реальное фото Дарьи/места встречи и персонализированной ручки-образца.",
+        "color_scheme": "cream"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "form",
+    "questions",
+    "meeting"
+  ]
+}

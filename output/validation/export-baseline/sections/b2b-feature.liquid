@@ -1,0 +1,33 @@
+<section class="b2b-section b2b-section--{{ section.settings.color_scheme }}">
+  <div class="container b2b-split{% if section.settings.image == blank and request.design_mode == false %} b2b-split--text-only{% endif %}">
+    <div>
+      {% if section.settings.eyebrow != blank %}<p class="b2b-eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
+      <h2>{{ section.settings.heading | escape }}</h2>
+      <div class="b2b-rte">{{ section.settings.text }}</div>
+      {% if section.settings.show_address %}<p class="ev-feature-address">{% render 'business-address' %}</p>{% endif %}
+      {% if section.settings.fine_print != blank %}<p class="ev-fine-print">{{ section.settings.fine_print | escape }}</p>{% endif %}
+      <div class="b2b-actions">
+        {% if section.settings.button_link != blank %}<a class="btn btn--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a>{% endif %}
+        {% if section.settings.secondary_link != blank %}<a class="btn btn--outline" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label | escape }}</a>{% endif %}
+      </div>
+    </div>
+    {% render 'b2b-image', photo: section.settings.image, alt: section.settings.image_alt, title: section.settings.heading, note: section.settings.photo_note %}
+  </div>
+</section>
+{% schema %}
+{"name":"B2B feature & photo","settings":[
+{"type":"text","id":"eyebrow","label":"Eyebrow"},
+{"type":"text","id":"heading","label":"Heading","default":"See the detail before you decide"},
+{"type":"richtext","id":"text","label":"Text"},
+{"type":"textarea","id":"fine_print","label":"Visible terms / turnaround disclaimer"},
+{"type":"image_picker","id":"image","label":"Real photo"},
+{"type":"text","id":"image_alt","label":"Photo description"},
+{"type":"textarea","id":"photo_note","label":"Photo brief (editor only)"},
+{"type":"checkbox","id":"show_address","label":"Show shared business address","default":false},
+{"type":"text","id":"button_label","label":"Primary button","default":"Get a Free Mockup"},
+{"type":"url","id":"button_link","label":"Primary link"},
+{"type":"text","id":"secondary_label","label":"Secondary button"},
+{"type":"url","id":"secondary_link","label":"Secondary link"},
+{"type":"select","id":"color_scheme","label":"Background","options":[{"value":"white","label":"White"},{"value":"cream","label":"Cream"},{"value":"navy","label":"Dark"}],"default":"cream"}
+],"presets":[{"name":"B2B feature & photo"}]}
+{% endschema %}

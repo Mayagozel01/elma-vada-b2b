@@ -1,0 +1,21 @@
+{
+  "general": {
+    "page_not_found": "Page not found",
+    "loading": "Loading...",
+    "close": "Close",
+    "open": "Open"
+  },
+  "navigation": {
+    "business_solutions": "Business Solutions",
+    "capabilities": "Capabilities",
+    "industries": "Industries",
+    "our_work": "Our Work",
+    "about": "About",
+    "request_quote": "Request a Quote"
+  },
+  "accessibility": {
+    "skip_to_content": "Skip to content",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu"
+  }
+}

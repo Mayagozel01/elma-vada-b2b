@@ -1,0 +1,30 @@
+{% if section.blocks.size > 0 %}
+<section class="b2b-section b2b-section--cream">
+  <div class="container"><div class="b2b-faq">
+    {% if section.settings.heading != blank %}<h2>{{ section.settings.heading | escape }}</h2>{% endif %}
+    {% for block in section.blocks %}
+      {% if block.settings.question != blank and block.settings.answer != blank %}
+        <details {{ block.shopify_attributes }}><summary>{{ block.settings.question | escape }}</summary><div class="b2b-rte">{{ block.settings.answer }}</div></details>
+      {% endif %}
+    {% endfor %}
+  </div></div>
+</section>
+{% if section.settings.structured_data %}
+  {% assign escaped_close = '%3C%5C%2F' | url_decode %}
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {% assign emitted = false %}
+    {% for block in section.blocks %}
+      {% if block.settings.question != blank and block.settings.answer != blank %}
+        {% if emitted %},{% endif %}
+        {"@type":"Question","name":{{ block.settings.question | json | replace: '</', escaped_close }},"acceptedAnswer":{"@type":"Answer","text":{{ block.settings.answer | strip_html | strip | json | replace: '</', escaped_close }}}}
+        {% assign emitted = true %}
+      {% endif %}
+    {% endfor %}
+    ]}
+  </script>
+{% endif %}
+{% endif %}
+{% schema %}
+{"name":"B2B questions & answers","limit":1,"settings":[{"type":"text","id":"heading","label":"Heading","default":"What else would you like to know?"},{"type":"checkbox","id":"structured_data","label":"FAQ structured data (matches visible answers)","default":true}],"blocks":[{"type":"question","name":"Question","settings":[{"type":"text","id":"question","label":"Question","default":"How do I start a project?"},{"type":"richtext","id":"answer","label":"Answer","default":"<p>Send your occasion, quantity and target date through our quote form.</p>"}]}],"max_blocks":25,"presets":[{"name":"B2B questions & answers","blocks":[{"type":"question"}]}]}
+{% endschema %}

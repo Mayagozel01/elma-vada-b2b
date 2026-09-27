@@ -1,0 +1,433 @@
+{
+  "generator": "Built-in imagegen",
+  "status": "31 final images saved and visually reviewed",
+  "assets": [
+    {
+      "id": 1,
+      "page": "15-service-awards",
+      "slot": "hero",
+      "file": "service-recognition-award-holder-keepsake-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/award.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/holder.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/box.png"
+      ],
+      "alt": "Clear circular award, engraved wooden desk holder and square keepsake box arranged on a light surface.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: An editorial three-product arrangement: clear circular award in dark crescent wood support, elongated wooden desk pen holder, square wooden keepsake box. Award engraved 'SERVICE EXCELLENCE'; holder 'ELMA VADA STUDIO'; box 'With appreciation'. Three-quarter view, generous spacing, no pens. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Hero"
+    },
+    {
+      "id": 2,
+      "page": "15-service-awards",
+      "slot": "2.1",
+      "file": "five-ten-fifteen-year-service-awards-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/award.png"
+      ],
+      "alt": "Three clear circular awards on wooden bases engraved with 5, 10 and 15 years of service.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Three identical clear circular awards in dark crescent wooden supports on matching rectangular bases, staggered diagonally, engravings '5 YEARS', '10 YEARS', '15 YEARS', smaller 'With appreciation'. Preserve exact reference award construction. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Years-of-Service Awards"
+    },
+    {
+      "id": 3,
+      "page": "15-service-awards",
+      "slot": "2.2",
+      "file": "staff-appreciation-engraved-wood-cube-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/cube.png"
+      ],
+      "alt": "Wooden cube engraved with You Make a Difference and Thank You on adjacent faces.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: One natural wood cube shown close at a low three-quarter angle; front engraved 'YOU MAKE A DIFFERENCE', adjacent face 'Thank you'. Subtle dark burned lettering following the wood grain. No other products. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Staff Appreciation"
+    },
+    {
+      "id": 4,
+      "page": "15-service-awards",
+      "slot": "2.3",
+      "file": "professional-recognition-wooden-desk-holder-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/holder.png"
+      ],
+      "alt": "Wooden desk holder with an open top and engraved Alex Morgan and Team Lead lettering.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: One elongated rounded rectangular wooden desk holder, identical shape to reference with narrow deep open top slot. Front engraving 'ALEX MORGAN' and 'Team Lead'. Empty holder, clean angled portrait, no screenshot arrows. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Professional Recognition"
+    },
+    {
+      "id": 5,
+      "page": "15-service-awards",
+      "slot": "2.4",
+      "file": "donor-thank-you-wooden-keepsake-box-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/box.png"
+      ],
+      "alt": "Square wooden keepsake box with a laurel wreath and engraved thank-you message on the lid.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Square wooden keepsake box matching reference, closed lid, slightly overhead diagonal view. Engraved delicate laurel wreath around 'THANK YOU' with smaller 'For making a difference'. Show genuine wood grain, no pens or awards. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Donor & Named Recognition"
+    },
+    {
+      "id": 6,
+      "page": "16-employee-recognition",
+      "slot": "hero",
+      "file": "employee-gifts-pick-box-desk-holder-pen-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/pick.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/holder.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/pen.png"
+      ],
+      "alt": "Wooden guitar-pick case, personalized desk holder and silver-tone pen with a gold-tone clip.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: A varied employee gift collection: wooden guitar-pick case with musical staff engraving 'Enjoy the next chapter', one wooden desk holder engraved 'ALEX MORGAN', one brushed silver pen with gold clip engraved 'Thank you'. Balanced asymmetrical tabletop, no awards. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Hero"
+    },
+    {
+      "id": 7,
+      "page": "16-employee-recognition",
+      "slot": "2.1",
+      "file": "work-anniversary-silver-pen-five-years-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/pen.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/packaging.png"
+      ],
+      "alt": "Silver-tone pen with a gold-tone clip and Alex 5 Years engraving in an open black presentation box.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: One brushed silver pen with gold clip engraved 'ALEX • 5 YEARS', laid diagonally across an open narrow black presentation box. Cream insert, close eye-level detail with complete pen and box visible. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Work Anniversary Pen"
+    },
+    {
+      "id": 8,
+      "page": "16-employee-recognition",
+      "slot": "2.2",
+      "file": "employee-ten-year-circular-wood-base-award-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/award.png"
+      ],
+      "alt": "Clear circular award on a wooden base engraved with Alex Morgan and 10 Years.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Single clear circular award in dark wood crescent and rectangular base from reference, frontal slightly turned view, engraving 'ALEX MORGAN' above '10 YEARS' and 'Thank you for your dedication'. Entire silhouette visible, soft realistic clear edges. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Years-of-Service Award"
+    },
+    {
+      "id": 9,
+      "page": "16-employee-recognition",
+      "slot": "2.3",
+      "file": "promotion-desk-holder-keychain-gift-set-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/holder.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/keychain.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/packaging.png"
+      ],
+      "alt": "Wooden desk holder engraved Team Lead with a personalized keychain beside a black gift box.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: A promotion gift set with wooden elongated open-top desk holder engraved 'JORDAN LEE' and 'Team Lead', matching wood keychain engraved 'JORDAN', beside open black gift box with understated gold ribbon. No pen. Wide top-oblique composition. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Promotion Gift Set"
+    },
+    {
+      "id": 10,
+      "page": "16-employee-recognition",
+      "slot": "2.4",
+      "file": "retirement-engraved-wooden-memory-box-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/box.png"
+      ],
+      "alt": "Wooden keepsake box with an open lid engraved Enjoy Your Next Chapter and a botanical flourish.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Square wooden keepsake box with lid placed slightly ajar behind revealing empty dark interior. Lid engraved 'Enjoy your next chapter' and small branching botanical flourish. Three-quarter view with both inside and inscription readable, no jewelry. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Retirement Keepsake"
+    },
+    {
+      "id": 11,
+      "page": "17-events-awards",
+      "slot": "hero",
+      "file": "event-award-chopsticks-musician-gift-display-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/award.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/chopsticks.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/pick.png"
+      ],
+      "alt": "Circular award on a wooden base, chopsticks in a wooden case and a small engraved guitar-pick case.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Three distinct event-gift types: one clear circular recognition award in crescent wood base engraved 'EXCELLENCE', one long wood case with two chopsticks visible engraved 'ELMA VADA STUDIO', one small closed guitar-pick case with musical notes. Tier-free balanced arrangement. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Hero"
+    },
+    {
+      "id": 12,
+      "page": "17-events-awards",
+      "slot": "2.1",
+      "file": "event-excellence-award-laurel-engraving-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/award.png"
+      ],
+      "alt": "Clear circular award engraved with a laurel wreath, Excellence and 2026 on a dark wooden base.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Single clear circular award in reference crescent dark wood stand and rectangular base; engraving a delicate laurel and 'EXCELLENCE' with '2026' below. Strong three-quarter angle from right showing thickness and base. No other objects. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Recognition Award"
+    },
+    {
+      "id": 13,
+      "page": "17-events-awards",
+      "slot": "2.2",
+      "file": "conference-engraved-silver-pen-row-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/pair.png"
+      ],
+      "alt": "Six silver-tone retractable pens arranged in a row with Elma Vada Studio engraving.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Six brushed silver retractable pens with SILVER clips matching reference pen bodies, arranged parallel in clean stepped row, all engraved 'ELMA VADA STUDIO'. No box, slightly overhead tight yet complete product composition. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Conference Pen Run"
+    },
+    {
+      "id": 14,
+      "page": "17-events-awards",
+      "slot": "2.3",
+      "file": "speaker-gift-engraved-chopsticks-case-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/chopsticks.png"
+      ],
+      "alt": "Wooden chopsticks in an open matching case beside a lid engraved with a speaker thank-you message.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Single open long wooden chopsticks case, two matching wooden chopsticks inside. Sliding lid beside it engraved 'THANK YOU' and 'For sharing your ideas'. Diagonal product shot, rich wood grain, no pens. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Speaker Gift Set"
+    },
+    {
+      "id": 15,
+      "page": "17-events-awards",
+      "slot": "2.4",
+      "file": "vip-musician-guitar-pick-keepsake-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/pick.png"
+      ],
+      "alt": "Wooden guitar-pick case engraved with musical notes and Encore beside a wooden guitar pick.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Rounded oblong wood guitar-pick keepsake box with small brass clasp and hinged lid matching reference, closed lid engraved musical staff and 'ENCORE'. One wooden guitar pick resting beside, engraved simple guitar outline. Elegant close-up composition. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Sponsor & VIP Gifts"
+    },
+    {
+      "id": 16,
+      "page": "18-onboarding",
+      "slot": "hero",
+      "file": "welcome-kit-wooden-holder-keychain-box-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/holder.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/keychain.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/kraft.png"
+      ],
+      "alt": "Engraved wooden desk holder and Alex keychain beside an open kraft gift box and welcome card.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Welcome arrangement: elongated wood desk holder engraved 'WELCOME ALEX', rectangular wood keychain engraved 'ALEX', open kraft cube gift box with white tissue and blank cream welcome card printed 'WELCOME'. No pen, no notebook. Natural top-oblique composition. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Hero"
+    },
+    {
+      "id": 17,
+      "page": "18-onboarding",
+      "slot": "2.1",
+      "file": "welcome-personalized-silver-pen-duo-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/pair.png"
+      ],
+      "alt": "Two silver-tone pens engraved Welcome Alex held by a cream band in an open presentation box.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Open narrow black presentation box with cream insert and cream fabric keeper holding two silver pens with SILVER clips, reference geometry. Each pen engraved 'WELCOME ALEX'. Top-down view aligned diagonally, complete box visible. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Welcome Pen Set"
+    },
+    {
+      "id": 18,
+      "page": "18-onboarding",
+      "slot": "2.2",
+      "file": "new-teammate-welcome-wooden-cube-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/cube.png"
+      ],
+      "alt": "Light wooden cube engraved Welcome to the Team and Alex beside a blank folded card.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Natural light wooden cube, front engraved 'WELCOME TO THE TEAM', side engraved 'ALEX'. Place alongside a single blank folded ivory card, close tabletop view. Cube grain and letters sharply visible. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Desk Keepsake"
+    },
+    {
+      "id": 19,
+      "page": "18-onboarding",
+      "slot": "2.3",
+      "file": "office-manager-personalized-desk-organizer-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/holder.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/pen.png"
+      ],
+      "alt": "Wooden desk holder engraved Jamie and Office Manager containing a silver pen and two pencils.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: One reference elongated wooden desk holder engraved 'JAMIE' and 'Office Manager', holding one silver pen and two natural wood pencils in the top slot. Front three-quarter angle, complete holder. Preserve real long rounded silhouette. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Role-Specific Gift"
+    },
+    {
+      "id": 20,
+      "page": "18-onboarding",
+      "slot": "2.4",
+      "file": "welcome-kraft-boxes-twine-batch-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/kraft.png"
+      ],
+      "alt": "Five kraft gift boxes tied with twine and cream Welcome tags in staggered rows.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Five matching closed kraft cube gift boxes tied with natural twine, arranged in two loose staggered rows. Small cream tags read 'WELCOME'. Reference actual packaging construction, no shipping labels, no extra items. Photo of illustrative packaging concept. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Coordinated Fulfillment"
+    },
+    {
+      "id": 21,
+      "page": "19-milestone-program",
+      "slot": "hero",
+      "file": "recognition-program-cube-case-award-calendar-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/cube.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/chopsticks.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/award.png"
+      ],
+      "alt": "Engraved wooden cube, long wooden gift case and clear 15 Years award beside a calendar card.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Recurring recognition planning still life: one small wood cube engraved 'THANK YOU', one closed long chopsticks case engraved 'ELMA VADA STUDIO', one clear award on wood crescent support engraved '15 YEARS'. Small unbranded ivory calendar card with simple blank grid behind; no prices. Diagonal progression small to large. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Hero"
+    },
+    {
+      "id": 22,
+      "page": "19-milestone-program",
+      "slot": "2.1",
+      "file": "essential-recognition-named-wood-keychains-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/keychain.png"
+      ],
+      "alt": "Three wooden keychains with bronze-tone rings engraved Alex, Jamie and Morgan with thank-you messages.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Three separate rectangular wooden keychains with bronze-tone split rings matching reference, fan arrangement, engraved names 'ALEX', 'JAMIE', 'MORGAN' with small 'Thank you' beneath. Tight overhead detail. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Essential Recognition"
+    },
+    {
+      "id": 23,
+      "page": "19-milestone-program",
+      "slot": "2.2",
+      "file": "signature-chopsticks-keepsake-presentation-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/chopsticks.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/box.png"
+      ],
+      "alt": "Wooden chopsticks case and matching engraved keepsake box presented together in a charcoal gift tray.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: A coordinated wooden keepsake gift: long open chopsticks case with pair of chopsticks and square wooden keepsake box beside it, both engraved small 'ELMA VADA STUDIO'. Entire duo inside a shallow open charcoal gift tray, ivory tissue minimal, no pens. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Signature Gift Set"
+    },
+    {
+      "id": 24,
+      "page": "19-milestone-program",
+      "slot": "2.3",
+      "file": "twenty-five-year-clear-recognition-award-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/award.png"
+      ],
+      "alt": "Clear circular award engraved 25 Years and A Lasting Contribution on a crescent-shaped wooden stand.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: One clear circular recognition award matching reference wood crescent and rectangular base. Engraved '25 YEARS' and 'A lasting contribution' in frosted white. Close front-left perspective, large full silhouette with realistic clear reflections. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Long-Service Award"
+    },
+    {
+      "id": 25,
+      "page": "19-milestone-program",
+      "slot": "2.4",
+      "file": "scheduled-gift-box-groups-gold-ribbons-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/packaging.png"
+      ],
+      "alt": "Black gift boxes with gold ribbons arranged in three pairs beside Q1, Q2 and Q3 cards.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Six long narrow black pen gift boxes with gold satin ribbon tied across each, arranged in three pairs at different depths. Each pair accompanied by small ivory standing card 'Q1', 'Q2', 'Q3'. All boxes closed. Neat planned fulfillment concept, no labels or addresses. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Planned Fulfillment"
+    },
+    {
+      "id": 26,
+      "page": "20-free-mockup",
+      "slot": "hero",
+      "file": "wood-cube-digital-mockup-screen-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/cube.png"
+      ],
+      "alt": "Laptop displaying an Elma Vada Studio engraving mockup beside a matching wooden cube.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Photorealistic mockup desk: slim laptop open at three-quarter angle displaying a clean large digital rendering of the reference wood cube with 'ELMA VADA STUDIO' engraving; actual matching cube in foreground. Screen white with small heading 'DESIGN PREVIEW'. Both cube and screen in focus. No fake app logos. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Hero"
+    },
+    {
+      "id": 27,
+      "page": "20-free-mockup",
+      "slot": "form",
+      "file": "wood-keychain-engraving-proof-sample-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/keychain.png"
+      ],
+      "alt": "Engraved wooden keychain resting on a design preview sheet showing its outline and artwork placement.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: One reference wood keychain engraved 'ELMA VADA STUDIO' lying partly on a white proof sheet with simple black outline of identical keychain and matching lettering. Heading 'DESIGN PREVIEW', no fabricated dimensions or approval stamps. Close overhead, ample neutral gray border. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Боковое изображение формы"
+    },
+    {
+      "id": 28,
+      "page": "20-free-mockup",
+      "slot": "feature",
+      "file": "sample-review-pen-holder-tabletop-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/pen.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/holder.png"
+      ],
+      "alt": "Silver-tone engraved pen, wooden desk holder marked Design Sample and a blank note card on a table.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: A sample review tabletop: brushed silver gold-clip pen engraved 'ELMA VADA STUDIO' resting diagonally in foreground, wood elongated open-top holder behind engraved 'DESIGN SAMPLE'. Blank ivory note card beside. No people. Fine material texture and engraving, approachable close crop. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Meet With Us Face to Face"
+    },
+    {
+      "id": 29,
+      "page": "21-consultation",
+      "slot": "hero",
+      "file": "gifting-consultation-chopsticks-pick-box-samples-elma-vada-dfw-v2.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/chopsticks.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/pick.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/box.png"
+      ],
+      "alt": "Wooden chopstick cases, a guitar-pick case and an engraved keepsake box around an open blank notebook.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: A consultation sample selection arranged around a blank open ivory notebook: long wood chopsticks case with visible chopsticks, small musical guitar-pick case, square keepsake box engraved 'With appreciation'. Three different gift types, top-down balanced frame, no pens or people. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Hero",
+      "revision": {
+        "prompt": "Edit this image precisely. Preserve background, lighting, notebook, guitar pick box, wooden keepsake box and all product geometry and placement. On BOTH long wooden chopstick case lids, replace all existing text (including TEAM EPIC) with only 'ELMA VADA STUDIO', dark engraved letters in accurate perspective. On every visible chopstick remove ALL alphanumeric inscriptions such as PACS-Q 030-25, leaving natural blank wood. Preserve the 'With appreciation' engraving on the square box. Do not add or remove products. Landscape 4:3 opaque background.",
+        "reference": "gifting-consultation-chopsticks-pick-box-samples-elma-vada-dfw.png"
+      }
+    },
+    {
+      "id": 30,
+      "page": "21-consultation",
+      "slot": "form",
+      "file": "award-consultation-project-planning-sheet-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/award.png"
+      ],
+      "alt": "Clear appreciation award on a wooden base beside a project worksheet for occasion, quantity and date.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: A small clear circular award on crescent wood base engraved 'WITH APPRECIATION', beside an ivory project worksheet showing only headings 'OCCASION', 'QUANTITY', 'DATE' and empty lines. Three-quarter tabletop view, focus on award and brief, no hands or people. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Боковое изображение формы"
+    },
+    {
+      "id": 31,
+      "page": "21-consultation",
+      "slot": "feature",
+      "file": "consultation-sample-tray-cube-keychain-elma-vada-dfw.png",
+      "refs": [
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/cube.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/personalized-merchandise/sources/keychain.png",
+        "/home/yus/Документы/Elma/slack_design/theme/output/imagegen/recognition-pages/sources/pick.png"
+      ],
+      "alt": "Wooden thank-you cube, engraved keychain and guitar pick arranged in a charcoal sample tray.",
+      "prompt": "Use case: product-mockup. Create ONE separate photorealistic website image, landscape 4:3, opaque RGB, not a collage. Input image 1 is ONLY the exact neutral pale warm-gray seamless background and soft lighting reference, NOT its products. Other references define real product shapes and materials; preserve these shapes, remove any source-photo UI, borders and orange backdrops. Scene: Close overhead sample-selection scene: shallow matte charcoal tray with light wooden cube engraved 'THANK YOU', rectangular wooden keychain engraved 'ELMA VADA STUDIO', wooden guitar pick with guitar outline. Tray sits on matching light gray consultation table, blank ivory cards to side, no humans. Match background and tabletop color of reference 1 consistently, no horizon line, no plant shadows, no marble, no gradient vignette. Soft diffuse upper-left lighting, natural contact shadows, realistic wood grain and metal/glass reflections, full products within frame with 10% crop margin. Engraving follows surface perspective. No overlay headlines, watermarks, invented customer logos, people or decorative unrelated props. This is an illustrative gift arrangement, not documentary proof of a completed customer order.",
+      "title": "Meet With Us Face to Face"
+    }
+  ]
+}

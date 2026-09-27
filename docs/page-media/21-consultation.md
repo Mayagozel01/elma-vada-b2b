@@ -1,17 +1,18 @@
 # Schedule a Consultation
 
-> Обновлено по экспорту 24SEP2026-0517pm. Ниже сохранён подбор медиа; полный порядок всех секций, карточек и полей — в разделе [Полный чек-лист](#полный-чек-лист). Уже загруженные файлы указаны в чек-листе: сохраняйте их, если они подходят по содержанию.
+> Новый подбор: 27 сентября 2026. Три отдельные композиции для этой страницы в едином светлом тёпло-сером фоне. Полный чек-лист и исходные значения настроек сохранены ниже.
 
+Изображения созданы встроенным imagegen на основе фотографий ваших товаров. Это иллюстрации вариантов подарков и макетов, не реальные консультации или завершённые заказы. Видимая подпись: `Illustrative gift concept.` Для макетов: `Illustrative mockup — your final proof is prepared for your project.`
 
-Форма и понятное обещание консультации важнее hero-фото. Не ставьте случайный портрет, если не доказано, что это сотрудник Elma Vada.
+[Галерея всех семи страниц](../../output/imagegen/recognition-pages/README.md) · [Alt-тексты CSV](../../output/imagegen/recognition-pages/alt-texts.csv)
 
-| Блок | Что поставить | Alt text |
+| Блок | Новый файл | Alt text |
 |---|---|---|
-| Hero | Оставить без фото, как в текущем шаблоне, либо снять новую консультацию за столом. | — |
-| Meet With Us Face to Face | Новый горизонтальный реальный кадр: сотрудник и образец ручки/коробки на чистом столе; лица — только по согласию. | `Elma Vada team member presenting a personalized pen sample during an in-person consultation.` |
-| Optional example gift | [IMG_4128.JPG](https://drive.google.com/file/d/1C5gbm59BXpJnpZoPa1IJ7fMVV03Pzaho/view?usp=drive_web) | `Gift bag, ribbon-tied box and personalized pen presented as a corporate gift set.` |
+| Hero | [gifting-consultation-chopsticks-pick-box-samples-elma-vada-dfw-v2.png](../../output/imagegen/recognition-pages/gifting-consultation-chopsticks-pick-box-samples-elma-vada-dfw-v2.png) | `Wooden chopstick cases, a guitar-pick case and an engraved keepsake box around an open blank notebook.` |
+| Боковое изображение формы | [award-consultation-project-planning-sheet-elma-vada-dfw.png](../../output/imagegen/recognition-pages/award-consultation-project-planning-sheet-elma-vada-dfw.png) | `Clear appreciation award on a wooden base beside a project worksheet for occasion, quantity and date.` |
+| Meet With Us Face to Face | [consultation-sample-tray-cube-keychain-elma-vada-dfw.png](../../output/imagegen/recognition-pages/consultation-sample-tray-cube-keychain-elma-vada-dfw.png) | `Wooden thank-you cube, engraved keychain and guitar pick arranged in a charcoal sample tray.` |
 
-Не используйте фото склада или упаковочной комнаты как иллюстрацию встречи. Если встреча проводится в DFW, адрес и условия должны оставаться текстом страницы, а не превращаться в alt text.
+Для Hero нужно включить Include image or video: в исходном экспорте стоит false. Боковое фото формы необязательно; если форма стала слишком длинной на телефоне, его можно не использовать. Логотип, поля формы, FAQ и футер сохранены — новые фото им не нужны.
 
 <!-- COMPLETE-THEME-CHECKLIST -->
 
@@ -74,11 +75,13 @@
 | Secondary link (secondary_link) | /pages/our-work | Откройте ссылку как посетитель; она должна вести на нужную страницу или форму без 404. |
 | Compact intro (forms) (compact) | true | Проверьте переключатель в редакторе и результат в предпросмотре. |
 
-**Сюжет / файл:** Оставить без фото, как в текущем шаблоне, либо снять новую консультацию за столом.
+**Сюжет / файл:** [gifting-consultation-chopsticks-pick-box-samples-elma-vada-dfw-v2.png](../../output/imagegen/recognition-pages/gifting-consultation-chopsticks-pick-box-samples-elma-vada-dfw-v2.png) — новая AI-композиция по фотографиям ваших товаров.
 
-**Alt для предложенного сюжета:** —
+**Alt для предложенного сюжета:** `Wooden chopstick cases, a guitar-pick case and an engraved keepsake box around an open blank notebook.`
 
-Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
+**В редакторе:** Hero сейчас выключен: включите Include image or video, затем Media type → Image. В Photo description вставьте alt выше. Сохраните видимую подпись `Illustrative gift concept.`
+
+Сейчас Include image or video выключен; для нового варианта с Hero включите его. Можно сохранить прежний компактный текстовый Hero — тогда этот файл не загружайте.
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 
@@ -125,9 +128,11 @@
 | Submit button (submit_label) | Request a Consultation | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 | Success message (success_message) | Thank you. Your request has been sent. We will contact you to discuss the next step. | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 
-**Сюжет / файл:** Один реальный готовый подарок рядом с согласованным эскизом. Не обязательно.
+**Сюжет / файл:** [award-consultation-project-planning-sheet-elma-vada-dfw.png](../../output/imagegen/recognition-pages/award-consultation-project-planning-sheet-elma-vada-dfw.png) — новая AI-композиция по фотографиям ваших товаров.
 
-**Alt для предложенного сюжета:** `Personalized gift displayed for you can reduce the risk before committing..`
+**Alt для предложенного сюжета:** `Clear appreciation award on a wooden base beside a project worksheet for occasion, quantity and date.`
+
+**В редакторе:** В секции формы выберите Media type → Image и загрузите файл в Optional sample photo. В Photo description вставьте alt выше. Сохраните видимую подпись `Illustrative gift concept.`
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 
@@ -208,9 +213,11 @@
 | Secondary link (secondary_link) | Не заполнено | Откройте ссылку как посетитель; она должна вести на нужную страницу или форму без 404. |
 | Background (color_scheme) | cream | Настройка оформления. Проверьте настольный и мобильный вид. |
 
-**Сюжет / файл:** Новый горизонтальный реальный кадр: сотрудник и образец ручки/коробки на чистом столе; лица — только по согласию.
+**Сюжет / файл:** [consultation-sample-tray-cube-keychain-elma-vada-dfw.png](../../output/imagegen/recognition-pages/consultation-sample-tray-cube-keychain-elma-vada-dfw.png) — новая AI-композиция по фотографиям ваших товаров.
 
-**Alt для предложенного сюжета:** `Elma Vada team member presenting a personalized pen sample during an in-person consultation.`
+**Alt для предложенного сюжета:** `Wooden thank-you cube, engraved keychain and guitar pick arranged in a charcoal sample tray.`
+
+**В редакторе:** В B2B feature выберите Media type → Image. Это предметная иллюстрация образцов, не фото сотрудника или реальной встречи. В Photo description вставьте alt выше. Сохраните видимую подпись `Illustrative gift concept.`
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 

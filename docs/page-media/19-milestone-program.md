@@ -1,17 +1,20 @@
 # Milestone Program
 
-> Обновлено по экспорту 24SEP2026-0517pm. Ниже сохранён подбор медиа; полный порядок всех секций, карточек и полей — в разделе [Полный чек-лист](#полный-чек-лист). Уже загруженные файлы указаны в чек-листе: сохраняйте их, если они подходят по содержанию.
+> Новый подбор: 27 сентября 2026. Пять уникальных изображений этой страницы; фон — единый светлый тёпло-серый. Полный чек-лист и значения из экспорта сохранены ниже.
 
+Это AI-визуализации по фотографиям ваших товаров, а не фотографии выполненных клиентских заказов. Перед публикацией подтвердите доступность комплектации и вариант гравировки. Для демонстрации используйте видимую подпись `Illustrative gift concept.` Имена и сроки на изображениях — примеры.
 
-| Блок | Что поставить | Alt text |
+[Галерея всех семи страниц](../../output/imagegen/recognition-pages/README.md) · [Alt-тексты CSV](../../output/imagegen/recognition-pages/alt-texts.csv)
+
+| Блок | Новый файл | Alt text |
 |---|---|---|
-| Hero | [IMG_8148.WEBP](https://drive.google.com/file/d/1_X4UYppqOKFQ2I-8D1nFhOlN_NEquYgG/view?usp=drive_web) — только после разрешения на текст/логотип. | `Black personalized pen and presentation box with an engraved team message.` |
-| Essential Recognition | [IMG_0121.WEBP](https://drive.google.com/file/d/1M0ReyxhkfXjwURDH66ZKzQf3FP6NfbRc/view?usp=drive_web) | `Close-up of a silver-tone pen with a gold-tone clip and engraved name.` |
-| Signature Gift Set | [IMG_5299.JPG](https://drive.google.com/file/d/1HycZ_eM6SFSyDtSAQR0whZ-UQzLNtl5b/view?usp=drive_web) | `Ribbon-tied black gift box opened to reveal a personalized pen.` |
-| Long-Service Award | [IMG_3302.PNG](https://drive.google.com/file/d/1qKgD2qSgBjKol1lA9bxHzgvM5U4x9OBH/view?usp=drive_web) | `Clear circular recognition award on a wooden base.` |
-| Planned Fulfillment | Новый реальный кадр нескольких готовых коробок без персональных данных. | `Matching personalized gift boxes grouped for planned fulfillment.` |
+| Hero | [recognition-program-cube-case-award-calendar-elma-vada-dfw.png](../../output/imagegen/recognition-pages/recognition-program-cube-case-award-calendar-elma-vada-dfw.png) | `Engraved wooden cube, long wooden gift case and clear 15 Years award beside a calendar card.` |
+| Essential Recognition | [essential-recognition-named-wood-keychains-elma-vada-dfw.png](../../output/imagegen/recognition-pages/essential-recognition-named-wood-keychains-elma-vada-dfw.png) | `Three wooden keychains with bronze-tone rings engraved Alex, Jamie and Morgan with thank-you messages.` |
+| Signature Gift Set | [signature-chopsticks-keepsake-presentation-elma-vada-dfw.png](../../output/imagegen/recognition-pages/signature-chopsticks-keepsake-presentation-elma-vada-dfw.png) | `Wooden chopsticks case and matching engraved keepsake box presented together in a charcoal gift tray.` |
+| Long-Service Award | [twenty-five-year-clear-recognition-award-elma-vada-dfw.png](../../output/imagegen/recognition-pages/twenty-five-year-clear-recognition-award-elma-vada-dfw.png) | `Clear circular award engraved 25 Years and A Lasting Contribution on a crescent-shaped wooden stand.` |
+| Planned Fulfillment | [scheduled-gift-box-groups-gold-ribbons-elma-vada-dfw.png](../../output/imagegen/recognition-pages/scheduled-gift-box-groups-gold-ribbons-elma-vada-dfw.png) | `Black gift boxes with gold ribbons arranged in three pairs beside Q1, Q2 and Q3 cards.` |
 
-Не пишите на изображении `1 year`, `5 years` или `10 years`, если это не реальный согласованный пример программы. Смысл страницы — планируемая программа, а не автоматическое выполнение без участия человека.
+Повторяющиеся блоки процесса и переходов оставляем без фото: они перечислены в чек-листе и не пропущены. Логотип, FAQ и CTA не требуют новых иллюстраций. Один alt описывает видимое изображение; отдельного «AEO alt» нет.
 
 <!-- COMPLETE-THEME-CHECKLIST -->
 
@@ -74,9 +77,11 @@
 | Secondary link (secondary_link) | /pages/our-work | Откройте ссылку как посетитель; она должна вести на нужную страницу или форму без 404. |
 | Compact intro (forms) (compact) | false | Проверьте переключатель в редакторе и результат в предпросмотре. |
 
-**Сюжет / файл:** [IMG_8148.WEBP](https://drive.google.com/file/d/1_X4UYppqOKFQ2I-8D1nFhOlN_NEquYgG/view?usp=drive_web) — только после разрешения на текст/логотип.
+**Сюжет / файл:** [recognition-program-cube-case-award-calendar-elma-vada-dfw.png](../../output/imagegen/recognition-pages/recognition-program-cube-case-award-calendar-elma-vada-dfw.png) — новая AI-композиция по фотографиям ассортимента. Этот файл предназначен только для данной карточки.
 
-**Alt для предложенного сюжета:** `Black personalized pen and presentation box with an engraved team message.`
+**Alt для предложенного сюжета:** `Engraved wooden cube, long wooden gift case and clear 15 Years award beside a calendar card.`
+
+**В редакторе:** Media type → Image; Include image or video → включено; Photo → файл выше. Alt вставьте в Photo description. Кадр 4:3, проверяйте сохранность надписи при мобильном кадрировании.
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 
@@ -124,9 +129,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** [IMG_0121.WEBP](https://drive.google.com/file/d/1M0ReyxhkfXjwURDH66ZKzQf3FP6NfbRc/view?usp=drive_web)
+**Сюжет / файл:** [essential-recognition-named-wood-keychains-elma-vada-dfw.png](../../output/imagegen/recognition-pages/essential-recognition-named-wood-keychains-elma-vada-dfw.png) — новая AI-композиция по фотографиям ассортимента. Этот файл предназначен только для данной карточки.
 
-**Alt для предложенного сюжета:** `Close-up of a silver-tone pen with a gold-tone clip and engraved name.`
+**Alt для предложенного сюжета:** `Three wooden keychains with bronze-tone rings engraved Alex, Jamie and Morgan with thank-you messages.`
+
+**В редакторе:** Media type → Image; Include image or video → включено; Photo → файл выше. Alt вставьте в Photo description. Кадр 4:3, проверяйте сохранность надписи при мобильном кадрировании.
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 
@@ -151,9 +158,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** [IMG_5299.JPG](https://drive.google.com/file/d/1HycZ_eM6SFSyDtSAQR0whZ-UQzLNtl5b/view?usp=drive_web)
+**Сюжет / файл:** [signature-chopsticks-keepsake-presentation-elma-vada-dfw.png](../../output/imagegen/recognition-pages/signature-chopsticks-keepsake-presentation-elma-vada-dfw.png) — новая AI-композиция по фотографиям ассортимента. Этот файл предназначен только для данной карточки.
 
-**Alt для предложенного сюжета:** `Ribbon-tied black gift box opened to reveal a personalized pen.`
+**Alt для предложенного сюжета:** `Wooden chopsticks case and matching engraved keepsake box presented together in a charcoal gift tray.`
+
+**В редакторе:** Media type → Image; Include image or video → включено; Photo → файл выше. Alt вставьте в Photo description. Кадр 4:3, проверяйте сохранность надписи при мобильном кадрировании.
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 
@@ -178,9 +187,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** [IMG_3302.PNG](https://drive.google.com/file/d/1qKgD2qSgBjKol1lA9bxHzgvM5U4x9OBH/view?usp=drive_web)
+**Сюжет / файл:** [twenty-five-year-clear-recognition-award-elma-vada-dfw.png](../../output/imagegen/recognition-pages/twenty-five-year-clear-recognition-award-elma-vada-dfw.png) — новая AI-композиция по фотографиям ассортимента. Этот файл предназначен только для данной карточки.
 
-**Alt для предложенного сюжета:** `Clear circular recognition award on a wooden base.`
+**Alt для предложенного сюжета:** `Clear circular award engraved 25 Years and A Lasting Contribution on a crescent-shaped wooden stand.`
+
+**В редакторе:** Media type → Image; Include image or video → включено; Photo → файл выше. Alt вставьте в Photo description. Кадр 4:3, проверяйте сохранность надписи при мобильном кадрировании.
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 
@@ -205,9 +216,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Новый реальный кадр нескольких готовых коробок без персональных данных.
+**Сюжет / файл:** [scheduled-gift-box-groups-gold-ribbons-elma-vada-dfw.png](../../output/imagegen/recognition-pages/scheduled-gift-box-groups-gold-ribbons-elma-vada-dfw.png) — новая AI-композиция по фотографиям ассортимента. Этот файл предназначен только для данной карточки.
 
-**Alt для предложенного сюжета:** `Matching personalized gift boxes grouped for planned fulfillment.`
+**Alt для предложенного сюжета:** `Black gift boxes with gold ribbons arranged in three pairs beside Q1, Q2 and Q3 cards.`
+
+**В редакторе:** Media type → Image; Include image or video → включено; Photo → файл выше. Alt вставьте в Photo description. Кадр 4:3, проверяйте сохранность надписи при мобильном кадрировании.
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 
@@ -253,9 +266,9 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Можно оставить без фото. Если включаете: подарочная ручка и упаковка рядом с чистой карточкой для идеи.
+**Сюжет / файл:** Оставить текстовым: Include image or video → выключено. Отдельное изображение для этой повторяющейся карточки в новом комплекте не создавалось.
 
-**Alt для предложенного сюжета:** `Personalized pen and gift packaging beside a blank card.`
+**Alt:** Не нужен, пока изображение выключено. Не повторяйте здесь картинки из основной галереи.
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
@@ -282,9 +295,9 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Цифровой макет вашего изделия с расположением имени/логотипа и согласуемыми размерами. Для демонстрации используйте ELMA VADA STUDIO; подпись Illustrative approval layout.
+**Сюжет / файл:** Оставить текстовым: Include image or video → выключено. Отдельное изображение для этой повторяющейся карточки в новом комплекте не создавалось.
 
-**Alt для предложенного сюжета:** `Illustrative engraving proof showing artwork placement on a pen.`
+**Alt:** Не нужен, пока изображение выключено. Не повторяйте здесь картинки из основной галереи.
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
@@ -311,9 +324,9 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Цифровой макет вашего изделия с расположением имени/логотипа и согласуемыми размерами. Для демонстрации используйте ELMA VADA STUDIO; подпись Illustrative approval layout.
+**Сюжет / файл:** Оставить текстовым: Include image or video → выключено. Отдельное изображение для этой повторяющейся карточки в новом комплекте не создавалось.
 
-**Alt для предложенного сюжета:** `Illustrative engraving proof showing artwork placement on a pen.`
+**Alt:** Не нужен, пока изображение выключено. Не повторяйте здесь картинки из основной галереи.
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
@@ -340,9 +353,9 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Реальная готовая партия в одинаковых коробках или ролик упаковки; адресные этикетки не включать в кадр.
+**Сюжет / файл:** Оставить текстовым: Include image or video → выключено. Отдельное изображение для этой повторяющейся карточки в новом комплекте не создавалось.
 
-**Alt для предложенного сюжета:** `Personalized gift boxes prepared for packing and delivery.`
+**Alt:** Не нужен, пока изображение выключено. Не повторяйте здесь картинки из основной галереи.
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
@@ -390,9 +403,9 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Реальная награда с нейтральной демонстрационной надписью, целиком и с читаемой гравировкой.
+**Сюжет / файл:** Оставить текстовым: Include image or video → выключено. Отдельное изображение для этой повторяющейся карточки в новом комплекте не создавалось.
 
-**Alt для предложенного сюжета:** `Personalized recognition award with an engraved message.`
+**Alt:** Не нужен, пока изображение выключено. Не повторяйте здесь картинки из основной галереи.
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
@@ -419,9 +432,9 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Реальная награда с нейтральной демонстрационной надписью, целиком и с читаемой гравировкой.
+**Сюжет / файл:** Оставить текстовым: Include image or video → выключено. Отдельное изображение для этой повторяющейся карточки в новом комплекте не создавалось.
 
-**Alt для предложенного сюжета:** `Personalized recognition award with an engraved message.`
+**Alt:** Не нужен, пока изображение выключено. Не повторяйте здесь картинки из основной галереи.
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
@@ -448,9 +461,9 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Новый кадр для «Bulk Orders»: выберите реальный подарок, соответствующий описанию карточки, покажите его целиком на нейтральном фоне.
+**Сюжет / файл:** Оставить текстовым: Include image or video → выключено. Отдельное изображение для этой повторяющейся карточки в новом комплекте не создавалось.
 
-**Alt для предложенного сюжета:** `Personalized gift displayed for bulk orders.`
+**Alt:** Не нужен, пока изображение выключено. Не повторяйте здесь картинки из основной галереи.
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 

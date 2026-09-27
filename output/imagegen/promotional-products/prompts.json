@@ -1,0 +1,246 @@
+{
+  "generator": "built-in imagegen",
+  "background_reference": "engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+  "hero_prompt_file": "hero-image-notes.md",
+  "assets": [
+    {
+      "id": "hero",
+      "title": "Hero",
+      "slot": "hero",
+      "file": "engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png",
+      "required": true,
+      "alt": "Silver metal pens, wooden keychains and a wooden desk cube engraved with Elma Vada Studio.",
+      "description": "Ранее созданный Hero — образец общего фона и освещения.",
+      "reference_files": []
+    },
+    {
+      "id": "event-pens",
+      "title": "Event Pens",
+      "slot": "examples.item_1",
+      "file": "silver-event-pen-batch-elma-vada-dfw.png",
+      "refs": [
+        "pen"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show SIX identical complete brushed silver retractable metal pens with gold-tone clips and collars from product reference, arranged parallel in two staggered neat groups of three. Engrave each upper barrel exactly ELMA VADA STUDIO. No boxes or other objects. Realistic slender construction, fine dark lettering, pen tips and push buttons all within frame.",
+      "required": true,
+      "alt": "Five silver metal pens with gold-tone clips and matching Elma Vada Studio engravings.",
+      "description": "Пять серебристых ручек с золотистыми клипсами и надписью ELMA VADA STUDIO.",
+      "reference_files": [
+        "../personalized-merchandise/sources/pen.png"
+      ],
+      "previous_recommendation": {
+        "source": "[IMG_5180.JPG](https://drive.google.com/file/d/1p-ZLLi4Qi8fzaB2ZVxCL9z0R0u-zDd_T/view?usp=drive_web)",
+        "alt": "Row of black pens with individual engraved names."
+      }
+    },
+    {
+      "id": "drinkware",
+      "title": "Personalized Drinkware",
+      "slot": "examples.item_2",
+      "file": "clear-engraved-event-glasses-elma-vada-dfw.png",
+      "refs": [
+        "drinkware-concept"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show TWO empty clear straight-sided tall drinking glasses from reference, one foreground and one slightly behind, both with a heavy transparent base. Frosted engraving on each reads exactly ELMA VADA STUDIO in two clean lines, no logo or other motif. No packages, plinths, liquid or other objects. Reference glass is illustrative. Use neutral gray background and soft diffused lighting from first image, NOT the warm orange sunlight from glass reference.",
+      "required": true,
+      "alt": "Two tall clear glasses with heavy bases and frosted Elma Vada Studio lettering.",
+      "description": "Два прозрачных стакана с матовой надписью ELMA VADA STUDIO. Концепт стеклянной посуды, не металлический tumbler; наличие модели уточните.",
+      "reference_files": [
+        "../personalized-merchandise/sources/drinkware-concept.png"
+      ],
+      "previous_recommendation": {
+        "source": "Новый реальный снимок доступного drinkware.",
+        "alt": "Laser-engraved metal tumbler with a personalized name."
+      }
+    },
+    {
+      "id": "keepsakes",
+      "title": "Personalized Keepsakes",
+      "slot": "examples.item_3",
+      "file": "wooden-cube-keychain-keepsakes-elma-vada-dfw.png",
+      "refs": [
+        "cube",
+        "keychain"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show ONE palm-sized natural light-wood desk cube with softly rounded edges, and ONE narrow rectangular wooden keychain with a round metal ring lying beside it. Front cube inscription exactly ELMA VADA STUDIO. Keychain inscription exactly THANK YOU. All other faces plain wood, absolutely no small text or top-face markings. No pens. Preserve actual shapes and grain of the product references.",
+      "required": true,
+      "alt": "Wooden cube engraved Elma Vada Studio beside a wooden Thank You keychain with a metal ring.",
+      "description": "Деревянный кубик ELMA VADA STUDIO и деревянный брелок THANK YOU.",
+      "reference_files": [
+        "../personalized-merchandise/sources/cube.png",
+        "../personalized-merchandise/sources/keychain.png"
+      ],
+      "previous_recommendation": {
+        "source": "[IMG_0621.JPG](https://drive.google.com/file/d/1jmcP8eBKSN-CFpK07jcRiTCfIbg_QjWM/view?usp=drive_web)",
+        "alt": "Wooden pen with gold-tone trim beside a matching personalized wooden case."
+      }
+    },
+    {
+      "id": "event-packs",
+      "title": "Event Packs",
+      "slot": "examples.item_4",
+      "file": "engraved-pen-event-pack-gold-ribbon-elma-vada-dfw.png",
+      "refs": [
+        "packaging",
+        "pen",
+        "keychain"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show ONE open long black presentation box holding a silver pen with gold clip engraved ELMA VADA STUDIO. Black lid with a gold satin bow placed behind, ONE matching small black gift bag standing behind, ONE rectangular wood keychain beside the box engraved WELCOME. No additional gift boxes. Preserve source product shapes. Whole bag and box visible.",
+      "required": true,
+      "alt": "Engraved silver pen in a black box with gold ribbon, a gift bag and a wooden Welcome keychain.",
+      "description": "Подарочный пакет, коробка с серебристой ручкой, золотая лента и деревянный брелок WELCOME.",
+      "reference_files": [
+        "../personalized-merchandise/sources/packaging.png",
+        "../personalized-merchandise/sources/pen.png",
+        "../personalized-merchandise/sources/keychain.png"
+      ],
+      "previous_recommendation": {
+        "source": "[IMG_5299.JPG](https://drive.google.com/file/d/1HycZ_eM6SFSyDtSAQR0whZ-UQzLNtl5b/view?usp=drive_web)",
+        "alt": "Ribbon-tied black gift box opened to reveal a personalized pen."
+      }
+    },
+    {
+      "id": "brief",
+      "title": "Share the Brief",
+      "slot": "process.item_1",
+      "file": "event-gift-brief-wooden-keychain-elma-vada-dfw.png",
+      "refs": [
+        "keychain"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show ONE wooden keychain with metal ring engraved ELMA VADA STUDIO next to a flat white paper brief card with exactly four labels: Occasion, Audience, Quantity, Event date, each with a blank line. Clean overhead flat lay, all content readable, card and keychain entirely visible. No pens or extra props.",
+      "required": false,
+      "alt": "Wooden Elma Vada Studio keychain beside a blank event brief card with four labeled fields.",
+      "description": "Брелок и карточка брифа с полями Occasion, Audience, Quantity, Event date.",
+      "reference_files": [
+        "../personalized-merchandise/sources/keychain.png"
+      ],
+      "previous_recommendation": {
+        "source": "Можно оставить без фото. Если включаете: подарочная ручка и упаковка рядом с чистой карточкой для идеи.",
+        "alt": "Personalized pen and gift packaging beside a blank card."
+      }
+    },
+    {
+      "id": "direction",
+      "title": "Review the Direction",
+      "slot": "process.item_2",
+      "file": "promotional-pen-design-options-elma-vada-dfw.png",
+      "refs": [
+        "pen"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show one slim black landscape tablet on a subtle stand displaying TWO realistic silver pen mockups with gold clips, one above another. Both mockups read ELMA VADA STUDIO, upper in clean sans serif and lower in restrained serif typography. One actual matching reference silver pen rests on gray surface in front. Screen heading only Design options. No measurements or small UI clutter. Both tablet and pen entirely visible, same neutral gray seamless backdrop.",
+      "required": false,
+      "alt": "Tablet showing two lettering options on silver pens beside a matching engraved sample pen.",
+      "description": "Планшет с двумя вариантами шрифта на серебристой ручке и образец рядом.",
+      "reference_files": [
+        "../personalized-merchandise/sources/pen.png"
+      ],
+      "previous_recommendation": {
+        "source": "Цифровой макет вашего изделия с расположением имени/логотипа и согласуемыми размерами. Для демонстрации используйте ELMA VADA STUDIO; подпись Illustrative approval layout.",
+        "alt": "Illustrative engraving proof showing artwork placement on a pen."
+      }
+    },
+    {
+      "id": "approval",
+      "title": "Approve the Details",
+      "slot": "process.item_3",
+      "file": "event-pen-engraving-approval-layout-elma-vada-dfw.png",
+      "refs": [
+        "pen"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show a white approval sheet laid flat on the gray surface beside one complete silver pen with gold clip engraved ELMA VADA STUDIO. On sheet, one clean side-view pen mockup with engraving ELMA VADA STUDIO and thin placement guide arrows labeled Width and Height, NO numeric dimensions. Heading Artwork proof. Below are three empty checkboxes labeled Artwork, Spelling, Quantity. Small footer Illustrative approval layout. No extra text or objects.",
+      "required": false,
+      "alt": "Silver engraved pen beside an artwork proof with dimension guides and three approval checkboxes.",
+      "description": "Ручка и лист согласования: Artwork, Spelling, Quantity; направления размеров показаны без числовых значений.",
+      "reference_files": [
+        "../personalized-merchandise/sources/pen.png"
+      ],
+      "previous_recommendation": {
+        "source": "Цифровой макет вашего изделия с расположением имени/логотипа и согласуемыми размерами. Для демонстрации используйте ELMA VADA STUDIO; подпись Illustrative approval layout.",
+        "alt": "Illustrative engraving proof showing artwork placement on a pen."
+      }
+    },
+    {
+      "id": "packing",
+      "title": "Produce & Prepare",
+      "slot": "process.item_4",
+      "file": "ribboned-event-gift-box-batch-elma-vada-dfw.png",
+      "refs": [
+        "packaging",
+        "pen"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show FIVE closed long matte-black presentation boxes tied with simple gold satin ribbon, arranged neatly in staggered rows, and ONE open matching box foreground with a silver gold-trimmed pen engraved ELMA VADA STUDIO. No shipping carton, hands, background warehouse, table horizon or labels. Realistic clean packaging concept on exactly the neutral gray seamless surface from image one.",
+      "required": false,
+      "alt": "Five black boxes with gold bows behind an open box holding an engraved silver pen.",
+      "description": "Пять закрытых коробок с золотыми бантами и одна открытая коробка с ручкой. Визуальный концепт комплектации.",
+      "reference_files": [
+        "../personalized-merchandise/sources/packaging.png",
+        "../personalized-merchandise/sources/pen.png"
+      ],
+      "previous_recommendation": {
+        "source": "Реальная готовая партия в одинаковых коробках или ролик упаковки; адресные этикетки не включать в кадр.",
+        "alt": "Personalized gift boxes prepared for packing and delivery."
+      }
+    },
+    {
+      "id": "business",
+      "title": "Business Solutions",
+      "slot": "related.item_1",
+      "file": "circular-appreciation-award-elma-vada-dfw.png",
+      "refs": [
+        "award"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show ONE transparent round recognition award on the distinctive dark-wood crescent support and rectangular base from product reference, upright. Its frosted engraving reads only ELMA VADA STUDIO and on the next line THANK YOU. No decorative flourishes, packaging or other objects. Entire award and base visible, centered, pale warm-gray seamless background, actual wood grain and believable transparent edge.",
+      "required": false,
+      "alt": "Clear round award with Elma Vada Studio and Thank You lettering on a curved wooden base.",
+      "description": "Круглая прозрачная награда на деревянной опоре с надписями ELMA VADA STUDIO и THANK YOU.",
+      "reference_files": [
+        "../personalized-merchandise/sources/award.png"
+      ],
+      "background_correction_prompt": "Use case: compositing. FIRST reference is the exact BACKGROUND AND LIGHTING to copy. SECOND reference is the award to preserve. Place the award from image two onto the pale warm-gray fine matte tabletop from image one, replacing ALL transparent or black background areas with that opaque gray background. Match soft upper-left light and add natural contact shadow beneath the wooden base. Background must be completely opaque, NOT transparent, NOT black. Keep the award's circular clear disc, wooden crescent support, base, engraving ELMA VADA STUDIO and THANK YOU, dimensions and camera angle unchanged. No other objects from image one. Landscape 4:3, keep entire award inside frame with margins.",
+      "previous_recommendation": {
+        "source": "Новый кадр для «Business Solutions»: выберите реальный подарок, соответствующий описанию карточки, покажите его целиком на нейтральном фоне.",
+        "alt": "Personalized gift displayed for business solutions."
+      }
+    },
+    {
+      "id": "production",
+      "title": "Production Capabilities",
+      "slot": "related.item_2",
+      "file": "desktop-engraving-machine-display-elma-vada-dfw.png",
+      "refs": [
+        "studio"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show ONE silver upright desktop laser marking machine based on the CENTRAL machine in the second reference studio photograph: aluminum height column, scanning head, round black lens underneath, flat silver work bed. Present machine ALONE as a realistic isolated equipment concept sitting on the same seamless pale warm-gray surface from first image. Preserve plausible reference construction; remove room, curtains, monitors, desks, cables outside frame, unrelated equipment and people. Entire machine visible, no operating beam, smoke or sparks, no invented labels or technology designation. Machine stands firmly on its base with a soft contact shadow.",
+      "required": false,
+      "alt": "Silver desktop laser engraving machine with a vertical column, black lens and perforated metal base.",
+      "description": "Иллюстрация настольного аппарата по фото оборудования вашей студии, на общем сером фоне. Тип лазера не заявлен.",
+      "reference_files": [
+        "../personalized-merchandise/sources/studio.png"
+      ],
+      "previous_recommendation": {
+        "source": "Новый кадр для «Production Capabilities»: выберите реальный подарок, соответствующий описанию карточки, покажите его целиком на нейтральном фоне.",
+        "alt": "Personalized gift displayed for production capabilities."
+      }
+    },
+    {
+      "id": "work",
+      "title": "Our Work",
+      "slot": "related.item_3",
+      "file": "wooden-chopstick-case-gift-elma-vada-dfw.png",
+      "refs": [
+        "chopsticks"
+      ],
+      "prompt": "Use case: product-mockup. Generate ONE photorealistic landscape 4:3 image, a coordinated companion to the FIRST input image. FIRST image is the EXACT background, exposure, color and lighting reference: pale warm-gray fine matte surface, no visible horizon, softly diffused upper-left light with gentle shadows cast toward lower right. Match this background closely: not beige, cream, white, marble, stone, wood, not a room, no plant shadows. The first image's products are NOT required unless explicitly requested below. Other input images are product-shape references only; ignore their backgrounds. Camera gently elevated, generous 12% margins, all main objects fully visible, clear textures and engraving. No collage, border, overlay titles, watermarks or unrelated decorations. All inscription text ONLY as specified, no client names. Show ONE pair of dark natural-wood chopsticks nested in its matching narrow elongated wooden sliding-lid case from product reference. Lid slid halfway open, engraved exactly ELMA VADA STUDIO. Two chopstick handles have simple small engraving THANK YOU. Entire case visible diagonally, with margins, no orange backdrop. Actual fine wood grain, real proportion and construction, no extra objects.",
+      "required": false,
+      "alt": "Wooden chopsticks engraved Thank You inside a sliding case marked Elma Vada Studio.",
+      "description": "Деревянные палочки THANK YOU в раздвижном футляре ELMA VADA STUDIO.",
+      "reference_files": [
+        "../personalized-merchandise/sources/chopsticks.png"
+      ],
+      "previous_recommendation": {
+        "source": "Новый кадр для «Our Work»: выберите реальный подарок, соответствующий описанию карточки, покажите его целиком на нейтральном фоне.",
+        "alt": "Personalized gift displayed for our work."
+      }
+    }
+  ]
+}

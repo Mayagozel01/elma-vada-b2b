@@ -1,0 +1,225 @@
+{
+  "created": "2026-09-27",
+  "generator": "built-in imagegen",
+  "filename_prefix_note": "User-requested search prefix; not Google generator attribution.",
+  "assets": [
+    {
+      "id": "01-personalized-merchandise-hero",
+      "title": "Hero",
+      "slot": "hero",
+      "required": true,
+      "description": "Награда, деревянный кубик, ручка и палочки в футляре — общий кадр разных товаров.",
+      "alt": "Personalized pen, wooden desk cube, chopsticks in a case and circular award displayed together.",
+      "file": "google-ai-photo-01-personalized-merchandise-hero.png",
+      "refs": [
+        "pen",
+        "cube",
+        "award",
+        "chopsticks"
+      ],
+      "prompt": "Use case: product-mockup. One photorealistic premium commercial product photograph, landscape 4:3 aspect ratio, for the Elma Vada Studio Personalized Merchandise webpage. Pale warm-gray seamless tabletop and background, soft natural window light from left, subtle realistic shadows, crisp material textures, restrained refined styling. Entire subject visible, 10% crop-safe margins. No collage, borders, blurred padding, watermarks, captions or added headings. Create a new cohesive still-life using the four supplied product references, preserving their construction: one silver pen with gold trim, one small light-wood engraved desk cube, one clear round award on a walnut crescent support and rectangular base, and one open elongated wooden sliding-lid case containing a pair of chopsticks. Arrange as an elegant diverse merchandise collection, tall award at back and smaller objects at front. Products are hero subjects, not workshop. Replace reference client inscriptions with restrained demonstration engraving \"ELMA VADA STUDIO\". No other product types. Camera at tabletop three-quarter angle. Correct scale: palm-sized cube and pen around 14cm long, chopsticks longer than pen, award taller than cube.",
+      "reference_files": [
+        "sources/pen.png",
+        "sources/cube.png",
+        "sources/award.png",
+        "sources/chopsticks.png"
+      ],
+      "refinement_prompt": null
+    },
+    {
+      "id": "02-everyday-pens",
+      "title": "Everyday Pens",
+      "slot": "examples.item_1",
+      "required": true,
+      "description": "Три серебристые ручки с золотистыми деталями и гравировкой ELMA VADA STUDIO.",
+      "alt": "Three silver-tone pens with gold-tone clips and Elma Vada Studio engraving.",
+      "file": "google-ai-photo-02-everyday-pens.png",
+      "refs": [
+        "pen"
+      ],
+      "prompt": "Use case: product-mockup. Create one new photorealistic landscape 4:3 product photograph for the Everyday Pens card of Elma Vada Studio Personalized Merchandise website. Reference image defines the actual product: brushed silver retractable ballpoint pen with gold-tone arrow clip, gold collar, silver push button. Show three matching complete pens neatly arranged parallel with a slight diagonal on a seamless pale warm-gray tabletop. Preserve their construction and realistic slender proportions. Engraving on each upper barrel reads exactly \"ELMA VADA STUDIO\", fine dark laser marking following the metal surface. All tips and push buttons visible with generous crop-safe margins. Soft window light, realistic brushed steel and subtle gold reflections, crisp readable engraving, gentle shadows. No packaging, hands, unrelated props, watermarks, added headings, blurred frame, collage or border. This is a new product presentation based on the reference, not a copy of the original composition.",
+      "reference_files": [
+        "sources/pen.png"
+      ],
+      "refinement_prompt": null
+    },
+    {
+      "id": "03-drinkware",
+      "title": "Drinkware",
+      "slot": "examples.item_2",
+      "required": true,
+      "description": "Два прозрачных стакана с матовой надписью и растительным мотивом. Концепт стеклянного drinkware, не металлического.",
+      "alt": "Two clear drinking glasses with frosted Elma Vada Studio lettering and a leaf motif.",
+      "file": "google-ai-photo-03-drinkware.png",
+      "refs": [
+        "drinkware-concept"
+      ],
+      "prompt": "Use case: product-mockup. One photorealistic premium commercial product photograph, landscape 4:3 aspect ratio, for the Elma Vada Studio Personalized Merchandise webpage. Pale warm-gray seamless tabletop and background, soft natural window light from left, subtle realistic shadows, crisp material textures, restrained refined styling. Entire subject visible, 10% crop-safe margins. No collage, borders, blurred padding, watermarks, captions or added headings. The reference is a prior illustrative drinkware concept and defines only the clear straight-sided glass shape. Create a new composition with TWO matching empty clear cylindrical drinking tumblers, a foreground glass facing camera and one slightly behind at a three-quarter angle. No packaging or other objects. Foreground glass has subtle frosted engraved lettering exactly \"ELMA VADA STUDIO\"; rear glass has a small matching inscription. Preserve realistic transparent glass, wall thickness and heavy base, true light refraction. Glasses entirely visible and inscriptions readable. No metal drinkware, colored print or liquid.",
+      "reference_files": [
+        "sources/drinkware-concept.png"
+      ],
+      "refinement_prompt": null
+    },
+    {
+      "id": "04-desk-accessories",
+      "title": "Desk Accessories",
+      "slot": "examples.item_3",
+      "required": true,
+      "description": "Деревянный настольный кубик с надписями ELMA VADA STUDIO и GROW TOGETHER.",
+      "alt": "Wooden desk cube engraved with Elma Vada Studio and Grow Together.",
+      "file": "google-ai-photo-04-desk-accessories.png",
+      "refs": [
+        "cube"
+      ],
+      "prompt": "Use case: product-mockup. One photorealistic premium commercial product photograph, landscape 4:3 aspect ratio, for the Elma Vada Studio Personalized Merchandise webpage. Pale warm-gray seamless tabletop and background, soft natural window light from left, subtle realistic shadows, crisp material textures, restrained refined styling. Entire subject visible, 10% crop-safe margins. No collage, borders, blurred padding, watermarks, captions or added headings. Reference defines the actual small wooden keepsake cube. Create a new still life of ONE light natural-wood desk cube resting on the tabletop, seen at a three-quarter angle with front, side and top visible. Preserve compact palm-sized cube shape, subtly rounded edges and natural fine wood grain. Remove hand and orange background. Front engraving reads exactly \"ELMA VADA STUDIO\", dark recessed laser engraving, side engraving reads \"GROW TOGETHER\". Cube is the only object, medium close-up, generous whitespace, no pens. Text must look burned into wood, not raised or printed.",
+      "reference_files": [
+        "sources/cube.png"
+      ],
+      "refinement_prompt": "Use case: precise-object-edit. Edit this supplied generated product photograph. Change ONLY the TOP FACE of the wooden cube: remove all dark marks and text on its top and replace with continuous clean natural light wood grain matching the rest of the cube. Keep front text \"ELMA VADA STUDIO\", side text \"GROW TOGETHER\", cube shape, background, lighting, camera angle and composition exactly unchanged. Top must be entirely unengraved. Preserve landscape 4:3."
+    },
+    {
+      "id": "05-coordinated-kits",
+      "title": "Coordinated Kits",
+      "slot": "examples.item_4",
+      "required": true,
+      "description": "Подарочный пакет, открытая коробка с ручкой, золотая лента и деревянный брелок.",
+      "alt": "Engraved pen in a black gift box beside a wooden keychain, gold ribbon and black gift bag.",
+      "file": "google-ai-photo-05-coordinated-kits.png",
+      "refs": [
+        "packaging",
+        "pen",
+        "keychain"
+      ],
+      "prompt": "Use case: product-mockup. One photorealistic premium commercial product photograph, landscape 4:3 aspect ratio, for the Elma Vada Studio Personalized Merchandise webpage. Pale warm-gray seamless tabletop and background, soft natural window light from left, subtle realistic shadows, crisp material textures, restrained refined styling. Entire subject visible, 10% crop-safe margins. No collage, borders, blurred padding, watermarks, captions or added headings. Create one new attractive coordinated gift-kit still life. References define a black rope-handle paper gift bag, long black presentation pen box with gold satin ribbon, silver pen with gold clip, and elongated rectangular natural-wood keychain with metal ring. Show gift bag standing at rear, open pen box in front holding ONE matching pen, gold ribbon gently laid next to the lid, and the wooden keychain beside the box, all fully visible. Keep actual product construction and believable scales. Replace client names with \"ELMA VADA STUDIO\" on the pen and wood keychain, keep bag plain black. No other items or logos. View at a three-quarter overhead angle.",
+      "reference_files": [
+        "sources/packaging.png",
+        "sources/pen.png",
+        "sources/keychain.png"
+      ],
+      "refinement_prompt": null
+    },
+    {
+      "id": "06-share-the-brief",
+      "title": "Share the Brief",
+      "slot": "process.item_1",
+      "required": false,
+      "description": "Брелок, коробка и карточка с полями Occasion, Recipients, Quantity, Target date.",
+      "alt": "Engraved wooden keychain beside a gift box and a project brief card.",
+      "file": "google-ai-photo-06-share-the-brief.png",
+      "refs": [
+        "keychain",
+        "packaging"
+      ],
+      "prompt": "Use case: product-mockup. One photorealistic premium commercial product photograph, landscape 4:3 aspect ratio, for the Elma Vada Studio Personalized Merchandise webpage. Pale warm-gray seamless tabletop and background, soft natural window light from left, subtle realistic shadows, crisp material textures, restrained refined styling. Entire subject visible, 10% crop-safe margins. No collage, borders, blurred padding, watermarks, captions or added headings. Create a new project-planning flat lay. An engraved rectangular wooden keychain from reference rests beside a small open black gift box and one clean white briefing card. On the card use only four clearly printed short labels in English: \"Occasion\", \"Recipients\", \"Quantity\", \"Target date\", with blank writing lines beneath. Wooden keychain engraving \"ELMA VADA STUDIO\". No pen, no people, no filled personal information. Card and whole keychain dominate, enough scale for labels to remain readable. Natural overhead photograph, not an interface screenshot.",
+      "reference_files": [
+        "sources/keychain.png",
+        "sources/packaging.png"
+      ],
+      "refinement_prompt": null
+    },
+    {
+      "id": "07-review-the-direction",
+      "title": "Review the Direction",
+      "slot": "process.item_2",
+      "required": false,
+      "description": "Планшет с двумя вариантами шрифта на кубике и отдельный образец рядом.",
+      "alt": "Tablet displaying two engraving designs for a wooden desk cube beside a matching sample.",
+      "file": "google-ai-photo-07-review-the-direction.png",
+      "refs": [
+        "cube"
+      ],
+      "prompt": "Use case: product-mockup. One photorealistic premium commercial product photograph, landscape 4:3 aspect ratio, for the Elma Vada Studio Personalized Merchandise webpage. Pale warm-gray seamless tabletop and background, soft natural window light from left, subtle realistic shadows, crisp material textures, restrained refined styling. Entire subject visible, 10% crop-safe margins. No collage, borders, blurred padding, watermarks, captions or added headings. Create a new photorealistic design-review tabletop scene. One slim tablet on a simple stand displays TWO clean digital product mockups of the reference light-wood cube, side by side. Both mockups keep the cube proportions and grain but show different restrained typography for the exact inscription \"ELMA VADA STUDIO\". A single physical sample wooden cube sits beside the tablet. Top of physical cube plain, front engraving \"ELMA VADA STUDIO\". Tablet screen white, one small heading \"Design options\", no buttons or extra tiny UI. Focus on choosing between design directions, no measurement arrows. Three-quarter view, tablet and cube completely visible.",
+      "reference_files": [
+        "sources/cube.png"
+      ],
+      "refinement_prompt": "Use case: precise-object-edit. Edit this supplied generated image. Change ONLY the TOP FACES of ALL THREE wooden cubes: the two displayed on tablet and the physical sample to its right. Remove all dark marks and lettering from each top face, replacing with clean continuous natural light wood grain. Keep all front-face \"ELMA VADA STUDIO\" lettering, tablet heading \"Design options\", props, camera angle, lighting and composition unchanged. Each cube top must be completely plain wood. Preserve landscape 4:3."
+    },
+    {
+      "id": "08-approve-the-details",
+      "title": "Approve the Details",
+      "slot": "process.item_3",
+      "required": false,
+      "description": "Лист согласования гравировки брелока: направления Width и Height, проверка Artwork, Spelling, Quantity. Числовые размеры не заявлены.",
+      "alt": "Illustrative wooden keychain engraving proof with placement guides and an approval checklist.",
+      "file": "google-ai-photo-08-approve-the-details.png",
+      "refs": [
+        "keychain"
+      ],
+      "prompt": "Use case: product-mockup. One photorealistic premium commercial product photograph, landscape 4:3 aspect ratio, for the Elma Vada Studio Personalized Merchandise webpage. Pale warm-gray seamless tabletop and background, soft natural window light from left, subtle realistic shadows, crisp material textures, restrained refined styling. Entire subject visible, 10% crop-safe margins. No collage, borders, blurred padding, watermarks, captions or added headings. Create a new photorealistic close-up of an approval-layout sheet on a light neutral desk with the referenced elongated wooden keychain resting next to it. Paper displays a precise clean top-view digital mockup of that wooden keychain with engraving \"ELMA VADA STUDIO\" and two thin dimension arrows indicating engraving placement, labeled only \"Width\" and \"Height\", NO numeric dimensions. Paper heading \"Artwork proof\", small bottom note \"Illustrative approval layout\". Three short checklist lines below the mockup read \"Artwork\", \"Spelling\", \"Quantity\", with empty checkboxes. Actual keychain inscription matches artwork. No signatures, addresses or personal names. Sheet and keychain fill central composition, readable lettering, no other props.",
+      "reference_files": [
+        "sources/keychain.png"
+      ],
+      "refinement_prompt": null
+    },
+    {
+      "id": "09-produce-and-prepare",
+      "title": "Produce & Prepare",
+      "slot": "process.item_4",
+      "required": false,
+      "description": "Пять закрытых коробок с золотыми лентами, открытая коробка с ручкой и картонная упаковка на заднем плане. Иллюстрация комплектации.",
+      "alt": "Black gift boxes with gold ribbons and an open engraved pen box beside a shipping carton.",
+      "file": "google-ai-photo-09-produce-and-prepare.png",
+      "refs": [
+        "packaging",
+        "pen"
+      ],
+      "prompt": "Use case: product-mockup. One photorealistic premium commercial product photograph, landscape 4:3 aspect ratio, for the Elma Vada Studio Personalized Merchandise webpage. Pale warm-gray seamless tabletop and background, soft natural window light from left, subtle realistic shadows, crisp material textures, restrained refined styling. Entire subject visible, 10% crop-safe margins. No collage, borders, blurred padding, watermarks, captions or added headings. Create a new photorealistic illustrative arrangement of a small batch of matching long black gift boxes prepared for packing. Six closed boxes arranged neatly in two rows, one open presentation box at front containing a single reference silver pen with gold trim engraved \"ELMA VADA STUDIO\". Each closed box has a simple gold ribbon band, no shipping labels. A clean open kraft outer carton with tissue paper stands behind, not blocking boxes. Packaging matches reference shapes. No hands, people, machinery, caption or addresses. Realistic slight differences in satin folds, physically consistent lids, tabletop view from above at 35 degrees.",
+      "reference_files": [
+        "sources/packaging.png",
+        "sources/pen.png"
+      ],
+      "refinement_prompt": null
+    },
+    {
+      "id": "10-business-solutions",
+      "title": "Business Solutions",
+      "slot": "related.item_1",
+      "required": false,
+      "description": "Круглая прозрачная награда на деревянной подставке и чёрная коробка.",
+      "alt": "Clear circular Team Appreciation award on a wooden base beside a black presentation box.",
+      "file": "google-ai-photo-10-business-solutions.png",
+      "refs": [
+        "award"
+      ],
+      "prompt": "Use case: product-mockup. One photorealistic premium commercial product photograph, landscape 4:3 aspect ratio, for the Elma Vada Studio Personalized Merchandise webpage. Pale warm-gray seamless tabletop and background, soft natural window light from left, subtle realistic shadows, crisp material textures, restrained refined styling. Entire subject visible, 10% crop-safe margins. No collage, borders, blurred padding, watermarks, captions or added headings. Create a new still life centered on ONE clear circular recognition award with the exact walnut crescent support and rectangular walnut base from reference. Award upright and entirely visible, beside a closed understated black square presentation gift box. Engraving on clear disc exactly \"ELMA VADA STUDIO\" and below \"TEAM APPRECIATION\". No retirement names or dates. Subtle etched frosted lettering rather than printed color. Do not change the distinctive award shape. Camera at object height in three-quarter angle, no people or hands.",
+      "reference_files": [
+        "sources/award.png"
+      ],
+      "refinement_prompt": null
+    },
+    {
+      "id": "11-production-capabilities",
+      "title": "Production Capabilities",
+      "slot": "related.item_2",
+      "required": false,
+      "description": "Новая AI-композиция по фото вашей студии: настольный гравировальный аппарат и монитор. Тип лазера не указан.",
+      "alt": "Illustrative studio view of a desktop laser engraving machine and computer monitor.",
+      "file": "google-ai-photo-11-production-capabilities.png",
+      "refs": [
+        "studio"
+      ],
+      "prompt": "Use case: photorealistic-natural. Create one new photorealistic landscape 4:3 editorial image based closely on the supplied real studio photograph. Main subject is the CENTRAL upright silver engraving workstation with its real scanning head, black lens, vertical aluminum column and metal work bed, and the associated adjacent black monitor. Compose a tighter straight-on three-quarter view of this workstation, preserving the recognizable cream curtains and white desk of the actual studio. Keep actual equipment geometry and connections. Soft natural interior light, neutral color balance, tidy framing with loose items outside view. No people, new equipment, added branding, visible laser beam or product process. Do not relabel machine technology. Full scanning head and work bed visible with crop-safe margins. This is a new illustrative studio composition based on the actual source photograph, not a factory stock scene.",
+      "reference_files": [
+        "sources/studio.png"
+      ],
+      "refinement_prompt": null
+    },
+    {
+      "id": "12-our-work",
+      "title": "Our Work",
+      "slot": "related.item_3",
+      "required": false,
+      "description": "Деревянные палочки в частично открытом футляре с надписью ELMA VADA STUDIO. Демонстрационный вариант изделия.",
+      "alt": "Wooden chopsticks in a matching sliding-lid case engraved with Elma Vada Studio.",
+      "file": "google-ai-photo-12-our-work.png",
+      "refs": [
+        "chopsticks"
+      ],
+      "prompt": "Use case: product-mockup. One photorealistic premium commercial product photograph, landscape 4:3 aspect ratio, for the Elma Vada Studio Personalized Merchandise webpage. Pale warm-gray seamless tabletop and background, soft natural window light from left, subtle realistic shadows, crisp material textures, restrained refined styling. Entire subject visible, 10% crop-safe margins. No collage, borders, blurred padding, watermarks, captions or added headings. Create a new close product photograph of ONE pair of natural dark-wood chopsticks in their matching elongated wooden sliding-lid case, based on actual reference construction. Lid slid partly aside so both chopsticks clearly visible, case completely contained in frame. Engraving on lid exactly \"ELMA VADA STUDIO\", small matching lettering on chopstick handle ends. Preserve straight wooden sticks, rounded narrow case, natural grain and subtle metal details only if visible in reference. Diagonal composition on pale tabletop, no pens, awards, people or other items. Refined realistic finished-product photograph.",
+      "reference_files": [
+        "sources/chopsticks.png"
+      ],
+      "refinement_prompt": null
+    }
+  ]
+}

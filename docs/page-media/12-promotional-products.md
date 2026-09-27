@@ -3,15 +3,41 @@
 > Обновлено по экспорту 24SEP2026-0517pm. Ниже сохранён подбор медиа; полный порядок всех секций, карточек и полей — в разделе [Полный чек-лист](#полный-чек-лист). Уже загруженные файлы указаны в чек-листе: сохраняйте их, если они подходят по содержанию.
 
 
-| Блок | Что поставить | Alt text |
-|---|---|---|
-| Hero | [IMG_5178.JPG](https://drive.google.com/file/d/1dVWhmq_7oVmIGLcevDnOWXp9MEKQRVdj/view?usp=drive_web) | `Collection of black pens with engraved names arranged in a fan.` |
-| Event Pens | [IMG_5180.JPG](https://drive.google.com/file/d/1p-ZLLi4Qi8fzaB2ZVxCL9z0R0u-zDd_T/view?usp=drive_web) | `Row of black pens with individual engraved names.` |
-| Personalized Drinkware | Новый реальный снимок доступного drinkware. | `Laser-engraved metal tumbler with a personalized name.` |
-| Personalized Keepsakes | [IMG_0621.JPG](https://drive.google.com/file/d/1jmcP8eBKSN-CFpK07jcRiTCfIbg_QjWM/view?usp=drive_web) | `Wooden pen with gold-tone trim beside a matching personalized wooden case.` |
-| Event Packs | [IMG_5299.JPG](https://drive.google.com/file/d/1HycZ_eM6SFSyDtSAQR0whZ-UQzLNtl5b/view?usp=drive_web) | `Ribbon-tied black gift box opened to reveal a personalized pen.` |
+## Единый набор изображений
 
-Промоподарок здесь должен быть реальным продуктом, который можно заказать. Не используйте AI-концепт как карточку товара.
+Готовы **12 изображений: прежний Hero и 11 новых**. У всех единый светлый тёпло-серый фон, мягкий свет и формат PNG 1448 × 1086 px (4:3). Hero использован как визуальный референс фона в каждой новой генерации. Набор создан встроенным imagegen.
+
+[Галерея](../../output/imagegen/promotional-products/README.md) · [Все изображения ZIP](../../output/imagegen/promotional-products/promotional-products-elma-vada-dfw-images.zip) · [Alt-тексты CSV](../../output/imagegen/promotional-products/alt-texts.csv) · [Промпты](../../output/imagegen/promotional-products/prompts.json).
+
+### Основные изображения
+
+| Блок | Файл | Alt text |
+|---|---|---|
+| Hero | [engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png](../../output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png) | `Silver metal pens, wooden keychains and a wooden desk cube engraved with Elma Vada Studio.` |
+| Event Pens | [silver-event-pen-batch-elma-vada-dfw.png](../../output/imagegen/promotional-products/silver-event-pen-batch-elma-vada-dfw.png) | `Five silver metal pens with gold-tone clips and matching Elma Vada Studio engravings.` |
+| Personalized Drinkware | [clear-engraved-event-glasses-elma-vada-dfw.png](../../output/imagegen/promotional-products/clear-engraved-event-glasses-elma-vada-dfw.png) | `Two tall clear glasses with heavy bases and frosted Elma Vada Studio lettering.` |
+| Personalized Keepsakes | [wooden-cube-keychain-keepsakes-elma-vada-dfw.png](../../output/imagegen/promotional-products/wooden-cube-keychain-keepsakes-elma-vada-dfw.png) | `Wooden cube engraved Elma Vada Studio beside a wooden Thank You keychain with a metal ring.` |
+| Event Packs | [engraved-pen-event-pack-gold-ribbon-elma-vada-dfw.png](../../output/imagegen/promotional-products/engraved-pen-event-pack-gold-ribbon-elma-vada-dfw.png) | `Engraved silver pen in a black box with gold ribbon, a gift bag and a wooden Welcome keychain.` |
+
+### Дополнительные изображения
+
+Семь карточек ниже сейчас текстовые (`show_image: false`). Чтобы добавить подготовленные картинки, включите **Include image or video**, выберите **Media type → Image**, загрузите файл в **Photo** и вставьте alt в **Photo description (alt)**. Код темы и настройки магазина не менялись.
+
+| Блок | Файл | Alt text |
+|---|---|---|
+| Share the Brief | [event-gift-brief-wooden-keychain-elma-vada-dfw.png](../../output/imagegen/promotional-products/event-gift-brief-wooden-keychain-elma-vada-dfw.png) | `Wooden Elma Vada Studio keychain beside a blank event brief card with four labeled fields.` |
+| Review the Direction | [promotional-pen-design-options-elma-vada-dfw.png](../../output/imagegen/promotional-products/promotional-pen-design-options-elma-vada-dfw.png) | `Tablet showing two lettering options on silver pens beside a matching engraved sample pen.` |
+| Approve the Details | [event-pen-engraving-approval-layout-elma-vada-dfw.png](../../output/imagegen/promotional-products/event-pen-engraving-approval-layout-elma-vada-dfw.png) | `Silver engraved pen beside an artwork proof with dimension guides and three approval checkboxes.` |
+| Produce & Prepare | [ribboned-event-gift-box-batch-elma-vada-dfw.png](../../output/imagegen/promotional-products/ribboned-event-gift-box-batch-elma-vada-dfw.png) | `Five black boxes with gold bows behind an open box holding an engraved silver pen.` |
+| Business Solutions | [circular-appreciation-award-elma-vada-dfw.png](../../output/imagegen/promotional-products/circular-appreciation-award-elma-vada-dfw.png) | `Clear round award with Elma Vada Studio and Thank You lettering on a curved wooden base.` |
+| Production Capabilities | [desktop-engraving-machine-display-elma-vada-dfw.png](../../output/imagegen/promotional-products/desktop-engraving-machine-display-elma-vada-dfw.png) | `Silver desktop laser engraving machine with a vertical column, black lens and perforated metal base.` |
+| Our Work | [wooden-chopstick-case-gift-elma-vada-dfw.png](../../output/imagegen/promotional-products/wooden-chopstick-case-gift-elma-vada-dfw.png) | `Wooden chopsticks engraved Thank You inside a sliding case marked Elma Vada Studio.` |
+
+Все новые имена — английский kebab-case с `elma-vada-dfw`. Все alt-тексты уникальны и короче 125 символов; один фактический alt используется для доступности и описания изображения, отдельного «AEO alt» нет. DFW в имени обозначает контекст страницы услуг, а не место съёмки.
+
+Изображения — демонстрационные AI-композиции по референсам товаров и оборудования, не фотографии выполненных заказов. Для товарных сцен подпись `Illustrative product concept`, для оборудования — `Illustrative equipment view`. Drinkware основан на прежнем концепте стеклянного стакана: модель и наличие уточните до использования как предложения товара. Не выдавайте концепты за подтверждённые карточки ассортимента.
+
+Для Header / Footer используйте существующий логотип; FAQ, заголовки секций и финальный CTA не требуют новых картинок. Перед сохранением проверьте кадрирование на телефоне.
 
 <!-- COMPLETE-THEME-CHECKLIST -->
 
@@ -74,11 +100,13 @@
 | Secondary link (secondary_link) | /pages/our-work | Откройте ссылку как посетитель; она должна вести на нужную страницу или форму без 404. |
 | Compact intro (forms) (compact) | false | Проверьте переключатель в редакторе и результат в предпросмотре. |
 
-**Сюжет / файл:** [IMG_5178.JPG](https://drive.google.com/file/d/1dVWhmq_7oVmIGLcevDnOWXp9MEKQRVdj/view?usp=drive_web)
+**Сюжет / файл:** [engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png](../../output/imagegen/promotional-products/engraved-promotional-pens-wooden-keepsakes-elma-vada-dfw.png) — новая композиция для Hero: три серебристые ручки с золотистыми деталями, два деревянных брелока и кубик, с надписью ELMA VADA STUDIO. Выберите файл в B2B page hero → Hero photo.
 
-**Alt для предложенного сюжета:** `Collection of black pens with engraved names arranged in a fan.`
+**Alt для нового изображения:** `Silver metal pens, wooden keychains and a wooden desk cube engraved with Elma Vada Studio.`
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Исходный вариант с реальными ручками сохранён как альтернатива: [IMG_5178.JPG](https://drive.google.com/file/d/1dVWhmq_7oVmIGLcevDnOWXp9MEKQRVdj/view?usp=drive_web). Для него прежний alt: `Collection of black pens with engraved names arranged in a fan.`
+
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 Вложенных карточек в текущем экспорте нет.
 
@@ -124,11 +152,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** [IMG_5180.JPG](https://drive.google.com/file/d/1p-ZLLi4Qi8fzaB2ZVxCL9z0R0u-zDd_T/view?usp=drive_web)
+**Сюжет / файл:** [silver-event-pen-batch-elma-vada-dfw.png](../../output/imagegen/promotional-products/silver-event-pen-batch-elma-vada-dfw.png) — Пять серебристых ручек с золотистыми клипсами и надписью ELMA VADA STUDIO.
 
-**Alt для предложенного сюжета:** `Row of black pens with individual engraved names.`
+**Alt для нового изображения:** `Five silver metal pens with gold-tone clips and matching Elma Vada Studio engravings.`
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 #### 2.2. Personalized Drinkware
 
@@ -151,11 +179,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Новый реальный снимок доступного drinkware.
+**Сюжет / файл:** [clear-engraved-event-glasses-elma-vada-dfw.png](../../output/imagegen/promotional-products/clear-engraved-event-glasses-elma-vada-dfw.png) — Два прозрачных стакана с матовой надписью ELMA VADA STUDIO. Концепт стеклянной посуды, не металлический tumbler; наличие модели уточните.
 
-**Alt для предложенного сюжета:** `Laser-engraved metal tumbler with a personalized name.`
+**Alt для нового изображения:** `Two tall clear glasses with heavy bases and frosted Elma Vada Studio lettering.`
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 #### 2.3. Personalized Keepsakes
 
@@ -178,11 +206,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** [IMG_0621.JPG](https://drive.google.com/file/d/1jmcP8eBKSN-CFpK07jcRiTCfIbg_QjWM/view?usp=drive_web)
+**Сюжет / файл:** [wooden-cube-keychain-keepsakes-elma-vada-dfw.png](../../output/imagegen/promotional-products/wooden-cube-keychain-keepsakes-elma-vada-dfw.png) — Деревянный кубик ELMA VADA STUDIO и деревянный брелок THANK YOU.
 
-**Alt для предложенного сюжета:** `Wooden pen with gold-tone trim beside a matching personalized wooden case.`
+**Alt для нового изображения:** `Wooden cube engraved Elma Vada Studio beside a wooden Thank You keychain with a metal ring.`
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 #### 2.4. Event Packs
 
@@ -205,11 +233,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** [IMG_5299.JPG](https://drive.google.com/file/d/1HycZ_eM6SFSyDtSAQR0whZ-UQzLNtl5b/view?usp=drive_web)
+**Сюжет / файл:** [engraved-pen-event-pack-gold-ribbon-elma-vada-dfw.png](../../output/imagegen/promotional-products/engraved-pen-event-pack-gold-ribbon-elma-vada-dfw.png) — Подарочный пакет, коробка с серебристой ручкой, золотая лента и деревянный брелок WELCOME.
 
-**Alt для предложенного сюжета:** `Ribbon-tied black gift box opened to reveal a personalized pen.`
+**Alt для нового изображения:** `Engraved silver pen in a black box with gold ribbon, a gift bag and a wooden Welcome keychain.`
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 ### 3. How does the project come together?
 
@@ -253,13 +281,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Можно оставить без фото. Если включаете: подарочная ручка и упаковка рядом с чистой карточкой для идеи.
+**Сюжет / файл:** [event-gift-brief-wooden-keychain-elma-vada-dfw.png](../../output/imagegen/promotional-products/event-gift-brief-wooden-keychain-elma-vada-dfw.png) — Брелок и карточка брифа с полями Occasion, Audience, Quantity, Event date.
 
-**Alt для предложенного сюжета:** `Personalized pen and gift packaging beside a blank card.`
+**Alt для нового изображения:** `Wooden Elma Vada Studio keychain beside a blank event brief card with four labeled fields.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 #### 3.2. Review the Direction
 
@@ -282,13 +310,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Цифровой макет вашего изделия с расположением имени/логотипа и согласуемыми размерами. Для демонстрации используйте ELMA VADA STUDIO; подпись Illustrative approval layout.
+**Сюжет / файл:** [promotional-pen-design-options-elma-vada-dfw.png](../../output/imagegen/promotional-products/promotional-pen-design-options-elma-vada-dfw.png) — Планшет с двумя вариантами шрифта на серебристой ручке и образец рядом.
 
-**Alt для предложенного сюжета:** `Illustrative engraving proof showing artwork placement on a pen.`
+**Alt для нового изображения:** `Tablet showing two lettering options on silver pens beside a matching engraved sample pen.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 #### 3.3. Approve the Details
 
@@ -311,13 +339,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Цифровой макет вашего изделия с расположением имени/логотипа и согласуемыми размерами. Для демонстрации используйте ELMA VADA STUDIO; подпись Illustrative approval layout.
+**Сюжет / файл:** [event-pen-engraving-approval-layout-elma-vada-dfw.png](../../output/imagegen/promotional-products/event-pen-engraving-approval-layout-elma-vada-dfw.png) — Ручка и лист согласования: Artwork, Spelling, Quantity; направления размеров показаны без числовых значений.
 
-**Alt для предложенного сюжета:** `Illustrative engraving proof showing artwork placement on a pen.`
+**Alt для нового изображения:** `Silver engraved pen beside an artwork proof with dimension guides and three approval checkboxes.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 #### 3.4. Produce & Prepare
 
@@ -340,13 +368,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Реальная готовая партия в одинаковых коробках или ролик упаковки; адресные этикетки не включать в кадр.
+**Сюжет / файл:** [ribboned-event-gift-box-batch-elma-vada-dfw.png](../../output/imagegen/promotional-products/ribboned-event-gift-box-batch-elma-vada-dfw.png) — Пять закрытых коробок с золотыми бантами и одна открытая коробка с ручкой. Визуальный концепт комплектации.
 
-**Alt для предложенного сюжета:** `Personalized gift boxes prepared for packing and delivery.`
+**Alt для нового изображения:** `Five black boxes with gold bows behind an open box holding an engraved silver pen.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 ### 4. Where would you like to go next?
 
@@ -390,13 +418,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Новый кадр для «Business Solutions»: выберите реальный подарок, соответствующий описанию карточки, покажите его целиком на нейтральном фоне.
+**Сюжет / файл:** [circular-appreciation-award-elma-vada-dfw.png](../../output/imagegen/promotional-products/circular-appreciation-award-elma-vada-dfw.png) — Круглая прозрачная награда на деревянной опоре с надписями ELMA VADA STUDIO и THANK YOU.
 
-**Alt для предложенного сюжета:** `Personalized gift displayed for business solutions.`
+**Alt для нового изображения:** `Clear round award with Elma Vada Studio and Thank You lettering on a curved wooden base.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 #### 4.2. Production Capabilities
 
@@ -419,13 +447,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Новый кадр для «Production Capabilities»: выберите реальный подарок, соответствующий описанию карточки, покажите его целиком на нейтральном фоне.
+**Сюжет / файл:** [desktop-engraving-machine-display-elma-vada-dfw.png](../../output/imagegen/promotional-products/desktop-engraving-machine-display-elma-vada-dfw.png) — Иллюстрация настольного аппарата по фото оборудования вашей студии, на общем сером фоне. Тип лазера не заявлен.
 
-**Alt для предложенного сюжета:** `Personalized gift displayed for production capabilities.`
+**Alt для нового изображения:** `Silver desktop laser engraving machine with a vertical column, black lens and perforated metal base.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 #### 4.3. Our Work
 
@@ -448,13 +476,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Новый кадр для «Our Work»: выберите реальный подарок, соответствующий описанию карточки, покажите его целиком на нейтральном фоне.
+**Сюжет / файл:** [wooden-chopstick-case-gift-elma-vada-dfw.png](../../output/imagegen/promotional-products/wooden-chopstick-case-gift-elma-vada-dfw.png) — Деревянные палочки THANK YOU в раздвижном футляре ELMA VADA STUDIO.
 
-**Alt для предложенного сюжета:** `Personalized gift displayed for our work.`
+**Alt для нового изображения:** `Wooden chopsticks engraved Thank You inside a sliding case marked Elma Vada Studio.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Файл готов: 1448 × 1086 px, 4:3, единый светло-серый фон. Alt составлен по этому изображению; при замене фото обновите описание. Статус AI-концепта указан в начале инструкции.
 
 ### 5. What else would you like to know?
 

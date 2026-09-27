@@ -3,13 +3,44 @@
 > Обновлено по экспорту 24SEP2026-0517pm. Ниже сохранён подбор медиа; полный порядок всех секций, карточек и полей — в разделе [Полный чек-лист](#полный-чек-лист). Уже загруженные файлы указаны в чек-листе: сохраняйте их, если они подходят по содержанию.
 
 
-| Блок | Что поставить | Alt text |
+| Блок | Новый файл | Alt text |
 |---|---|---|
-| Hero | [IMG_4128.JPG](https://drive.google.com/file/d/1C5gbm59BXpJnpZoPa1IJ7fMVV03Pzaho/view?usp=drive_web) | `Gift bag, ribbon-tied box and personalized pen presented as a corporate gift set.` |
-| Everyday Pens | [IMG_0121.WEBP](https://drive.google.com/file/d/1M0ReyxhkfXjwURDH66ZKzQf3FP6NfbRc/view?usp=drive_web) | `Close-up of a silver-tone pen with a gold-tone clip and engraved name.` |
-| Drinkware | Новый реальный снимок доступного drinkware с лазерной гравировкой. | `Personalized metal drinkware with laser-engraved name.` |
-| Desk Accessories | [IMG_5451.PNG — pen set](https://drive.google.com/file/d/1zcPaDUqHTK1mc7C4qb3ZXlTACATn4_Rp/view?usp=drive_web) | `Personalized pen set in a presentation box.` |
-| Coordinated Kits | [IMG_4128.JPG](https://drive.google.com/file/d/1C5gbm59BXpJnpZoPa1IJ7fMVV03Pzaho/view?usp=drive_web) | `Gift bag, ribbon-tied box and personalized pen presented as a corporate gift set.` |
+| Hero | [google-ai-photo-01-personalized-merchandise-hero.png](../../output/imagegen/personalized-merchandise/google-ai-photo-01-personalized-merchandise-hero.png) | `Personalized pen, wooden desk cube, chopsticks in a case and circular award displayed together.` |
+| Everyday Pens | [google-ai-photo-02-everyday-pens.png](../../output/imagegen/personalized-merchandise/google-ai-photo-02-everyday-pens.png) | `Three silver-tone pens with gold-tone clips and Elma Vada Studio engraving.` |
+| Drinkware | [google-ai-photo-03-drinkware.png](../../output/imagegen/personalized-merchandise/google-ai-photo-03-drinkware.png) | `Two clear drinking glasses with frosted Elma Vada Studio lettering and a leaf motif.` |
+| Desk Accessories | [google-ai-photo-04-desk-accessories.png](../../output/imagegen/personalized-merchandise/google-ai-photo-04-desk-accessories.png) | `Wooden desk cube engraved with Elma Vada Studio and Grow Together.` |
+| Coordinated Kits | [google-ai-photo-05-coordinated-kits.png](../../output/imagegen/personalized-merchandise/google-ai-photo-05-coordinated-kits.png) | `Engraved pen in a black gift box beside a wooden keychain, gold ribbon and black gift bag.` |
+
+## Новые AI-изображения — 27 сентября 2026
+
+Созданы **12 новых PNG, 1448 × 1086 px (4:3)**: 5 основных и 7 дополнительных. Файлы лежат в `output/imagegen/personalized-merchandise/`; для поиска используйте `google-ai-photo`. Это префикс имени по вашему запросу, а не указание генератора: изображения созданы встроенным imagegen.
+
+[Галерея и исходные референсы](../../output/imagegen/personalized-merchandise/README.md) · [Alt-тексты CSV](../../output/imagegen/personalized-merchandise/alt-texts.csv) · [Промпты](../../output/imagegen/personalized-merchandise/prompts.json).
+
+Это AI-визуализации на основе фото товаров и студии, а не документальные снимки выполненных заказов. Drinkware основан на прежнем визуальном концепте стакана; конкретную модель и доступность согласуйте отдельно. Для товарных сцен используйте видимую подпись `Illustrative product concept`, для изображения студии — `Illustrative studio view`. Набор не заменяет реальные фотографии кейсов.
+
+### Дополнительные изображения для текстовых карточек
+
+Эти семь карточек в экспортированном шаблоне имеют `show_image: false`. Файлы готовы, но включать картинки необязательно. Если используете: **Include image or video → On**, **Media type → Image**, затем выберите файл в **Photo**.
+
+| Блок | Новый файл | Alt text |
+|---|---|---|
+| Share the Brief | [google-ai-photo-06-share-the-brief.png](../../output/imagegen/personalized-merchandise/google-ai-photo-06-share-the-brief.png) | `Engraved wooden keychain beside a gift box and a project brief card.` |
+| Review the Direction | [google-ai-photo-07-review-the-direction.png](../../output/imagegen/personalized-merchandise/google-ai-photo-07-review-the-direction.png) | `Tablet displaying two engraving designs for a wooden desk cube beside a matching sample.` |
+| Approve the Details | [google-ai-photo-08-approve-the-details.png](../../output/imagegen/personalized-merchandise/google-ai-photo-08-approve-the-details.png) | `Illustrative wooden keychain engraving proof with placement guides and an approval checklist.` |
+| Produce & Prepare | [google-ai-photo-09-produce-and-prepare.png](../../output/imagegen/personalized-merchandise/google-ai-photo-09-produce-and-prepare.png) | `Black gift boxes with gold ribbons and an open engraved pen box beside a shipping carton.` |
+| Business Solutions | [google-ai-photo-10-business-solutions.png](../../output/imagegen/personalized-merchandise/google-ai-photo-10-business-solutions.png) | `Clear circular Team Appreciation award on a wooden base beside a black presentation box.` |
+| Production Capabilities | [google-ai-photo-11-production-capabilities.png](../../output/imagegen/personalized-merchandise/google-ai-photo-11-production-capabilities.png) | `Illustrative studio view of a desktop laser engraving machine and computer monitor.` |
+| Our Work | [google-ai-photo-12-our-work.png](../../output/imagegen/personalized-merchandise/google-ai-photo-12-our-work.png) | `Wooden chopsticks in a matching sliding-lid case engraved with Elma Vada Studio.` |
+
+### Загрузка и alt для SEO / AEO
+
+1. Загрузите PNG в Shopify Files с текущими именами; в редакторе шаблона `branded-merchandise` выберите нужный файл.
+2. Скопируйте соответствующий английский текст в **Photo description (alt)**. Если заполняете alt самого файла в Shopify Files, используйте то же описание.
+3. Alt один: он описывает видимое, отдельного «AEO alt» нет. Не добавляйте в него набор ключевых слов, Dallas или DFW, если они не описывают изображение. Услугу и географию раскрывайте в видимом тексте страницы.
+4. Проверьте мобильное кадрирование и нажмите Save. Для Hero важно не обрезать награду и футляр; при необходимости выберите `contain`, если настройка доступна.
+
+Общие Header / Footer используют существующий логотип. Для FAQ, заголовков секций и финального CTA новых изображений не требуется: отдельных медиаполей там нет. Код темы и настройки Shopify этой подготовкой не менялись.
 
 <!-- COMPLETE-THEME-CHECKLIST -->
 
@@ -72,11 +103,11 @@
 | Secondary link (secondary_link) | /pages/our-work | Откройте ссылку как посетитель; она должна вести на нужную страницу или форму без 404. |
 | Compact intro (forms) (compact) | false | Проверьте переключатель в редакторе и результат в предпросмотре. |
 
-**Сюжет / файл:** [IMG_4128.JPG](https://drive.google.com/file/d/1C5gbm59BXpJnpZoPa1IJ7fMVV03Pzaho/view?usp=drive_web)
+**Сюжет / файл:** [google-ai-photo-01-personalized-merchandise-hero.png](../../output/imagegen/personalized-merchandise/google-ai-photo-01-personalized-merchandise-hero.png) — Награда, деревянный кубик, ручка и палочки в футляре — общий кадр разных товаров.
 
-**Alt для предложенного сюжета:** `Gift bag, ribbon-tied box and personalized pen presented as a corporate gift set.`
+**Alt для нового изображения:** `Personalized pen, wooden desk cube, chopsticks in a case and circular award displayed together.`
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 Вложенных карточек в текущем экспорте нет.
 
@@ -122,11 +153,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** [IMG_0121.WEBP](https://drive.google.com/file/d/1M0ReyxhkfXjwURDH66ZKzQf3FP6NfbRc/view?usp=drive_web)
+**Сюжет / файл:** [google-ai-photo-02-everyday-pens.png](../../output/imagegen/personalized-merchandise/google-ai-photo-02-everyday-pens.png) — Три серебристые ручки с золотистыми деталями и гравировкой ELMA VADA STUDIO.
 
-**Alt для предложенного сюжета:** `Close-up of a silver-tone pen with a gold-tone clip and engraved name.`
+**Alt для нового изображения:** `Three silver-tone pens with gold-tone clips and Elma Vada Studio engraving.`
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 #### 2.2. Drinkware
 
@@ -149,11 +180,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Новый реальный снимок доступного drinkware с лазерной гравировкой.
+**Сюжет / файл:** [google-ai-photo-03-drinkware.png](../../output/imagegen/personalized-merchandise/google-ai-photo-03-drinkware.png) — Два прозрачных стакана с матовой надписью и растительным мотивом. Концепт стеклянного drinkware, не металлического.
 
-**Alt для предложенного сюжета:** `Personalized metal drinkware with laser-engraved name.`
+**Alt для нового изображения:** `Two clear drinking glasses with frosted Elma Vada Studio lettering and a leaf motif.`
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 #### 2.3. Desk Accessories
 
@@ -176,11 +207,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** [IMG_5451.PNG — pen set](https://drive.google.com/file/d/1zcPaDUqHTK1mc7C4qb3ZXlTACATn4_Rp/view?usp=drive_web)
+**Сюжет / файл:** [google-ai-photo-04-desk-accessories.png](../../output/imagegen/personalized-merchandise/google-ai-photo-04-desk-accessories.png) — Деревянный настольный кубик с надписями ELMA VADA STUDIO и GROW TOGETHER.
 
-**Alt для предложенного сюжета:** `Personalized pen set in a presentation box.`
+**Alt для нового изображения:** `Wooden desk cube engraved with Elma Vada Studio and Grow Together.`
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 #### 2.4. Coordinated Kits
 
@@ -203,11 +234,11 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** [IMG_4128.JPG](https://drive.google.com/file/d/1C5gbm59BXpJnpZoPa1IJ7fMVV03Pzaho/view?usp=drive_web)
+**Сюжет / файл:** [google-ai-photo-05-coordinated-kits.png](../../output/imagegen/personalized-merchandise/google-ai-photo-05-coordinated-kits.png) — Подарочный пакет, открытая коробка с ручкой, золотая лента и деревянный брелок.
 
-**Alt для предложенного сюжета:** `Gift bag, ribbon-tied box and personalized pen presented as a corporate gift set.`
+**Alt для нового изображения:** `Engraved pen in a black gift box beside a wooden keychain, gold ribbon and black gift bag.`
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 ### 3. How does the project come together?
 
@@ -251,13 +282,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Можно оставить без фото. Если включаете: подарочная ручка и упаковка рядом с чистой карточкой для идеи.
+**Сюжет / файл:** [google-ai-photo-06-share-the-brief.png](../../output/imagegen/personalized-merchandise/google-ai-photo-06-share-the-brief.png) — Брелок, коробка и карточка с полями Occasion, Recipients, Quantity, Target date.
 
-**Alt для предложенного сюжета:** `Personalized pen and gift packaging beside a blank card.`
+**Alt для нового изображения:** `Engraved wooden keychain beside a gift box and a project brief card.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 #### 3.2. Review the Direction
 
@@ -280,13 +311,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Цифровой макет вашего изделия с расположением имени/логотипа и согласуемыми размерами. Для демонстрации используйте ELMA VADA STUDIO; подпись Illustrative approval layout.
+**Сюжет / файл:** [google-ai-photo-07-review-the-direction.png](../../output/imagegen/personalized-merchandise/google-ai-photo-07-review-the-direction.png) — Планшет с двумя вариантами шрифта на кубике и отдельный образец рядом.
 
-**Alt для предложенного сюжета:** `Illustrative engraving proof showing artwork placement on a pen.`
+**Alt для нового изображения:** `Tablet displaying two engraving designs for a wooden desk cube beside a matching sample.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 #### 3.3. Approve the Details
 
@@ -309,13 +340,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Цифровой макет вашего изделия с расположением имени/логотипа и согласуемыми размерами. Для демонстрации используйте ELMA VADA STUDIO; подпись Illustrative approval layout.
+**Сюжет / файл:** [google-ai-photo-08-approve-the-details.png](../../output/imagegen/personalized-merchandise/google-ai-photo-08-approve-the-details.png) — Лист согласования гравировки брелока: направления Width и Height, проверка Artwork, Spelling, Quantity. Числовые размеры не заявлены.
 
-**Alt для предложенного сюжета:** `Illustrative engraving proof showing artwork placement on a pen.`
+**Alt для нового изображения:** `Illustrative wooden keychain engraving proof with placement guides and an approval checklist.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 #### 3.4. Produce & Prepare
 
@@ -338,13 +369,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Реальная готовая партия в одинаковых коробках или ролик упаковки; адресные этикетки не включать в кадр.
+**Сюжет / файл:** [google-ai-photo-09-produce-and-prepare.png](../../output/imagegen/personalized-merchandise/google-ai-photo-09-produce-and-prepare.png) — Пять закрытых коробок с золотыми лентами, открытая коробка с ручкой и картонная упаковка на заднем плане. Иллюстрация комплектации.
 
-**Alt для предложенного сюжета:** `Personalized gift boxes prepared for packing and delivery.`
+**Alt для нового изображения:** `Black gift boxes with gold ribbons and an open engraved pen box beside a shipping carton.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 ### 4. Where would you like to go next?
 
@@ -388,13 +419,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Новый кадр для «Business Solutions»: выберите реальный подарок, соответствующий описанию карточки, покажите его целиком на нейтральном фоне.
+**Сюжет / файл:** [google-ai-photo-10-business-solutions.png](../../output/imagegen/personalized-merchandise/google-ai-photo-10-business-solutions.png) — Круглая прозрачная награда на деревянной подставке и чёрная коробка.
 
-**Alt для предложенного сюжета:** `Personalized gift displayed for business solutions.`
+**Alt для нового изображения:** `Clear circular Team Appreciation award on a wooden base beside a black presentation box.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 #### 4.2. Production Capabilities
 
@@ -417,13 +448,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Новый кадр для «Production Capabilities»: выберите реальный подарок, соответствующий описанию карточки, покажите его целиком на нейтральном фоне.
+**Сюжет / файл:** [google-ai-photo-11-production-capabilities.png](../../output/imagegen/personalized-merchandise/google-ai-photo-11-production-capabilities.png) — Новая AI-композиция по фото вашей студии: настольный гравировальный аппарат и монитор. Тип лазера не указан.
 
-**Alt для предложенного сюжета:** `Personalized gift displayed for production capabilities.`
+**Alt для нового изображения:** `Illustrative studio view of a desktop laser engraving machine and computer monitor.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 #### 4.3. Our Work
 
@@ -446,13 +477,13 @@
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 
-**Сюжет / файл:** Новый кадр для «Our Work»: выберите реальный подарок, соответствующий описанию карточки, покажите его целиком на нейтральном фоне.
+**Сюжет / файл:** [google-ai-photo-12-our-work.png](../../output/imagegen/personalized-merchandise/google-ai-photo-12-our-work.png) — Деревянные палочки в частично открытом футляре с надписью ELMA VADA STUDIO. Демонстрационный вариант изделия.
 
-**Alt для предложенного сюжета:** `Personalized gift displayed for our work.`
+**Alt для нового изображения:** `Wooden chopsticks in a matching sliding-lid case engraved with Elma Vada Studio.`
 
 Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
 
-Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
+Новый файл: PNG, 1448 × 1086 px, 4:3. Alt выше составлен по созданному изображению. При замене файла пересмотрите alt и мобильное кадрирование; статус AI-концепта указан в начале инструкции.
 
 ### 5. What else would you like to know?
 

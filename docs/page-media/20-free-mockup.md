@@ -1,16 +1,18 @@
 # Get a Free Mockup
 
-> Обновлено по экспорту 24SEP2026-0517pm. Ниже сохранён подбор медиа; полный порядок всех секций, карточек и полей — в разделе [Полный чек-лист](#полный-чек-лист). Уже загруженные файлы указаны в чек-листе: сохраняйте их, если они подходят по содержанию.
+> Новый подбор: 27 сентября 2026. Три отдельные композиции для этой страницы в едином светлом тёпло-сером фоне. Полный чек-лист и исходные значения настроек сохранены ниже.
 
+Изображения созданы встроенным imagegen на основе фотографий ваших товаров. Это иллюстрации вариантов подарков и макетов, не реальные консультации или завершённые заказы. Видимая подпись: `Illustrative gift concept.` Для макетов: `Illustrative mockup — your final proof is prepared for your project.`
 
-| Блок | Что поставить | Alt text |
+[Галерея всех семи страниц](../../output/imagegen/recognition-pages/README.md) · [Alt-тексты CSV](../../output/imagegen/recognition-pages/alt-texts.csv)
+
+| Блок | Новый файл | Alt text |
 |---|---|---|
-| Hero / рядом с формой | [Подготовленный AI-макет](../../output/imagegen/free-mockup-products-v1.png) | `AI-generated personalization mockup of metal and wooden pens, a case and a name badge with sample artwork placement.` |
-| Альтернативный реальный образец | [IMG_0621.JPG](https://drive.google.com/file/d/1jmcP8eBKSN-CFpK07jcRiTCfIbg_QjWM/view?usp=drive_web) | `Wooden pen with gold-tone trim beside a matching personalized wooden case.` |
+| Hero | [wood-cube-digital-mockup-screen-elma-vada-dfw.png](../../output/imagegen/recognition-pages/wood-cube-digital-mockup-screen-elma-vada-dfw.png) | `Laptop displaying an Elma Vada Studio engraving mockup beside a matching wooden cube.` |
+| Боковое изображение формы | [wood-keychain-engraving-proof-sample-elma-vada-dfw.png](../../output/imagegen/recognition-pages/wood-keychain-engraving-proof-sample-elma-vada-dfw.png) | `Engraved wooden keychain resting on a design preview sheet showing its outline and artwork placement.` |
+| Meet With Us Face to Face | [sample-review-pen-holder-tabletop-elma-vada-dfw.png](../../output/imagegen/recognition-pages/sample-review-pen-holder-tabletop-elma-vada-dfw.png) | `Silver-tone engraved pen, wooden desk holder marked Design Sample and a blank note card on a table.` |
 
-Под AI-макетом обязательно покажите текст: `Illustrative mockup — AI-generated. Your final proof is prepared for your project.` Не утверждайте, что изображённый набор — готовый заказ клиента или точная комплектация любого будущего заказа.
-
-Если нужен не AI-макет, создайте цифровой дизайн: серебристая ручка, placeholder `YOUR LOGO`, `SAMPLE NAME`, стрелка к зоне гравировки и подпись `Illustrative approval layout`. Не используйте реальный логотип клиента без разрешения.
+Для Hero нужно включить Include image or video: в исходном экспорте стоит false. Боковое фото формы необязательно; если форма стала слишком длинной на телефоне, его можно не использовать. Логотип, поля формы, FAQ и футер сохранены — новые фото им не нужны.
 
 <!-- COMPLETE-THEME-CHECKLIST -->
 
@@ -73,11 +75,13 @@
 | Secondary link (secondary_link) | /pages/our-work | Откройте ссылку как посетитель; она должна вести на нужную страницу или форму без 404. |
 | Compact intro (forms) (compact) | true | Проверьте переключатель в редакторе и результат в предпросмотре. |
 
-**Сюжет / файл:** [Подготовленный AI-макет](../../output/imagegen/free-mockup-products-v1.png)
+**Сюжет / файл:** [wood-cube-digital-mockup-screen-elma-vada-dfw.png](../../output/imagegen/recognition-pages/wood-cube-digital-mockup-screen-elma-vada-dfw.png) — новая AI-композиция по фотографиям ваших товаров.
 
-**Alt для предложенного сюжета:** `AI-generated personalization mockup of metal and wooden pens, a case and a name badge with sample artwork placement.`
+**Alt для предложенного сюжета:** `Laptop displaying an Elma Vada Studio engraving mockup beside a matching wooden cube.`
 
-Сейчас Include image or video выключен: карточка текстовая. Изображение здесь необязательно.
+**В редакторе:** Hero сейчас выключен: включите Include image or video, затем Media type → Image. В Photo description вставьте alt выше. Сохраните видимую подпись `Illustrative gift concept.`
+
+Сейчас Include image or video выключен; для нового варианта с Hero включите его. Можно сохранить прежний компактный текстовый Hero — тогда этот файл не загружайте.
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 
@@ -124,9 +128,11 @@
 | Submit button (submit_label) | Request My Free Mockup | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 | Success message (success_message) | Thank you. Your request has been sent. We will contact you to discuss the next step. | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 
-**Сюжет / файл:** Один реальный готовый подарок рядом с согласованным эскизом. Не обязательно.
+**Сюжет / файл:** [wood-keychain-engraving-proof-sample-elma-vada-dfw.png](../../output/imagegen/recognition-pages/wood-keychain-engraving-proof-sample-elma-vada-dfw.png) — новая AI-композиция по фотографиям ваших товаров.
 
-**Alt для предложенного сюжета:** `Personalized gift displayed for you can reduce the risk before committing..`
+**Alt для предложенного сюжета:** `Engraved wooden keychain resting on a design preview sheet showing its outline and artwork placement.`
+
+**В редакторе:** В секции формы выберите Media type → Image и загрузите файл в Optional sample photo. В Photo description вставьте alt выше. Сохраните видимую подпись `Illustrative gift concept.`
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 
@@ -207,9 +213,11 @@
 | Secondary link (secondary_link) | Не заполнено | Откройте ссылку как посетитель; она должна вести на нужную страницу или форму без 404. |
 | Background (color_scheme) | cream | Настройка оформления. Проверьте настольный и мобильный вид. |
 
-**Сюжет / файл:** Реальный сотрудник за столом показывает образец ручки и футляр во время консультации.
+**Сюжет / файл:** [sample-review-pen-holder-tabletop-elma-vada-dfw.png](../../output/imagegen/recognition-pages/sample-review-pen-holder-tabletop-elma-vada-dfw.png) — новая AI-композиция по фотографиям ваших товаров.
 
-**Alt для предложенного сюжета:** `Elma Vada team member presenting a personalized pen sample.`
+**Alt для предложенного сюжета:** `Silver-tone engraved pen, wooden desk holder marked Design Sample and a blank note card on a table.`
+
+**В редакторе:** В B2B feature выберите Media type → Image. Это предметная иллюстрация образцов, не фото сотрудника или реальной встречи. В Photo description вставьте alt выше. Сохраните видимую подпись `Illustrative gift concept.`
 
 Для нового кадра: формат 4:3, ровный свет, изделие и гравировка в фокусе, запас по краям для мобильного кадрирования. Для реального процесса/команды/кейса нужна настоящая съёмка. Если создаёте цифровой концепт подарка, обозначьте его как концепт; размеры и комплектацию берите из реального ассортимента. Предложенный alt применяйте только если кадр действительно ему соответствует.
 

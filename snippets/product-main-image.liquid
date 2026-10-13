@@ -1,0 +1,5 @@
+<img src="{{ photo | image_url: width: 1200 }}"
+  srcset="{{ photo | image_url: width: 320 }} 320w, {{ photo | image_url: width: 400 }} 400w, {{ photo | image_url: width: 640 }} 640w, {{ photo | image_url: width: 800 }} 800w, {{ photo | image_url: width: 1200 }} 1200w"
+  sizes="(min-width: 1152px) 512px, (min-width: 769px) calc((100vw - 128px) / 2), (min-width: 752px) calc((100vw - 112px) / 2), calc(100vw - 64px)"
+  alt="{{ photo.alt | default: title | escape }}" width="{{ photo.width }}" height="{{ photo.height }}"
+  loading="eager" fetchpriority="high" style="width:100%;height:auto;display:block;border-radius:4px;">

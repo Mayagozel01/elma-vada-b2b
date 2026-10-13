@@ -1,0 +1,13 @@
+{%- comment -%}Matches the existing auto-fit 230px grid, 24px gap and container padding.{%- endcomment -%}
+{%- for columns in (3..8) reversed -%}
+  {%- assign effective_columns = columns | at_most: count -%}
+  {%- assign breakpoint = columns | times: 254 | plus: 56 -%}
+  {%- assign spacing = effective_columns | minus: 1 | times: 24 | plus: 80 -%}
+  (min-width: {{ breakpoint }}px) calc((100vw - {{ spacing }}px) / {{ effective_columns }}),
+{%- endfor -%}
+{%- assign mobile_columns = 2 | at_most: count -%}
+{%- assign desktop_spacing = mobile_columns | minus: 1 | times: 24 | plus: 80 -%}
+{%- assign mobile_spacing = mobile_columns | minus: 1 | times: 24 | plus: 64 -%}
+(min-width: 769px) calc((100vw - {{ desktop_spacing }}px) / {{ mobile_columns }}),
+(min-width: 548px) calc((100vw - {{ mobile_spacing }}px) / {{ mobile_columns }}),
+calc(100vw - 64px)

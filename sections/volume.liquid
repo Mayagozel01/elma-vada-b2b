@@ -28,7 +28,8 @@
     </div>
 
     <div style="text-align: center;">
-      <a href="/pages/request-a-quote" class="btn btn--primary">Start Your Project</a>
+      {% render 'bulk-order-note', centered: true %}
+      <a href="/pages/request-a-quote" class="btn btn--primary" data-ev-bulk-cta="{{ section.id }}:primary">Get a Bulk Quote</a>
     </div>
   </div>
 </section>

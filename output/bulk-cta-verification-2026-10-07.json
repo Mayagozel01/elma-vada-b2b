@@ -1,0 +1,273 @@
+{
+  "theme": "shopify-export-2026-10-07",
+  "published": false,
+  "conditions": {
+    "browser": "Chrome 151",
+    "desktop": "1440x900",
+    "mobile": "390x844 emulation, not a physical handset",
+    "cache": "disabled",
+    "resourceDelivery": "local intercepted fixtures, not live Shopify performance"
+  },
+  "checks": [
+    {
+      "name": "liquid-rendering",
+      "passed": true,
+      "templates": 13,
+      "disabledVolumeStillDisabled": true,
+      "unapprovedHomePortfolioUnchanged": true
+    },
+    {
+      "name": "interaction-desktop",
+      "passed": true,
+      "once": true,
+      "labelVisible": true,
+      "noAnimatedLayoutShift": true,
+      "keyboardFocus": {
+        "style": "solid",
+        "width": "3px",
+        "visible": true
+      },
+      "pressedState": {
+        "bg": "rgb(42, 51, 59)",
+        "transition": "0s",
+        "height": 54.390625
+      },
+      "tapHeight": 54.390625,
+      "quoteHrefPreserved": true,
+      "plainNavigationUnmarked": true
+    },
+    {
+      "name": "interaction-mobile",
+      "passed": true,
+      "once": true,
+      "labelVisible": true,
+      "noAnimatedLayoutShift": true,
+      "keyboardFocus": {
+        "style": "solid",
+        "width": "3px",
+        "visible": true
+      },
+      "pressedState": {
+        "bg": "rgb(42, 51, 59)",
+        "transition": "0s",
+        "height": 51.65625
+      },
+      "tapHeight": 51.65625,
+      "quoteHrefPreserved": true,
+      "plainNavigationUnmarked": true
+    },
+    {
+      "name": "portfolio-editor",
+      "passed": true,
+      "approvedBulkCases": 3,
+      "arrowPixels": 3,
+      "logicalOnceAcrossReload": true,
+      "duplicateLoadSafe": true,
+      "removedSectionCleanup": true,
+      "errors": []
+    },
+    {
+      "name": "fallback-{\"reduced\":\"reduce\"}",
+      "passed": true,
+      "linkVisible": true,
+      "hrefPreserved": true,
+      "noHighlight": true
+    },
+    {
+      "name": "fallback-{\"js\":false}",
+      "passed": true,
+      "linkVisible": true,
+      "hrefPreserved": true,
+      "noHighlight": true
+    },
+    {
+      "name": "fallback-{\"observer\":false}",
+      "passed": true,
+      "linkVisible": true,
+      "hrefPreserved": true,
+      "noHighlight": true
+    },
+    {
+      "name": "reduced-motion-arrow",
+      "passed": true,
+      "movementDisabled": true
+    },
+    {
+      "name": "motion-preference-change",
+      "passed": true,
+      "noReplay": true
+    },
+    {
+      "name": "ordinary-buttons-and-resources",
+      "passed": true,
+      "ordinaryButtonsUnaffected": true,
+      "imageAttributesUnchanged": {
+        "complete": true,
+        "natural": 1,
+        "opacity": "1",
+        "loading": null
+      },
+      "noAdditionalImageOrScriptRequest": true,
+      "resources": [
+        {
+          "name": "https://elmavada.com/assets/base.css",
+          "start": 7,
+          "end": 14.900000000372529
+        },
+        {
+          "name": "https://elmavada.com/assets/revision.css",
+          "start": 7.199999999254942,
+          "end": 17.40000000037253
+        },
+        {
+          "name": "https://elmavada.com/images/test.png",
+          "start": 7.199999999254942,
+          "end": 17.59999999962747
+        },
+        {
+          "name": "https://elmavada.com/assets/revision.js",
+          "start": 7.299999998882413,
+          "end": 18
+        }
+      ],
+      "errors": []
+    },
+    {
+      "name": "controlled-local-image-paint",
+      "passed": true,
+      "runsPerVariant": 6,
+      "beforeMedianMs": 40,
+      "afterMedianMs": 38,
+      "deltaMs": -2,
+      "samples": [
+        {
+          "run": 0,
+          "baseline": false,
+          "imageStart": 7.400000000372529,
+          "imageEnd": 14.900000000372529,
+          "imagePaint": 36
+        },
+        {
+          "run": 0,
+          "baseline": true,
+          "imageStart": 7.699999999254942,
+          "imageEnd": 15.299999998882413,
+          "imagePaint": 40
+        },
+        {
+          "run": 1,
+          "baseline": true,
+          "imageStart": 8.200000001117587,
+          "imageEnd": 15.900000000372529,
+          "imagePaint": 40
+        },
+        {
+          "run": 1,
+          "baseline": false,
+          "imageStart": 8.599999999627471,
+          "imageEnd": 19.700000001117587,
+          "imagePaint": 40
+        },
+        {
+          "run": 2,
+          "baseline": false,
+          "imageStart": 7.900000000372529,
+          "imageEnd": 17.100000001490116,
+          "imagePaint": 36
+        },
+        {
+          "run": 2,
+          "baseline": true,
+          "imageStart": 8.600000001490116,
+          "imageEnd": 15.800000000745058,
+          "imagePaint": 44
+        },
+        {
+          "run": 3,
+          "baseline": true,
+          "imageStart": 7.400000000372529,
+          "imageEnd": 17.59999999962747,
+          "imagePaint": 36
+        },
+        {
+          "run": 3,
+          "baseline": false,
+          "imageStart": 8.300000000745058,
+          "imageEnd": 18.300000000745058,
+          "imagePaint": 36
+        },
+        {
+          "run": 4,
+          "baseline": false,
+          "imageStart": 9.699999999254942,
+          "imageEnd": 18.59999999962747,
+          "imagePaint": 44
+        },
+        {
+          "run": 4,
+          "baseline": true,
+          "imageStart": 7.199999999254942,
+          "imageEnd": 17.399999998509884,
+          "imagePaint": 48
+        },
+        {
+          "run": 5,
+          "baseline": true,
+          "imageStart": 7.399999998509884,
+          "imageEnd": 15.199999999254942,
+          "imagePaint": 36
+        },
+        {
+          "run": 5,
+          "baseline": false,
+          "imageStart": 8.5,
+          "imageEnd": 17.700000001117587,
+          "imagePaint": 40
+        }
+      ],
+      "notLiveShopifyMeasurement": true
+    }
+  ],
+  "audit": {
+    "changed": [
+      "assets/revision.css",
+      "assets/revision.js",
+      "sections/b2b-content.liquid",
+      "sections/b2b-feature.liquid",
+      "sections/cta-banner.liquid",
+      "sections/hero.liquid",
+      "sections/volume.liquid",
+      "templates/index.json",
+      "templates/page.branded-merchandise.json",
+      "templates/page.bulk-orders.json",
+      "templates/page.client-gifting.json",
+      "templates/page.corporate-gifts.json",
+      "templates/page.employee-recognition.json",
+      "templates/page.events-awards.json",
+      "templates/page.industries.json",
+      "templates/page.onboarding.json",
+      "templates/page.portfolio.json",
+      "templates/page.promotional-products.json",
+      "templates/page.service-awards.json",
+      "templates/page.solutions.json"
+    ],
+    "newFile": "snippets/bulk-order-note.liquid",
+    "immutableImagesSettingsFormsMediaSEOAndUnrelatedFilesPreserved": true,
+    "disabledVolumeAndPublicationFlagsPreserved": true
+  },
+  "liveDestinationChecks": [
+    {
+      "url": "https://elmavada.com/pages/request-a-quote",
+      "status": 200
+    },
+    {
+      "url": "https://elmavada.com/pages/bulk-orders",
+      "status": 200
+    },
+    {
+      "url": "https://elmavada.com/pages/our-work",
+      "status": 200
+    }
+  ],
+  "quoteFlowLimitation": "Existing Shopify Forms app block 1155185 and disabled native fallback are unchanged. The live browser check found an empty app container and no accessible fields after six seconds. No inquiry was submitted; app activation, consent dependencies and delivery are not confirmed."
+}

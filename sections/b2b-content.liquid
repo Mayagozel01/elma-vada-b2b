@@ -50,13 +50,16 @@
               {% if block.settings.eyebrow != blank %}<p class="b2b-eyebrow">{{ block.settings.eyebrow | escape }}</p>{% endif %}
               {% if block.settings.title != blank %}<h3>{{ block.settings.title | escape }}</h3>{% endif %}
               <div class="b2b-rte">{{ block.settings.text }}</div>
-              {% if block.settings.link != blank and block.settings.link_label != blank %}<a class="b2b-link" href="{{ block.settings.link }}">{{ block.settings.link_label | escape }} <span aria-hidden="true">→</span></a>{% endif %}
+              {% if block.settings.link != blank and block.settings.link_label != blank %}<a class="b2b-link" {% if block.settings.bulk_quote %}data-ev-bulk-cta="{{ section.id }}:{{ block.id }}"{% endif %} href="{{ block.settings.link }}">{{ block.settings.link_label | escape }} <span {% if block.settings.bulk_quote %}class="ev-bulk-cta__arrow"{% endif %} aria-hidden="true">→</span></a>{% endif %}
             </div>
           </article>
         {% endif %}
       {% endfor %}
     </div>
-    {% if section.settings.button_link != blank and section.settings.button_label != blank %}<div class="b2b-actions" style="justify-content:center"><a class="btn btn--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a></div>{% endif %}
+    {% if section.settings.button_link != blank and section.settings.button_label != blank %}
+      {% if section.settings.bulk_quote %}{% render 'bulk-order-note', centered: true %}{% endif %}
+      <div class="b2b-actions" style="justify-content:center"><a class="btn btn--primary" {% if section.settings.bulk_quote %}data-ev-bulk-cta="{{ section.id }}:primary"{% if template.suffix == 'bulk-orders' and section.settings.heading == 'What do you have in mind?' and section.settings.button_link == '/pages/request-a-quote' and section.settings.button_label == 'Get a Bulk Quote' %} data-ev-bulk-pulse{% endif %}{% endif %} href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a></div>
+    {% endif %}
   </div>
 </section>
 {% endif %}
@@ -148,6 +151,12 @@
       "default": false
     },
     {
+      "type": "checkbox",
+      "id": "bulk_quote",
+      "label": "Highlight primary bulk quote button",
+      "default": false
+    },
+    {
       "type": "text",
       "id": "button_label",
       "label": "Button text"
@@ -228,6 +237,12 @@
           "id": "photo_note",
           "label": "Photo brief (editor only)",
           "default": "Фото реального изделия, 1200 × 900 px. Не размещайте неподтверждённые логотипы клиентов."
+        },
+        {
+          "type": "checkbox",
+          "id": "bulk_quote",
+          "label": "Highlight bulk case quote link",
+          "default": false
         },
         {
           "type": "text",

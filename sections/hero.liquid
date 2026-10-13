@@ -16,8 +16,9 @@
       <h1>{{ lead.settings.heading | default: 'Corporate Gifts Made Personal' | escape }}</h1>
       {% if lead.settings.subheading != blank %}<p class="ev-hero__intro">{{ lead.settings.subheading | escape }}</p>{% endif %}
       {% if lead.settings.body_text != blank %}<p>{{ lead.settings.body_text | escape }}</p>{% endif %}
+      {% if lead.settings.bulk_quote %}{% render 'bulk-order-note' %}{% endif %}
       <div class="b2b-actions">
-        <a class="btn btn--primary" href="{{ lead.settings.primary_cta_url | default: '/pages/free-mockup' }}">{{ lead.settings.primary_cta_text | default: 'Get a Free Mockup' | escape }}</a>
+        <a class="btn btn--primary" {% if lead.settings.bulk_quote %}data-ev-bulk-cta="{{ section.id }}:primary"{% if request.page_type == 'index' %} data-ev-bulk-pulse{% endif %}{% endif %} href="{{ lead.settings.primary_cta_url | default: '/pages/free-mockup' }}">{{ lead.settings.primary_cta_text | default: 'Get a Free Mockup' | escape }}</a>
         <a class="btn btn--outline" href="{{ lead.settings.secondary_cta_url | default: '/pages/book-a-call' }}">{{ lead.settings.secondary_cta_text | default: 'Schedule a Consultation' | escape }}</a>
       </div>
       {% if section.settings.price_line != blank %}<p class="ev-hero__details">{{ section.settings.price_line | escape }}</p>{% endif %}
@@ -56,9 +57,13 @@
                 assign image_priority = 'high'
               endif
             %}
+            {% if media_index == 0 and block.settings.media_type == 'video' and block.settings.video != blank and poster_url != blank %}
+              <link rel="preload" as="image" href="{{ poster_url | escape }}" fetchpriority="high">
+            {% endif %}
             <figure class="ev-hero__slide" data-ev-slide data-block-id="{{ block.id }}" {% unless media_index == 0 %}hidden inert{% endunless %} aria-label="{{ media_index | plus: 1 }} / {{ media_count }}" {{ block.shopify_attributes }}>
               {% if block.settings.media_type == 'video' and block.settings.video != blank %}
-                {{ block.settings.video | video_tag: image_size: '1600x', poster: poster_url, controls: true, autoplay: false, muted: true, loop: block.settings.video_loop, playsinline: true, preload: 'none', class: 'ev-hero__visual' }}
+                {% assign video_autoplay = false %}{% if media_index == 0 %}{% assign video_autoplay = true %}{% endif %}
+                {{ block.settings.video | video_tag: image_size: '1600x', poster: poster_url, controls: true, autoplay: video_autoplay, muted: true, loop: true, playsinline: true, preload: 'none', class: 'ev-hero__visual' | replace: '<img ', '<img loading="lazy" fetchpriority="low" ' }}
                 <button type="button" class="ev-video-toggle" data-ev-video-toggle aria-label="Play video without sound" aria-pressed="false" hidden>
                   <svg class="ev-video-toggle__play" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M12 7 26 16 12 25Z" fill="currentColor"/></svg>
                   <svg class="ev-video-toggle__pause" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 8h4v16h-4zM19 8h4v16h-4z" fill="currentColor"/></svg>
@@ -219,6 +224,12 @@
           "id": "body_text",
           "label": "Body text",
           "default": "Get a FREE custom mockup before you order."
+        },
+        {
+          "type": "checkbox",
+          "id": "bulk_quote",
+          "label": "Highlight primary bulk quote button",
+          "default": false
         },
         {
           "type": "text",

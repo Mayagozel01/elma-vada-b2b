@@ -57,7 +57,6 @@
 @media (max-width: 990px) { .b2b-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media (max-width: 640px) {
   .b2b-split, .b2b-grid, .b2b-stories .b2b-card, .b2b-form__fields { grid-template-columns: minmax(0,1fr); }
-  .b2b-hero .b2b-media img { aspect-ratio: 4 / 3; }
   .b2b-placeholder { min-height: 180px; }
 }
 

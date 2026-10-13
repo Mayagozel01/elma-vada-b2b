@@ -94,7 +94,12 @@
 
         <div class="footer__contact-item">
           <span class="footer__contact-label">Location</span>
-          <span class="footer__contact-value">{% render 'business-address' %}<br>{{ settings.business_area | default: 'Dallas–Fort Worth' | escape }}</span>
+          <span class="footer__contact-value"><a href="https://maps.app.goo.gl/yGMMBrWXRJovjwdv6?g_st=ic"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="color: inherit; text-decoration: underline;">
+  {% render 'business-address' %}
+</a><br>{{ settings.business_area | default: 'Dallas–Fort Worth' | escape }}</span>
         </div>
 
         {% if settings.business_hours != blank %}

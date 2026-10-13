@@ -13,7 +13,7 @@
       {% if section.settings.show_address %}<p class="ev-feature-address">{% render 'business-address' %}</p>{% endif %}
       {% if section.settings.fine_print != blank %}<p class="ev-fine-print">{{ section.settings.fine_print | escape }}</p>{% endif %}
       <div class="b2b-actions">
-        {% if section.settings.button_link != blank %}<a class="btn btn--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a>{% endif %}
+        {% if section.settings.button_link != blank %}<a class="btn btn--primary" {% if section.settings.bulk_quote %}data-ev-bulk-cta="{{ section.id }}:primary"{% if request.page_type == 'index' or template.suffix == 'bulk-orders' %} data-ev-bulk-pulse{% endif %}{% endif %} href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a>{% endif %}
         {% if section.settings.secondary_link != blank %}<a class="btn btn--outline" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label | escape }}</a>{% endif %}
       </div>
     </div>
@@ -91,6 +91,12 @@
       "type": "checkbox",
       "id": "show_address",
       "label": "Show shared business address",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "bulk_quote",
+      "label": "Highlight primary bulk quote button",
       "default": false
     },
     {

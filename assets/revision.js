@@ -3,6 +3,90 @@
   'use strict';
   const controllers = new Map();
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  // Only explicitly opted-in quote CTAs; never delays or hides their content.
+  const bulkPulseSelector = '[data-ev-bulk-cta][data-ev-bulk-pulse]';
+  const bulkButtons = new Map();
+  let bulkObserver;
+  let bulkSizeObserver;
+  // Scale percentages differ by axis so the ring moves 4px per edge at full expansion.
+  function sizeBulkHalo(button, width = button.offsetWidth, height = button.offsetHeight) {
+    if (width > 0 && height > 0) {
+      button.style.setProperty('--ev-bulk-halo-x', String(8 / width));
+      button.style.setProperty('--ev-bulk-halo-y', String(8 / height));
+    }
+  }
+  function resizeBulkHalos() {
+    for (const [button] of bulkButtons) sizeBulkHalo(button);
+  }
+  if (!('ResizeObserver' in window)) {
+    window.addEventListener('resize', resizeBulkHalos);
+    document.fonts?.ready.then(resizeBulkHalos);
+  }
+  function syncBulkCtas() {
+    const supported = 'IntersectionObserver' in window;
+    const disabled = !supported || reduced.matches;
+    for (const [button, visible] of bulkButtons) {
+      button.classList.toggle('is-bulk-highlight', !disabled);
+      const running = !disabled && !document.hidden && visible;
+      button.style.setProperty('--ev-bulk-play-state', running ? 'running' : 'paused');
+    }
+  }
+  function mountBulkCtas(scope) {
+    if (!('IntersectionObserver' in window)) { syncBulkCtas(); return; }
+    const buttons = [...scope.querySelectorAll(bulkPulseSelector)];
+    if (scope.matches?.(bulkPulseSelector)) buttons.unshift(scope);
+    for (const button of buttons) {
+      if (bulkButtons.has(button)) continue;
+      if (!bulkObserver) {
+        bulkObserver = new IntersectionObserver((entries, observer) => {
+          if (bulkObserver !== observer) return;
+          for (const entry of entries) {
+            const target = entry.target;
+            if (!bulkButtons.has(target)) continue;
+            bulkButtons.set(target, entry.isIntersecting);
+          }
+          syncBulkCtas();
+        }, {threshold: 0});
+      }
+      bulkButtons.set(button, false);
+      sizeBulkHalo(button);
+      if ('ResizeObserver' in window) {
+        if (!bulkSizeObserver) {
+          bulkSizeObserver = new ResizeObserver((entries, observer) => {
+            if (bulkSizeObserver !== observer) return;
+            for (const entry of entries) {
+              if (!bulkButtons.has(entry.target)) continue;
+              const box = entry.borderBoxSize?.[0];
+              if (box) sizeBulkHalo(entry.target, box.inlineSize, box.blockSize);
+              else sizeBulkHalo(entry.target);
+            }
+          });
+        }
+        bulkSizeObserver.observe(button, {box: 'border-box'});
+      }
+      bulkObserver.observe(button);
+    }
+    syncBulkCtas();
+  }
+  function unmountBulkCtas(scope) {
+    for (const [button] of bulkButtons) {
+      if (scope.contains(button)) {
+        bulkObserver?.unobserve(button);
+        bulkSizeObserver?.unobserve(button);
+        bulkButtons.delete(button);
+        button.classList.remove('is-bulk-highlight');
+        button.style.removeProperty('--ev-bulk-play-state');
+        button.style.removeProperty('--ev-bulk-halo-x');
+        button.style.removeProperty('--ev-bulk-halo-y');
+      }
+    }
+    if (!bulkButtons.size) {
+      bulkObserver?.disconnect(); bulkObserver = null;
+      bulkSizeObserver?.disconnect(); bulkSizeObserver = null;
+    }
+  }
+  document.addEventListener('visibilitychange', syncBulkCtas);
+  reduced.addEventListener('change', syncBulkCtas);
   function mountHero(root) {
     if (controllers.has(root)) return;
     const slides = [...root.querySelectorAll('[data-ev-slide]')];
@@ -13,10 +97,19 @@
     const pauseButton = root.querySelector('[data-ev-pause]');
     const status = root.querySelector('[data-ev-status]');
     let current = 0, timer = null, hovered = false, focused = false, visible = true;
+    const isHomepageHero = root.classList.contains('ev-hero');
+    const shouldAutoplayVideo = () => isHomepageHero && !reduced.matches && !window.Shopify?.designMode;
     let paused = root.dataset.autoplay !== 'true' || reduced.matches || !!window.Shopify?.designMode;
     const videos = [...root.querySelectorAll('video')];
+    const manuallyPausedVideos = new Set();
     const stop = () => { window.clearTimeout(timer); timer = null; };
     const pauseVideos = () => videos.forEach(video => video.pause());
+    const playVideoIfEligible = video => {
+      if (!shouldAutoplayVideo() || manuallyPausedVideos.has(video) || video.closest('[data-ev-slide]')?.hidden || !visible || document.hidden || !video.paused) return;
+      video.muted = true;
+      video.volume = 0;
+      video.play().catch(() => {});
+    };
     const updateControl = () => {
       if (!pauseButton) return;
       pauseButton.setAttribute('aria-pressed', String(paused || reduced.matches));
@@ -28,8 +121,11 @@
       stop();
       updateControl();
       const video = slides[current].querySelector('video');
-      // A video cover stays in place until the visitor chooses Play or another slide.
-      if (slides.length < 2 || video || paused || reduced.matches || hovered || focused || !visible || document.hidden) return;
+      if (video) {
+        playVideoIfEligible(video);
+        return;
+      }
+      if (slides.length < 2 || paused || reduced.matches || hovered || focused || !visible || document.hidden) return;
       timer = window.setTimeout(() => show(current + 1), Number(root.dataset.interval) || 6000);
     }
     function show(index) {
@@ -75,8 +171,10 @@
         }
         syncPlayback();
       };
-      video.autoplay = false;
-      video.removeAttribute('autoplay');
+      video.autoplay = shouldAutoplayVideo() && !slide.hidden;
+      if (video.autoplay) video.setAttribute('autoplay', '');
+      else video.removeAttribute('autoplay');
+      if (isHomepageHero) video.loop = true;
       video.defaultMuted = true;
       silence();
       if (toggle) {
@@ -84,7 +182,8 @@
         toggle.hidden = false;
         on(toggle, 'click', async () => {
           if (slide.hidden || document.hidden) return;
-          if (!video.paused) { video.pause(); return; }
+          if (!video.paused) { manuallyPausedVideos.add(video); video.pause(); return; }
+          manuallyPausedVideos.delete(video);
           if (message) message.hidden = true;
           silence();
           try { await video.play(); } catch { showError(); }
@@ -98,7 +197,14 @@
         syncPlayback();
       });
       on(video, 'pause', () => { syncPlayback(); start(); });
-      on(video, 'ended', () => { syncPlayback(); start(); });
+      on(video, 'ended', () => {
+        if (shouldAutoplayVideo()) {
+          video.currentTime = 0;
+          playVideoIfEligible(video);
+        }
+        syncPlayback();
+        start();
+      });
       on(video, 'error', () => { stop(); showError(); });
       syncPlayback();
     }
@@ -138,10 +244,12 @@
     if (scope.matches?.('[data-ev-hero]')) mountHero(scope);
     scope.querySelectorAll('[data-ev-hero]').forEach(mountHero);
     mountForms(scope);
+    mountBulkCtas(scope);
   }
   mount(document);
   document.addEventListener('shopify:section:load', event => mount(event.target));
   document.addEventListener('shopify:section:unload', event => {
+    unmountBulkCtas(event.target);
     for (const [root, destroy] of controllers) if (event.target.contains(root)) { destroy(); controllers.delete(root); }
   });
   // Close the existing mobile menu with Escape and return focus to its toggle.

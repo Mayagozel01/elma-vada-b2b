@@ -5,8 +5,9 @@
       Tell us about your volume, materials, and deadline. We’ll reply with a clear quote and timeline.
     </p>
     
+    {% render 'bulk-order-note', centered: true %}
     <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; justify-content: center;">
-      <a href="/pages/request-a-quote" class="btn btn--primary" style="width: 100%; max-width: 300px;">Request a Quote</a>
+      <a href="/pages/request-a-quote" class="btn btn--primary" data-ev-bulk-cta="{{ section.id }}:primary"{% if request.page_type == 'index' %} data-ev-bulk-pulse{% endif %} style="width: 100%; max-width: 300px;">Get a Bulk Quote</a>
       <a href="/pages/production-capabilities" class="btn btn--outline" style="width: 100%; max-width: 300px; color: #fff; border-color: rgba(255,255,255,0.3);">View Production Capabilities</a>
     </div>
   </div>

@@ -10,7 +10,7 @@
   %}
   <figure class="b2b-media ev-page-video{% if fit == 'contain' %} b2b-media--contain{% endif %}" data-ev-hero data-autoplay="false" aria-label="{{ video_label | escape }}">
     <div data-ev-slide>
-      {{ video | video_tag: image_size: '1800x', poster: cover_url, controls: true, autoplay: false, muted: true, loop: false, playsinline: true, preload: 'none' }}
+      {{ video | video_tag: image_size: '1800x', poster: cover_url, controls: true, autoplay: false, muted: true, loop: false, playsinline: true, preload: 'none' | replace: '<img ', '<img loading="lazy" fetchpriority="low" ' }}
       <button type="button" class="ev-video-toggle" data-ev-video-toggle aria-label="Play video without sound" aria-pressed="false" hidden>
         <svg class="ev-video-toggle__play" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M12 7 26 16 12 25Z" fill="currentColor"/></svg>
         <svg class="ev-video-toggle__pause" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 8h4v16h-4zM19 8h4v16h-4z" fill="currentColor"/></svg>

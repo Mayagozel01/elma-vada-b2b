@@ -119,7 +119,7 @@
 
 Это срок производства, не доставки. Не скрывайте оговорку в футере.
 
-**Доверие:** в компактном хедере можно оставить `5+ years of experience · 50,000+ happy customers`. В Stats Bar — `5+ Years of Experience`, `10+ Team Members`, `50,000+ Happy Customers`, `100,000+ Engraved Gifts`. Дарья подтверждает актуальность перед публикацией. Не выдавайте клиентов за количество отзывов или исключительно B2B-клиентов. Статусы Etsy Star Seller / eBay Top Rated показывайте только при актуальном подтверждении; Amazon’s Choice связывайте с конкретным отмеченным товаром, не со всей компанией. Никаких придуманных звёзд.
+**Доверие:** в компактном хедере можно оставить `5+ years of experience · 110,000+ happy customers`. В Stats Bar — `5+ Years of Experience`, `10+ Team Members`, `110,000+ Happy Customers`, `100,000+ Engraved Gifts`. Дарья подтверждает актуальность перед публикацией. Не выдавайте клиентов за количество отзывов или исключительно B2B-клиентов. Статусы Etsy Star Seller / eBay Top Rated показывайте только при актуальном подтверждении; Amazon’s Choice связывайте с конкретным отмеченным товаром, не со всей компанией. Никаких придуманных звёзд.
 
 ### Правила фото для всех страниц
 
@@ -457,7 +457,7 @@ Explore our in-house laser engraving capabilities, materials and production proc
 Это вариант для вставки, не обязательная замена уже согласованного текста: если текущий абзац отвечает той же задаче, сохраните его.
 
 - [ ] Find your starting point: четыре сценария из фото-карты. В каждой карточке объясните бизнес-задачу, пример изделия и следующий шаг.
-- [ ] Corporate & HR Teams → Employee Recognition; Real Estate & Client Services → Client Gifting; Hospitality & Events → Events & Awards; Education & Community Organizations → Service Awards.
+- [ ] Marketing & HR Teams → Employee Recognition; Real Estate & Client Services → Client Gifting; Hospitality & Events → Events & Awards; Education & Community Organizations → Service Awards.
 - [ ] Не пишите, что перечисленные отрасли уже являются клиентами, если нет подтверждённых заказов. Здесь допустимы идеи применения, явно описанные как варианты.
 - [ ] Не обещайте отраслевую сертификацию, compliance или гарантированный рост продаж/удержания сотрудников.
 
@@ -466,7 +466,7 @@ Explore our in-house laser engraving capabilities, materials and production proc
 | Блок / карточка в редакторе | Какое фото загрузить |
 |---|---|
 | B2B page hero → Hero photo | Подборка реальных подарков для разных задач: награда, клиентский набор, ручки для события. Не стоковые офисы и не лица случайных клиентов. |
-| Find your starting point → Corporate & HR Teams | Именная награда сотруднику. |
+| Find your starting point → Marketing & HR Teams | Именная награда сотруднику. |
 | Find your starting point → Real Estate & Client Services | Реальный подарок клиенту после сделки. |
 | Find your starting point → Hospitality & Events | Ваши награды или сувениры для события. |
 | Find your starting point → Education & Community Organizations | Ваша памятная табличка или награда. |

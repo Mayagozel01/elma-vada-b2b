@@ -1,0 +1,38 @@
+<section class="commerce-cart b2b-section">
+  <div class="container">
+    <nav class="commerce-breadcrumbs" aria-label="Breadcrumb"><a href="{{ routes.all_products_collection_url }}">Catalog</a><span aria-hidden="true">/</span><span aria-current="page">Cart</span></nav>
+    <h1>Your cart</h1>
+    {% if cart.item_count > 0 %}
+      <form action="{{ routes.cart_url }}" method="post">
+        <div class="commerce-cart__items">
+          {% for item in cart.items %}
+            <article class="commerce-cart__item">
+              <a href="{{ item.url }}">{% if item.image != blank %}<img src="{{ item.image | image_url: width: 240 }}" alt="{{ item.image.alt | default: item.product.title | escape }}" width="{{ item.image.width }}" height="{{ item.image.height }}" loading="lazy">{% endif %}</a>
+              <div>
+                <h2><a href="{{ item.url }}">{{ item.product.title | escape }}</a></h2>
+                {% unless item.product.has_only_default_variant %}<p>{{ item.variant.title | escape }}</p>{% endunless %}
+                {% for property in item.properties %}
+                  {% assign first_character = property.first | slice: 0 %}
+                  {% if property.last != blank and first_character != '_' %}<p class="commerce-note">{{ property.first | escape }}: {{ property.last | escape }}</p>{% endif %}
+                {% endfor %}
+                {% if item.selling_plan_allocation != blank %}<p class="commerce-note">{{ item.selling_plan_allocation.selling_plan.name | escape }}</p>{% endif %}
+                {% for discount in item.line_level_discount_allocations %}<p class="commerce-note">{{ discount.discount_application.title | escape }} (−{{ discount.amount | money }})</p>{% endfor %}
+                <a class="commerce-cart__remove" href="{{ item.url_to_remove }}">Remove</a>
+              </div>
+              <div class="commerce-field"><label for="CartQuantity-{{ forloop.index }}">Quantity</label><input type="number" id="CartQuantity-{{ forloop.index }}" name="updates[]" value="{{ item.quantity }}" min="0" step="1"></div>
+              <p class="commerce-cart__price">{% if item.original_line_price != item.final_line_price %}<s>{{ item.original_line_price | money }}</s> {% endif %}{{ item.final_line_price | money }}</p>
+            </article>
+          {% endfor %}
+        </div>
+        <div class="commerce-cart__footer">
+          <a href="{{ routes.all_products_collection_url }}" class="btn btn--outline">Continue shopping</a>
+          <div class="commerce-cart__total">
+            {% for discount in cart.cart_level_discount_applications %}<p>{{ discount.title | escape }} (−{{ discount.total_allocated_amount | money }})</p>{% endfor %}
+            <h2>Total: {{ cart.total_price | money }}</h2><p class="commerce-note">Shipping and applicable taxes are calculated at checkout.</p>
+            <div class="commerce-cart__buttons"><button type="submit" name="update" class="btn btn--outline">Update cart</button><button type="submit" name="checkout" class="btn btn--primary">Checkout</button></div>
+          </div>
+        </div>
+      </form>
+    {% else %}<div class="catalog__empty"><h2>Your cart is empty</h2><a href="{{ routes.all_products_collection_url }}" class="btn btn--primary">Browse products</a></div>{% endif %}
+  </div>
+</section>

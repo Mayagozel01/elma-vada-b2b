@@ -1,0 +1,137 @@
+{%- liquid
+  assign current_sort = collection.sort_by | default: collection.default_sort_by
+  assign category_menu = section.settings.category_menu | default: settings.catalog_category_menu
+  assign catalog_heading = collection.title | default: section.settings.fallback_title
+  if collection.handle == 'all'
+    assign catalog_heading = section.settings.fallback_title | default: 'Product Catalog'
+  endif
+  assign empty_button_link = section.settings.empty_button_link | default: '/pages/request-a-quote'
+  assign has_filters = false
+  assign has_active_filters = false
+  if section.settings.show_filters and collection.filters.size > 0
+    assign has_filters = true
+  endif
+  for filter in collection.filters
+    if filter.active_values.size > 0 or filter.min_value.value != nil or filter.max_value.value != nil
+      assign has_active_filters = true
+    endif
+  endfor
+-%}
+{% paginate collection.products by section.settings.products_per_page %}
+<section class="catalog b2b-section b2b-section--cream">
+  <div class="container">
+    <nav class="commerce-breadcrumbs" aria-label="Breadcrumb"><a href="{{ routes.root_url }}">Home</a><span aria-hidden="true">/</span><span aria-current="page">{{ catalog_heading | escape }}</span></nav>
+    <header class="catalog__header">
+      {% if section.settings.eyebrow != blank %}<p class="b2b-eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
+      <h1>{{ catalog_heading | escape }}</h1>
+      {% if section.settings.use_collection_description and collection.handle != 'all' and collection.description != blank %}<div class="catalog__description b2b-rte">{{ collection.description }}</div>
+      {% elsif section.settings.introduction != blank %}<div class="catalog__description b2b-rte">{{ section.settings.introduction }}</div>{% endif %}
+    </header>
+      <nav class="catalog-categories" aria-label="Product categories">
+        <a href="{{ routes.all_products_collection_url }}" {% if collection.handle == 'all' %}aria-current="page"{% endif %}>All products</a>
+        {% for link in category_menu.links %}
+          {% assign category = link.object %}
+          {% if link.type == 'collection_link' and category != blank and category.url != blank and category.handle != blank and category.handle != 'all' and link.title != blank %}
+            {% comment %}Use the collection URL, never a saved filter/page query from a menu link.{% endcomment %}
+            <a href="{{ category.url | escape }}" {% if category.handle == collection.handle %}aria-current="page"{% endif %}>{{ link.title | escape }}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    <form action="{{ collection.url }}" method="get" class="catalog-tools">
+      <div class="catalog-tools__bar">
+        <p>{{ collection.products_count }} {% if collection.products_count == 1 %}product{% else %}products{% endif %} · <a href="{{ routes.cart_url }}">View cart ({{ cart.item_count }})</a></p>
+        <div class="catalog-sort"><label for="CatalogSort-{{ section.id }}">Sort by</label><select name="sort_by" id="CatalogSort-{{ section.id }}">{% for option in collection.sort_options %}<option value="{{ option.value | escape }}" {% if option.value == current_sort %}selected{% endif %}>{{ option.name | escape }}</option>{% endfor %}</select><button class="btn btn--outline" type="submit">Apply</button></div>
+      </div>
+      {% if has_filters %}
+        <details class="catalog-filters" {% if has_active_filters %}open{% endif %}>
+          <summary>Filter products</summary>
+          <div class="catalog-filters__groups">
+            {% for filter in collection.filters %}
+              {% assign filter_index = forloop.index %}
+              <fieldset><legend>{{ filter.label | escape }}</legend>
+                {% case filter.type %}
+                  {% when 'list', 'boolean' %}
+                    {% for filter_value in filter.values %}
+                      <label class="catalog-filter-option" for="Filter-{{ section.id }}-{{ filter_index }}-{{ forloop.index }}">
+                        <input id="Filter-{{ section.id }}-{{ filter_index }}-{{ forloop.index }}" type="checkbox" name="{{ filter_value.param_name | escape }}" value="{{ filter_value.value | escape }}" {% if filter_value.active %}checked{% endif %} {% if filter_value.count == 0 and filter_value.active == false %}disabled{% endif %}>
+                        <span>{{ filter_value.label | escape }} <small>({{ filter_value.count }})</small></span>
+                      </label>
+                    {% endfor %}
+                  {% when 'price_range' %}
+                    <p class="commerce-note">{{ cart.currency.iso_code | default: shop.currency }}</p>
+                    <div class="catalog-price-range">
+                      <label for="Filter-{{ section.id }}-{{ filter_index }}-min">From<input type="number" id="Filter-{{ section.id }}-{{ filter_index }}-min" name="{{ filter.min_value.param_name | escape }}" min="0" step="any" placeholder="0" {% if filter.min_value.value != nil %}value="{{ filter.min_value.value | divided_by: 100.0 }}"{% endif %}></label>
+                      <label for="Filter-{{ section.id }}-{{ filter_index }}-max">To<input type="number" id="Filter-{{ section.id }}-{{ filter_index }}-max" name="{{ filter.max_value.param_name | escape }}" min="0" step="any" placeholder="{{ filter.range_max | divided_by: 100.0 }}" {% if filter.max_value.value != nil %}value="{{ filter.max_value.value | divided_by: 100.0 }}"{% endif %}></label>
+                    </div>
+                {% endcase %}
+              </fieldset>
+            {% endfor %}
+          </div>
+          <button class="btn btn--primary" type="submit">Apply filters</button>
+        </details>
+      {% endif %}
+      {% if has_filters == false %}
+        {% comment %}Retain active parameters when only sorting is displayed.{% endcomment %}
+        {% for filter in collection.filters %}
+          {% for value in filter.active_values %}<input type="hidden" name="{{ value.param_name | escape }}" value="{{ value.value | escape }}">{% endfor %}
+          {% if filter.type == 'price_range' %}
+            {% if filter.min_value.value != nil %}<input type="hidden" name="{{ filter.min_value.param_name | escape }}" value="{{ filter.min_value.value | divided_by: 100.0 }}">{% endif %}
+            {% if filter.max_value.value != nil %}<input type="hidden" name="{{ filter.max_value.param_name | escape }}" value="{{ filter.max_value.value | divided_by: 100.0 }}">{% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </form>
+    {% if has_active_filters %}
+      <nav class="catalog-active-filters" aria-label="Applied filters">
+        <a href="{{ collection.url }}?sort_by={{ current_sort | url_encode }}">Clear all filters</a>
+        {% for filter in collection.filters %}
+          {% for value in filter.active_values %}<a href="{{ value.url_to_remove }}" aria-label="Remove {{ filter.label | escape }}: {{ value.label | escape }}">{{ value.label | escape }} <span aria-hidden="true">×</span></a>{% endfor %}
+          {% if filter.type == 'price_range' %}{% if filter.min_value.value != nil or filter.max_value.value != nil %}<a href="{{ filter.url_to_remove }}">Price: {{ filter.min_value.value | default: 0 | money }}–{{ filter.max_value.value | default: filter.range_max | money }} <span aria-hidden="true">×</span></a>{% endif %}{% endif %}
+        {% endfor %}
+      </nav>
+    {% endif %}
+    {% if collection.products.size > 0 %}
+      <div class="catalog__grid" role="list">
+        {% for product in collection.products %}{% render 'catalog-product-card', card_product: product, card_index: forloop.index, card_label: section.settings.product_link_label, show_price: settings.show_catalog_prices %}{% endfor %}
+      </div>
+      {% if paginate.pages > 1 %}
+        <nav class="catalog__pagination" aria-label="Catalog pages">
+          {% if paginate.previous %}<a href="{{ paginate.previous.url }}" class="btn btn--outline">Previous</a>{% endif %}
+          <span>Page {{ paginate.current_page }} of {{ paginate.pages }}</span>
+          {% if paginate.next %}<a href="{{ paginate.next.url }}" class="btn btn--outline">Next</a>{% endif %}
+        </nav>
+      {% endif %}
+    {% elsif has_active_filters %}
+      <div class="catalog__empty"><h2>No matching products</h2><p>Try a different category or clear your filters.</p><a href="{{ collection.url }}?sort_by={{ current_sort | url_encode }}" class="btn btn--outline">Clear filters</a></div>
+    {% else %}
+      <div class="catalog__empty"><h2>{{ section.settings.empty_heading | escape }}</h2><p>{{ section.settings.empty_text | escape }}</p>{% if section.settings.empty_button_label != blank %}<a href="{{ empty_button_link }}" class="btn btn--primary">{{ section.settings.empty_button_label | escape }}</a>{% endif %}</div>
+    {% endif %}
+    {% if section.settings.bulk_heading != blank %}
+      <aside class="catalog-bulk"><div><p class="b2b-eyebrow">Corporate orders</p><h2>{{ section.settings.bulk_heading | escape }}</h2><div class="b2b-rte">{{ section.settings.bulk_text }}</div></div><a href="{{ section.settings.bulk_link | default: '/pages/request-a-quote' }}" class="btn btn--primary">{{ section.settings.bulk_label | escape }}</a></aside>
+    {% endif %}
+  </div>
+</section>
+{% endpaginate %}
+{% schema %}
+{
+  "name": "Product catalog",
+  "settings": [
+    {"type":"text","id":"eyebrow","label":"Eyebrow","default":"Elma Vada Studio"},
+    {"type":"text","id":"fallback_title","label":"Main catalog heading","default":"Product Catalog","info":"Used for All products. Category pages use their collection title."},
+    {"type":"richtext","id":"introduction","label":"Catalog introduction","default":"<p>Explore personalized gifts for your team and clients. Choose a category or contact our studio to discuss a corporate order.</p>"},
+    {"type":"checkbox","id":"use_collection_description","label":"Use collection description on category pages","default":true},
+    {"type":"link_list","id":"category_menu","label":"Category menu override","info":"Optional. Leave empty to use Theme settings > Product catalog > Catalog categories menu on every collection."},
+    {"type":"checkbox","id":"show_filters","label":"Show filters","default":true,"info":"Configure filters in Shopify Search & Discovery."},
+    {"type":"range","id":"products_per_page","label":"Products per page","min":8,"max":36,"step":4,"default":24},
+    {"type":"text","id":"product_link_label","label":"Product link label","default":"View product"},
+    {"type":"text","id":"empty_heading","label":"Empty catalog heading","default":"Products are coming soon"},
+    {"type":"text","id":"empty_text","label":"Empty catalog text","default":"Please check back soon, or contact us to discuss your project."},
+    {"type":"text","id":"empty_button_label","label":"Empty catalog button label","default":"Request a Quote"},
+    {"type":"url","id":"empty_button_link","label":"Empty catalog button link"},
+    {"type":"text","id":"bulk_heading","label":"Corporate order heading","default":"Gifts for your team or clients?"},
+    {"type":"richtext","id":"bulk_text","label":"Corporate order text","default":"<p>Share your quantity, artwork and target date for a project-specific quote.</p>"},
+    {"type":"text","id":"bulk_label","label":"Corporate order button","default":"Request a Bulk Quote"},
+    {"type":"url","id":"bulk_link","label":"Corporate order link"}
+  ]
+}
+{% endschema %}

@@ -31,6 +31,24 @@
     ]
   },
   {
+    "name": "Product catalog",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "catalog_category_menu",
+        "label": "Catalog categories menu",
+        "info": "Shared across collection pages. Use links to published collections; manage names and order in Shopify Menus."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_catalog_prices",
+        "label": "Show agreed product prices on cards",
+        "default": false,
+        "info": "Enable only after approving Shopify variant prices. These are product prices, not confirmed bulk quotes. Applies to catalog, featured and related cards."
+      }
+    ]
+  },
+  {
     "name": "Favicon",
     "settings": [
       {
@@ -177,7 +195,7 @@
         "type": "text",
         "id": "header_trust_text",
         "label": "Header trust text",
-        "default": "5+ years of experience · 50,000+ happy customers"
+        "default": "5+ years of experience · 110,000+ happy customers"
       }
     ]
   },

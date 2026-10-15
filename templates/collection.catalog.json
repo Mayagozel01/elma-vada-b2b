@@ -1,0 +1,20 @@
+{
+  "sections": {
+    "main": {
+      "type": "catalog",
+      "settings": {
+        "eyebrow": "Elma Vada Studio",
+        "fallback_title": "Product Catalog",
+        "introduction": "<p>Explore personalized gifts for your team and clients. Choose a category or contact our studio to discuss a corporate order.</p>",
+        "products_per_page": 24,
+        "product_link_label": "View product",
+        "empty_heading": "Products are coming soon",
+        "empty_text": "Please check back soon, or contact us to discuss your project.",
+        "empty_button_label": "Request a Quote",
+        "empty_button_link": "/pages/request-a-quote",
+        "bulk_link": "/pages/request-a-quote"
+      }
+    }
+  },
+  "order": ["main"]
+}

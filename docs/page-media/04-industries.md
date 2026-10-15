@@ -7,7 +7,7 @@
 
 | Карточка | Что поставить | Alt text |
 |---|---|---|
-| Corporate & HR Teams | [IMG_7472.JPG](https://drive.google.com/file/d/1Lr9D8FgzvYc9KZn6u0_Cw-Zk-Ti07ySG/view?usp=drive_web) | `Four black pen sets with individual engraved names in presentation boxes.` |
+| Marketing & HR Teams | [IMG_7472.JPG](https://drive.google.com/file/d/1Lr9D8FgzvYc9KZn6u0_Cw-Zk-Ti07ySG/view?usp=drive_web) | `Four black pen sets with individual engraved names in presentation boxes.` |
 | Real Estate & Client Services | [IMG_5299.JPG](https://drive.google.com/file/d/1HycZ_eM6SFSyDtSAQR0whZ-UQzLNtl5b/view?usp=drive_web) | `Ribbon-tied black gift box opened to reveal a personalized pen.` |
 | Hospitality & Events | [IMG_5180.JPG](https://drive.google.com/file/d/1p-ZLLi4Qi8fzaB2ZVxCL9z0R0u-zDd_T/view?usp=drive_web) | `Row of black pens with individual engraved names.` |
 | Education & Community Organizations | [IMG_3302.PNG — награда](https://drive.google.com/file/d/1qKgD2qSgBjKol1lA9bxHzgvM5U4x9OBH/view?usp=drive_web) | `Clear circular recognition award on a wooden base.` |
@@ -104,13 +104,13 @@
 
 Медиа: отдельного слота изображения/видео в этом блоке нет.
 
-#### 2.1. Corporate & HR Teams
+#### 2.1. Marketing & HR Teams
 
 - [ ] Проверить блок `item_1`.
 
 | Поле в редакторе | Сейчас / значение по умолчанию | Что сделать |
 |---|---|---|
-| Title (title) | Corporate & HR Teams | Понятный заголовок по теме блока; H1 — только в hero страницы. |
+| Title (title) | Marketing & HR Teams | Понятный заголовок по теме блока; H1 — только в hero страницы. |
 | Eyebrow (eyebrow) | Не заполнено | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 | Text (text) | Welcome new teammates and recognize contributions with named gifts and awards. | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 | Include image or video (show_image) | true | Включает фото или видео; у текстовых шагов можно оставить выключенным. |

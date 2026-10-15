@@ -19,7 +19,7 @@
 - Добавлены Free Mockup, Physical Sample, Consultation, In-Person Consultation и Gifting Calendar Audit как типы запросов.
 - Добавлены шаблоны страниц page.free-mockup и page.book-a-call.
 - Добавлены блоки Fast, In-House Engraving и Meet With Us Face to Face с оговоркой для производственных сроков.
-- Добавлены доверительные показатели: 5+ years, 10+ team members, 50,000+ happy customers, 100,000+ engraved gifts.
+- Добавлены доверительные показатели: 5+ years, 10+ team members, 110,000+ happy customers, 100,000+ engraved gifts.
 - Etsy удалён из футера; Amazon’s Choice не показывается без URL конкретного подходящего товара.
 - Добавлены URL и ссылки для Client Gifting, Onboarding и Milestone Program.
 - Добавлены резервные SEO title/description для 21 страницы, OG/Twitter meta и обновлённый LocalBusiness JSON-LD.

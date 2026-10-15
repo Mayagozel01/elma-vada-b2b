@@ -138,7 +138,7 @@
 
 - **B2B page hero → Hero photo:** Три ваших подарка для разных задач бизнеса, без неподтверждённых логотипов.
 - **Find your starting point → карточки Photo:**
-  - **Corporate & HR Teams:** Именная награда сотруднику.
+  - **Marketing & HR Teams:** Именная награда сотруднику.
   - **Real Estate & Client Services:** Реальный подарок клиенту после сделки.
   - **Hospitality & Events:** Ваши награды или сувениры для события.
   - **Education & Community Organizations:** Ваша памятная табличка или награда.

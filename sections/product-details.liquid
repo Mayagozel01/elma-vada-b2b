@@ -1,0 +1,188 @@
+{%- liquid
+  assign selected_variant = product.selected_or_first_available_variant
+  assign active_image = selected_variant.featured_image | default: product.featured_image
+  assign product_form_id = 'ProductForm-' | append: section.id
+  assign quote_form_id = 'BulkQuote-' | append: section.id
+  assign personalization = false
+  if section.settings.enable_personalization and product.metafields.custom.personalization_enabled.value == true
+    assign personalization = true
+  endif
+-%}
+<section class="product-detail b2b-section" data-product-detail>
+  <div class="container">
+    <nav class="commerce-breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ routes.all_products_collection_url }}">Catalog</a>
+      {% if product.collections.first != blank %}<span aria-hidden="true">/</span><a href="{{ product.collections.first.url }}">{{ product.collections.first.title | escape }}</a>{% endif %}
+      <span aria-hidden="true">/</span><span aria-current="page">{{ product.title | escape }}</span>
+    </nav>
+    <div class="product-detail__layout">
+      <div class="product-gallery">
+        <div class="product-gallery__stage">
+          {% for image in product.images %}
+            <a class="product-gallery__slide" href="{{ image | image_url: width: 2000 }}" target="_blank" rel="noopener" data-gallery-image="{{ image.id }}" {% unless image.id == active_image.id %}hidden{% endunless %} aria-label="Enlarge {{ image.alt | default: product.title | escape }}">
+              <img src="{{ image | image_url: width: 1000 }}"
+                srcset="{{ image | image_url: width: 400 }} 400w, {{ image | image_url: width: 700 }} 700w, {{ image | image_url: width: 1000 }} 1000w, {{ image | image_url: width: 1400 }} 1400w"
+                sizes="(min-width: 1280px) 660px, (min-width: 901px) 55vw, calc(100vw - 40px)"
+                alt="{{ image.alt | default: product.title | escape }}" width="{{ image.width }}" height="{{ image.height }}"
+                loading="{% if image.id == active_image.id %}eager{% else %}lazy{% endif %}" {% if image.id == active_image.id %}fetchpriority="high"{% endif %}>
+              <span class="product-gallery__zoom" aria-hidden="true">Enlarge photo ↗</span>
+            </a>
+          {% else %}
+            <div class="product-gallery__placeholder">{{ 'product-1' | placeholder_svg_tag }}</div>
+          {% endfor %}
+        </div>
+        {% if product.images.size > 1 %}
+          <div class="product-gallery__thumbnails" aria-label="Product photos">
+            {% for image in product.images %}
+              <a href="{{ image | image_url: width: 2000 }}" data-gallery-thumb="{{ image.id }}" aria-label="Show photo {{ forloop.index }}: {{ image.alt | default: product.title | escape }}" {% if image.id == active_image.id %}aria-current="true"{% endif %}>
+                <img src="{{ image | image_url: width: 160 }}" alt="" width="{{ image.width }}" height="{{ image.height }}" loading="lazy">
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+        <dialog class="product-lightbox" data-product-lightbox aria-label="Enlarged product photo">
+          <button type="button" class="product-lightbox__close" data-lightbox-close aria-label="Close enlarged photo">Close ×</button>
+          <img data-lightbox-image alt="" width="2000" height="2000">
+        </dialog>
+      </div>
+
+      <div class="product-detail__summary">
+        {% if product.type != blank %}<p class="b2b-eyebrow">{{ product.type | escape }}</p>{% endif %}
+        <h1>{{ product.title | escape }}</h1>
+        {% if product.metafields.custom.short_description.value != blank %}<p class="product-detail__intro">{{ product.metafields.custom.short_description.value | escape }}</p>{% endif %}
+        <div class="product-detail__pricing" aria-live="polite">
+          <span class="product-detail__price" data-variant-price>{{ selected_variant.price | money }}</span>
+          <s data-variant-compare {% unless selected_variant.compare_at_price > selected_variant.price %}hidden{% endunless %}>{{ selected_variant.compare_at_price | money }}</s>
+          <p class="commerce-note" data-variant-stock>{% if selected_variant.available %}Available to order{% else %}Sold out{% endif %}</p>
+        </div>
+        <a class="product-detail__cart-link" href="{{ routes.cart_url }}">View cart ({{ cart.item_count }}) →</a>
+        {% form 'product', product, id: product_form_id, class: 'product-purchase' %}
+          {% if form.errors %}<div class="commerce-message" role="alert">{{ form.errors | default_errors }}</div>{% endif %}
+          <div class="commerce-field" {% if product.has_only_default_variant %}hidden{% endif %}>
+            <label for="ProductVariant-{{ section.id }}">{{ section.settings.variant_label | escape }}</label>
+            <select id="ProductVariant-{{ section.id }}" name="id" data-variant-select>
+              {% for variant in product.variants %}
+                <option value="{{ variant.id }}" {% if variant.id == selected_variant.id %}selected{% endif %}
+                  data-price="{{ variant.price | money | escape }}" data-compare="{{ variant.compare_at_price | money | escape }}"
+                  data-on-sale="{% if variant.compare_at_price > variant.price %}true{% else %}false{% endif %}"
+                  data-available="{{ variant.available }}" data-image="{{ variant.featured_image.id | default: product.featured_image.id }}"
+                  data-min="{{ variant.quantity_rule.min | default: 1 }}" data-step="{{ variant.quantity_rule.increment | default: 1 }}" data-max="{{ variant.quantity_rule.max }}">
+                  {{ variant.title | escape }}{% unless variant.available %} — Sold out{% endunless %}
+                </option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="commerce-field">
+            <label for="ProductQuantity-{{ section.id }}">Quantity</label>
+            <input id="ProductQuantity-{{ section.id }}" name="quantity" type="number" value="{{ selected_variant.quantity_rule.min | default: 1 }}" min="{{ selected_variant.quantity_rule.min | default: 1 }}" step="{{ selected_variant.quantity_rule.increment | default: 1 }}" {% if selected_variant.quantity_rule.max != blank %}max="{{ selected_variant.quantity_rule.max }}"{% endif %} data-product-quantity>
+          </div>
+          {% if personalization %}
+            <div class="commerce-field product-personalization">
+              <label for="ProductEngraving-{{ section.id }}">{{ section.settings.personalization_label | escape }}</label>
+              <input type="text" id="ProductEngraving-{{ section.id }}" name="properties[Engraving text]" maxlength="{{ section.settings.personalization_limit }}" aria-describedby="ProductEngravingHelp-{{ section.id }}" data-engraving-text>
+              {% if product.metafields.custom.personalization_note.value != blank %}<p id="ProductEngravingHelp-{{ section.id }}" class="commerce-note">{{ product.metafields.custom.personalization_note.value | escape }}</p>
+              {% else %}<p id="ProductEngravingHelp-{{ section.id }}" class="commerce-note">Enter the text exactly as you would like it engraved. For logos or different names across a batch, request a bulk quote.</p>{% endif %}
+            </div>
+          {% endif %}
+          {% if product.requires_selling_plan %}
+            <p class="commerce-message">This product requires a subscription. Contact us to discuss ordering options.</p>
+          {% endif %}
+          <button type="submit" class="btn btn--primary" data-add-to-cart data-purchase-label="{{ section.settings.buy_label | escape }}" {% if selected_variant.available == false or product.requires_selling_plan %}disabled{% endif %} data-subscription-only="{{ product.requires_selling_plan }}">{% if product.requires_selling_plan %}Contact us to order{% elsif selected_variant.available %}{{ section.settings.buy_label | escape }}{% else %}Sold out{% endif %}</button>
+          <input type="hidden" name="return_to" value="{{ routes.cart_url }}">
+          <noscript>
+            <p class="commerce-note">To refresh the price and availability, open a variant below.</p>
+            {% for variant in product.variants %}<a class="product-variant-fallback" href="{{ product.url }}?variant={{ variant.id }}">{{ variant.title | escape }} — {{ variant.price | money }}</a>{% endfor %}
+          </noscript>
+        {% endform %}
+        {% if section.settings.show_bulk_quote %}
+          <aside class="product-bulk-callout"><h2>{{ section.settings.bulk_heading | escape }}</h2><div class="b2b-rte">{{ section.settings.bulk_text }}</div><a href="#{{ quote_form_id }}" class="btn btn--outline" data-bulk-link>{{ section.settings.bulk_label | escape }}</a></aside>
+        {% endif %}
+        <div class="product-accordions">
+          {% for block in section.blocks %}
+            {% liquid
+              assign detail_text = ''
+              assign detail_rich = false
+              case block.type
+                when 'description'
+                  assign detail_text = product.description
+                  assign detail_rich = true
+                when 'specifications'
+                  assign detail_text = product.metafields.custom.material.value | append: product.metafields.custom.dimensions.value
+                when 'engraving'
+                  assign detail_text = product.metafields.custom.engraving_details.value
+                when 'packaging'
+                  assign detail_text = product.metafields.custom.packaging.value
+                when 'delivery'
+                  assign detail_text = product.metafields.custom.production_delivery.value | default: block.settings.text
+              endcase
+            %}
+            {% if detail_text != blank %}
+              <details {{ block.shopify_attributes }}>
+                <summary>{{ block.settings.heading | escape }}</summary>
+                <div class="b2b-rte">
+                  {% if block.type == 'specifications' %}
+                    <dl class="product-specs">
+                      {% if product.metafields.custom.material.value != blank %}<dt>Material</dt><dd>{{ product.metafields.custom.material.value | escape }}</dd>{% endif %}
+                      {% if product.metafields.custom.dimensions.value != blank %}<dt>Dimensions</dt><dd>{{ product.metafields.custom.dimensions.value | escape }}</dd>{% endif %}
+                    </dl>
+                  {% elsif detail_rich or block.type == 'delivery' and product.metafields.custom.production_delivery.value == blank %}
+                    {{ detail_text }}
+                  {% else %}{{ detail_text | escape | newline_to_br }}{% endif %}
+                </div>
+              </details>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% if section.settings.show_bulk_quote %}
+      <section class="product-quote" aria-labelledby="BulkQuoteHeading-{{ section.id }}">
+        <div class="product-quote__intro"><p class="b2b-eyebrow">Corporate orders</p><h2 id="BulkQuoteHeading-{{ section.id }}">Request a Bulk Quote</h2><p>Tell us the quantity, personalization and target date. We will confirm the price and project details with you.</p></div>
+        {% form 'contact', id: quote_form_id, class: 'product-quote__form' %}
+          {% if form.posted_successfully? %}<p class="commerce-message" role="status">Thank you. Your request has been received.</p>{% endif %}
+          {% if form.errors %}<div class="commerce-message" role="alert">{{ form.errors | default_errors }}</div>{% endif %}
+          <p class="product-quote__context" data-quote-context>{{ product.title | escape }} — {{ selected_variant.title | escape }}</p>
+          <input type="hidden" name="contact[Request type]" value="Bulk product quote">
+          <input type="hidden" name="contact[Product]" value="{{ product.title | escape }}">
+          <input type="hidden" name="contact[Product URL]" value="{{ shop.url }}{{ product.url }}?variant={{ selected_variant.id }}" data-quote-url>
+          <input type="hidden" name="contact[Variant]" value="{{ selected_variant.title | escape }}" data-quote-variant>
+          <div class="product-quote__fields">
+            <div class="commerce-field"><label for="{{ quote_form_id }}-name">Name *</label><input id="{{ quote_form_id }}-name" name="contact[name]" autocomplete="name" value="{{ form.name | default: customer.name | escape }}" required></div>
+            <div class="commerce-field"><label for="{{ quote_form_id }}-email">Email *</label><input id="{{ quote_form_id }}-email" name="contact[email]" type="email" autocomplete="email" value="{{ form.email | default: customer.email | escape }}" required></div>
+            <div class="commerce-field"><label for="{{ quote_form_id }}-company">Company</label><input id="{{ quote_form_id }}-company" name="contact[Company]" autocomplete="organization"></div>
+            <div class="commerce-field"><label for="{{ quote_form_id }}-quantity">Quantity *</label><input id="{{ quote_form_id }}-quantity" name="contact[Quantity]" type="number" min="1" step="1" value="{{ selected_variant.quantity_rule.min | default: 1 }}" required data-quote-quantity></div>
+            <div class="commerce-field"><label for="{{ quote_form_id }}-deadline">Needed by</label><input id="{{ quote_form_id }}-deadline" name="contact[Needed by]" type="date"></div>
+            <div class="commerce-field"><label for="{{ quote_form_id }}-location">Delivery city / ZIP</label><input id="{{ quote_form_id }}-location" name="contact[Delivery city / ZIP]"></div>
+            <div class="commerce-field commerce-field--full"><label for="{{ quote_form_id }}-artwork">Link to your logo / artwork (optional)</label><input id="{{ quote_form_id }}-artwork" name="contact[Artwork link]" type="url" placeholder="https://" aria-describedby="{{ quote_form_id }}-artwork-help"><p id="{{ quote_form_id }}-artwork-help" class="commerce-note">Paste a shareable link to your file. You can also send artwork after we contact you.</p></div>
+            <div class="commerce-field commerce-field--full"><label for="{{ quote_form_id }}-body">Project details *</label><textarea id="{{ quote_form_id }}-body" name="contact[body]" rows="5" required data-quote-body>{{ form.body | escape }}</textarea></div>
+          </div>
+          {% if shop.privacy_policy != blank %}<p class="commerce-note"><a href="{{ shop.privacy_policy.url }}">{{ shop.privacy_policy.title | escape }}</a></p>{% endif %}
+          <button class="btn btn--primary" type="submit">Send quote request</button>
+        {% endform %}
+      </section>
+    {% endif %}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Product details",
+  "settings": [
+    {"type":"text","id":"variant_label","label":"Variant label","default":"Color / options"},
+    {"type":"text","id":"buy_label","label":"Purchase button","default":"Add to cart"},
+    {"type":"checkbox","id":"enable_personalization","label":"Allow engraving text field","default":true,"info":"Only appears when this product's custom.personalization_enabled metafield is true. Set its price and engraving terms first."},
+    {"type":"text","id":"personalization_label","label":"Personalization label","default":"Engraving text (optional)"},
+    {"type":"range","id":"personalization_limit","label":"Maximum engraving characters","min":20,"max":200,"step":10,"default":80},
+    {"type":"checkbox","id":"show_bulk_quote","label":"Show corporate quote form","default":true},
+    {"type":"text","id":"bulk_heading","label":"Corporate callout heading","default":"Ordering for your team?"},
+    {"type":"richtext","id":"bulk_text","label":"Corporate callout text","default":"<p>For batch personalization, company logos or custom packaging, request a project-specific quote.</p>"},
+    {"type":"text","id":"bulk_label","label":"Corporate callout button","default":"Request a Bulk Quote"}
+  ],
+  "blocks": [
+    {"type":"description","name":"Description","limit":1,"settings":[{"type":"text","id":"heading","label":"Heading","default":"Product description"}]},
+    {"type":"specifications","name":"Material & dimensions","limit":1,"settings":[{"type":"text","id":"heading","label":"Heading","default":"Material & dimensions"}]},
+    {"type":"engraving","name":"Engraving details","limit":1,"settings":[{"type":"text","id":"heading","label":"Heading","default":"Personalization & engraving"}]},
+    {"type":"packaging","name":"Packaging","limit":1,"settings":[{"type":"text","id":"heading","label":"Heading","default":"Packaging"}]},
+    {"type":"delivery","name":"Production & delivery","limit":1,"settings":[{"type":"text","id":"heading","label":"Heading","default":"Production & delivery"},{"type":"richtext","id":"text","label":"Fallback text","default":"<p>Production and delivery timing depend on the product, quantity, artwork approval and availability. Contact us to confirm timing for your order.</p>"}]}
+  ]
+}
+{% endschema %}

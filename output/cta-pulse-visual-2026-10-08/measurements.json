@@ -1,0 +1,272 @@
+[
+  {
+    "width": 1440,
+    "key": "index.json:hero:primary",
+    "frames": [
+      {
+        "phase": "rest",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-index-json-hero-primary-rest.png"
+      },
+      {
+        "phase": "peak",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-index-json-hero-primary-peak.png"
+      },
+      {
+        "phase": "fade",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-index-json-hero-primary-fade.png"
+      }
+    ],
+    "samples": {
+      "minScale": 1,
+      "maxScale": 1.02,
+      "maxOpacity": 0.65,
+      "maxHaloExpansionX": 4.00048828125001,
+      "maxHaloExpansionY": 3.9998865625000026,
+      "maxUnevenExpansion": 0.0006382438735190732,
+      "layoutShift": 0
+    }
+  },
+  {
+    "width": 1440,
+    "key": "page.bulk-orders.json:speed:primary",
+    "frames": [
+      {
+        "phase": "rest",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-page-bulk-orders-json-speed-primary-rest.png"
+      },
+      {
+        "phase": "peak",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-page-bulk-orders-json-speed-primary-peak.png"
+      },
+      {
+        "phase": "fade",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-page-bulk-orders-json-speed-primary-fade.png"
+      }
+    ],
+    "samples": {
+      "minScale": 1,
+      "maxScale": 1.02,
+      "maxOpacity": 0.65,
+      "maxHaloExpansionX": 4.00048828125001,
+      "maxHaloExpansionY": 3.9998865625000026,
+      "maxUnevenExpansion": 0.0006328155000923097,
+      "layoutShift": 0
+    }
+  },
+  {
+    "width": 1440,
+    "key": "page.bulk-orders.json:cta:primary",
+    "frames": [
+      {
+        "phase": "rest",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-page-bulk-orders-json-cta-primary-rest.png"
+      },
+      {
+        "phase": "peak",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-page-bulk-orders-json-cta-primary-peak.png"
+      },
+      {
+        "phase": "fade",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-page-bulk-orders-json-cta-primary-fade.png"
+      }
+    ],
+    "samples": {
+      "minScale": 1,
+      "maxScale": 1.02,
+      "maxOpacity": 0.65,
+      "maxHaloExpansionX": 4.00048828125001,
+      "maxHaloExpansionY": 3.9998865625000026,
+      "maxUnevenExpansion": 0.0006452694416925198,
+      "layoutShift": 0
+    }
+  },
+  {
+    "width": 1440,
+    "key": "index.json:speed:primary",
+    "frames": [
+      {
+        "phase": "rest",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-index-json-speed-primary-rest.png"
+      },
+      {
+        "phase": "peak",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-index-json-speed-primary-peak.png"
+      },
+      {
+        "phase": "fade",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-index-json-speed-primary-fade.png"
+      }
+    ],
+    "samples": {
+      "minScale": 1,
+      "maxScale": 1.02,
+      "maxOpacity": 0.65,
+      "maxHaloExpansionX": 4.00048828125001,
+      "maxHaloExpansionY": 3.9998865625000026,
+      "maxUnevenExpansion": 0.0006328155000923097,
+      "layoutShift": 0
+    }
+  },
+  {
+    "width": 1440,
+    "key": "index.json:cta_banner:primary",
+    "frames": [
+      {
+        "phase": "rest",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-index-json-cta-banner-primary-rest.png"
+      },
+      {
+        "phase": "peak",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-index-json-cta-banner-primary-peak.png"
+      },
+      {
+        "phase": "fade",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/1440-index-json-cta-banner-primary-fade.png"
+      }
+    ],
+    "samples": {
+      "minScale": 1,
+      "maxScale": 1.02,
+      "maxOpacity": 0.65,
+      "maxHaloExpansionX": 4.000499999999995,
+      "maxHaloExpansionY": 3.9998865625000026,
+      "maxUnevenExpansion": 0.000881870905180715,
+      "layoutShift": 0
+    }
+  },
+  {
+    "width": 390,
+    "key": "index.json:hero:primary",
+    "frames": [
+      {
+        "phase": "rest",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-index-json-hero-primary-rest.png"
+      },
+      {
+        "phase": "peak",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-index-json-hero-primary-peak.png"
+      },
+      {
+        "phase": "fade",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-index-json-hero-primary-fade.png"
+      }
+    ],
+    "samples": {
+      "minScale": 1,
+      "maxScale": 1.02,
+      "maxOpacity": 0.65,
+      "maxHaloExpansionX": 3.999659252064721,
+      "maxHaloExpansionY": 4.000001718750002,
+      "maxUnevenExpansion": 0.0009867170215646145,
+      "layoutShift": 0
+    }
+  },
+  {
+    "width": 390,
+    "key": "page.bulk-orders.json:speed:primary",
+    "frames": [
+      {
+        "phase": "rest",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-page-bulk-orders-json-speed-primary-rest.png"
+      },
+      {
+        "phase": "peak",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-page-bulk-orders-json-speed-primary-peak.png"
+      },
+      {
+        "phase": "fade",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-page-bulk-orders-json-speed-primary-fade.png"
+      }
+    ],
+    "samples": {
+      "minScale": 1,
+      "maxScale": 1.02,
+      "maxOpacity": 0.65,
+      "maxHaloExpansionX": 4.00048828125001,
+      "maxHaloExpansionY": 3.9998865625000026,
+      "maxUnevenExpansion": 0.0006578115400994733,
+      "layoutShift": 0
+    }
+  },
+  {
+    "width": 390,
+    "key": "page.bulk-orders.json:cta:primary",
+    "frames": [
+      {
+        "phase": "rest",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-page-bulk-orders-json-cta-primary-rest.png"
+      },
+      {
+        "phase": "peak",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-page-bulk-orders-json-cta-primary-peak.png"
+      },
+      {
+        "phase": "fade",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-page-bulk-orders-json-cta-primary-fade.png"
+      }
+    ],
+    "samples": {
+      "minScale": 1,
+      "maxScale": 1.02,
+      "maxOpacity": 0.65,
+      "maxHaloExpansionX": 4.00048828125001,
+      "maxHaloExpansionY": 3.9998865625000026,
+      "maxUnevenExpansion": 0.0006308795219713836,
+      "layoutShift": 0
+    }
+  },
+  {
+    "width": 390,
+    "key": "index.json:speed:primary",
+    "frames": [
+      {
+        "phase": "rest",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-index-json-speed-primary-rest.png"
+      },
+      {
+        "phase": "peak",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-index-json-speed-primary-peak.png"
+      },
+      {
+        "phase": "fade",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-index-json-speed-primary-fade.png"
+      }
+    ],
+    "samples": {
+      "minScale": 1,
+      "maxScale": 1.02,
+      "maxOpacity": 0.65,
+      "maxHaloExpansionX": 4.00048828125001,
+      "maxHaloExpansionY": 3.9998865625000026,
+      "maxUnevenExpansion": 0.0006310939788840564,
+      "layoutShift": 0
+    }
+  },
+  {
+    "width": 390,
+    "key": "index.json:cta_banner:primary",
+    "frames": [
+      {
+        "phase": "rest",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-index-json-cta-banner-primary-rest.png"
+      },
+      {
+        "phase": "peak",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-index-json-cta-banner-primary-peak.png"
+      },
+      {
+        "phase": "fade",
+        "file": "/home/yus/Документы/Elma/slack_design/theme/output/cta-pulse-visual-2026-10-08/390-index-json-cta-banner-primary-fade.png"
+      }
+    ],
+    "samples": {
+      "minScale": 1,
+      "maxScale": 1.02,
+      "maxOpacity": 0.65,
+      "maxHaloExpansionX": 4.000499999999995,
+      "maxHaloExpansionY": 3.9998865625000026,
+      "maxUnevenExpansion": 0.0008622172098302627,
+      "layoutShift": 0
+    }
+  }
+]

@@ -51,7 +51,8 @@ async function renderSection(type,data,id,ctx=context) {
 async function main() {
   const results=[];
   const rendered={};
-  for(const file of fs.readdirSync(path.join(root,'templates')).filter(f => f.endsWith('.json'))) {
+  // Commerce templates have their own product/cart/filter fixtures in verify-commerce.cjs.
+  for(const file of fs.readdirSync(path.join(root,'templates')).filter(f => f === 'index.json' || /^page\..+\.json$/.test(f))) {
     const template=JSON.parse(read(`templates/${file}`));
     const templateName=file==='index.json'?'index':'page';
     const ctx={...context,request:{...context.request,page_type:templateName},template:{name:templateName,suffix:templateName==='index'?'':file.slice(5,-5)}};

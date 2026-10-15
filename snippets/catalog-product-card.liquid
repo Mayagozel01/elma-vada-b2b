@@ -1,0 +1,25 @@
+{%- liquid
+  assign photo = card_product.featured_image
+  assign card_variant = card_product.selected_or_first_available_variant
+  assign card_title = card_product.metafields.custom.catalog_title.value | strip | default: card_product.title
+-%}
+<article class="b2b-card catalog-card" role="listitem">
+  <a class="b2b-media b2b-media--contain catalog-card__image" href="{{ card_product.url }}" aria-label="{{ card_title | escape }}">
+    {% if photo != blank %}
+      <img src="{{ photo | image_url: width: 700 }}"
+        srcset="{{ photo | image_url: width: 240 }} 240w, {{ photo | image_url: width: 400 }} 400w, {{ photo | image_url: width: 700 }} 700w, {{ photo | image_url: width: 1000 }} 1000w"
+        sizes="(min-width: 1280px) 290px, (min-width: 991px) calc((100vw - 120px) / 4), (min-width: 641px) calc((100vw - 96px) / 3), (min-width: 481px) calc((100vw - 52px) / 2), calc(100vw - 32px)"
+        alt="{{ photo.alt | default: card_product.title | escape }}" width="{{ photo.width }}" height="{{ photo.height }}"
+        loading="{% if card_index <= 4 %}eager{% else %}lazy{% endif %}" {% if card_index == 1 %}fetchpriority="high"{% endif %}>
+    {% else %}
+      <span class="catalog-card__placeholder" aria-hidden="true">{{ 'product-1' | placeholder_svg_tag }}</span>
+    {% endif %}
+  </a>
+  <div class="b2b-card__body catalog-card__body">
+    <h3><a href="{{ card_product.url }}">{{ card_title | escape }}</a></h3>
+    {% if show_price == true and card_product.price_min != nil and card_product.price_min >= 0 %}
+      <p class="catalog-card__price">{% if card_product.price_varies %}From {% endif %}{{ card_product.price_min | money }}</p>
+    {% endif %}
+    <a href="{{ card_product.url }}{% if card_variant != blank %}?variant={{ card_variant.id }}{% endif %}" class="b2b-link catalog-card__action">{{ card_label | default: 'View product' | escape }} <span aria-hidden="true">→</span></a>
+  </div>
+</article>

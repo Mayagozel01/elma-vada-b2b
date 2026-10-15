@@ -24,6 +24,9 @@
     {{ 'theme.css' | asset_url | stylesheet_tag }}
     {{ 'b2b-pages.css' | asset_url | stylesheet_tag }}
     {{ 'revision.css' | asset_url | stylesheet_tag }}
+    {% if template.name == 'collection' or template.name == 'product' or template.name == 'cart' %}
+      {{ 'commerce.css' | asset_url | stylesheet_tag }}
+    {% endif %}
   </head>
 
   <body class="page-{{ template.name }}{% if template.suffix %}-{{ template.suffix }}{% endif %}">
@@ -38,5 +41,6 @@
 
     <script src="{{ 'theme.js' | asset_url }}" defer></script>
     <script src="{{ 'revision.js' | asset_url }}" defer></script>
+    {% if template.name == 'product' %}<script src="{{ 'commerce.js' | asset_url }}" defer></script>{% endif %}
   </body>
 </html>

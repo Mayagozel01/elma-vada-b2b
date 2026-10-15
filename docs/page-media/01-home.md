@@ -217,7 +217,7 @@
 | Label 1 (label_1) | Years of Experience | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 | Value 2 (value_2) | 10+ | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 | Label 2 (label_2) | Team Members | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
-| Value 3 (value_3) | 50,000+ | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
+| Value 3 (value_3) | 110,000+ | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 | Label 3 (label_3) | Happy Customers | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 | Value 4 (value_4) | 100,000+ | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 | Label 4 (label_4) | Engraved Gifts | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |

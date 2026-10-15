@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-details",
+      "settings": {},
+      "blocks": {
+        "description": {"type": "description", "settings": {}},
+        "specifications": {"type": "specifications", "settings": {}},
+        "engraving": {"type": "engraving", "settings": {}},
+        "packaging": {"type": "packaging", "settings": {}},
+        "delivery": {"type": "delivery", "settings": {}}
+      },
+      "block_order": ["description", "specifications", "engraving", "packaging", "delivery"]
+    },
+    "related": {"type": "product-related", "settings": {}}
+  },
+  "order": ["main", "related"]
+}

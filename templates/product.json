@@ -8,9 +8,26 @@
         "specifications": {"type": "specifications", "settings": {}},
         "engraving": {"type": "engraving", "settings": {}},
         "packaging": {"type": "packaging", "settings": {}},
-        "delivery": {"type": "delivery", "settings": {}}
+        "delivery": {"type": "delivery", "settings": {}},
+        "quote_form": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "1155185",
+            "text_color": "#1E252B",
+            "button_background_color": "#1E252B",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#846020",
+            "errors_color": "#B42318",
+            "text_alignment": "left",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
       },
-      "block_order": ["description", "specifications", "engraving", "packaging", "delivery"]
+      "block_order": ["description", "specifications", "engraving", "packaging", "delivery", "quote_form"]
     },
     "related": {"type": "product-related", "settings": {}}
   },

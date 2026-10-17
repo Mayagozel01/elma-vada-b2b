@@ -1,4 +1,4 @@
-/* Product gallery and purchase/quote context. Forms submit through Shopify. */
+/* Product gallery, variant state and copyable Shopify Forms context. */
 (() => {
   'use strict';
   const mounted = new Map();
@@ -9,16 +9,14 @@
     const on = (element, event, callback) => element?.addEventListener(event, callback, {signal: abort.signal});
     const variantSelect = root.querySelector('[data-variant-select]');
     const quantity = root.querySelector('[data-product-quantity]');
-    const quoteQuantity = root.querySelector('[data-quote-quantity]');
-    const quoteVariant = root.querySelector('[data-quote-variant]');
-    const quoteUrl = root.querySelector('[data-quote-url]');
     const quoteContext = root.querySelector('[data-quote-context]');
+    const copyProductDetails = root.querySelector('[data-copy-product-details]');
+    const copyProductStatus = root.querySelector('[data-copy-product-status]');
     const productTitle = root.querySelector('h1').textContent;
     const slides = [...root.querySelectorAll('[data-gallery-image]')];
     const thumbs = [...root.querySelectorAll('[data-gallery-thumb]')];
     const dialog = root.querySelector('[data-product-lightbox]');
     let lightboxOpener;
-    let quoteQuantityEdited = false;
 
     function showImage(id) {
       if (!id || !slides.some(slide => slide.dataset.galleryImage === id)) return;
@@ -33,14 +31,13 @@
       if (!option) return;
       // Strip the availability suffix from the display name, not from form values.
       const variantName = option.textContent.trim().replace(/ — Sold out$/, '');
-      if (quoteVariant) quoteVariant.value = variantName;
       if (quoteContext) quoteContext.textContent = productTitle + ' — ' + variantName;
-      if (quoteUrl) {
-        const url = new URL(quoteUrl.value);
+      if (copyProductDetails) {
+        const url = new URL(copyProductDetails.dataset.productUrl, window.location.origin);
         url.searchParams.set('variant', option.value);
-        quoteUrl.value = url.href;
+        copyProductDetails.dataset.productVariant = variantName;
+        copyProductDetails.dataset.productUrl = url.href;
       }
-      if (quoteQuantity && !quoteQuantityEdited) quoteQuantity.value = quantity.value;
     }
     function updateVariant(updateUrl = true) {
       const option = variantSelect?.selectedOptions[0];
@@ -55,7 +52,7 @@
         compare.textContent = option.dataset.compare;
         compare.hidden = option.dataset.onSale !== 'true';
       }
-      if (stock) stock.textContent = available ? 'Available to order' : 'Sold out';
+      if (stock) stock.textContent = option.dataset.stockStatus || (available ? 'Available to order' : 'Out of stock');
       if (buy && buy.dataset.subscriptionOnly !== 'true') {
         buy.disabled = !available;
         buy.textContent = available ? buy.dataset.buyLabel : 'Sold out';
@@ -83,12 +80,21 @@
     if (buy) buy.dataset.buyLabel = buy.dataset.purchaseLabel || 'Add to cart';
     on(variantSelect, 'change', () => updateVariant());
     on(quantity, 'input', syncQuote);
-    on(quoteQuantity, 'input', () => { quoteQuantityEdited = true; });
-    on(root.querySelector('[data-bulk-link]'), 'click', () => {
+    on(root.querySelector('[data-bulk-link]'), 'click', syncQuote);
+    on(copyProductDetails, 'click', async () => {
       syncQuote();
-      const engraving = root.querySelector('[data-engraving-text]')?.value.trim();
-      const notes = root.querySelector('[data-quote-body]');
-      if (engraving && notes && !notes.value.trim()) notes.value = 'Engraving text: ' + engraving;
+      const details = [
+        'Product: ' + copyProductDetails.dataset.productTitle,
+        'Variant: ' + copyProductDetails.dataset.productVariant,
+        'Link: ' + copyProductDetails.dataset.productUrl
+      ].join('\n');
+      try {
+        await navigator.clipboard.writeText(details);
+        copyProductStatus.textContent = 'Copied. Paste these details into the Project details field below.';
+      } catch {
+        copyProductStatus.textContent = 'Copy was blocked by your browser. Copy the product name and selected option shown above, then paste them into Project details.';
+      }
+      copyProductStatus.hidden = false;
     });
     thumbs.forEach(thumb => on(thumb, 'click', event => {
       event.preventDefault();

@@ -1,1 +1,265 @@
-{"sections":{"hero":{"type":"b2b-page-hero","settings":{"eyebrow":"Elma Vada · Dallas, Texas","heading":"Make the first day feel personal","text":"<p>Welcome new hires and relocating team members with useful, personalized gifts. Bring together names, gift selection and packing instructions before the next start date.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/welcome-kit-wooden-holder-keychain-box-elma-vada-dfw.png","image_alt":"Engraved wooden desk holder and Alex keychain beside an open kraft gift box and welcome card. DFW","photo_note":"Открытый welcome-набор на рабочем столе, только ваши реальные товары.","color_scheme":"cream","button_label":"Get a Free Mockup","button_link":"/pages/free-mockup","secondary_label":"View Our Work","secondary_link":"/pages/our-work","compact":false}},"examples":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Welcome Pen Set","eyebrow":"","text":"<p>A named gift to make a new teammate feel expected.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/welcome-personalized-silver-pen-duo-elma-vada-dfw.png","image_alt":"`Two silver-tone pens engraved Welcome Alex held by a cream band in an open presentation box.","photo_note":"Футляр с ручкой для нового сотрудника.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Desk Keepsake","eyebrow":"","text":"<p>A lasting first-day piece with a name, role or welcome message.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/new-teammate-welcome-wooden-cube-elma-vada-dfw.png","image_alt":"Light wooden cube engraved Welcome to the Team and Alex beside a blank folded card.","photo_note":"Настольный сувенир из дерева.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Role-Specific Gift","eyebrow":"","text":"<p>Choose useful items that fit the person and their working day.</p>","show_image":true,"media_type":"image","image_alt":"","photo_note":"Ручка или изделие с именем и должностью.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Coordinated Fulfillment","eyebrow":"","text":"<p>Discuss recipient grouping, office delivery or shipping requirements in your quote.</p>","show_image":true,"media_type":"image","image_alt":"","photo_note":"Реальные упакованные наборы; адреса скрыть.","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"What could your gift look like?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"process":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Share the Brief","eyebrow":"","text":"<p>Tell us the occasion, recipients, quantity and target date.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Review the Direction","eyebrow":"","text":"<p>Discuss products and a digital mockup; ask about physical sample options.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Approve the Details","eyebrow":"","text":"<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Produce & Prepare","eyebrow":"","text":"<p>Production and packing follow the approved project scope.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"How does the project come together?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"white","require_photo":false,"button_label":"","button_link":""}},"related":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Business Solutions","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/business-solutions","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Production Capabilities","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/production-capabilities","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Our Work","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/our-work","requires_approval":false,"approved":false}},"milestone":{"type":"item","settings":{"title":"Milestone Program","eyebrow":"","text":"<p>Make recurring recognition easier to organize.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"Фото реального изделия, 1200 × 900 px. Не размещайте неподтверждённые логотипы клиентов.","link_label":"Explore the program","link":"/pages/milestone-program","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","milestone"],"settings":{"eyebrow":"","heading":"Where would you like to go next?","text":"","layout":"grid","columns":3,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"questions":{"type":"b2b-faq","blocks":{"question_1":{"type":"question","settings":{"question":"What information should I send for a quote?","answer":"<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"}},"question_2":{"type":"question","settings":{"question":"Can every gift have a different name?","answer":"<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"}},"question_3":{"type":"question","settings":{"question":"Can I review a mockup or sample first?","answer":"<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample\">Request a sample</a>.</p>"}},"question_4":{"type":"question","settings":{"question":"How long will my order take?","answer":"<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"}}},"block_order":["question_1","question_2","question_3","question_4"],"settings":{"heading":"What else would you like to know?","structured_data":true}},"cta":{"type":"b2b-content","settings":{"eyebrow":"","heading":"What do you have in mind?","text":"<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"navy","require_photo":false,"button_label":"Get a Bulk Quote","button_link":"/pages/request-a-quote","bulk_quote":true}}},"order":["hero","examples","process","related","questions","cta"]}
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "Make the first day feel personal",
+        "text": "<p>Welcome new hires and relocating team members with useful, personalized gifts. Bring together names, gift selection and packing instructions before the next start date.</p>",
+        "show_image": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/welcome-kit-wooden-holder-keychain-box-elma-vada-dfw.png",
+        "image_alt": "Engraved wooden desk holder and Alex keychain beside an open kraft gift box and welcome card. DFW",
+        "photo_note": "Открытый welcome-набор на рабочем столе, только ваши реальные товары.",
+        "color_scheme": "cream",
+        "button_label": "Get a Free Mockup",
+        "button_link": "/pages/free-mockup",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work",
+        "compact": false
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Welcome Pen Set",
+            "eyebrow": "",
+            "text": "<p>A named gift to make a new teammate feel expected.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/welcome-personalized-silver-pen-duo-elma-vada-dfw.png",
+            "image_alt": "`Two silver-tone pens engraved Welcome Alex held by a cream band in an open presentation box.",
+            "photo_note": "Футляр с ручкой для нового сотрудника.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Desk Keepsake",
+            "eyebrow": "",
+            "text": "<p>A lasting first-day piece with a name, role or welcome message.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/new-teammate-welcome-wooden-cube-elma-vada-dfw.png",
+            "image_alt": "Light wooden cube engraved Welcome to the Team and Alex beside a blank folded card.",
+            "photo_note": "Настольный сувенир из дерева.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Role-Specific Gift",
+            "eyebrow": "",
+            "text": "<p>Choose useful items that fit the person and their working day.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "Ручка или изделие с именем и должностью.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Coordinated Fulfillment",
+            "eyebrow": "",
+            "text": "<p>Discuss recipient grouping, office delivery or shipping requirements in your quote.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "Реальные упакованные наборы; адреса скрыть.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "What could your gift look like?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "cream",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "process": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Share the Brief",
+            "eyebrow": "",
+            "text": "<p>Tell us the occasion, recipients, quantity and target date.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Review the Direction",
+            "eyebrow": "",
+            "text": "<p>Discuss products and a digital mockup; ask about physical sample options.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Approve the Details",
+            "eyebrow": "",
+            "text": "<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Produce & Prepare",
+            "eyebrow": "",
+            "text": "<p>Production and packing follow the approved project scope.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "How does the project come together?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "white",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ],
+      "settings": {
+        "heading": "What else would you like to know?",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "eyebrow": "",
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "navy",
+        "require_photo": false,
+        "button_label": "Get a Bulk Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "bulk_quote": true
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "examples",
+    "process",
+    "questions",
+    "cta"
+  ]
+}

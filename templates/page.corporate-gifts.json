@@ -1,1 +1,276 @@
-{"sections":{"hero":{"type":"b2b-page-hero","settings":{"eyebrow":"Elma Vada · Dallas, Texas","heading":"Corporate gifts with a personal reason behind them","text":"<p>Create gifts for employees, clients and business partners with names, meaningful messages and considered presentation. Start with your audience, occasion and budget; we will help define the right project.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/b2b_gift.png","image_alt":"Personalized corporate gifts with engraved names on tumbler, pen, and gift box by Elma Vada Dallas-Fort Worth","photo_note":"Ваш реальный премиальный набор: ручка, коробка и персонализированная карточка.","color_scheme":"cream","button_label":"Get a Free Mockup","button_link":"/pages/free-mockup","secondary_label":"View Our Work","secondary_link":"/pages/our-work","compact":false}},"examples":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Personalized Pen Sets","eyebrow":"","text":"<p>A practical gift made personal with a name, date or short message.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/port2.png","image_alt":"Personalized Parker pen sets with engraved name and date, Elma Vada corporate gifts","photo_note":"Ручки в футлярах, видны разные имена.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Engraved Drinkware","eyebrow":"","text":"<p>Choose a useful keepsake with artwork sized for the product and the occasion.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/glass.png","image_alt":"Engraved crystal whiskey glasses and wine glass, Elma Vada Studio corporate gift","photo_note":"Стакан или термокружка с читаемой гравировкой.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Desk & Recognition Pieces","eyebrow":"","text":"<p>Mark an achievement with a display piece that carries a clear, personal message.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/Personalized_gift_displayed_for_industries_we_serve.png","image_alt":"Wood desk organizer, engraved pen, and keychain recognition set, Elma Vada Studio","photo_note":"Деревянный настольный сувенир или награда.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Gift-Ready Presentation","eyebrow":"","text":"<p>Discuss boxes, inserts and packing requirements as part of the quote.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/pen-gift-set-presentation-box-elma-vada.png","image_alt":"Gift-ready presentation with engraved Parker pen, gold ribbon, and black gift bag, Elma Vada corporate gifting","photo_note":"Открытая коробка с вашим готовым подарком.","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"What could your gift look like?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"process":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Share the Brief","eyebrow":"","text":"<p>Tell us the occasion, recipients, quantity and target date.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Review the Direction","eyebrow":"","text":"<p>Discuss products and a digital mockup; ask about physical sample options.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Approve the Details","eyebrow":"","text":"<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Produce & Prepare","eyebrow":"","text":"<p>Production and packing follow the approved project scope.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"How does the project come together?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"white","require_photo":false,"button_label":"","button_link":""}},"testimonials":{"type":"testimonials","settings":{"heading":"What our customers say","subheading":"","source_label":"Read the original review"}},"related":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Business Solutions","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/business-solutions","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Production Capabilities","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/production-capabilities","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Our Work","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/our-work","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3"],"settings":{"eyebrow":"","heading":"Where would you like to go next?","text":"","layout":"grid","columns":3,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"questions":{"type":"b2b-faq","blocks":{"question_1":{"type":"question","settings":{"question":"What information should I send for a quote?","answer":"<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"}},"question_2":{"type":"question","settings":{"question":"Can every gift have a different name?","answer":"<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"}},"question_3":{"type":"question","settings":{"question":"Can I review a mockup or sample first?","answer":"<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample\">Request a sample</a>.</p>"}},"question_4":{"type":"question","settings":{"question":"How long will my order take?","answer":"<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"}}},"block_order":["question_1","question_2","question_3","question_4"],"settings":{"heading":"What else would you like to know?","structured_data":true}},"cta":{"type":"b2b-content","settings":{"eyebrow":"","heading":"What do you have in mind?","text":"<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"navy","require_photo":false,"button_label":"Get a Bulk Quote","button_link":"/pages/request-a-quote","bulk_quote":true}}},"order":["hero","examples","process","testimonials","related","questions","cta"]}
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "Corporate gifts with a personal reason behind them",
+        "text": "<p>Create gifts for employees, clients and business partners with names, meaningful messages and considered presentation. Start with your audience, occasion and budget; we will help define the right project.</p>",
+        "show_image": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/b2b_gift.png",
+        "image_alt": "Personalized corporate gifts with engraved names on tumbler, pen, and gift box by Elma Vada Dallas-Fort Worth",
+        "photo_note": "Ваш реальный премиальный набор: ручка, коробка и персонализированная карточка.",
+        "color_scheme": "cream",
+        "button_label": "Get a Free Mockup",
+        "button_link": "/pages/free-mockup",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work",
+        "compact": false
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Personalized Pen Sets",
+            "eyebrow": "",
+            "text": "<p>A practical gift made personal with a name, date or short message.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/port2.png",
+            "image_alt": "Personalized Parker pen sets with engraved name and date, Elma Vada corporate gifts",
+            "photo_note": "Ручки в футлярах, видны разные имена.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Engraved Drinkware",
+            "eyebrow": "",
+            "text": "<p>Choose a useful keepsake with artwork sized for the product and the occasion.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/glass.png",
+            "image_alt": "Engraved crystal whiskey glasses and wine glass, Elma Vada Studio corporate gift",
+            "photo_note": "Стакан или термокружка с читаемой гравировкой.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Desk & Recognition Pieces",
+            "eyebrow": "",
+            "text": "<p>Mark an achievement with a display piece that carries a clear, personal message.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/Personalized_gift_displayed_for_industries_we_serve.png",
+            "image_alt": "Wood desk organizer, engraved pen, and keychain recognition set, Elma Vada Studio",
+            "photo_note": "Деревянный настольный сувенир или награда.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Gift-Ready Presentation",
+            "eyebrow": "",
+            "text": "<p>Discuss boxes, inserts and packing requirements as part of the quote.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/pen-gift-set-presentation-box-elma-vada.png",
+            "image_alt": "Gift-ready presentation with engraved Parker pen, gold ribbon, and black gift bag, Elma Vada corporate gifting",
+            "photo_note": "Открытая коробка с вашим готовым подарком.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "What could your gift look like?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "cream",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "process": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Share the Brief",
+            "eyebrow": "",
+            "text": "<p>Tell us the occasion, recipients, quantity and target date.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Review the Direction",
+            "eyebrow": "",
+            "text": "<p>Discuss products and a digital mockup; ask about physical sample options.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Approve the Details",
+            "eyebrow": "",
+            "text": "<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Produce & Prepare",
+            "eyebrow": "",
+            "text": "<p>Production and packing follow the approved project scope.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "How does the project come together?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "white",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {
+        "heading": "What our customers say",
+        "subheading": "",
+        "source_label": "Read the original review"
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ],
+      "settings": {
+        "heading": "What else would you like to know?",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "eyebrow": "",
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "navy",
+        "require_photo": false,
+        "button_label": "Get a Bulk Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "bulk_quote": true
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "examples",
+    "process",
+    "testimonials",
+    "questions",
+    "cta"
+  ]
+}

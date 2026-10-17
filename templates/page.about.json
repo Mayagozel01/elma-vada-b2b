@@ -1,1 +1,192 @@
-{"sections":{"hero":{"type":"b2b-page-hero","settings":{"eyebrow":"Elma Vada · Dallas, Texas","heading":"Thoughtful gifts begin with people who care about the details","text":"<p>Elma Vada is a Dallas studio creating personalized corporate gifts and engraved awards. With 5+ years of experience and a team of 10+ people, we help you plan meaningful gifts from the first idea to the finished piece.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/elma-vada-studio-team-hero-square.png","image_alt":"Elma Vada team in their Dallas gift studio with personalized engraved pens, wooden gift boxes, and custom corporate gifts prepared for B2B clients and wholesale orders.","photo_note":"Реальный основатель или команда в мастерской; с разрешением на публикацию.","color_scheme":"cream","button_label":"Get a Free Mockup","button_link":"\/pages\/free-mockup","secondary_label":"View Our Work","secondary_link":"\/pages\/our-work","compact":false}},"examples":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"The People Behind Your Project","eyebrow":"","text":"<p>Clear communication matters as much as the finished piece. We work through the occasion, artwork and practical details with you.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/elma-vada-production-team-dallas-laser-engraving-studio.png","image_alt":"Elma Vada team members reviewing personalized engraved gifts and project details at a worktable in the Dallas studio.","photo_note":"Портрет основателя; в тексте затем добавьте имя и настоящую историю.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Inside the Studio","eyebrow":"","text":"<p>Material samples and production details help turn an idea into a defined project.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/elma-vada-team-production-studio-dallas.png","image_alt":"Elma Vada team members reviewing personalized engraved gifts and project details at a worktable in the Dallas studio.","photo_note":"Общий вид вашей мастерской.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Care in the Small Details","eyebrow":"","text":"<p>Names, messages and presentation deserve attention from the first brief to the finished gift.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/personalized-gift-inventory-organization.png","image_alt":"Close-up of a personalized silver-tone pen with a gold-tone clip and precision engraved name by Elma Vada. Dallas","photo_note":"Команда за проверкой качества или упаковкой.","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3"],"settings":{"eyebrow":"","heading":"Who is behind the work?","text":"","layout":"stories","columns":3,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"testimonials":{"type":"testimonials","settings":{"heading":"What our customers say","subheading":"","source_label":"Read the original review"}},"related":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Business Solutions","eyebrow":"","text":"<p><\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"\/pages\/business-solutions","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Production Capabilities","eyebrow":"","text":"<p><\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"\/pages\/production-capabilities","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Our Work","eyebrow":"","text":"<p><\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"\/pages\/our-work","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3"],"settings":{"eyebrow":"","heading":"Where would you like to go next?","text":"","layout":"grid","columns":3,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"questions":{"type":"b2b-faq","blocks":{"question_1":{"type":"question","settings":{"question":"What information should I send for a quote?","answer":"<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.<\/p>"}},"question_2":{"type":"question","settings":{"question":"Can every gift have a different name?","answer":"<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.<\/p>"}},"question_3":{"type":"question","settings":{"question":"Can I review a mockup or sample first?","answer":"<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"\/pages\/request-a-quote?request=sample\">Request a sample<\/a>.<\/p>"}},"question_4":{"type":"question","settings":{"question":"How long will my order take?","answer":"<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.<\/p>"}}},"block_order":["question_1","question_2","question_3","question_4"],"settings":{"heading":"What else would you like to know?","structured_data":true}},"cta":{"type":"b2b-content","settings":{"eyebrow":"","heading":"What do you have in mind?","text":"<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.<\/p>","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"navy","require_photo":false,"button_label":"Discuss Your Project","button_link":"\/pages\/request-a-quote"}},"meeting":{"type":"b2b-feature","custom_css":["img {object-fit: contain; width: 100%;}"],"settings":{"eyebrow":"","heading":"Meet With Us Face to Face","text":"<p>Planning gifts for your employees, clients, partners, or an upcoming event? Schedule a complimentary in-person consultation in the Dallas–Fort Worth area.<\/p><p>We’ll discuss your gifting needs, timeline, quantities, and personalization options. You’ll also receive a complimentary pen engraved with your name or company logo as a sample of our work.<\/p>","fine_print":"Visits are arranged by appointment. We will confirm the meeting details with you.","media_type":"image","image":"shopify:\/\/shop_images\/30FEF1FC-EE52-4D78-A6B1-9983695804A6.png","image_alt":"Elma Vada team member presenting a personalized pen sample.","photo_note":"Реальное фото Дарьи\/места встречи и персонализированной ручки-образца.","show_address":true,"button_label":"Schedule an In-Person Consultation","button_link":"\/pages\/book-a-call?request=in-person","secondary_label":"","secondary_link":"","color_scheme":"cream"}}},"order":["hero","examples","testimonials","related","questions","cta","meeting"]}
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "Thoughtful gifts begin with people who care about the details",
+        "text": "<p>Elma Vada is a Dallas studio creating personalized corporate gifts and engraved awards. With 5+ years of experience and a team of 10+ people, we help you plan meaningful gifts from the first idea to the finished piece.</p>",
+        "show_image": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/elma-vada-studio-team-hero-square.png",
+        "image_alt": "Elma Vada team in their Dallas gift studio with personalized engraved pens, wooden gift boxes, and custom corporate gifts prepared for B2B clients and wholesale orders.",
+        "photo_note": "Реальный основатель или команда в мастерской; с разрешением на публикацию.",
+        "color_scheme": "cream",
+        "button_label": "Get a Free Mockup",
+        "button_link": "/pages/free-mockup",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work",
+        "compact": false
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "The People Behind Your Project",
+            "eyebrow": "",
+            "text": "<p>Clear communication matters as much as the finished piece. We work through the occasion, artwork and practical details with you.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/elma-vada-production-team-dallas-laser-engraving-studio.png",
+            "image_alt": "Elma Vada team members reviewing personalized engraved gifts and project details at a worktable in the Dallas studio.",
+            "photo_note": "Портрет основателя; в тексте затем добавьте имя и настоящую историю.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Inside the Studio",
+            "eyebrow": "",
+            "text": "<p>Material samples and production details help turn an idea into a defined project.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/elma-vada-team-production-studio-dallas.png",
+            "image_alt": "Elma Vada team members reviewing personalized engraved gifts and project details at a worktable in the Dallas studio.",
+            "photo_note": "Общий вид вашей мастерской.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Care in the Small Details",
+            "eyebrow": "",
+            "text": "<p>Names, messages and presentation deserve attention from the first brief to the finished gift.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/personalized-gift-inventory-organization.png",
+            "image_alt": "Close-up of a personalized silver-tone pen with a gold-tone clip and precision engraved name by Elma Vada. Dallas",
+            "photo_note": "Команда за проверкой качества или упаковкой.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "Who is behind the work?",
+        "text": "",
+        "layout": "stories",
+        "columns": 3,
+        "image_fit": "cover",
+        "color_scheme": "cream",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {
+        "heading": "What our customers say",
+        "subheading": "",
+        "source_label": "Read the original review"
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ],
+      "settings": {
+        "heading": "What else would you like to know?",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "eyebrow": "",
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "navy",
+        "require_photo": false,
+        "button_label": "Discuss Your Project",
+        "button_link": "/pages/request-a-quote#ProjectForm"
+      }
+    },
+    "meeting": {
+      "type": "b2b-feature",
+      "custom_css": [
+        "img {object-fit: contain; width: 100%;}"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "Meet With Us Face to Face",
+        "text": "<p>Planning gifts for your employees, clients, partners, or an upcoming event? Schedule a complimentary in-person consultation in the Dallas–Fort Worth area.</p><p>We’ll discuss your gifting needs, timeline, quantities, and personalization options. You’ll also receive a complimentary pen engraved with your name or company logo as a sample of our work.</p>",
+        "fine_print": "Visits are arranged by appointment. We will confirm the meeting details with you.",
+        "media_type": "image",
+        "image": "shopify://shop_images/30FEF1FC-EE52-4D78-A6B1-9983695804A6.png",
+        "image_alt": "Elma Vada team member presenting a personalized pen sample.",
+        "photo_note": "Реальное фото Дарьи/места встречи и персонализированной ручки-образца.",
+        "show_address": true,
+        "button_label": "Schedule an In-Person Consultation",
+        "button_link": "/pages/book-a-call?request=in-person",
+        "secondary_label": "",
+        "secondary_link": "",
+        "color_scheme": "cream"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "examples",
+    "testimonials",
+    "questions",
+    "cta",
+    "meeting"
+  ]
+}

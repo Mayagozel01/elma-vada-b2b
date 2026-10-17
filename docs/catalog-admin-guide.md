@@ -1,5 +1,7 @@
 # Каталог Elma Vada — инструкция для Shopify Admin
 
+Актуальная доработка статусов наличия, точного количества и цен: [catalog-inventory-guide.md](catalog-inventory-guide.md). Меню `Catalog categories` уже создано и подключено; повторно создавать его не нужно.
+
 ## Однократная настройка
 
 1. Загрузите новую тему как **неопубликованную**, откройте её Preview / Edit theme. Не нажимайте Publish во время проверки.
@@ -13,7 +15,7 @@
 
 ## 1. Создать категорию
 
-При проверке 15 октября 2026 в витрине найдены существующие коллекции: **Engraved Chopsticks** (`/collections/custom-engraved-chopsticks`), **Engraved Desk Accesories** (`/collections/engraved-desk-accesories`), **Engraved Pens** (`/collections/custom-engraved-pens`). Используйте их после подтверждения командой. Написание названия/URL Desk Accesories сохранено как в магазине. Меню `Catalog categories` пока отсутствует: обнаружены только `main-menu`, `footer`, `customer-account-main-menu`.
+В витрине используются существующие коллекции: **Engraved Chopsticks** (`/collections/custom-engraved-chopsticks`), **Engraved Desk Accesories** (`/collections/engraved-desk-accesories`), **Engraved Pens** (`/collections/custom-engraved-pens`). Меню `Catalog categories` теперь создано и подключено. Исправление отображаемого названия Desk Accessories в двух реальных источниках описано в [catalog-inventory-guide.md](catalog-inventory-guide.md); URL менять не требуется.
 
 В **Products → Collections** сначала проверьте существующие согласованные коллекции. Если подходящая уже есть — используйте её. Для новой: **Add / Create collection**, название, описание, доступность **Online Store**, шаблон **Default collection**. Пустая опубликованная категория допустима: каталог покажет понятное пустое состояние. Не создавайте служебные подборки для меню витрины.
 
@@ -58,7 +60,7 @@ Shopify постепенно заменяет старую модель Manual /
 
 ## Фильтры и проверка
 
-Проверяемая неопубликованная тема: **Elma Vada Catalog Review 2026-10-15**, ID `160451494074`. [Каталог Preview](https://elmavada.myshopify.com/collections/all?preview_theme_id=160451494074), [редактор этой темы](https://elmavada.myshopify.com/admin/themes/160451494074/editor). Актуальный архив для загрузки: `output/elma-vada-ready-2026-10-15.zip`. Действующая тема не публиковалась и не изменялась этой работой.
+Проверяемая неопубликованная тема: **Elma Vada Inventory Review 2026-10-15**, ID `160476889274`. [Каталог Preview](https://elmavada.myshopify.com/collections/all?preview_theme_id=160476889274), [редактор этой темы](https://elmavada.myshopify.com/admin/themes/160476889274/editor). Актуальный архив для загрузки: `output/elma-vada-inventory-review-2026-10-15.zip`. Действующая тема не публиковалась и не изменялась этой работой.
 
 Существующие Availability / Price работают через штатные фильтры Shopify. Если фильтры не видны, проверьте **Search & Discovery → Filters**, данные товаров и секцию **Show filters**. Платные приложения не нужны.
 
@@ -69,7 +71,7 @@ Shopify постепенно заменяет старую модель Manual /
 ## Что остаётся для команды
 
 - Выбрать реальные согласованные коллекции, схему тегов/типов и подтвердить доступный интерфейс коллекций.
-- Создать/выбрать `Catalog categories`, назначить его теме; проверить шаблоны и публикацию ресурсов в Online Store.
+- Меню `Catalog categories` уже подключено; проверьте его сохранение в новой теме и исправьте название Desk Accessories в меню и коллекции по инструкции наличия.
 - Проверить существующее определение `custom.catalog_title`, создать при необходимости и заполнить короткие названия.
 - Согласовать цены всех вариантов и только затем включить их вывод.
 - Проверить полноту ассортимента и реальные фотографии, включая коробочки; тема не добавляет товары и не дорисовывает отсутствующие фото.

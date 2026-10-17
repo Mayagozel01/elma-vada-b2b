@@ -1,1 +1,266 @@
-{"sections":{"hero":{"type":"b2b-page-hero","settings":{"eyebrow":"Elma Vada · Dallas, Texas","heading":"Turn recurring recognition into a clear plan","text":"<p>Build a repeatable gifting plan for anniversaries and service milestones. Start with your calendar, expected recipients and budget so designs, approvals and fulfillment can be discussed in advance.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/employee-milestone-recognition-gift-program-elma-vada.jpg","image_alt":"Employee milestone gift collection with an engraved service award, personalized pen, wooden keepsake, keychain and desk recognition piece.","photo_note":"Линейка подарков одного стиля для нескольких этапов стажа.","color_scheme":"cream","button_label":"Request a 20-Minute Calendar Audit","button_link":"\/pages\/book-a-call?request=audit","secondary_label":"View Our Work","secondary_link":"\/pages\/our-work","compact":false}},"examples":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Essential Recognition","eyebrow":"","text":"<p>A useful named piece for a recurring occasion.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/personalized-wood-desk-organizer-employee-recognition.jpg","image_alt":"Personalized wooden desk organizer engraved with an employee name and job title, shown with a pen and pencils.","photo_note":"Именная ручка, крупный план.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Signature Gift Set","eyebrow":"","text":"<p>A coordinated option for the milestones that call for more presentation.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/employee-milestone-signature-gift-set-personalized.jpg","image_alt":"Premium employee milestone gift set with an engraved pen, wooden keychain and personalized clear recognition piece in a presentation box.","photo_note":"Ваш подарочный набор.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Long-Service Award","eyebrow":"","text":"<p>A lasting recognition piece with a personal message and milestone.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/personalized-long-service-employee-award-15-years.jpg","image_alt":"Personalized 15 Years of Service recognition award with clear engraved plaque and wooden base for an employee milestone.","photo_note":"Награда за долгий стаж.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Planned Fulfillment","eyebrow":"","text":"<p>Discuss order windows, recipient approvals and delivery grouping before launch.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/employee-milestone-gifts-planned-fulfillment.jpg","image_alt":"Multiple milestone gift packages labeled for Year 1, Year 5 and Year 10 alongside a personalized presentation gift set.","photo_note":"Готовые коробки с подарками, без личных данных.","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"What could your gift look like?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"process":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Share the Brief","eyebrow":"","text":"<p>Tell us the occasion, recipients, quantity and target date.<\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Review the Direction","eyebrow":"","text":"<p>Discuss products and a digital mockup; ask about physical sample options.<\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Approve the Details","eyebrow":"","text":"<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.<\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Produce & Prepare","eyebrow":"","text":"<p>Production and packing follow the approved project scope.<\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"How does the project come together?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"white","require_photo":false,"button_label":"","button_link":""}},"related":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Employee Recognition","eyebrow":"","text":"<p><\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"\/pages\/employee-recognition","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Service Awards","eyebrow":"","text":"<p><\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"\/pages\/service-awards","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Bulk Orders","eyebrow":"","text":"<p><\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"\/pages\/bulk-orders","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3"],"settings":{"eyebrow":"","heading":"Where would you like to go next?","text":"","layout":"grid","columns":3,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"questions":{"type":"b2b-faq","blocks":{"question_1":{"type":"question","settings":{"question":"What information should I send for a quote?","answer":"<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.<\/p>"}},"question_2":{"type":"question","settings":{"question":"Can every gift have a different name?","answer":"<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.<\/p>"}},"question_3":{"type":"question","settings":{"question":"Can I review a mockup or sample first?","answer":"<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"\/pages\/request-a-quote?request=sample\">Request a sample<\/a>.<\/p>"}},"question_4":{"type":"question","settings":{"question":"How long will my order take?","answer":"<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.<\/p>"}}},"block_order":["question_1","question_2","question_3","question_4"],"settings":{"heading":"What else would you like to know?","structured_data":true}},"cta":{"type":"b2b-content","settings":{"eyebrow":"","heading":"Start with a 20-minute Gifting Calendar Audit","text":"<p>Discuss headcount, milestone dates, a gift matrix, delivery and approvals. We will confirm a meeting time with you.<\/p>","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"navy","require_photo":false,"button_label":"Request a Calendar Audit","button_link":"\/pages\/book-a-call?request=audit"}}},"order":["hero","examples","process","related","questions","cta"]}
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "Turn recurring recognition into a clear plan",
+        "text": "<p>Build a repeatable gifting plan for anniversaries and service milestones. Start with your calendar, expected recipients and budget so designs, approvals and fulfillment can be discussed in advance.</p>",
+        "show_image": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/employee-milestone-recognition-gift-program-elma-vada.jpg",
+        "image_alt": "Employee milestone gift collection with an engraved service award, personalized pen, wooden keepsake, keychain and desk recognition piece.",
+        "photo_note": "Линейка подарков одного стиля для нескольких этапов стажа.",
+        "color_scheme": "cream",
+        "button_label": "Request a 20-Minute Calendar Audit",
+        "button_link": "/pages/book-a-call?request=audit",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work",
+        "compact": false
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Essential Recognition",
+            "eyebrow": "",
+            "text": "<p>A useful named piece for a recurring occasion.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/personalized-wood-desk-organizer-employee-recognition.jpg",
+            "image_alt": "Personalized wooden desk organizer engraved with an employee name and job title, shown with a pen and pencils.",
+            "photo_note": "Именная ручка, крупный план.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Signature Gift Set",
+            "eyebrow": "",
+            "text": "<p>A coordinated option for the milestones that call for more presentation.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/employee-milestone-signature-gift-set-personalized.jpg",
+            "image_alt": "Premium employee milestone gift set with an engraved pen, wooden keychain and personalized clear recognition piece in a presentation box.",
+            "photo_note": "Ваш подарочный набор.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Long-Service Award",
+            "eyebrow": "",
+            "text": "<p>A lasting recognition piece with a personal message and milestone.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/personalized-long-service-employee-award-15-years.jpg",
+            "image_alt": "Personalized 15 Years of Service recognition award with clear engraved plaque and wooden base for an employee milestone.",
+            "photo_note": "Награда за долгий стаж.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Planned Fulfillment",
+            "eyebrow": "",
+            "text": "<p>Discuss order windows, recipient approvals and delivery grouping before launch.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/employee-milestone-gifts-planned-fulfillment.jpg",
+            "image_alt": "Multiple milestone gift packages labeled for Year 1, Year 5 and Year 10 alongside a personalized presentation gift set.",
+            "photo_note": "Готовые коробки с подарками, без личных данных.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "What could your gift look like?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "cream",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "process": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Share the Brief",
+            "eyebrow": "",
+            "text": "<p>Tell us the occasion, recipients, quantity and target date.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Review the Direction",
+            "eyebrow": "",
+            "text": "<p>Discuss products and a digital mockup; ask about physical sample options.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Approve the Details",
+            "eyebrow": "",
+            "text": "<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Produce & Prepare",
+            "eyebrow": "",
+            "text": "<p>Production and packing follow the approved project scope.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "How does the project come together?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "white",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ],
+      "settings": {
+        "heading": "What else would you like to know?",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "eyebrow": "",
+        "heading": "Start with a 20-minute Gifting Calendar Audit",
+        "text": "<p>Discuss headcount, milestone dates, a gift matrix, delivery and approvals. We will confirm a meeting time with you.</p>",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "navy",
+        "require_photo": false,
+        "button_label": "Request a Calendar Audit",
+        "button_link": "/pages/book-a-call?request=audit"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "examples",
+    "process",
+    "questions",
+    "cta"
+  ]
+}

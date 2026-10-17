@@ -1,1 +1,260 @@
-{"sections":{"hero":{"type":"b2b-page-hero","settings":{"eyebrow":"Elma Vada · Dallas, Texas","heading":"What does gifting need to do for your business?","text":"<p>Different teams give for different reasons. Explore starting points for employee recognition, client relationships, professional events and community appreciation, then tailor the project to your organization.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/corporate-gifting-engraved-glass-networking-event-elma-vada.png","image_alt":"A woman receives a personalized engraved glass in a gift box at a business networking event, with more wrapped gifts on the table.","photo_note":"Три ваших подарка для разных задач бизнеса, без неподтверждённых логотипов.","color_scheme":"cream","button_label":"Get a Free Mockup","button_link":"\/pages\/free-mockup","secondary_label":"View Our Work","secondary_link":"\/pages\/our-work","compact":false}},"examples":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Marketing & HR Teams","eyebrow":"","text":"<p>Welcome new teammates and recognize contributions with named gifts and awards.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/Corporate_HR_Teams.jpg","image_alt":"Four black pen sets with individual engraved names in presentation boxes. Dallas","photo_note":"Именная награда сотруднику.","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/employee-recognition","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Education & Community Organizations","eyebrow":"","text":"<p>Discuss staff appreciation, service milestones and donor recognition.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/Gemini_Generated_Image_fobqagfobqagfobq.jpg","image_alt":"Clear circular recognition award mounted on a wooden base with personalized donor appreciation text.","photo_note":"Ваша памятная табличка или награда.","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/service-awards","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Real Estate & Client Services","eyebrow":"","text":"<p>Mark a closing, referral or relationship anniversary with a personal thank-you.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/Real_Estate_Client_Services.jpg","image_alt":"Ribbon-tied black gift box opened to reveal a personalized pen. Dallas","photo_note":"Реальный подарок клиенту после сделки.","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/client-gifting","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Hospitality & Events","eyebrow":"","text":"<p>Coordinate speaker, partner and guest gifts around a defined event date.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/Gemini_Generated_Image_4s3i4e4s3i4e4s3i_1.jpg","image_alt":"Collection of custom-engraved wooden guitar picks in walnut and olive wood. Dallas","photo_note":"Ваши награды или сувениры для события.","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/events-awards","requires_approval":false,"approved":false}}},"block_order":["item_1","item_4","item_2","item_3"],"settings":{"eyebrow":"","heading":"Find your starting point","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"cream","require_photo":false,"bulk_quote":false,"button_label":"","button_link":""}},"related":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Business Solutions","eyebrow":"","text":"<p><\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/business-solutions","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Production Capabilities","eyebrow":"","text":"<p><\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/production-capabilities","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Our Work","eyebrow":"","text":"<p><\/p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/our-work","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3"],"settings":{"eyebrow":"","heading":"Where would you like to go next?","text":"","layout":"grid","columns":3,"image_fit":"cover","color_scheme":"cream","require_photo":false,"bulk_quote":false,"button_label":"","button_link":""}},"questions":{"type":"b2b-faq","blocks":{"question_1":{"type":"question","settings":{"question":"What information should I send for a quote?","answer":"<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.<\/p>"}},"question_2":{"type":"question","settings":{"question":"Can every gift have a different name?","answer":"<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.<\/p>"}},"question_3":{"type":"question","settings":{"question":"Can I review a mockup or sample first?","answer":"<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"\/pages\/request-a-quote?request=sample\">Request a sample<\/a>.<\/p>"}},"question_4":{"type":"question","settings":{"question":"How long will my order take?","answer":"<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.<\/p>"}}},"block_order":["question_1","question_2","question_3","question_4"],"settings":{"heading":"What else would you like to know?","structured_data":true}},"cta":{"type":"b2b-content","settings":{"eyebrow":"","heading":"What do you have in mind?","text":"<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.<\/p>","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"navy","require_photo":false,"bulk_quote":true,"button_label":"Get a Bulk Quote","button_link":"\/pages\/request-a-quote"}}},"order":["hero","examples","related","questions","cta"]}
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "What does gifting need to do for your business?",
+        "text": "<p>Different teams give for different reasons. Explore starting points for employee recognition, client relationships, professional events and community appreciation, then tailor the project to your organization.</p>",
+        "show_image": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/corporate-gifting-engraved-glass-networking-event-elma-vada.png",
+        "image_alt": "A woman receives a personalized engraved glass in a gift box at a business networking event, with more wrapped gifts on the table.",
+        "photo_note": "Три ваших подарка для разных задач бизнеса, без неподтверждённых логотипов.",
+        "color_scheme": "cream",
+        "button_label": "Get a Free Mockup",
+        "button_link": "/pages/free-mockup",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work",
+        "compact": false
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Marketing & HR Teams",
+            "eyebrow": "",
+            "text": "<p>Welcome new teammates and recognize contributions with named gifts and awards.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/Corporate_HR_Teams.jpg",
+            "image_alt": "Four black pen sets with individual engraved names in presentation boxes. Dallas",
+            "photo_note": "Именная награда сотруднику.",
+            "bulk_quote": false,
+            "link_label": "Explore this service",
+            "link": "/pages/employee-recognition",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Education & Community Organizations",
+            "eyebrow": "",
+            "text": "<p>Discuss staff appreciation, service milestones and donor recognition.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/Gemini_Generated_Image_fobqagfobqagfobq.jpg",
+            "image_alt": "Clear circular recognition award mounted on a wooden base with personalized donor appreciation text.",
+            "photo_note": "Ваша памятная табличка или награда.",
+            "bulk_quote": false,
+            "link_label": "Explore this service",
+            "link": "/pages/service-awards",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Real Estate & Client Services",
+            "eyebrow": "",
+            "text": "<p>Mark a closing, referral or relationship anniversary with a personal thank-you.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/Real_Estate_Client_Services.jpg",
+            "image_alt": "Ribbon-tied black gift box opened to reveal a personalized pen. Dallas",
+            "photo_note": "Реальный подарок клиенту после сделки.",
+            "bulk_quote": false,
+            "link_label": "Explore this service",
+            "link": "/pages/client-gifting",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Hospitality & Events",
+            "eyebrow": "",
+            "text": "<p>Coordinate speaker, partner and guest gifts around a defined event date.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/Gemini_Generated_Image_4s3i4e4s3i4e4s3i_1.jpg",
+            "image_alt": "Collection of custom-engraved wooden guitar picks in walnut and olive wood. Dallas",
+            "photo_note": "Ваши награды или сувениры для события.",
+            "bulk_quote": false,
+            "link_label": "Explore this service",
+            "link": "/pages/events-awards",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "military": {
+          "type": "item",
+          "settings": {
+            "title": "Military & Law Enforcement",
+            "eyebrow": "",
+            "text": "<p>Personalized gifts for military units, veterans’ organizations, and law enforcement teams. Recognize promotions, retirements, service milestones, and team achievements with meaningful engraved gifts.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image_asset": "industries-military.webp",
+            "image_alt": "Two black engraved bullet-style pens displayed in an open silver presentation case.",
+            "photo_note": "Use a real Elma Vada product photo. Replace with Shopify Photo picker if needed.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "distributed": {
+          "type": "item",
+          "settings": {
+            "title": "Direct Sales & Distributed Teams",
+            "eyebrow": "",
+            "text": "<p>Help teams feel connected across locations. Create personalized gifts for new representatives, sales milestones, team recognition, and company events.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image_asset": "industries-distributed.webp",
+            "image_alt": "Three wooden pen cases engraved with the same team name, each holding a personalized wooden pen.",
+            "photo_note": "Use a real Elma Vada product photo. Replace with Shopify Photo picker if needed.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "healthcare": {
+          "type": "item",
+          "settings": {
+            "title": "Healthcare & Medical Practices",
+            "eyebrow": "",
+            "text": "<p>Recognize the people who care for others. Personalized gifts for doctors, nurses, administrative staff, and practice teams—for appreciation, onboarding, and professional milestones.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image_asset": "industries-healthcare.webp",
+            "image_alt": "Two black pens engraved with a doctor's name in a tan presentation case.",
+            "photo_note": "Use a real Elma Vada product photo. Replace with Shopify Photo picker if needed.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "executive": {
+          "type": "item",
+          "settings": {
+            "title": "Executive & Administrative Teams",
+            "eyebrow": "",
+            "text": "<p>Thoughtful gifts for leadership, executive assistants, and administrative teams. Mark promotions, work anniversaries, leadership events, and everyday contributions with personalized details.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image_asset": "industries-executive.webp",
+            "image_alt": "Black engraved pens with gold details and an open black presentation case.",
+            "photo_note": "Use a real Elma Vada product photo. Replace with Shopify Photo picker if needed.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_4",
+        "item_2",
+        "item_3",
+        "military",
+        "distributed",
+        "healthcare",
+        "executive"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "Find your starting point",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "cream",
+        "require_photo": false,
+        "bulk_quote": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ],
+      "settings": {
+        "heading": "What else would you like to know?",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "eyebrow": "",
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "navy",
+        "require_photo": false,
+        "bulk_quote": true,
+        "button_label": "Get a Bulk Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "examples",
+    "questions",
+    "cta"
+  ]
+}

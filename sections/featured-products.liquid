@@ -8,7 +8,7 @@
     </div>
     <div class="catalog__grid" role="list">
       {%- for product in featured_collection.products limit: section.settings.products_to_show -%}
-        {% render 'catalog-product-card', card_product: product, card_index: 5, card_label: 'View product', show_price: settings.show_catalog_prices %}
+        {% render 'catalog-product-card', card_product: product, card_index: 5, card_label: 'View product', show_price: settings.show_catalog_prices, show_inventory_quantity: settings.show_inventory_quantity, low_stock_threshold: settings.low_stock_threshold %}
       {%- endfor -%}
     </div>
     {%- if section.settings.button_label != blank -%}<div style="text-align: center; margin-top: 2.5rem;"><a href="{{ featured_collection.url }}" class="btn btn--primary">{{ section.settings.button_label }}</a></div>{%- endif -%}

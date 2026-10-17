@@ -18,7 +18,7 @@
         {% assign shown = 0 %}
         {% for item in related_collection.products %}
           {% if item.id != product.id %}
-            {% render 'catalog-product-card', card_product: item, card_index: 5, card_label: 'View product', show_price: settings.show_catalog_prices %}
+            {% render 'catalog-product-card', card_product: item, card_index: 5, card_label: 'View product', show_price: settings.show_catalog_prices, show_inventory_quantity: settings.show_inventory_quantity, low_stock_threshold: settings.low_stock_threshold %}
             {% assign shown = shown | plus: 1 %}
             {% if shown >= section.settings.products_to_show %}{% break %}{% endif %}
           {% endif %}

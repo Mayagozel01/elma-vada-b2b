@@ -22,7 +22,7 @@
       "maxOpacity": 0.65,
       "maxHaloExpansionX": 4.00048828125001,
       "maxHaloExpansionY": 3.9998865625000026,
-      "maxUnevenExpansion": 0.0006382438735190732,
+      "maxUnevenExpansion": 0.00063732458375787,
       "layoutShift": 0
     }
   },
@@ -49,7 +49,7 @@
       "maxOpacity": 0.65,
       "maxHaloExpansionX": 4.00048828125001,
       "maxHaloExpansionY": 3.9998865625000026,
-      "maxUnevenExpansion": 0.0006328155000923097,
+      "maxUnevenExpansion": 0.0006306650650582668,
       "layoutShift": 0
     }
   },
@@ -76,7 +76,7 @@
       "maxOpacity": 0.65,
       "maxHaloExpansionX": 4.00048828125001,
       "maxHaloExpansionY": 3.9998865625000026,
-      "maxUnevenExpansion": 0.0006452694416925198,
+      "maxUnevenExpansion": 0.0006601990451196027,
       "layoutShift": 0
     }
   },
@@ -103,7 +103,7 @@
       "maxOpacity": 0.65,
       "maxHaloExpansionX": 4.00048828125001,
       "maxHaloExpansionY": 3.9998865625000026,
-      "maxUnevenExpansion": 0.0006328155000923097,
+      "maxUnevenExpansion": 0.0006537138640165807,
       "layoutShift": 0
     }
   },
@@ -130,7 +130,7 @@
       "maxOpacity": 0.65,
       "maxHaloExpansionX": 4.000499999999995,
       "maxHaloExpansionY": 3.9998865625000026,
-      "maxUnevenExpansion": 0.000881870905180715,
+      "maxUnevenExpansion": 0.0008609369366781028,
       "layoutShift": 0
     }
   },
@@ -155,9 +155,9 @@
       "minScale": 1,
       "maxScale": 1.02,
       "maxOpacity": 0.65,
-      "maxHaloExpansionX": 3.999659252064721,
+      "maxHaloExpansionX": 3.9996599475533716,
       "maxHaloExpansionY": 4.000001718750002,
-      "maxUnevenExpansion": 0.0009867170215646145,
+      "maxUnevenExpansion": 0.0009844578555195937,
       "layoutShift": 0
     }
   },
@@ -184,7 +184,7 @@
       "maxOpacity": 0.65,
       "maxHaloExpansionX": 4.00048828125001,
       "maxHaloExpansionY": 3.9998865625000026,
-      "maxUnevenExpansion": 0.0006578115400994733,
+      "maxUnevenExpansion": 0.0006323807203614251,
       "layoutShift": 0
     }
   },
@@ -211,7 +211,7 @@
       "maxOpacity": 0.65,
       "maxHaloExpansionX": 4.00048828125001,
       "maxHaloExpansionY": 3.9998865625000026,
-      "maxUnevenExpansion": 0.0006308795219713836,
+      "maxUnevenExpansion": 0.0006411348208958945,
       "layoutShift": 0
     }
   },
@@ -238,7 +238,7 @@
       "maxOpacity": 0.65,
       "maxHaloExpansionX": 4.00048828125001,
       "maxHaloExpansionY": 3.9998865625000026,
-      "maxUnevenExpansion": 0.0006310939788840564,
+      "maxUnevenExpansion": 0.0006578115400994733,
       "layoutShift": 0
     }
   },
@@ -265,7 +265,7 @@
       "maxOpacity": 0.65,
       "maxHaloExpansionX": 4.000499999999995,
       "maxHaloExpansionY": 3.9998865625000026,
-      "maxUnevenExpansion": 0.0008622172098302627,
+      "maxUnevenExpansion": 0.000870254242961721,
       "layoutShift": 0
     }
   }

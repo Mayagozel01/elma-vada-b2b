@@ -1,0 +1,50 @@
+{%- comment -%}
+  Text only, shared by product cards and the selected-variant status.
+  No totals across variants; untracked inventory_quantity is not a stock count.
+  Quantity is disclosed only when explicitly enabled and a single variant is known.
+{%- endcomment -%}
+{%- liquid
+  assign stock_label = 'Out of stock'
+  assign stock_variant = inventory_variant
+  assign threshold = low_stock_threshold | default: 5
+  if inventory_product != blank
+    assign variant_count = inventory_product.variants_count | default: inventory_product.variants.size
+    assign available_count = 0
+    assign physical_count = 0
+    for item in inventory_product.variants
+      if item.available
+        assign available_count = available_count | plus: 1
+        if item.inventory_management != blank and item.inventory_quantity != nil and item.inventory_quantity > 0
+          assign physical_count = physical_count | plus: 1
+        endif
+      endif
+    endfor
+    if inventory_product.available
+      if variant_count == 1
+        assign stock_variant = inventory_product.variants.first
+      elsif available_count < variant_count or available_count == 0
+        assign stock_label = 'Some options available'
+      elsif physical_count == available_count
+        assign stock_label = 'In stock'
+      else
+        assign stock_label = 'Available to order'
+      endif
+    endif
+  endif
+  if stock_variant != blank
+    if stock_variant.available
+      if stock_variant.inventory_management != blank and stock_variant.inventory_quantity != nil and stock_variant.inventory_quantity > 0
+        assign stock_label = 'In stock'
+        if threshold > 0 and stock_variant.inventory_quantity <= threshold
+          assign stock_label = 'Low stock'
+        endif
+      else
+        assign stock_label = 'Available to order'
+      endif
+    else
+      assign stock_label = 'Out of stock'
+    endif
+  endif
+-%}
+{{- stock_label -}}
+{%- if show_inventory_quantity == true and stock_variant != blank and stock_variant.available and stock_variant.inventory_management != blank and stock_variant.inventory_quantity != nil and stock_variant.inventory_quantity > 0 %} · {{ stock_variant.inventory_quantity }} available{% endif -%}

@@ -224,26 +224,9 @@
     show(0);
     controllers.set(root, () => { stop(); abort.abort(); observer?.disconnect(); pauseVideos(); });
   }
-  const requestTypes = {'mockup':'Free mockup','sample':'Physical sample','consultation':'Consultation','in-person':'In-person consultation','audit':'Gifting calendar audit','quote':'Quote'};
-  function mountForms(scope) {
-    scope.querySelectorAll('.b2b-form').forEach(form => {
-      if (form.dataset.revisionReady) return;
-      form.dataset.revisionReady = 'true';
-      const success = form.querySelector('[role="status"]');
-      const error = form.querySelector('[role="alert"]');
-      const requested = requestTypes[new URLSearchParams(location.search).get('request')];
-      const select = form.querySelector('[data-request-type]');
-      if (select && requested && !success && !error) select.value = requested;
-      if (success || error) (success || error).focus();
-      // Only the native form's confirmed response emits success, never a Submit click.
-      // Consumers must handle analytics consent and deduplication themselves.
-      if (success) document.dispatchEvent(new CustomEvent('elma:lead-success', {detail:{formId:form.id || 'native-contact'}}));
-    });
-  }
   function mount(scope) {
     if (scope.matches?.('[data-ev-hero]')) mountHero(scope);
     scope.querySelectorAll('[data-ev-hero]').forEach(mountHero);
-    mountForms(scope);
     mountBulkCtas(scope);
   }
   mount(document);

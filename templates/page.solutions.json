@@ -1,1 +1,222 @@
-{"sections":{"hero":{"type":"b2b-page-hero","settings":{"eyebrow":"Elma Vada · Dallas, Texas","heading":"What are you gifting for?","text":"<p>Personalized employee, client and event gifts start with the occasion. Elma Vada helps you bring product choice, engraving, presentation and fulfillment into one project plan.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/gift.jpg","image_alt":"Gift bag, ribbon-tied box and personalized pen presented as a corporate gift set.","photo_note":"Композиция из 3–4 ваших подарков: ручка, награда, коробка, изделие из дерева.","color_scheme":"cream","button_label":"Get a Free Mockup","button_link":"\/pages\/free-mockup","secondary_label":"View Our Work","secondary_link":"\/pages\/our-work","compact":false}},"examples":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Employee Recognition","eyebrow":"","text":"<p>Recognize anniversaries, promotions and the everyday contributions that deserve a personal thank-you.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/IMG_5180.jpg","image_alt":"Four black pen sets with individual engraved names in presentation boxes.","photo_note":"Именная награда и ручка сотрудника.","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/employee-recognition","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Events & Awards","eyebrow":"","text":"<p>Plan engraved awards, speaker gifts and personalized event pieces around the date that matters.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/awards.png","image_alt":"Clear recognition award mounted on a curved wooden base.","photo_note":"Несколько наград с разными именами.","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/events-awards","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Client & Executive Gifts","eyebrow":"","text":"<p>Choose thoughtful gifts for client milestones, partner relationships and executive occasions.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/Executive_Gifts.jpg","image_alt":"","photo_note":"Подарочная ручка в открытом футляре.","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/client-gifting","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Onboarding & Relocation","eyebrow":"","text":"<p>Make the first day feel considered with named welcome gifts and coordinated presentation.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/onboarding-elma-vada-engraved-v1.png","image_alt":"Illustrative employee welcome gift set with an Elma Vada Studio engraved wooden pen and case, notebook and blank card","photo_note":"Готовый welcome-набор в коробке.","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/onboarding","requires_approval":false,"approved":false}},"item_6":{"type":"item","settings":{"title":"Bulk Orders","eyebrow":"","text":"<p>Bring your quantity, artwork and deadline for a production plan that fits your order.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/engraved_glass.png","image_alt":"Bulk orders Dallas gifting","photo_note":"Ровные ряды готовой партии изделий.","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/bulk-orders","requires_approval":false,"approved":false}},"item_5":{"type":"item","settings":{"title":"Milestone Program","eyebrow":"","text":"<p>Discuss a recurring gifting plan with agreed designs, recipient details and a practical schedule.<\/p>","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/IMG_8148.webp","image_alt":"Black personalized pen and presentation box with an engraved team message.","photo_note":"Серия подарков к разным годам стажа.","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/milestone-program","requires_approval":false,"approved":false}}},"block_order":["item_1","item_3","item_2","item_4","item_6","item_5"],"settings":{"eyebrow":"","heading":"Choose your business occasion","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"cream","require_photo":false,"bulk_quote":false,"button_label":"","button_link":""}},"related":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Corporate Gifts DFW","eyebrow":"","text":"","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/kart.jpg","image_alt":"Personalized gift displayed for corporate gifts dfw.","photo_note":"","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/corporate-gifts","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Personalized Merchandise DFW","eyebrow":"","text":"","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/Gemini_Generated_Image_7extzi7extzi7ext.jpg","image_alt":"","photo_note":"","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/branded-merchandise","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Custom Engraving Dallas","eyebrow":"","text":"","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/quality-review-personalized-engraved-pens-checklist.png","image_alt":"Laser engraving a personalized gift in the studio.`","photo_note":"","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/custom-engraving","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Promotional Products DFW","eyebrow":"","text":"","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/Gemini_Generated_Image_t2ex0zt2ex0zt2ex.jpg","image_alt":"Personalized gift displayed for promotional products dfw.","photo_note":"","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/promotional-products","requires_approval":false,"approved":false}},"item_5":{"type":"item","settings":{"title":"Production Capabilities","eyebrow":"","text":"","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/Gemini_Generated_Image_ohvxkqohvxkqohvx.jpg","image_alt":"Personalized gift displayed for production capabilities.","photo_note":"","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/production-capabilities","requires_approval":false,"approved":false}},"item_6":{"type":"item","settings":{"title":"Industries We Serve","eyebrow":"","text":"","show_image":true,"media_type":"image","image":"shopify:\/\/shop_images\/Personalized_gift_displayed_for_industries_we_serve.png","image_alt":"Personalized gift displayed for industries we serve.","photo_note":"","bulk_quote":false,"link_label":"Explore this service","link":"\/pages\/industries","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4","item_5","item_6"],"settings":{"eyebrow":"","heading":"Where would you like to go next?","text":"","layout":"grid","columns":3,"image_fit":"cover","color_scheme":"cream","require_photo":false,"bulk_quote":false,"button_label":"","button_link":""}},"questions":{"type":"b2b-faq","blocks":{"question_1":{"type":"question","settings":{"question":"What information should I send for a quote?","answer":"<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.<\/p>"}},"question_2":{"type":"question","settings":{"question":"Can every gift have a different name?","answer":"<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.<\/p>"}},"question_3":{"type":"question","settings":{"question":"Can I review a mockup or sample first?","answer":"<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"\/pages\/request-a-quote?request=sample\">Request a sample<\/a>.<\/p>"}},"question_4":{"type":"question","settings":{"question":"How long will my order take?","answer":"<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.<\/p>"}}},"block_order":["question_1","question_2","question_3","question_4"],"settings":{"heading":"What else would you like to know?","structured_data":true}},"cta":{"type":"b2b-content","settings":{"eyebrow":"","heading":"What do you have in mind?","text":"<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.<\/p>","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"navy","require_photo":false,"bulk_quote":true,"button_label":"Get a Bulk Quote","button_link":"\/pages\/request-a-quote"}}},"order":["hero","examples","related","questions","cta"]}
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "What are you gifting for?",
+        "text": "<p>Personalized employee, client and event gifts start with the occasion. Elma Vada helps you bring product choice, engraving, presentation and fulfillment into one project plan.</p>",
+        "show_image": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/gift.jpg",
+        "image_alt": "Gift bag, ribbon-tied box and personalized pen presented as a corporate gift set.",
+        "photo_note": "Композиция из 3–4 ваших подарков: ручка, награда, коробка, изделие из дерева.",
+        "color_scheme": "cream",
+        "button_label": "Get a Free Mockup",
+        "button_link": "/pages/free-mockup",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work",
+        "compact": false
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Employee Recognition",
+            "eyebrow": "",
+            "text": "<p>Recognize anniversaries, promotions and the everyday contributions that deserve a personal thank-you.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/IMG_5180.jpg",
+            "image_alt": "Four black pen sets with individual engraved names in presentation boxes.",
+            "photo_note": "Именная награда и ручка сотрудника.",
+            "bulk_quote": false,
+            "link_label": "Explore this service",
+            "link": "/pages/employee-recognition",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Events & Awards",
+            "eyebrow": "",
+            "text": "<p>Plan engraved awards, speaker gifts and personalized event pieces around the date that matters.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/awards.png",
+            "image_alt": "Clear recognition award mounted on a curved wooden base.",
+            "photo_note": "Несколько наград с разными именами.",
+            "bulk_quote": false,
+            "link_label": "Explore this service",
+            "link": "/pages/events-awards",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Client & Executive Gifts",
+            "eyebrow": "",
+            "text": "<p>Choose thoughtful gifts for client milestones, partner relationships and executive occasions.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/Executive_Gifts.jpg",
+            "image_alt": "",
+            "photo_note": "Подарочная ручка в открытом футляре.",
+            "bulk_quote": false,
+            "link_label": "Explore this service",
+            "link": "/pages/client-gifting",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Onboarding & Relocation",
+            "eyebrow": "",
+            "text": "<p>Make the first day feel considered with named welcome gifts and coordinated presentation.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/onboarding-elma-vada-engraved-v1.png",
+            "image_alt": "Illustrative employee welcome gift set with an Elma Vada Studio engraved wooden pen and case, notebook and blank card",
+            "photo_note": "Готовый welcome-набор в коробке.",
+            "bulk_quote": false,
+            "link_label": "Explore this service",
+            "link": "/pages/onboarding",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_6": {
+          "type": "item",
+          "settings": {
+            "title": "Bulk Orders",
+            "eyebrow": "",
+            "text": "<p>Bring your quantity, artwork and deadline for a production plan that fits your order.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/engraved_glass.png",
+            "image_alt": "Bulk orders Dallas gifting",
+            "photo_note": "Ровные ряды готовой партии изделий.",
+            "bulk_quote": false,
+            "link_label": "Explore this service",
+            "link": "/pages/bulk-orders",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "title": "Milestone Program",
+            "eyebrow": "",
+            "text": "<p>Discuss a recurring gifting plan with agreed designs, recipient details and a practical schedule.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/IMG_8148.webp",
+            "image_alt": "Black personalized pen and presentation box with an engraved team message.",
+            "photo_note": "Серия подарков к разным годам стажа.",
+            "bulk_quote": false,
+            "link_label": "Explore this service",
+            "link": "/pages/milestone-program",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_3",
+        "item_2",
+        "item_4",
+        "item_6",
+        "item_5"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "Choose your business occasion",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "cream",
+        "require_photo": false,
+        "bulk_quote": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ],
+      "settings": {
+        "heading": "What else would you like to know?",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "eyebrow": "",
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "navy",
+        "require_photo": false,
+        "bulk_quote": true,
+        "button_label": "Get a Bulk Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "examples",
+    "questions",
+    "cta"
+  ]
+}

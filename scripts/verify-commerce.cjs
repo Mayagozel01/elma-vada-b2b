@@ -17,9 +17,9 @@ engine.registerFilter('default_errors', () => '<p>Please check the form.</p>');
 const photo = id => ({id, url: 'https://fixture.test/images/' + id + '.svg', width: 1200, height: 1200, alt: 'Pen photo ' + id});
 const images = [photo('black'), photo('gold'), photo('detail')];
 const variants = [
-  {id: 101, title: 'Black / Gift case', available: true, price: 1999, compare_at_price: null, featured_image: images[0], quantity_rule: {min: 1, increment: 1}},
-  {id: 102, title: 'Gold / Gift case', available: true, price: 2999, compare_at_price: 3499, featured_image: images[1], quantity_rule: {min: 2, increment: 2, max: 10}},
-  {id: 103, title: 'Silver / Gift case', available: false, price: 2499, compare_at_price: null, quantity_rule: {min: 1, increment: 1}}
+  {id: 101, title: 'Black / Gift case', available: true, inventory_management: 'shopify', inventory_quantity: 12, inventory_policy: 'deny', price: 1999, compare_at_price: null, featured_image: images[0], quantity_rule: {min: 1, increment: 1}},
+  {id: 102, title: 'Gold / Gift case', available: true, inventory_management: 'shopify', inventory_quantity: 2, inventory_policy: 'deny', price: 2999, compare_at_price: 3499, featured_image: images[1], quantity_rule: {min: 2, increment: 2, max: 10}},
+  {id: 103, title: 'Silver / Gift case', available: false, inventory_management: 'shopify', inventory_quantity: 0, inventory_policy: 'deny', price: 2499, compare_at_price: null, quantity_rule: {min: 1, increment: 1}}
 ];
 const product = {
   id: 1, title: 'Executive pen & case', type: 'Pens', url: '/products/executive-pen', price: 1999, price_min: 1999, price_varies: true,
@@ -152,7 +152,7 @@ async function main() {
   for (const type of ['featured-products', 'product-related']) {
     assert((await renderSection(type, pricedCtx, {collection, products_to_show: 4})).includes('catalog-card__price'), 'Shared price toggle: ' + type);
   }
-  const renderCard = (card_product, show_price = true) => engine.parseAndRender(source('snippets/catalog-product-card.liquid'), {card_product, card_index: 1, show_price});
+  const renderCard = (card_product, show_price = true, options = {}) => engine.parseAndRender(source('snippets/catalog-product-card.liquid'), {card_product, card_index: 1, show_price, ...options});
   const shortProduct = {...product, title: 'Long product title – with many characteristics, SEO unchanged', metafields: {custom: {catalog_title: {value: 'Pen & Gift Set'}}}};
   const shortHtml = await renderCard(shortProduct);
   assert(shortHtml.includes('>Pen &amp; Gift Set</a></h3>'));
@@ -170,15 +170,46 @@ async function main() {
     assert(html.includes('class="b2b-link catalog-card__action"'));
     assert(html.includes('<h3><a href="/products/'));
     assert(!html.includes('catalog-card__price'), 'Card prices must remain hidden until enabled');
-    assert(!html.includes('catalog-card__stock'), 'Card stock information remains hidden');
+    assert(html.includes('catalog-card__stock'), 'Card availability must be visible even when prices are hidden');
+    assert(html.includes('Some options available'));
   }
   const soldOutCardHtml = await engine.parseAndRender(source('snippets/catalog-product-card.liquid'), {card_product: {...product, available: false}, card_index: 1});
-  assert(!soldOutCardHtml.includes('Sold out'), 'Sold-out cards must not render stock information');
+  assert(soldOutCardHtml.includes('Out of stock'));
+  assert(soldOutCardHtml.includes('catalog-card__action'), 'Unavailable products must remain openable for quote requests');
   assert(!soldOutCardHtml.includes('catalog-card__price'));
   assert(catalogHtml.includes('href="/pages/request-a-quote" class="btn btn--primary">Request a Bulk Quote'), 'Bulk quote fallback must remain');
   const customLinkHtml = await renderSection('catalog', {...ctx, collection: {...collection, products: [], products_count: 0}}, {empty_button_link: '/pages/custom-quote', bulk_link: '/pages/custom-bulk'});
   assert(customLinkHtml.includes('href="/pages/custom-quote"'));
   assert(customLinkHtml.includes('href="/pages/custom-bulk"'));
+  const singleProduct = variant => ({...product, available: variant.available, variants_count: 1, variants: [variant], selected_or_first_available_variant: variant});
+  const stockCases = [
+    ['Tracked stock', {...variants[0]}, 'In stock'],
+    ['Low stock', {...variants[0], inventory_quantity: 3}, 'Low stock'],
+    ['Unavailable', {...variants[0], available: false, inventory_quantity: 0}, 'Out of stock'],
+    ['Backorder', {...variants[0], inventory_quantity: 0, inventory_policy: 'continue'}, 'Available to order'],
+    ['Negative backorder', {...variants[0], inventory_quantity: -4, inventory_policy: 'continue'}, 'Available to order'],
+    ['Untracked', {...variants[0], inventory_management: null, inventory_quantity: 999}, 'Available to order'],
+    ['Unknown quantity', {...variants[0], inventory_quantity: null}, 'Available to order']
+  ];
+  for (const [name, variant, expected] of stockCases) {
+    const card = await renderCard(singleProduct(variant), true, {show_inventory_quantity: true});
+    assert(card.includes('>' + expected), name);
+    const knownPositive = variant.available && variant.inventory_management && variant.inventory_quantity > 0;
+    assert.equal(card.includes(' · ' + variant.inventory_quantity + ' available'), Boolean(knownPositive), name + ': quantity disclosure');
+    const hiddenQuantity = await renderCard(singleProduct(variant));
+    assert(!/·\s*-?\d+ available/.test(hiddenQuantity), name + ': quantity hidden by default');
+  }
+  assert((await renderCard(singleProduct({...variants[0], inventory_quantity: 3}), true, {low_stock_threshold: 2})).includes('>In stock'));
+  assert((await renderCard(singleProduct({...variants[0], inventory_quantity: 1}), true, {low_stock_threshold: 0})).includes('>In stock'));
+  assert((await renderCard({...product, variants: variants.slice(0, 2)}, true, {show_inventory_quantity: true})).includes('>In stock'));
+  const mixedSupply = {...product, variants: [variants[0], {...variants[1], inventory_quantity: 0, inventory_policy: 'continue'}]};
+  const mixedSupplyHtml = await renderCard(mixedSupply, true, {show_inventory_quantity: true});
+  assert(mixedSupplyHtml.includes('>Available to order'));
+  assert(!/·\s*\d+ available/.test(mixedSupplyHtml), 'Do not total incompatible variants');
+  assert((await renderCard({...product, variants_count: 300, variants: variants.slice(0, 2)})).includes('Some options available'), 'Do not claim every option is available for truncated variant data');
+  const inventoryProducts = stockCases.map(([name, variant], index) => ({...singleProduct(variant), id: 50 + index, title: name, url: '/products/fixture-' + index}));
+  inventoryProducts.push({...product, title: 'A long product title which must stay readable without replacing its SEO title or removing characteristics', id: 99});
+  const inventoryHtml = await renderSection('catalog', {...ctx, settings: {...sharedSettings, show_catalog_prices: true, show_inventory_quantity: true}, collection: {...collection, products: inventoryProducts, products_count: inventoryProducts.length}});
   if (process.argv.includes('--markup-only')) {
     console.log('PASS: URL schema defaults, JSON template compatibility, Liquid rendering, empty/custom quote links, product metafields, related products and cart markup.');
     return;
@@ -199,7 +230,7 @@ async function main() {
       return page;
     }
     for (const width of [320, 390, 768, 1024, 1440]) {
-      for (const [name, html] of [['product', productHtml], ['catalog', catalogHtml], ['priced-catalog', pricedCatalogHtml], ['category', categoryHtml], ['long-category', longCategoryHtml], ['featured', featuredHtml], ['cart', cartHtml], ['minimal-product', minimalHtml]]) {
+      for (const [name, html] of [['product', productHtml], ['catalog', catalogHtml], ['priced-catalog', pricedCatalogHtml], ['inventory-catalog', inventoryHtml], ['category', categoryHtml], ['long-category', longCategoryHtml], ['featured', featuredHtml], ['cart', cartHtml], ['minimal-product', minimalHtml]]) {
         const page = await createPage(width, html, name === 'featured' ? '/' : '/products/executive-pen', name !== 'featured');
         assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), name + '/' + width + ' overflow');
         // revision.css clips viewport overflow: verify each visible commerce control as well.
@@ -211,9 +242,22 @@ async function main() {
         if (name === 'priced-catalog' || name === 'category') {
           assert(await page.locator('.catalog-card__body').evaluateAll(nodes => nodes.every(node => {
             const heading = node.querySelector('h3').getBoundingClientRect();
-            const next = node.querySelector('.catalog-card__price, .catalog-card__action').getBoundingClientRect();
+            const next = node.querySelector('.catalog-card__price, .catalog-card__stock').getBoundingClientRect();
             return next.top - heading.bottom < 20;
           })), 'Compact spacing: ' + name + '/' + width);
+        }
+        if (name.includes('catalog') || name === 'category') {
+          assert(await page.locator('.catalog-card h3 a').evaluateAll(links => links.every(link => link.getBoundingClientRect().height <= Number.parseFloat(getComputedStyle(link).lineHeight) * 3 + 1 && link.getAttribute('title') === link.textContent)), 'Three visual lines with the full title retained: ' + name + '/' + width);
+          assert(await page.locator('.catalog-card').evaluateAll(cards => {
+            const rows = new Map();
+            for (const card of cards) {
+              const top = Math.round(card.getBoundingClientRect().top);
+              const linkTop = card.querySelector('.catalog-card__action').getBoundingClientRect().top;
+              if (rows.has(top) && Math.abs(rows.get(top) - linkTop) > 1) return false;
+              rows.set(top, linkTop);
+            }
+            return true;
+          }), 'Aligned action links: ' + name + '/' + width);
         }
         if (name === 'catalog' || name === 'featured') {
           const card = page.locator('.catalog-card').first();
@@ -224,7 +268,7 @@ async function main() {
             return style.transform === 'none' && style.boxShadow === 'none' && Math.abs(image.width / image.height - 4 / 3) < .02;
           }), name + '/' + width + ': shared card styling');
         }
-        if ((width === 1440 || width === 390) && (name === 'product' || name === 'catalog' || name === 'priced-catalog')) {
+        if ((width === 1440 || width === 390) && (name === 'product' || name === 'catalog' || name === 'priced-catalog' || name === 'inventory-catalog')) {
           fs.mkdirSync(path.join(root, 'output'), {recursive: true});
           await page.screenshot({path: path.join(root, 'output', 'hybrid-' + name + '-' + width + '.png'), fullPage: true});
         }
@@ -232,6 +276,7 @@ async function main() {
       }
     }
     const page = await createPage(1440, productHtml);
+    assert.equal((await page.locator('[data-variant-stock]').textContent()).trim(), 'In stock');
     await page.locator('[data-gallery-thumb="detail"]').click();
     assert(await page.locator('[data-gallery-image="detail"]').isVisible());
     await page.locator('[data-gallery-image="detail"]').click();
@@ -239,6 +284,7 @@ async function main() {
     await page.keyboard.press('Escape');
     assert(!(await page.locator('dialog').evaluate(el => el.open)));
     await page.locator('[data-variant-select]').selectOption('102');
+    assert.equal((await page.locator('[data-variant-stock]').textContent()).trim(), 'Low stock');
     assert.equal(await page.locator('[data-variant-price]').textContent(), '$29.99');
     assert(await page.locator('[data-variant-compare]').isVisible());
     assert(await page.locator('[data-gallery-image="gold"]').isVisible());
@@ -260,6 +306,7 @@ async function main() {
     assert.equal(purchase.get('return_to'), '/cart');
     await page.waitForLoadState();
     await page.locator('[data-variant-select]').selectOption('103');
+    assert.equal((await page.locator('[data-variant-stock]').textContent()).trim(), 'Out of stock');
     assert(await page.locator('[data-add-to-cart]').isDisabled());
     assert(!(await page.locator('[data-variant-compare]').isVisible()));
     await page.locator('[data-variant-select]').selectOption('101');
@@ -279,6 +326,18 @@ async function main() {
     assert.equal(contact.get('contact[Variant]'), 'Black / Gift case');
     assert.equal(new URL(contact.get('contact[Product URL]')).searchParams.get('variant'), '101');
     await page.close();
+    const quantityProduct = await renderProduct({...ctx, settings: {show_inventory_quantity: true, low_stock_threshold: 5}});
+    const quantityPage = await createPage(390, quantityProduct);
+    assert.equal((await quantityPage.locator('[data-variant-stock]').textContent()).trim(), 'In stock · 12 available');
+    await quantityPage.locator('[data-variant-select]').selectOption('102');
+    assert.equal((await quantityPage.locator('[data-variant-stock]').textContent()).trim(), 'Low stock · 2 available');
+    await quantityPage.close();
+    for (const [, variant, expected] of stockCases.slice(2)) {
+      const html = await renderProduct({...ctx, settings: {show_inventory_quantity: true}, product: singleProduct(variant)});
+      const stockPage = await createPage(390, html);
+      assert.equal((await stockPage.locator('[data-variant-stock]').textContent()).trim(), expected);
+      await stockPage.close();
+    }
     const catalogPage = await createPage(390, catalogHtml, '/collections/all');
     await catalogPage.locator('summary', {hasText: 'Filter products'}).click();
     assert(await catalogPage.locator('input[value="Wood"]').isDisabled());

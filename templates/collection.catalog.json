@@ -11,10 +11,12 @@
         "empty_heading": "Products are coming soon",
         "empty_text": "Please check back soon, or contact us to discuss your project.",
         "empty_button_label": "Request a Quote",
-        "empty_button_link": "/pages/request-a-quote",
-        "bulk_link": "/pages/request-a-quote"
+        "empty_button_link": "/pages/request-a-quote#ProjectForm",
+        "bulk_link": "/pages/request-a-quote#ProjectForm"
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }

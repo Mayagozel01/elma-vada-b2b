@@ -1,7 +1,14 @@
 {
-  "sections": {"main": {"type": "catalog", "settings": {
-    "empty_button_link": "/pages/request-a-quote",
-    "bulk_link": "/pages/request-a-quote"
-  }}},
-  "order": ["main"]
+  "sections": {
+    "main": {
+      "type": "catalog",
+      "settings": {
+        "empty_button_link": "/pages/request-a-quote#ProjectForm",
+        "bulk_link": "/pages/request-a-quote#ProjectForm"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }

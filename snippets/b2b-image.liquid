@@ -28,6 +28,11 @@
       loading="{% if eager %}eager{% else %}lazy{% endif %}" {% if eager %}fetchpriority="high"{% endif %}
       style="object-position: {{ photo.presentation.focal_point | default: '50% 50%' }};">
   </figure>
+{% elsif fallback_asset != blank %}
+  <figure class="b2b-media{% if fit == 'contain' %} b2b-media--contain{% endif %}">
+    <img src="{{ fallback_asset | asset_url }}" alt="{{ alt | default: title | escape }}"
+      width="1200" height="900" loading="{% if eager %}eager{% else %}lazy{% endif %}" {% if eager %}fetchpriority="high"{% endif %}>
+  </figure>
 {% elsif request.design_mode %}
   <div class="b2b-placeholder">
     {{ 'image' | placeholder_svg_tag }}

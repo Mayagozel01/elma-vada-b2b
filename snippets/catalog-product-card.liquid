@@ -16,10 +16,11 @@
     {% endif %}
   </a>
   <div class="b2b-card__body catalog-card__body">
-    <h3><a href="{{ card_product.url }}">{{ card_title | escape }}</a></h3>
+    <h3><a href="{{ card_product.url }}" title="{{ card_title | escape }}">{{ card_title | escape }}</a></h3>
     {% if show_price == true and card_product.price_min != nil and card_product.price_min >= 0 %}
       <p class="catalog-card__price">{% if card_product.price_varies %}From {% endif %}{{ card_product.price_min | money }}</p>
     {% endif %}
+    <p class="catalog-card__stock">{% render 'inventory-status', inventory_product: card_product, show_inventory_quantity: show_inventory_quantity, low_stock_threshold: low_stock_threshold %}</p>
     <a href="{{ card_product.url }}{% if card_variant != blank %}?variant={{ card_variant.id }}{% endif %}" class="b2b-link catalog-card__action">{{ card_label | default: 'View product' | escape }} <span aria-hidden="true">→</span></a>
   </div>
 </article>

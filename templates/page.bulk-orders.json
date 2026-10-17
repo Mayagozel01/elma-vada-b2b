@@ -1,1 +1,292 @@
-{"sections":{"hero":{"type":"b2b-page-hero","settings":{"eyebrow":"Elma Vada · Dallas, Texas","heading":"A clear plan for every piece in the batch","text":"<p>Plan personalized gift orders from 1 to 5,000+ units with our Dallas engraving team. We coordinate artwork, individual names, quality checks and packing around your quantity and deadline.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/bulk-corporate-gifts-personalized-awards-dallas-elma-vada_2070508f-1af6-4565-b4db-2e7eb2372175.png","image_alt":"Bulk personalized corporate gifts and recognition awards prepared for business orders by Elma Vada in Dallas.","photo_note":"Широкий кадр реальной партии одинаковых изделий, не сгенерированный цех.","color_scheme":"cream","button_label":"Get a Free Mockup","button_link":"/pages/free-mockup","secondary_label":"View Our Work","secondary_link":"/pages/our-work","compact":false}},"speed":{"type":"b2b-feature","settings":{"eyebrow":"","heading":"Fast, In-House Engraving","text":"<p>Small orders ready in as little as 1 business day.*</p><p>Up to 1,000 engraved pens produced in just 1 business day.*</p>","fine_print":"*Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability.","media_type":"video","video":"shopify://files/videos/Bullet Bolt Action Pen Niko2.MOV","image_alt":"","photo_note":"Реальный процесс лазерной гравировки и готовая партия ручек.","show_address":false,"button_label":"Get a Bulk Quote","button_link":"/pages/request-a-quote","secondary_label":"Request a Physical Sample","secondary_link":"/pages/request-a-quote?request=sample","color_scheme":"cream","bulk_quote":true}},"examples":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Consistent Production Runs","eyebrow":"","text":"<p>Agree the design and placement before the batch is produced.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/packed.png","image_alt":"Batch of engraved gift boxes ready for consistent production run, Elma Vada bulk orders","photo_note":"Ровные ряды одинаково выгравированных изделий.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Per-Piece Personalization","eyebrow":"","text":"<p>Include names or individual messages in a clearly organized recipient list.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/personalized-pen-elma-vada.png","image_alt":"Two engraved pens with individual recipient names, per-piece personalization by Elma Vada","photo_note":"Ручки с разными именами в одной партии.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Quality Review","eyebrow":"","text":"<p>Plan checks for artwork, spelling and finish as part of the project.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/quality-review-personalized-engraved-pens-checklist.png","image_alt":"Close-up of personalized engraved pens being checked against an order checklist before packing and shipping.","photo_note":"Руки сотрудника проверяют гравировку.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Packing & Distribution","eyebrow":"","text":"<p>Specify whether items should be grouped, boxed or prepared for separate recipients.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/upakovannye.png","image_alt":"Packed corporate gift boxes organized on warehouse shelves for distribution, Elma Vada","photo_note":"Реальные коробки и защитная упаковка.","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"What could your gift look like?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"process":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Share the Brief","eyebrow":"","text":"<p>Tell us the occasion, recipients, quantity and target date.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/elma-vada-inventory-manager-warehouse.png","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Review the Direction","eyebrow":"","text":"<p>Discuss products and a digital mockup; ask about physical sample options.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/engraved-metal-bookmarks-speaker-gift-set.jpg","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Approve the Details","eyebrow":"","text":"<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/google-ai-photo-06-share-the-brief.png","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Produce & Prepare","eyebrow":"","text":"<p>Production and packing follow the approved project scope.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/corporate-gift-warehouse-inventory-dallas.png","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"How does the project come together?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"white","require_photo":false,"button_label":"","button_link":""}},"related":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Business Solutions","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/business-solutions","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Production Capabilities","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/production-capabilities","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Our Work","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/our-work","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3"],"settings":{"eyebrow":"","heading":"Where would you like to go next?","text":"","layout":"grid","columns":3,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"questions":{"type":"b2b-faq","blocks":{"question_1":{"type":"question","settings":{"question":"What information should I send for a quote?","answer":"<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"}},"question_2":{"type":"question","settings":{"question":"Can every gift have a different name?","answer":"<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"}},"question_3":{"type":"question","settings":{"question":"Can I review a mockup or sample first?","answer":"<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample\">Request a sample</a>.</p>"}},"question_4":{"type":"question","settings":{"question":"How long will my order take?","answer":"<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"}}},"block_order":["question_1","question_2","question_3","question_4"],"settings":{"heading":"What else would you like to know?","structured_data":true}},"cta":{"type":"b2b-content","settings":{"eyebrow":"","heading":"What do you have in mind?","text":"<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"navy","require_photo":false,"button_label":"Get a Bulk Quote","button_link":"/pages/request-a-quote","bulk_quote":true}}},"order":["hero","speed","examples","process","related","questions","cta"]}
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "A clear plan for every piece in the batch",
+        "text": "<p>Plan personalized gift orders from 1 to 5,000+ units with our Dallas engraving team. We coordinate artwork, individual names, quality checks and packing around your quantity and deadline.</p>",
+        "show_image": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/bulk-corporate-gifts-personalized-awards-dallas-elma-vada_2070508f-1af6-4565-b4db-2e7eb2372175.png",
+        "image_alt": "Bulk personalized corporate gifts and recognition awards prepared for business orders by Elma Vada in Dallas.",
+        "photo_note": "Широкий кадр реальной партии одинаковых изделий, не сгенерированный цех.",
+        "color_scheme": "cream",
+        "button_label": "Get a Free Mockup",
+        "button_link": "/pages/free-mockup",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work",
+        "compact": false
+      }
+    },
+    "speed": {
+      "type": "b2b-feature",
+      "settings": {
+        "eyebrow": "",
+        "heading": "Fast, In-House Engraving",
+        "text": "<p>Small orders ready in as little as 1 business day.*</p><p>Up to 1,000 engraved pens produced in just 1 business day.*</p>",
+        "fine_print": "*Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability.",
+        "media_type": "video",
+        "video": "shopify://files/videos/Bullet Bolt Action Pen Niko2.MOV",
+        "image_alt": "",
+        "photo_note": "Реальный процесс лазерной гравировки и готовая партия ручек.",
+        "show_address": false,
+        "button_label": "Get a Bulk Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "secondary_label": "Request a Physical Sample",
+        "secondary_link": "/pages/request-a-quote?request=sample#ProjectForm",
+        "color_scheme": "cream",
+        "bulk_quote": true
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Consistent Production Runs",
+            "eyebrow": "",
+            "text": "<p>Agree the design and placement before the batch is produced.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/packed.png",
+            "image_alt": "Batch of engraved gift boxes ready for consistent production run, Elma Vada bulk orders",
+            "photo_note": "Ровные ряды одинаково выгравированных изделий.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Per-Piece Personalization",
+            "eyebrow": "",
+            "text": "<p>Include names or individual messages in a clearly organized recipient list.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/personalized-pen-elma-vada.png",
+            "image_alt": "Two engraved pens with individual recipient names, per-piece personalization by Elma Vada",
+            "photo_note": "Ручки с разными именами в одной партии.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Quality Review",
+            "eyebrow": "",
+            "text": "<p>Plan checks for artwork, spelling and finish as part of the project.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/quality-review-personalized-engraved-pens-checklist.png",
+            "image_alt": "Close-up of personalized engraved pens being checked against an order checklist before packing and shipping.",
+            "photo_note": "Руки сотрудника проверяют гравировку.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Packing & Distribution",
+            "eyebrow": "",
+            "text": "<p>Specify whether items should be grouped, boxed or prepared for separate recipients.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/upakovannye.png",
+            "image_alt": "Packed corporate gift boxes organized on warehouse shelves for distribution, Elma Vada",
+            "photo_note": "Реальные коробки и защитная упаковка.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "What could your gift look like?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "cream",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "process": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Share the Brief",
+            "eyebrow": "",
+            "text": "<p>Tell us the occasion, recipients, quantity and target date.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/elma-vada-inventory-manager-warehouse.png",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Review the Direction",
+            "eyebrow": "",
+            "text": "<p>Discuss products and a digital mockup; ask about physical sample options.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/engraved-metal-bookmarks-speaker-gift-set.jpg",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Approve the Details",
+            "eyebrow": "",
+            "text": "<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/google-ai-photo-06-share-the-brief.png",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Produce & Prepare",
+            "eyebrow": "",
+            "text": "<p>Production and packing follow the approved project scope.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/corporate-gift-warehouse-inventory-dallas.png",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "How does the project come together?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "white",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ],
+      "settings": {
+        "heading": "What else would you like to know?",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "eyebrow": "",
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "navy",
+        "require_photo": false,
+        "button_label": "Get a Bulk Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "bulk_quote": true
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "speed",
+    "examples",
+    "process",
+    "questions",
+    "cta"
+  ]
+}

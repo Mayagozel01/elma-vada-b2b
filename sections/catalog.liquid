@@ -5,7 +5,7 @@
   if collection.handle == 'all'
     assign catalog_heading = section.settings.fallback_title | default: 'Product Catalog'
   endif
-  assign empty_button_link = section.settings.empty_button_link | default: '/pages/request-a-quote'
+  assign empty_button_link = section.settings.empty_button_link | default: '/pages/request-a-quote#ProjectForm'
   assign has_filters = false
   assign has_active_filters = false
   if section.settings.show_filters and collection.filters.size > 0
@@ -26,6 +26,7 @@
       <h1>{{ catalog_heading | escape }}</h1>
       {% if section.settings.use_collection_description and collection.handle != 'all' and collection.description != blank %}<div class="catalog__description b2b-rte">{{ collection.description }}</div>
       {% elsif section.settings.introduction != blank %}<div class="catalog__description b2b-rte">{{ section.settings.introduction }}</div>{% endif %}
+      {% if request.design_mode and settings.show_catalog_prices != true %}<p class="b2b-editor-note">Card prices are hidden. After confirming variant prices, enable Theme settings → Product catalog → Show agreed product prices on cards.</p>{% endif %}
     </header>
       <nav class="catalog-categories" aria-label="Product categories">
         <a href="{{ routes.all_products_collection_url }}" {% if collection.handle == 'all' %}aria-current="page"{% endif %}>All products</a>
@@ -45,6 +46,7 @@
       {% if has_filters %}
         <details class="catalog-filters" {% if has_active_filters %}open{% endif %}>
           <summary>Filter products</summary>
+          <p class="commerce-note catalog-inventory-note">Availability filters products that can be ordered, including items sold without tracked stock. Check the product page for the selected option's stock status.</p>
           <div class="catalog-filters__groups">
             {% for filter in collection.filters %}
               {% assign filter_index = forloop.index %}
@@ -92,7 +94,7 @@
     {% endif %}
     {% if collection.products.size > 0 %}
       <div class="catalog__grid" role="list">
-        {% for product in collection.products %}{% render 'catalog-product-card', card_product: product, card_index: forloop.index, card_label: section.settings.product_link_label, show_price: settings.show_catalog_prices %}{% endfor %}
+        {% for product in collection.products %}{% render 'catalog-product-card', card_product: product, card_index: forloop.index, card_label: section.settings.product_link_label, show_price: settings.show_catalog_prices, show_inventory_quantity: settings.show_inventory_quantity, low_stock_threshold: settings.low_stock_threshold %}{% endfor %}
       </div>
       {% if paginate.pages > 1 %}
         <nav class="catalog__pagination" aria-label="Catalog pages">
@@ -107,7 +109,7 @@
       <div class="catalog__empty"><h2>{{ section.settings.empty_heading | escape }}</h2><p>{{ section.settings.empty_text | escape }}</p>{% if section.settings.empty_button_label != blank %}<a href="{{ empty_button_link }}" class="btn btn--primary">{{ section.settings.empty_button_label | escape }}</a>{% endif %}</div>
     {% endif %}
     {% if section.settings.bulk_heading != blank %}
-      <aside class="catalog-bulk"><div><p class="b2b-eyebrow">Corporate orders</p><h2>{{ section.settings.bulk_heading | escape }}</h2><div class="b2b-rte">{{ section.settings.bulk_text }}</div></div><a href="{{ section.settings.bulk_link | default: '/pages/request-a-quote' }}" class="btn btn--primary">{{ section.settings.bulk_label | escape }}</a></aside>
+      <aside class="catalog-bulk"><div><p class="b2b-eyebrow">Corporate orders</p><h2>{{ section.settings.bulk_heading | escape }}</h2><div class="b2b-rte">{{ section.settings.bulk_text }}</div></div><a href="{{ section.settings.bulk_link | default: '/pages/request-a-quote#ProjectForm' }}" class="btn btn--primary">{{ section.settings.bulk_label | escape }}</a></aside>
     {% endif %}
   </div>
 </section>

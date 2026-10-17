@@ -76,6 +76,9 @@
   [data-ev-bulk-cta].is-bulk-highlight::after { animation: none; }
   [data-ev-bulk-cta]:hover .ev-bulk-cta__arrow { transform: none; }
 }
+.btn[data-ev-bulk-cta] {
+  justify-content: center;
+}
 [hidden] { display: none !important; }
 .ev-brand-logo {
   display: block;
@@ -112,9 +115,9 @@ body {
 }
 .ev-header-trust { padding: .5rem 1rem; text-align: center; background: #1e252b; color: #fff; font-size: .8rem; overflow-wrap: anywhere; }
 .ev-hero { background: var(--color-cream); }
-.ev-hero__grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 0; align-items: stretch; min-height: calc(100svh - 104px); max-width: none; padding: 0; }
+.ev-hero__grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 0; align-items: center; min-height: 0; max-width: none; padding: 0; }
 .ev-hero__copy { align-self: center; padding: clamp(2rem,4vw,4rem); }
-.ev-hero__media { position: relative; min-height: 560px; overflow: hidden; background: #1e252b; }
+.ev-hero__media { position: relative; justify-self: center; width: min(100%, 405px); max-width: 405px; height: auto; min-height: 0; aspect-ratio: 9 / 16; overflow: hidden; background: var(--color-cream); }
 .ev-hero--text-only .ev-hero__grid { grid-template-columns: minmax(0,850px); justify-content: center; }
 .ev-hero__copy, .ev-hero__media, .ev-quote__main, .ev-quote__aside { min-width: 0; }
 .ev-hero h1 { font: 400 clamp(2.1rem,4.3vw,4.5rem)/1.08 var(--font-heading); color: var(--color-navy); margin: .75rem 0 1.25rem; overflow-wrap: anywhere; }
@@ -123,8 +126,8 @@ body {
 .ev-hero .btn--outline { border-color: var(--color-navy); color: var(--color-navy); }
 .ev-hero__details { font-size: .9rem; margin-top: 1rem; }
 .ev-hero__slide { margin: 0; position: absolute; inset: 0; }
-.ev-hero__visual { display: block; width: 100%; max-width: 100%; height: 100%; object-fit: cover; background: #1e252b; }
-.ev-hero video { object-fit: cover; }
+.ev-hero__visual { display: block; width: 100%; max-width: 100%; height: 100%; object-fit: contain; object-position: center; transform: none; background: var(--color-cream); }
+.ev-hero video { object-fit: contain; object-position: center; transform: none; }
 .ev-hero figcaption { position: absolute; top: 1rem; left: 1rem; right: 1rem; width: fit-content; max-width: calc(100% - 2rem); padding: .5rem .75rem; background: #1e252baa; color: white; font-size: .85rem; overflow-wrap: anywhere; pointer-events: none; }
 .ev-hero__controls { position: absolute; z-index: 3; bottom: 1.5rem; right: 1.5rem; max-width: calc(100% - 3rem); display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: .4rem; padding: .35rem; color: white; background: #1e252b66; backdrop-filter: blur(8px); border: 1px solid #ffffff45; border-radius: 4px; }
 .ev-hero__controls button { min-height: 44px; min-width: 44px; padding: .5rem .75rem; background: transparent; color: white; font: inherit; cursor: pointer; }
@@ -164,7 +167,11 @@ body {
 .ev-quote-section { padding-top: 1rem; scroll-margin-top: 88px; }
 .ev-quote__main { grid-column: 2; grid-row: 1; }
 .ev-quote__aside { grid-column: 1; grid-row: 1; }
-.ev-quote-section .b2b-form h2 { font-size: clamp(1.4rem,2.3vw,2rem); }
+.ev-quote-section .b2b-quote { gap: clamp(1.5rem, 4vw, 3.5rem); }
+.ev-quote-section .ev-quote__main { padding: clamp(1rem, 2.5vw, 2rem); border: 1px solid var(--color-beige-dark); background: var(--color-cream); }
+.ev-shopify-form { min-width: 0; width: 100%; color: var(--color-navy); }
+.ev-shopify-form > .shopify-app-block { width: 100%; max-width: 100%; margin: 0; }
+.ev-shopify-form:focus-within { outline: 2px solid var(--color-gold); outline-offset: 4px; }
 .footer__grid > *, .header__logo-text { min-width: 0; }
 .site-footer { overflow-wrap: anywhere; }
 .site-footer .footer__logo-badge,
@@ -183,7 +190,7 @@ body {
 :focus-visible { outline: 3px solid #a57b31; outline-offset: 4px; }
 @media (max-width: 1024px) {
   .ev-hero__grid { grid-template-columns: minmax(0,1fr); min-height: 0; }
-  .ev-hero__media { width: 100%; min-height: clamp(320px, 70svh, 640px); }
+  .ev-hero__media { width: min(405px, calc(100% - 10vw)); max-width: 100%; min-height: 0; }
 }
 @media (max-width: 990px) {
   .b2b-quote { grid-template-columns: minmax(0,1fr); }
@@ -201,8 +208,7 @@ body {
   .ev-hero .b2b-actions { gap: .65rem; margin-top: 1rem; }
   .ev-hero .btn { width: 100%; font-size: .8rem; padding: .85rem 1rem; }
   .footer__bottom { flex-wrap: wrap; gap: 1rem; }
-  .ev-quote-section .b2b-form { padding: 1rem; }
-  .ev-quote-section .b2b-form__fields { margin-top: 1rem; }
+  .ev-quote-section .ev-quote__main { padding: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }

@@ -1,1 +1,267 @@
-{"sections":{"hero":{"type":"b2b-page-hero","settings":{"eyebrow":"Elma Vada · Dallas, Texas","heading":"Client gifts that outlive the transaction","text":"<p>Personalized client, partner and executive gifts turn a business occasion into a thoughtful thank-you. Plan for closings, relationship anniversaries, referrals and the people who help your business grow.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/personalized-client-gift-set-award-pen-tumbler.png","image_alt":"Personalized client gift set with engraved pens in presentation boxes, a custom tumbler, a wooden keepsake box, an engraved guitar pick and a clear recognition award arranged together for executive and corporate gifting.","photo_note":"Настоящий клиентский подарок: футляр с именной ручкой и запиской.","color_scheme":"cream","button_label":"Get a Free Mockup","button_link":"/pages/free-mockup","secondary_label":"View Our Work","secondary_link":"/pages/our-work","compact":false}},"examples":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Executive Pen Set","eyebrow":"","text":"<p>A presentation-ready starting point for a leadership or partner occasion.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/podruch.png","image_alt":"","photo_note":"Ваш набор ручек в футляре.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Relationship Keepsake","eyebrow":"","text":"<p>Consider a wood or acrylic piece tied to a closing, shared project or anniversary.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/Gemini_Generated_Image_4s3i4e4s3i4e4s3i_1.jpg","image_alt":"","photo_note":"Деревянный сувенир или памятная табличка.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Engraved Glass Gift","eyebrow":"","text":"<p>A finished piece for a client or partner occasion, with artwork chosen for the recipient.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/personalized-engraved-glassware-variety-gift-set.png","image_alt":"Assorted engraved glass gifts including personalized tumblers, a tall glass and a stemless glass with custom names and Team Epic branding on a white background.","photo_note":"Стеклянное изделие с вашей гравировкой.","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Personalized Client Pen","eyebrow":"","text":"<p>A name or message can make a useful everyday object feel personal.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/metal.png","image_alt":"","photo_note":"Макро ручки с именем, без случайного чужого логотипа.","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_3","item_4","item_2"],"settings":{"eyebrow":"","heading":"What could your gift look like?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"process":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Share the Brief","eyebrow":"","text":"<p>Tell us the occasion, recipients, quantity and target date.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Review the Direction","eyebrow":"","text":"<p>Discuss products and a digital mockup; ask about physical sample options.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Approve the Details","eyebrow":"","text":"<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Produce & Prepare","eyebrow":"","text":"<p>Production and packing follow the approved project scope.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"How does the project come together?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"white","require_photo":false,"button_label":"","button_link":""}},"related":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Business Solutions","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/business-solutions","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Production Capabilities","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/production-capabilities","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Our Work","eyebrow":"","text":"<p></p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","link_label":"Explore this service","link":"/pages/our-work","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3"],"settings":{"eyebrow":"","heading":"Where would you like to go next?","text":"","layout":"grid","columns":3,"image_fit":"cover","color_scheme":"cream","require_photo":false,"button_label":"","button_link":""}},"questions":{"type":"b2b-faq","blocks":{"question_1":{"type":"question","settings":{"question":"What information should I send for a quote?","answer":"<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"}},"question_2":{"type":"question","settings":{"question":"Can every gift have a different name?","answer":"<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"}},"question_3":{"type":"question","settings":{"question":"Can I review a mockup or sample first?","answer":"<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample\">Request a sample</a>.</p>"}},"question_4":{"type":"question","settings":{"question":"How long will my order take?","answer":"<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"}}},"block_order":["question_1","question_2","question_3","question_4"],"settings":{"heading":"What else would you like to know?","structured_data":true}},"cta":{"type":"b2b-content","settings":{"eyebrow":"","heading":"What do you have in mind?","text":"<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"navy","require_photo":false,"button_label":"Get a Bulk Quote","button_link":"/pages/request-a-quote","bulk_quote":true}}},"order":["hero","examples","process","related","questions","cta"]}
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "Client gifts that outlive the transaction",
+        "text": "<p>Personalized client, partner and executive gifts turn a business occasion into a thoughtful thank-you. Plan for closings, relationship anniversaries, referrals and the people who help your business grow.</p>",
+        "show_image": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/personalized-client-gift-set-award-pen-tumbler.png",
+        "image_alt": "Personalized client gift set with engraved pens in presentation boxes, a custom tumbler, a wooden keepsake box, an engraved guitar pick and a clear recognition award arranged together for executive and corporate gifting.",
+        "photo_note": "Настоящий клиентский подарок: футляр с именной ручкой и запиской.",
+        "color_scheme": "cream",
+        "button_label": "Get a Free Mockup",
+        "button_link": "/pages/free-mockup",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work",
+        "compact": false
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Executive Pen Set",
+            "eyebrow": "",
+            "text": "<p>A presentation-ready starting point for a leadership or partner occasion.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/podruch.png",
+            "image_alt": "",
+            "photo_note": "Ваш набор ручек в футляре.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Relationship Keepsake",
+            "eyebrow": "",
+            "text": "<p>Consider a wood or acrylic piece tied to a closing, shared project or anniversary.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/Gemini_Generated_Image_4s3i4e4s3i4e4s3i_1.jpg",
+            "image_alt": "",
+            "photo_note": "Деревянный сувенир или памятная табличка.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Engraved Glass Gift",
+            "eyebrow": "",
+            "text": "<p>A finished piece for a client or partner occasion, with artwork chosen for the recipient.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/personalized-engraved-glassware-variety-gift-set.png",
+            "image_alt": "Assorted engraved glass gifts including personalized tumblers, a tall glass and a stemless glass with custom names and Team Epic branding on a white background.",
+            "photo_note": "Стеклянное изделие с вашей гравировкой.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Personalized Client Pen",
+            "eyebrow": "",
+            "text": "<p>A name or message can make a useful everyday object feel personal.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/metal.png",
+            "image_alt": "",
+            "photo_note": "Макро ручки с именем, без случайного чужого логотипа.",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_3",
+        "item_4",
+        "item_2"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "What could your gift look like?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "cream",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "process": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Share the Brief",
+            "eyebrow": "",
+            "text": "<p>Tell us the occasion, recipients, quantity and target date.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Review the Direction",
+            "eyebrow": "",
+            "text": "<p>Discuss products and a digital mockup; ask about physical sample options.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Approve the Details",
+            "eyebrow": "",
+            "text": "<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Produce & Prepare",
+            "eyebrow": "",
+            "text": "<p>Production and packing follow the approved project scope.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "How does the project come together?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "white",
+        "require_photo": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ],
+      "settings": {
+        "heading": "What else would you like to know?",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "eyebrow": "",
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "navy",
+        "require_photo": false,
+        "button_label": "Get a Bulk Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "bulk_quote": true
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "examples",
+    "process",
+    "questions",
+    "cta"
+  ]
+}

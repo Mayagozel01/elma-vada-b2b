@@ -2,7 +2,6 @@
   assign selected_variant = product.selected_or_first_available_variant
   assign active_image = selected_variant.featured_image | default: product.featured_image
   assign product_form_id = 'ProductForm-' | append: section.id
-  assign quote_form_id = 'BulkQuote-' | append: section.id
   assign personalization = false
   if section.settings.enable_personalization and product.metafields.custom.personalization_enabled.value == true
     assign personalization = true
@@ -53,7 +52,7 @@
         <div class="product-detail__pricing" aria-live="polite">
           <span class="product-detail__price" data-variant-price>{{ selected_variant.price | money }}</span>
           <s data-variant-compare {% unless selected_variant.compare_at_price > selected_variant.price %}hidden{% endunless %}>{{ selected_variant.compare_at_price | money }}</s>
-          <p class="commerce-note" data-variant-stock>{% if selected_variant.available %}Available to order{% else %}Sold out{% endif %}</p>
+          <p class="commerce-note" data-variant-stock>{% render 'inventory-status', inventory_variant: selected_variant, show_inventory_quantity: settings.show_inventory_quantity, low_stock_threshold: settings.low_stock_threshold %}</p>
         </div>
         <a class="product-detail__cart-link" href="{{ routes.cart_url }}">View cart ({{ cart.item_count }}) →</a>
         {% form 'product', product, id: product_form_id, class: 'product-purchase' %}
@@ -62,9 +61,11 @@
             <label for="ProductVariant-{{ section.id }}">{{ section.settings.variant_label | escape }}</label>
             <select id="ProductVariant-{{ section.id }}" name="id" data-variant-select>
               {% for variant in product.variants %}
+                {% capture variant_stock_status %}{% render 'inventory-status', inventory_variant: variant, show_inventory_quantity: settings.show_inventory_quantity, low_stock_threshold: settings.low_stock_threshold %}{% endcapture %}
                 <option value="{{ variant.id }}" {% if variant.id == selected_variant.id %}selected{% endif %}
                   data-price="{{ variant.price | money | escape }}" data-compare="{{ variant.compare_at_price | money | escape }}"
                   data-on-sale="{% if variant.compare_at_price > variant.price %}true{% else %}false{% endif %}"
+                  data-stock-status="{{ variant_stock_status | strip | escape }}"
                   data-available="{{ variant.available }}" data-image="{{ variant.featured_image.id | default: product.featured_image.id }}"
                   data-min="{{ variant.quantity_rule.min | default: 1 }}" data-step="{{ variant.quantity_rule.increment | default: 1 }}" data-max="{{ variant.quantity_rule.max }}">
                   {{ variant.title | escape }}{% unless variant.available %} — Sold out{% endunless %}
@@ -95,7 +96,7 @@
           </noscript>
         {% endform %}
         {% if section.settings.show_bulk_quote %}
-          <aside class="product-bulk-callout"><h2>{{ section.settings.bulk_heading | escape }}</h2><div class="b2b-rte">{{ section.settings.bulk_text }}</div><a href="#{{ quote_form_id }}" class="btn btn--outline" data-bulk-link>{{ section.settings.bulk_label | escape }}</a></aside>
+          <aside class="product-bulk-callout"><h2>{{ section.settings.bulk_heading | escape }}</h2><div class="b2b-rte">{{ section.settings.bulk_text }}</div><a href="#ProductQuote-{{ section.id }}" class="btn btn--outline" data-bulk-link>{{ section.settings.bulk_label | escape }}</a></aside>
         {% endif %}
         <div class="product-accordions">
           {% for block in section.blocks %}
@@ -136,29 +137,30 @@
       </div>
     </div>
     {% if section.settings.show_bulk_quote %}
-      <section class="product-quote" aria-labelledby="BulkQuoteHeading-{{ section.id }}">
+      <section class="product-quote" id="ProductQuote-{{ section.id }}" aria-labelledby="BulkQuoteHeading-{{ section.id }}">
         <div class="product-quote__intro"><p class="b2b-eyebrow">Corporate orders</p><h2 id="BulkQuoteHeading-{{ section.id }}">Request a Bulk Quote</h2><p>Tell us the quantity, personalization and target date. We will confirm the price and project details with you.</p></div>
-        {% form 'contact', id: quote_form_id, class: 'product-quote__form' %}
-          {% if form.posted_successfully? %}<p class="commerce-message" role="status">Thank you. Your request has been received.</p>{% endif %}
-          {% if form.errors %}<div class="commerce-message" role="alert">{{ form.errors | default_errors }}</div>{% endif %}
-          <p class="product-quote__context" data-quote-context>{{ product.title | escape }} — {{ selected_variant.title | escape }}</p>
-          <input type="hidden" name="contact[Request type]" value="Bulk product quote">
-          <input type="hidden" name="contact[Product]" value="{{ product.title | escape }}">
-          <input type="hidden" name="contact[Product URL]" value="{{ shop.url }}{{ product.url }}?variant={{ selected_variant.id }}" data-quote-url>
-          <input type="hidden" name="contact[Variant]" value="{{ selected_variant.title | escape }}" data-quote-variant>
-          <div class="product-quote__fields">
-            <div class="commerce-field"><label for="{{ quote_form_id }}-name">Name *</label><input id="{{ quote_form_id }}-name" name="contact[name]" autocomplete="name" value="{{ form.name | default: customer.name | escape }}" required></div>
-            <div class="commerce-field"><label for="{{ quote_form_id }}-email">Email *</label><input id="{{ quote_form_id }}-email" name="contact[email]" type="email" autocomplete="email" value="{{ form.email | default: customer.email | escape }}" required></div>
-            <div class="commerce-field"><label for="{{ quote_form_id }}-company">Company</label><input id="{{ quote_form_id }}-company" name="contact[Company]" autocomplete="organization"></div>
-            <div class="commerce-field"><label for="{{ quote_form_id }}-quantity">Quantity *</label><input id="{{ quote_form_id }}-quantity" name="contact[Quantity]" type="number" min="1" step="1" value="{{ selected_variant.quantity_rule.min | default: 1 }}" required data-quote-quantity></div>
-            <div class="commerce-field"><label for="{{ quote_form_id }}-deadline">Needed by</label><input id="{{ quote_form_id }}-deadline" name="contact[Needed by]" type="date"></div>
-            <div class="commerce-field"><label for="{{ quote_form_id }}-location">Delivery city / ZIP</label><input id="{{ quote_form_id }}-location" name="contact[Delivery city / ZIP]"></div>
-            <div class="commerce-field commerce-field--full"><label for="{{ quote_form_id }}-artwork">Link to your logo / artwork (optional)</label><input id="{{ quote_form_id }}-artwork" name="contact[Artwork link]" type="url" placeholder="https://" aria-describedby="{{ quote_form_id }}-artwork-help"><p id="{{ quote_form_id }}-artwork-help" class="commerce-note">Paste a shareable link to your file. You can also send artwork after we contact you.</p></div>
-            <div class="commerce-field commerce-field--full"><label for="{{ quote_form_id }}-body">Project details *</label><textarea id="{{ quote_form_id }}-body" name="contact[body]" rows="5" required data-quote-body>{{ form.body | escape }}</textarea></div>
+        <div class="product-quote__form">
+          <div class="product-quote__context">
+            <p data-quote-context>{{ product.title | escape }} — {{ selected_variant.title | escape }}</p>
+            <button type="button" class="btn btn--outline" data-copy-product-details
+              data-product-title="{{ product.title | escape }}"
+              data-product-variant="{{ selected_variant.title | escape }}"
+              data-product-url="{{ shop.url }}{{ product.url }}?variant={{ selected_variant.id }}"
+              aria-describedby="ProductQuoteCopyHelp-{{ section.id }} ProductQuoteCopyStatus-{{ section.id }}">Copy product details</button>
+            <p class="commerce-note" id="ProductQuoteCopyHelp-{{ section.id }}">Copy the product name, selected option and link, then paste them into Project details in the form.</p>
+            <p class="commerce-message product-quote__copy-status" id="ProductQuoteCopyStatus-{{ section.id }}" data-copy-product-status role="status" aria-live="polite" hidden></p>
           </div>
-          {% if shop.privacy_policy != blank %}<p class="commerce-note"><a href="{{ shop.privacy_policy.url }}">{{ shop.privacy_policy.title | escape }}</a></p>{% endif %}
-          <button class="btn btn--primary" type="submit">Send quote request</button>
-        {% endform %}
+          <div class="ev-shopify-form" data-shopify-quote-form>
+            {% assign quote_app_blocks = 0 %}
+            {% for block in section.blocks %}
+              {% if block.type == '@app' %}
+                {% assign quote_app_blocks = quote_app_blocks | plus: 1 %}
+                {% render block %}
+              {% endif %}
+            {% endfor %}
+            {% if request.design_mode and quote_app_blocks == 0 %}<p class="b2b-editor-note">Add the existing Shopify Forms inline block here and use Form ID 1155185.</p>{% endif %}
+          </div>
+        </div>
       </section>
     {% endif %}
   </div>
@@ -178,6 +180,7 @@
     {"type":"text","id":"bulk_label","label":"Corporate callout button","default":"Request a Bulk Quote"}
   ],
   "blocks": [
+    {"type":"@app"},
     {"type":"description","name":"Description","limit":1,"settings":[{"type":"text","id":"heading","label":"Heading","default":"Product description"}]},
     {"type":"specifications","name":"Material & dimensions","limit":1,"settings":[{"type":"text","id":"heading","label":"Heading","default":"Material & dimensions"}]},
     {"type":"engraving","name":"Engraving details","limit":1,"settings":[{"type":"text","id":"heading","label":"Heading","default":"Personalization & engraving"}]},

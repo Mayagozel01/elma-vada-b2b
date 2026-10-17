@@ -45,6 +45,23 @@
         "label": "Show agreed product prices on cards",
         "default": false,
         "info": "Enable only after approving Shopify variant prices. These are product prices, not confirmed bulk quotes. Applies to catalog, featured and related cards."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_inventory_quantity",
+        "label": "Show inventory quantity",
+        "default": false,
+        "info": "Only tracked positive inventory of a single variant, or the selected variant on its product page. Never sums different options."
+      },
+      {
+        "type": "range",
+        "id": "low_stock_threshold",
+        "label": "Low stock threshold",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "default": 5,
+        "info": "For a single or selected tracked variant. Set 0 to disable Low stock. Multi-option cards never imply a combined stock count."
       }
     ]
   },

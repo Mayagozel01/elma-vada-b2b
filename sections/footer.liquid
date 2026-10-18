@@ -1,6 +1,7 @@
 {%- assign services_menu = section.settings.services_menu -%}
 {%- assign company_menu = section.settings.company_menu -%}
-<footer class="site-footer" role="contentinfo">
+{%- assign footer_logo_image = section.settings.footer_logo_image -%}
+<footer class="site-footer" role="contentinfo" style="--footer-logo-width: {{ section.settings.footer_logo_width | default: 380 }}px;">
   <div class="container">
 
     <div class="footer__grid">
@@ -8,24 +9,24 @@
       <!-- Brand col -->
       <div class="footer__brand">
         <a href="{{ routes.root_url }}" class="footer__logo" aria-label="{{ shop.name }}">
-          {% if section.settings.logo_image != blank %}
+          {% if footer_logo_image != blank %}
             <img class="ev-brand-logo ev-brand-logo--footer"
-              src="{{ section.settings.logo_image | image_url: width: 900 }}"
-              alt="{{ section.settings.logo_image.alt | default: shop.name | escape }}"
-              width="{{ section.settings.logo_image.width }}" height="{{ section.settings.logo_image.height }}"
-              style="--logo-width: {{ section.settings.logo_width | default: 220 }}px;"
+              src="{{ footer_logo_image | image_url: width: 900 }}"
+              alt="Elma Vada — Corporate Gifts &amp; In-House Engraving"
+              width="{{ footer_logo_image.width }}" height="{{ footer_logo_image.height }}"
               loading="lazy">
           {% else %}
-          <div class="footer__logo-badge">EV</div>
-          <div>
-            <div class="footer__logo-name">Elma Vada Studio</div>
-          </div>
+            <img class="ev-brand-logo ev-brand-logo--footer"
+              src="{{ 'elma-vada-footer-logo.png' | asset_url }}"
+              alt="Elma Vada — Corporate Gifts &amp; In-House Engraving"
+              width="1774" height="887"
+              loading="lazy">
           {% endif %}
         </a>
         <p class="footer__tagline">
           {{ section.settings.tagline | default: 'Personalized corporate gifts and in-house laser engraving in Dallas–Fort Worth. From individual gifts to orders of 5,000+ units.' }}
         </p>
-        <a href="/pages/request-a-quote#ProjectForm" class="btn btn--gold" style="align-self: flex-start; margin-top: var(--space-2);">
+        <a href="/pages/request-a-quote#ProjectForm" class="btn btn--gold" style="align-self: flex-start;">
           Request a Quote
         </a>
       </div>
@@ -150,19 +151,19 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "logo_image",
-      "label": "Logo image",
-      "info": "Choose a logo for the dark footer, for example a light version with a transparent background."
+      "id": "footer_logo_image",
+      "label": "Footer logo image",
+      "info": "Choose the logo shown in the dark footer. A transparent PNG is recommended."
     },
     {
       "type": "range",
-      "id": "logo_width",
-      "label": "Logo width",
-      "min": 80,
-      "max": 300,
+      "id": "footer_logo_width",
+      "label": "Footer logo width",
+      "min": 200,
+      "max": 400,
       "step": 10,
       "unit": "px",
-      "default": 220
+      "default": 380
     },
     {
       "type": "textarea",

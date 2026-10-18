@@ -1,18 +1,23 @@
 {%- assign main_menu = section.settings.menu -%}
+<div class="site-header-group" data-header-group style="--header-logo-width: {{ section.settings.logo_width | default: 260 }}px; --header-logo-mobile-width: {{ section.settings.logo_mobile_width | default: 150 }}px; --header-logo-ratio: {{ section.settings.logo_image.aspect_ratio | default: 1 }};">
 <header class="site-header" id="SiteHeader" role="banner">
   <div class="container"><div class="header__inner">
-    <a href="{{ routes.root_url }}" class="header__logo" aria-label="{{ shop.name }}">
+    <a href="{{ routes.root_url }}" class="header__logo" aria-label="{{ shop.name | escape }}"
+      style="--brand-name-size: {{ section.settings.brand_name_size | default: 32 }}px; --brand-name-mobile-size: {{ section.settings.brand_name_mobile_size | default: 20 }}px; --brand-detail-size: {{ section.settings.brand_detail_size | default: 11 }}px; --brand-detail-mobile-size: {{ section.settings.brand_detail_mobile_size | default: 9 }}px; --brand-name-color: {{ section.settings.brand_name_color | default: '#001333' }}; --brand-detail-color: {{ section.settings.brand_detail_color | default: '#A8752A' }}; --brand-line-height: {{ section.settings.brand_line_height | default: 1.3 }};">
       {% if section.settings.logo_image != blank %}
+      <span class="header__brand-image">
         <img class="ev-brand-logo ev-brand-logo--header"
           src="{{ section.settings.logo_image | image_url: width: 720 }}"
           alt="{{ section.settings.logo_image.alt | default: section.settings.logo_name | default: shop.name | escape }}"
           width="{{ section.settings.logo_image.width }}" height="{{ section.settings.logo_image.height }}"
-          style="--logo-width: {{ section.settings.logo_width | default: 180 }}px; --logo-mobile-width: {{ section.settings.logo_mobile_width | default: 150 }}px;"
           loading="eager">
-      {% else %}
-      <div class="header__logo-badge" aria-hidden="true">{{ section.settings.logo_badge | default: 'EV' }}</div>
-      <div class="header__logo-text"><span class="header__logo-name">{{ section.settings.logo_name | default: 'Elma Vada' }}</span><span class="header__logo-sub">{{ section.settings.logo_subtitle | default: 'Studio' }}</span></div>
+      </span>
       {% endif %}
+      <span class="header__brand-copy">
+        <span class="header__brand-name" data-font="{{ section.settings.brand_name_font | default: 'serif' }}">{{ section.settings.brand_line_one | default: 'Elma Vada' | escape }}</span>
+        <span class="header__brand-detail" data-font="{{ section.settings.brand_detail_font | default: 'sans' }}">{{ section.settings.brand_line_two | default: 'CORPORATE GIFTS' | escape }}</span>
+        <span class="header__brand-detail" data-font="{{ section.settings.brand_detail_font | default: 'sans' }}">{{ section.settings.brand_line_three | default: 'IN-HOUSE ENGRAVING' | escape }}</span>
+      </span>
     </a>
     <nav class="header__nav" aria-label="Main navigation">
       {%- if main_menu != blank -%}
@@ -34,13 +39,28 @@
   <a href="{{ section.settings.cta_url | default: '/pages/request-a-quote#ProjectForm' }}" class="mobile-menu__link" style="color: var(--color-gold); font-weight: 700;">{{ section.settings.cta_label | default: 'Request a Quote' }} →</a>
   {% render 'contact-links' %}
 </nav>
-<div style="height: 72px;" aria-hidden="true"></div>
+<div class="site-header-spacer" aria-hidden="true"></div>
 {% schema %}
 {"name":"Header","settings":[
-{"type":"image_picker","id":"logo_image","label":"Logo image","info":"Upload your complete brand logo. Replaces the EV badge and brand text when selected."},
-{"type":"range","id":"logo_width","label":"Logo width — desktop","min":80,"max":240,"step":10,"unit":"px","default":180},
-{"type":"range","id":"logo_mobile_width","label":"Logo width — mobile","min":80,"max":200,"step":10,"unit":"px","default":150},
+{"type":"header","content":"Logo image — left block"},
+{"type":"image_picker","id":"logo_image","label":"Logo image","info":"Shown in full to the left of the editable text. Text already inside the image remains visible."},
+{"type":"range","id":"logo_width","label":"Image width — desktop","min":40,"max":400,"step":10,"unit":"px","default":260},
+{"type":"range","id":"logo_mobile_width","label":"Image width — mobile","min":40,"max":200,"step":10,"unit":"px","default":150},
+{"type":"header","content":"Brand text — right block"},
+{"type":"text","id":"brand_line_one","label":"Line 1","default":"Elma Vada"},
+{"type":"text","id":"brand_line_two","label":"Line 2","default":"CORPORATE GIFTS"},
+{"type":"text","id":"brand_line_three","label":"Line 3","default":"IN-HOUSE ENGRAVING"},
+{"type":"select","id":"brand_name_font","label":"Name font","options":[{"value":"serif","label":"DM Serif Display"},{"value":"sans","label":"Inter"},{"value":"classic","label":"Georgia"}],"default":"serif"},
+{"type":"select","id":"brand_detail_font","label":"Lines 2–3 font","options":[{"value":"sans","label":"Inter"},{"value":"serif","label":"DM Serif Display"},{"value":"classic","label":"Georgia"}],"default":"sans"},
+{"type":"range","id":"brand_name_size","label":"Name size — desktop","min":16,"max":48,"step":1,"unit":"px","default":32},
+{"type":"range","id":"brand_name_mobile_size","label":"Name size — mobile","min":12,"max":32,"step":1,"unit":"px","default":20},
+{"type":"range","id":"brand_detail_size","label":"Lines 2–3 size — desktop","min":9,"max":20,"step":1,"unit":"px","default":11},
+{"type":"range","id":"brand_detail_mobile_size","label":"Lines 2–3 size — mobile","min":8,"max":16,"step":1,"unit":"px","default":9},
+{"type":"color","id":"brand_name_color","label":"Name color","default":"#001333"},
+{"type":"color","id":"brand_detail_color","label":"Lines 2–3 color","default":"#A8752A"},
+{"type":"range","id":"brand_line_height","label":"Text line height","min":1,"max":2,"step":0.1,"default":1.3},
 {"type":"link_list","id":"menu","label":"Main menu"},{"type":"text","id":"logo_badge","label":"Logo badge","default":"EV"},{"type":"text","id":"logo_name","label":"Logo name","default":"Elma Vada"},{"type":"text","id":"logo_subtitle","label":"Logo subtitle","default":"Studio"},{"type":"text","id":"cta_label","label":"CTA label","default":"Request a Quote"},{"type":"url","id":"cta_url","label":"CTA link"}]}
 {% endschema %}
 
 {% if settings.show_header_trust %}<div class="ev-header-trust">{{ settings.header_trust_text | escape }}</div>{% endif %}
+</div>

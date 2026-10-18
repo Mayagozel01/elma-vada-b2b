@@ -86,15 +86,11 @@
   .header__nav, .header__cta { display: none; }
   .header__hamburger { display: flex; flex-shrink: 0; }
   .header__inner { gap: 1rem; }
-  .header__logo { min-width: 0; flex-shrink: 1; }
+  .header__logo { min-width: 0; flex: 0 0 auto; flex-shrink: 0; }
   .header__logo-badge { flex-shrink: 0; }
   .header__logo-text { min-width: 0; overflow-wrap: anywhere; }
   .header__logo-sub { line-height: 1.35; }
-  .mobile-menu { max-height: calc(100dvh - 72px); overflow-y: auto; }
   .mobile-menu__link { overflow-wrap: anywhere; }
-}
-@media (min-width: 1201px) {
-  .mobile-menu.is-open { display: none; }
 }
 
 /* Hero text sizing and wrapping — 2026-09-13 */

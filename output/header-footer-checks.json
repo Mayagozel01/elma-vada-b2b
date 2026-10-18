@@ -1,0 +1,697 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 115.75,
+        "right": 320,
+        "bottom": 115.75
+      },
+      "logo": {
+        "x": 16,
+        "y": 32.375,
+        "width": 150,
+        "height": 50,
+        "right": 166,
+        "bottom": 82.375
+      },
+      "footerLogo": {
+        "x": 32,
+        "y": 486.171875,
+        "width": 256,
+        "height": 85.328125,
+        "right": 288,
+        "bottom": 571.5
+      },
+      "headerRatio": 3,
+      "footerRatio": 3,
+      "spacer": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 115.75,
+        "right": 320,
+        "bottom": 115.75
+      },
+      "footerCard": {
+        "x": 16,
+        "y": 470.171875,
+        "width": 288,
+        "height": 117.328125,
+        "right": 304,
+        "bottom": 587.5
+      },
+      "headerContainer": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 114.75,
+        "right": 320,
+        "bottom": 114.75
+      },
+      "footerContainer": {
+        "x": 0,
+        "y": 470.171875,
+        "width": 320,
+        "height": 1743.25,
+        "right": 320,
+        "bottom": 2213.421875
+      },
+      "compact": true,
+      "filter": "none",
+      "cardBackground": "rgb(244, 242, 237)",
+      "columns": "288px",
+      "brand": {
+        "x": 16,
+        "y": 8,
+        "width": 228,
+        "height": 98.75,
+        "right": 244,
+        "bottom": 106.75
+      },
+      "copy": {
+        "x": 176,
+        "y": 8,
+        "width": 68,
+        "height": 98.75,
+        "right": 244,
+        "bottom": 106.75
+      },
+      "brandGap": "10px",
+      "lines": [
+        "Elma Vada",
+        "CORPORATE GIFTS",
+        "IN-HOUSE ENGRAVING"
+      ],
+      "lineRects": [
+        {
+          "x": 176,
+          "y": 8,
+          "width": 68,
+          "height": 52,
+          "right": 244,
+          "bottom": 60
+        },
+        {
+          "x": 176,
+          "y": 60,
+          "width": 68,
+          "height": 23.375,
+          "right": 244,
+          "bottom": 83.375
+        },
+        {
+          "x": 176,
+          "y": 83.375,
+          "width": 68,
+          "height": 23.375,
+          "right": 244,
+          "bottom": 106.75
+        }
+      ],
+      "scrolledHeaderHeight": 115.75,
+      "passed": true
+    },
+    {
+      "width": 375,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 67,
+        "right": 375,
+        "bottom": 67
+      },
+      "logo": {
+        "x": 16,
+        "y": 8,
+        "width": 150,
+        "height": 50,
+        "right": 166,
+        "bottom": 58
+      },
+      "footerLogo": {
+        "x": 32,
+        "y": 437.421875,
+        "width": 311,
+        "height": 103.65625,
+        "right": 343,
+        "bottom": 541.078125
+      },
+      "headerRatio": 3,
+      "footerRatio": 3,
+      "spacer": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 67,
+        "right": 375,
+        "bottom": 67
+      },
+      "footerCard": {
+        "x": 16,
+        "y": 421.421875,
+        "width": 343,
+        "height": 135.65625,
+        "right": 359,
+        "bottom": 557.078125
+      },
+      "headerContainer": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 66,
+        "right": 375,
+        "bottom": 66
+      },
+      "footerContainer": {
+        "x": 0,
+        "y": 421.421875,
+        "width": 375,
+        "height": 1708.796875,
+        "right": 375,
+        "bottom": 2130.21875
+      },
+      "compact": true,
+      "filter": "none",
+      "cardBackground": "rgb(244, 242, 237)",
+      "columns": "343px",
+      "brand": {
+        "x": 16,
+        "y": 8,
+        "width": 273.671875,
+        "height": 50,
+        "right": 289.671875,
+        "bottom": 58
+      },
+      "copy": {
+        "x": 176,
+        "y": 8.3125,
+        "width": 113.671875,
+        "height": 49.375,
+        "right": 289.671875,
+        "bottom": 57.6875
+      },
+      "brandGap": "10px",
+      "lines": [
+        "Elma Vada",
+        "CORPORATE GIFTS",
+        "IN-HOUSE ENGRAVING"
+      ],
+      "lineRects": [
+        {
+          "x": 176,
+          "y": 8.3125,
+          "width": 113.671875,
+          "height": 26,
+          "right": 289.671875,
+          "bottom": 34.3125
+        },
+        {
+          "x": 176,
+          "y": 34.3125,
+          "width": 113.671875,
+          "height": 11.6875,
+          "right": 289.671875,
+          "bottom": 46
+        },
+        {
+          "x": 176,
+          "y": 46,
+          "width": 113.671875,
+          "height": 11.6875,
+          "right": 289.671875,
+          "bottom": 57.6875
+        }
+      ],
+      "scrolledHeaderHeight": 67,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 103.65625,
+        "right": 768,
+        "bottom": 103.65625
+      },
+      "logo": {
+        "x": 16,
+        "y": 8,
+        "width": 260,
+        "height": 86.65625,
+        "right": 276,
+        "bottom": 94.65625
+      },
+      "footerLogo": {
+        "x": 32,
+        "y": 476.125,
+        "width": 380,
+        "height": 126.65625,
+        "right": 412,
+        "bottom": 602.78125
+      },
+      "headerRatio": 3,
+      "footerRatio": 3,
+      "spacer": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 103.65625,
+        "right": 768,
+        "bottom": 103.65625
+      },
+      "footerCard": {
+        "x": 16,
+        "y": 460.125,
+        "width": 412,
+        "height": 158.65625,
+        "right": 428,
+        "bottom": 618.78125
+      },
+      "headerContainer": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 102.65625,
+        "right": 768,
+        "bottom": 102.65625
+      },
+      "footerContainer": {
+        "x": 0,
+        "y": 460.125,
+        "width": 768,
+        "height": 1716,
+        "right": 768,
+        "bottom": 2176.125
+      },
+      "compact": true,
+      "filter": "none",
+      "cardBackground": "rgb(244, 242, 237)",
+      "columns": "736px",
+      "brand": {
+        "x": 16,
+        "y": 8,
+        "width": 421.609375,
+        "height": 86.65625,
+        "right": 437.609375,
+        "bottom": 94.65625
+      },
+      "copy": {
+        "x": 292,
+        "y": 16.234375,
+        "width": 145.609375,
+        "height": 70.1875,
+        "right": 437.609375,
+        "bottom": 86.421875
+      },
+      "brandGap": "16px",
+      "lines": [
+        "Elma Vada",
+        "CORPORATE GIFTS",
+        "IN-HOUSE ENGRAVING"
+      ],
+      "lineRects": [
+        {
+          "x": 292,
+          "y": 16.234375,
+          "width": 145.609375,
+          "height": 41.59375,
+          "right": 437.609375,
+          "bottom": 57.828125
+        },
+        {
+          "x": 292,
+          "y": 57.828125,
+          "width": 145.609375,
+          "height": 14.296875,
+          "right": 437.609375,
+          "bottom": 72.125
+        },
+        {
+          "x": 292,
+          "y": 72.125,
+          "width": 145.609375,
+          "height": 14.296875,
+          "right": 437.609375,
+          "bottom": 86.421875
+        }
+      ],
+      "scrolledHeaderHeight": 103.65625,
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 103.65625,
+        "right": 1024,
+        "bottom": 103.65625
+      },
+      "logo": {
+        "x": 24,
+        "y": 8,
+        "width": 260,
+        "height": 86.65625,
+        "right": 284,
+        "bottom": 94.65625
+      },
+      "footerLogo": {
+        "x": 40,
+        "y": 476.125,
+        "width": 380,
+        "height": 126.65625,
+        "right": 420,
+        "bottom": 602.78125
+      },
+      "headerRatio": 3,
+      "footerRatio": 3,
+      "spacer": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 103.65625,
+        "right": 1024,
+        "bottom": 103.65625
+      },
+      "footerCard": {
+        "x": 24,
+        "y": 460.125,
+        "width": 412,
+        "height": 158.65625,
+        "right": 436,
+        "bottom": 618.78125
+      },
+      "headerContainer": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 102.65625,
+        "right": 1024,
+        "bottom": 102.65625
+      },
+      "footerContainer": {
+        "x": 0,
+        "y": 460.125,
+        "width": 1024,
+        "height": 1056.640625,
+        "right": 1024,
+        "bottom": 1516.765625
+      },
+      "compact": true,
+      "filter": "none",
+      "cardBackground": "rgb(244, 242, 237)",
+      "columns": "476px 476px",
+      "brand": {
+        "x": 24,
+        "y": 8,
+        "width": 421.609375,
+        "height": 86.65625,
+        "right": 445.609375,
+        "bottom": 94.65625
+      },
+      "copy": {
+        "x": 300,
+        "y": 16.234375,
+        "width": 145.609375,
+        "height": 70.1875,
+        "right": 445.609375,
+        "bottom": 86.421875
+      },
+      "brandGap": "16px",
+      "lines": [
+        "Elma Vada",
+        "CORPORATE GIFTS",
+        "IN-HOUSE ENGRAVING"
+      ],
+      "lineRects": [
+        {
+          "x": 300,
+          "y": 16.234375,
+          "width": 145.609375,
+          "height": 41.59375,
+          "right": 445.609375,
+          "bottom": 57.828125
+        },
+        {
+          "x": 300,
+          "y": 57.828125,
+          "width": 145.609375,
+          "height": 14.296875,
+          "right": 445.609375,
+          "bottom": 72.125
+        },
+        {
+          "x": 300,
+          "y": 72.125,
+          "width": 145.609375,
+          "height": 14.296875,
+          "right": 445.609375,
+          "bottom": 86.421875
+        }
+      ],
+      "scrolledHeaderHeight": 103.65625,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 103.65625,
+        "right": 1440,
+        "bottom": 103.65625
+      },
+      "logo": {
+        "x": 24,
+        "y": 8,
+        "width": 260,
+        "height": 86.65625,
+        "right": 284,
+        "bottom": 94.65625
+      },
+      "footerLogo": {
+        "x": 40,
+        "y": 476.125,
+        "width": 380,
+        "height": 126.65625,
+        "right": 420,
+        "bottom": 602.78125
+      },
+      "headerRatio": 3,
+      "footerRatio": 3,
+      "spacer": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 103.65625,
+        "right": 1440,
+        "bottom": 103.65625
+      },
+      "footerCard": {
+        "x": 24,
+        "y": 460.125,
+        "width": 412,
+        "height": 158.65625,
+        "right": 436,
+        "bottom": 618.78125
+      },
+      "headerContainer": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 102.65625,
+        "right": 1440,
+        "bottom": 102.65625
+      },
+      "footerContainer": {
+        "x": 0,
+        "y": 460.125,
+        "width": 1440,
+        "height": 606.3125,
+        "right": 1440,
+        "bottom": 1066.4375
+      },
+      "compact": true,
+      "filter": "none",
+      "cardBackground": "rgb(244, 242, 237)",
+      "columns": "441.516px 275.953px 275.953px 303.562px",
+      "brand": {
+        "x": 24,
+        "y": 8,
+        "width": 421.609375,
+        "height": 86.65625,
+        "right": 445.609375,
+        "bottom": 94.65625
+      },
+      "copy": {
+        "x": 300,
+        "y": 16.234375,
+        "width": 145.609375,
+        "height": 70.1875,
+        "right": 445.609375,
+        "bottom": 86.421875
+      },
+      "brandGap": "16px",
+      "lines": [
+        "Elma Vada",
+        "CORPORATE GIFTS",
+        "IN-HOUSE ENGRAVING"
+      ],
+      "lineRects": [
+        {
+          "x": 300,
+          "y": 16.234375,
+          "width": 145.609375,
+          "height": 41.59375,
+          "right": 445.609375,
+          "bottom": 57.828125
+        },
+        {
+          "x": 300,
+          "y": 57.828125,
+          "width": 145.609375,
+          "height": 14.296875,
+          "right": 445.609375,
+          "bottom": 72.125
+        },
+        {
+          "x": 300,
+          "y": 72.125,
+          "width": 145.609375,
+          "height": 14.296875,
+          "right": 445.609375,
+          "bottom": 86.421875
+        }
+      ],
+      "scrolledHeaderHeight": 103.65625,
+      "passed": true
+    },
+    {
+      "width": 1911,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1911,
+        "height": 103.65625,
+        "right": 1911,
+        "bottom": 103.65625
+      },
+      "logo": {
+        "x": 24,
+        "y": 8,
+        "width": 260,
+        "height": 86.65625,
+        "right": 284,
+        "bottom": 94.65625
+      },
+      "footerLogo": {
+        "x": 40,
+        "y": 476.125,
+        "width": 380,
+        "height": 126.65625,
+        "right": 420,
+        "bottom": 602.78125
+      },
+      "headerRatio": 3,
+      "footerRatio": 3,
+      "spacer": {
+        "x": 0,
+        "y": 0,
+        "width": 1911,
+        "height": 103.65625,
+        "right": 1911,
+        "bottom": 103.65625
+      },
+      "footerCard": {
+        "x": 24,
+        "y": 460.125,
+        "width": 412,
+        "height": 158.65625,
+        "right": 436,
+        "bottom": 618.78125
+      },
+      "headerContainer": {
+        "x": 0,
+        "y": 0,
+        "width": 1911,
+        "height": 102.65625,
+        "right": 1911,
+        "bottom": 102.65625
+      },
+      "footerContainer": {
+        "x": 0,
+        "y": 460.125,
+        "width": 1911,
+        "height": 606.3125,
+        "right": 1911,
+        "bottom": 1066.4375
+      },
+      "compact": false,
+      "filter": "none",
+      "cardBackground": "rgb(244, 242, 237)",
+      "columns": "593.359px 370.844px 370.859px 407.938px",
+      "brand": {
+        "x": 24,
+        "y": 8,
+        "width": 421.609375,
+        "height": 86.65625,
+        "right": 445.609375,
+        "bottom": 94.65625
+      },
+      "copy": {
+        "x": 300,
+        "y": 16.234375,
+        "width": 145.609375,
+        "height": 70.1875,
+        "right": 445.609375,
+        "bottom": 86.421875
+      },
+      "brandGap": "16px",
+      "lines": [
+        "Elma Vada",
+        "CORPORATE GIFTS",
+        "IN-HOUSE ENGRAVING"
+      ],
+      "lineRects": [
+        {
+          "x": 300,
+          "y": 16.234375,
+          "width": 145.609375,
+          "height": 41.59375,
+          "right": 445.609375,
+          "bottom": 57.828125
+        },
+        {
+          "x": 300,
+          "y": 57.828125,
+          "width": 145.609375,
+          "height": 14.296875,
+          "right": 445.609375,
+          "bottom": 72.125
+        },
+        {
+          "x": 300,
+          "y": 72.125,
+          "width": 145.609375,
+          "height": 14.296875,
+          "right": 445.609375,
+          "bottom": 86.421875
+        }
+      ],
+      "scrolledHeaderHeight": 103.65625,
+      "passed": true
+    }
+  ],
+  "customMenuCollapse": true,
+  "editorReinitialization": true,
+  "errors": []
+}

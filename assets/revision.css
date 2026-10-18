@@ -88,11 +88,17 @@
   object-fit: contain;
   object-position: left center;
 }
-.ev-brand-logo--header { max-height: 52px; }
-.ev-brand-logo--footer { max-height: 140px; }
-@media (max-width: 640px) {
-  .ev-brand-logo--header { width: var(--logo-mobile-width); max-height: 48px; }
+.site-header .ev-brand-logo--header {
+  width: var(--header-active-logo-width);
+  height: auto;
+  max-width: 100%;
+  max-height: none;
+  flex-shrink: 0;
 }
+@media (max-width: 640px) {
+  .site-header-group { --header-active-logo-width: var(--header-logo-mobile-width, 150px); }
+}
+.site-header-spacer { height: var(--site-header-height); }
 /* Prevent a single long label, app block or media item from widening the mobile viewport. */
 html {
   max-width: 100%;
@@ -104,6 +110,7 @@ body {
   overflow-x: hidden;
 }
 .site-header,
+.site-header .container,
 .mobile-menu,
 .content-for-layout,
 .site-footer,
@@ -185,6 +192,29 @@ body {
 .site-footer .footer__contact-value,
 .site-footer .btn { font-size: calc(var(--fs-sm) + 2px); }
 .site-footer .ev-contact-links { color: #fff; }
+.site-footer .footer__logo {
+  display: block;
+  width: calc(var(--footer-logo-width, 380px) + 32px);
+  max-width: 100%;
+  padding: 16px;
+  background: var(--color-cream);
+}
+.site-footer .ev-brand-logo--footer {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: none;
+  object-fit: contain;
+  object-position: left center;
+}
+.site-footer .footer__tagline { max-width: 38ch; }
+@media (max-width: 1100px) {
+  .site-footer .footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .site-footer .footer__grid { grid-template-columns: minmax(0, 1fr); }
+}
 .mobile-menu .ev-contact-links { padding: 0 1.5rem; }
 .btn { white-space: normal; max-width: 100%; text-align: center; }
 :focus-visible { outline: 3px solid #a57b31; outline-offset: 4px; }

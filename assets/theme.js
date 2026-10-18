@@ -6,44 +6,93 @@
 (function () {
   'use strict';
 
-  /* ─── STICKY HEADER ──────────────────────────────────────────── */
-  const header = document.getElementById('SiteHeader');
-  if (header) {
-    const onScroll = () => {
-      header.classList.toggle('scrolled', window.scrollY > 20);
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-  }
-
-  /* ─── MOBILE MENU ────────────────────────────────────────────── */
-  const hamburger = document.getElementById('MobileMenuToggle');
-  const mobileMenu = document.getElementById('MobileMenu');
-
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('is-open');
-      hamburger.setAttribute('aria-expanded', String(isOpen));
-
-      // Animate hamburger lines
+  /* Header height follows the selected image, including Theme Editor changes. */
+  const headerCleanups = new WeakMap();
+  function initHeader(group) {
+    if (headerCleanups.has(group)) return;
+    const header = group.querySelector('.site-header');
+    const inner = group.querySelector('.header__inner');
+    const logo = group.querySelector('.header__logo');
+    const nav = group.querySelector('.header__nav');
+    const cta = group.querySelector('.header__cta');
+    const hamburger = group.querySelector('.header__hamburger');
+    const mobileMenu = group.querySelector('.mobile-menu');
+    if (!header || !inner || !logo || !nav || !cta || !hamburger || !mobileMenu) return;
+    const events = new AbortController();
+    const signal = events.signal;
+    let frame = 0;
+    const setMenuOpen = open => {
+      mobileMenu.classList.toggle('is-open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       const spans = hamburger.querySelectorAll('span');
-      if (isOpen) {
-        spans[0].style.cssText = 'transform: rotate(45deg) translate(5px, 5px)';
-        spans[1].style.cssText = 'opacity: 0';
-        spans[2].style.cssText = 'transform: rotate(-45deg) translate(5px, -5px)';
-      } else {
-        spans.forEach(s => s.removeAttribute('style'));
+      spans.forEach(s => s.removeAttribute('style'));
+      if (open) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
       }
-    });
-
-    // Close on outside click
-    document.addEventListener('click', (e) => {
-      if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
-        mobileMenu.classList.remove('is-open');
-        hamburger.setAttribute('aria-expanded', 'false');
-        hamburger.querySelectorAll('span').forEach(s => s.removeAttribute('style'));
+    };
+    const updateLayout = () => {
+      frame = 0;
+      if (!group.isConnected) return;
+      header.classList.remove('is-compact');
+      let compact = window.matchMedia('(max-width: 1200px)').matches;
+      if (!compact) {
+        const gap = parseFloat(getComputedStyle(inner).columnGap) || 0;
+        const navGap = parseFloat(getComputedStyle(nav).columnGap) || 0;
+        const links = [...nav.children];
+        // Right-aligned overflow can extend left and is not included in scrollWidth.
+        const navWidth = links.reduce((sum, link) => sum + link.getBoundingClientRect().width, 0) +
+          navGap * Math.max(0, links.length - 1);
+        const needed = logo.getBoundingClientRect().width + navWidth +
+          cta.getBoundingClientRect().width + gap * 2;
+        compact = needed > inner.clientWidth + 1;
       }
+      header.classList.toggle('is-compact', compact);
+      if (!compact) setMenuOpen(false);
+      // The spacer and dropdown inherit the same measured height (including border).
+      group.style.setProperty('--site-header-height', `${header.getBoundingClientRect().height}px`);
+    };
+    const scheduleLayout = () => {
+      if (!frame) frame = requestAnimationFrame(updateLayout);
+    };
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+    const observer = new ResizeObserver(scheduleLayout);
+    observer.observe(header);
+    window.addEventListener('resize', scheduleLayout, { passive: true, signal });
+    window.addEventListener('scroll', onScroll, { passive: true, signal });
+    logo.querySelector('img')?.addEventListener('load', scheduleLayout, { signal });
+    document.fonts?.ready.then(() => { if (group.isConnected) scheduleLayout(); });
+    hamburger.addEventListener('click', () => {
+      setMenuOpen(hamburger.getAttribute('aria-expanded') !== 'true');
+    }, { signal });
+    document.addEventListener('click', e => {
+      if ((!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) ||
+          mobileMenu.contains(e.target) && e.target.closest('a')) setMenuOpen(false);
+    }, { signal });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+        setMenuOpen(false);
+        hamburger.focus();
+      }
+    }, { signal });
+    headerCleanups.set(group, () => {
+      observer.disconnect();
+      events.abort();
+      cancelAnimationFrame(frame);
+      headerCleanups.delete(group);
     });
+    updateLayout();
+    onScroll();
   }
+  document.querySelectorAll('[data-header-group]').forEach(initHeader);
+  document.addEventListener('shopify:section:load', e => {
+    e.target.querySelectorAll('[data-header-group]').forEach(initHeader);
+  });
+  document.addEventListener('shopify:section:unload', e => {
+    e.target.querySelectorAll('[data-header-group]').forEach(group => headerCleanups.get(group)?.());
+  });
 
   /* ─── SOLUTION TABS ──────────────────────────────────────────── */
   const tabs = document.querySelectorAll('.solutions__tab');

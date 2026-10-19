@@ -3,7 +3,7 @@
   assign category_menu = section.settings.category_menu | default: settings.catalog_category_menu
   assign catalog_heading = collection.title | default: section.settings.fallback_title
   if collection.handle == 'all'
-    assign catalog_heading = section.settings.fallback_title | default: 'Product Catalog'
+    assign catalog_heading = section.settings.fallback_title | default: 'Shop personalized gifts'
   endif
   assign empty_button_link = section.settings.empty_button_link | default: '/pages/request-a-quote#ProjectForm'
   assign has_filters = false
@@ -119,7 +119,7 @@
   "name": "Product catalog",
   "settings": [
     {"type":"text","id":"eyebrow","label":"Eyebrow","default":"Elma Vada Studio"},
-    {"type":"text","id":"fallback_title","label":"Main catalog heading","default":"Product Catalog","info":"Used for All products. Category pages use their collection title."},
+    {"type":"text","id":"fallback_title","label":"Main catalog heading","default":"Shop personalized gifts","info":"Used for All products. Category pages use their collection title."},
     {"type":"richtext","id":"introduction","label":"Catalog introduction","default":"<p>Explore personalized gifts for your team and clients. Choose a category or contact our studio to discuss a corporate order.</p>"},
     {"type":"checkbox","id":"use_collection_description","label":"Use collection description on category pages","default":true},
     {"type":"link_list","id":"category_menu","label":"Category menu override","info":"Optional. Leave empty to use Theme settings > Product catalog > Catalog categories menu on every collection."},

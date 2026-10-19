@@ -135,7 +135,7 @@
 }
 
 .header__nav-link {
-    font-size: clamp(16px, 1.5vw, 20px);
+    font-size: clamp(16px, 1.2vw, 18px);
     font-weight: 500;
     color: var(--color-text-secondary);
     padding: var(--space-2) var(--space-4);

@@ -4,7 +4,7 @@
       "type": "catalog",
       "settings": {
         "eyebrow": "Elma Vada Studio",
-        "fallback_title": "Product Catalog",
+        "fallback_title": "Shop personalized gifts",
         "introduction": "<p>Explore personalized gifts for your team and clients. Choose a category or contact our studio to discuss a corporate order.</p>",
         "products_per_page": 24,
         "product_link_label": "View product",

@@ -30,7 +30,7 @@ async function main() {
       assert.equal(await page.evaluate(() => window.Shopify?.theme?.id), themeId, 'Must remain on the requested preview theme');
     };
     await go(target.href);
-    assert.equal(await page.locator('.catalog h1').textContent(), 'Product Catalog');
+    assert.equal(await page.locator('.catalog h1').textContent(), 'Shop personalized gifts');
     assert.equal(await page.locator('.catalog-card__price').count(), 0, 'Prices stay hidden until agreed');
     const cardCount = await page.locator('.catalog-card').count();
     assert.equal(await page.locator('.catalog-card__stock').count(), cardCount, 'Every card needs an availability status');

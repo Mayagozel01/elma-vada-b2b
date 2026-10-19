@@ -1,5 +1,5 @@
 /* Scoped storefront catalog, product and cart layout. */
-.catalog .container, .product-detail .container, .product-related .container, .commerce-cart .container { max-width: var(--container-max); }
+.product-detail .container, .product-related .container, .commerce-cart .container { max-width: var(--container-max); }
 .commerce-breadcrumbs { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.75rem; font-size: .8rem; color: var(--color-text-secondary); overflow-wrap: anywhere; }
 .commerce-breadcrumbs a, .commerce-note a { text-decoration: underline; text-underline-offset: .2em; }
 .commerce-note { font-size: .8rem; line-height: 1.6; color: var(--color-text-secondary); }
@@ -9,7 +9,6 @@
 .commerce-field textarea { resize: vertical; }
 .commerce-field--full { grid-column: 1 / -1; }
 .commerce-message { padding: 1rem; margin-bottom: 1rem; border: 1px solid currentColor; }
-.catalog { padding-block: clamp(1.5rem, 3vw, 3rem); }
 .catalog__header { max-width: 760px; margin: 0 0 2rem; text-align: left; }
 .catalog__header h1 { margin-block: .5rem 1rem; }
 .catalog-categories, .catalog-active-filters { display: flex; flex-wrap: wrap; gap: .65rem; margin-bottom: 1.25rem; }

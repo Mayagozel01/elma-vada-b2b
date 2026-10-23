@@ -51,8 +51,15 @@ into Project details.
 
 ## Keep consultations separate
 
+Office visits now have a dedicated `office-visit` section on Book a Call, selected by
+`?request=in-person`. Its native Shopify contact form is separate from Form 1155185;
+it can be replaced with a dedicated Forms inline app block. Follow
+[`office-visit-setup.md`](office-visit-setup.md) for required address fields,
+notifications and testing. The choices below concern the ordinary **project call**
+route only, not the office-visit section.
+
 `templates/page.book-a-call.json` already used Form ID `1155185` before this change.
-To keep the in-person consultation flow separate, do one of the following in Shopify:
+To further separate the ordinary project-call workflow, do one of the following in Shopify:
 
 1. Create or select a dedicated consultation form and replace only the app block on
    the Book a Call template with that form's ID; or

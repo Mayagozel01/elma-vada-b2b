@@ -1,0 +1,27 @@
+/* Loaded only on Book a Call; never styles the existing quote app. */
+html[data-consultation="office"] [data-consultation-call],
+html[data-consultation="call"] [data-office-visit] { display: none; }
+.office-visit { padding-block: 36px; }
+.office-visit > .container { max-width: 900px; }
+.office-visit__header { margin-bottom: 24px; }
+.office-visit__header h1 { margin-top: 0; }
+.office-visit__fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.office-visit__field { min-width: 0; }
+.office-visit__field--wide { grid-column: 1 / -1; }
+.office-visit__field label { display: block; margin-bottom: 6px; font-weight: 600; }
+.office-visit__field input, .office-visit__field textarea { display: block; box-sizing: border-box; width: 100%; min-width: 0; max-width: 100%; padding: 12px; border: 1px solid var(--color-beige-dark); border-radius: 0; background: var(--color-white); color: var(--color-navy); font: 16px/1.5 var(--font-body); }
+.office-visit__field textarea { resize: vertical; }
+.office-visit__note { margin: 16px 0; line-height: 1.6; overflow-wrap: anywhere; }
+.office-visit a { text-decoration: underline; text-underline-offset: 3px; }
+.office-visit #OfficeVisitForm,
+.office-visit__status { scroll-margin-top: var(--office-status-offset, 160px); }
+.office-visit__status { margin-bottom: 24px; padding: 20px; border: 1px solid var(--color-gold); border-left-width: 4px; background: var(--color-white); color: var(--color-navy); font-size: 18px; line-height: 1.6; overflow-wrap: anywhere; }
+.office-visit__status:focus { outline: 2px solid var(--color-navy); outline-offset: 4px; }
+.office-visit__status--error { border-color: #B42318; }
+.office-visit__status ul { list-style: disc; padding-left: 20px; }
+.office-visit .btn { max-width: 100%; white-space: normal; }
+.office-visit [aria-invalid="true"] { border-color: #B42318; }
+@media (max-width: 639px) {
+  .office-visit { padding-block: 24px; }
+  .office-visit__fields { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}

@@ -27,7 +27,7 @@
         <div class="b2b-rte">{{ section.settings.text }}</div>
       </div>
     {% endif %}
-    <div class="{% if section.settings.layout == 'stories' %}b2b-stories{% else %}b2b-grid{% endif %}" style="--b2b-columns: {{ section.settings.columns }};">
+    <div class="{% if section.settings.layout == 'stories' %}b2b-stories{% elsif section.settings.layout == 'project_stories' %}b2b-project-stories{% else %}b2b-grid{% endif %}" style="--b2b-columns: {{ section.settings.columns }};">
       {% for block in section.blocks %}
         {% liquid
           assign has_video = false
@@ -43,16 +43,33 @@
           endif
         %}
         {% if show_card or request.design_mode %}
-          <article class="b2b-card{% if block.settings.show_image == false %} b2b-card--text-only{% elsif block.settings.image == blank and block.settings.image_asset == blank and has_video == false and request.design_mode == false %} b2b-card--text-only{% endif %}" {{ block.shopify_attributes }}>
-            {% if block.settings.show_image %}{% render 'b2b-image', media_type: block.settings.media_type, video: block.settings.video, poster: block.settings.poster, photo: block.settings.image, fallback_asset: block.settings.image_asset, alt: block.settings.image_alt, title: block.settings.title, note: block.settings.photo_note, fit: section.settings.image_fit, sizes: '(min-width: 990px) 30vw, (min-width: 641px) 50vw, 100vw' %}{% endif %}
-            <div class="b2b-card__body">
-              {% if request.design_mode and show_card == false %}<p class="b2b-editor-note">Не видно посетителям: добавьте фото и/или подтвердите разрешение на публикацию в настройках блока.</p>{% endif %}
-              {% if block.settings.eyebrow != blank %}<p class="b2b-eyebrow">{{ block.settings.eyebrow | escape }}</p>{% endif %}
-              {% if block.settings.title != blank %}<h3>{{ block.settings.title | escape }}</h3>{% endif %}
-              <div class="b2b-rte">{{ block.settings.text }}</div>
-              {% if block.settings.link != blank and block.settings.link_label != blank %}<a class="b2b-link" {% if block.settings.bulk_quote %}data-ev-bulk-cta="{{ section.id }}:{{ block.id }}"{% endif %} href="{{ block.settings.link }}">{{ block.settings.link_label | escape }} <span {% if block.settings.bulk_quote %}class="ev-bulk-cta__arrow"{% endif %} aria-hidden="true">→</span></a>{% endif %}
-            </div>
-          </article>
+          {% if block.type == 'project_story' %}
+            <article class="b2b-card b2b-project-story" {{ block.shopify_attributes }}>
+              {% render 'b2b-image', media_type: block.settings.media_type, video: block.settings.video, poster: block.settings.poster, photo: block.settings.image, alt: block.settings.image_alt, title: block.settings.title, fit: section.settings.image_fit, sizes: '(min-width: 990px) 50vw, 100vw', show_placeholder: true %}
+              <div class="b2b-card__body">
+                {% if block.settings.title != blank %}<h3>{{ block.settings.title | escape }}</h3>{% endif %}
+                <dl class="b2b-project-story__facts">
+                  {% if block.settings.industry != blank %}<div><dt>Industry</dt><dd>{{ block.settings.industry | escape }}</dd></div>{% endif %}
+                  {% if block.settings.product != blank %}<div><dt>Product</dt><dd>{{ block.settings.product | escape }}</dd></div>{% endif %}
+                  {% if block.settings.quantity != blank %}<div><dt>Quantity</dt><dd>{{ block.settings.quantity | escape }}</dd></div>{% endif %}
+                  <div><dt>Request</dt><dd>{{ block.settings.request | escape | newline_to_br }}</dd></div>
+                  <div><dt>Our work</dt><dd>{{ block.settings.our_work | escape | newline_to_br }}</dd></div>
+                  <div><dt>Result</dt><dd>{{ block.settings.result | escape | newline_to_br }}</dd></div>
+                </dl>
+              </div>
+            </article>
+          {% else %}
+            <article class="b2b-card{% if block.settings.show_image == false %} b2b-card--text-only{% elsif block.settings.image == blank and block.settings.image_asset == blank and has_video == false and request.design_mode == false %} b2b-card--text-only{% endif %}" {{ block.shopify_attributes }}>
+              {% if block.settings.show_image %}{% render 'b2b-image', media_type: block.settings.media_type, video: block.settings.video, poster: block.settings.poster, photo: block.settings.image, fallback_asset: block.settings.image_asset, alt: block.settings.image_alt, title: block.settings.title, note: block.settings.photo_note, fit: section.settings.image_fit, sizes: '(min-width: 990px) 30vw, (min-width: 641px) 50vw, 100vw' %}{% endif %}
+              <div class="b2b-card__body">
+                {% if request.design_mode and show_card == false %}<p class="b2b-editor-note">Не видно посетителям: добавьте фото и/или подтвердите разрешение на публикацию в настройках блока.</p>{% endif %}
+                {% if block.settings.eyebrow != blank %}<p class="b2b-eyebrow">{{ block.settings.eyebrow | escape }}</p>{% endif %}
+                {% if block.settings.title != blank %}<h3>{{ block.settings.title | escape }}</h3>{% endif %}
+                <div class="b2b-rte">{{ block.settings.text }}</div>
+                {% if block.settings.link != blank and block.settings.link_label != blank %}<a class="b2b-link" {% if block.settings.bulk_quote %}data-ev-bulk-cta="{{ section.id }}:{{ block.id }}"{% endif %} href="{{ block.settings.link }}">{{ block.settings.link_label | escape }} <span {% if block.settings.bulk_quote %}class="ev-bulk-cta__arrow"{% endif %} aria-hidden="true">→</span></a>{% endif %}
+              </div>
+            </article>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </div>
@@ -95,6 +112,10 @@
         {
           "value": "stories",
           "label": "Photo beside text"
+        },
+        {
+          "value": "project_stories",
+          "label": "Project story cards"
         }
       ],
       "default": "grid"
@@ -272,6 +293,85 @@
           "id": "approved",
           "label": "Facts and publication permission confirmed",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "project_story",
+      "name": "Project story",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Project title"
+        },
+        {
+          "type": "text",
+          "id": "industry",
+          "label": "Industry (optional)"
+        },
+        {
+          "type": "text",
+          "id": "product",
+          "label": "Product (optional)"
+        },
+        {
+          "type": "text",
+          "id": "quantity",
+          "label": "Quantity (optional)"
+        },
+        {
+          "type": "textarea",
+          "id": "request",
+          "label": "Request"
+        },
+        {
+          "type": "textarea",
+          "id": "our_work",
+          "label": "Our work"
+        },
+        {
+          "type": "textarea",
+          "id": "result",
+          "label": "Result"
+        },
+        {
+          "type": "select",
+          "id": "media_type",
+          "label": "Media type",
+          "options": [
+            {
+              "value": "image",
+              "label": "Image"
+            },
+            {
+              "value": "video",
+              "label": "Video — play on click, muted"
+            }
+          ],
+          "default": "image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video — no autoplay or sound"
+        },
+        {
+          "type": "image_picker",
+          "id": "poster",
+          "label": "Video cover (optional)",
+          "info": "Uses the video's preview image if empty."
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image or video description (alt text)"
         }
       ]
     }

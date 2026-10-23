@@ -4,7 +4,7 @@
     assign has_video = true
   endif
 %}
-<section class="b2b-section ev-quote-section" id="ProjectForm">
+<section class="b2b-section ev-quote-section" id="ProjectForm"{% if template.suffix == 'book-a-call' %} data-consultation-call{% endif %}>
   <div class="container b2b-split b2b-quote">
     <aside class="ev-quote__aside">
       <h2>{{ section.settings.heading | escape }}</h2>
@@ -53,7 +53,7 @@
       "type": "richtext",
       "id": "text",
       "label": "Side text",
-      "default": "<p>Free mockup • 15-minute project call • physical sample where qualifying • in-person sample review for qualifying bulk projects.</p>"
+      "default": "<p>Free mockup • 15-minute project call • physical sample where qualifying • office visits in Dallas–Fort Worth by appointment.</p>"
     },
     {
       "type": "select",
@@ -102,7 +102,7 @@
       "type": "richtext",
       "id": "after_text",
       "label": "Additional information",
-      "default": "<p>One human contact from quote to delivery. Free digital proof before production. PO-friendly ordering for approved accounts. Approved artwork retained for easy reorders.</p><p><a href=\"/pages/free-mockup\">Request a free mockup</a> or <a href=\"/pages/book-a-call?request=in-person\">request an in-person consultation</a>.</p>"
+      "default": "<p>One human contact from quote to delivery. Free digital proof before production. PO-friendly ordering for approved accounts. Approved artwork retained for easy reorders.</p><p><a href=\"/pages/free-mockup\">Request a free mockup</a> or <a href=\"/pages/book-a-call?request=in-person\">request an office visit</a>.</p>"
     }
   ],
   "blocks": [

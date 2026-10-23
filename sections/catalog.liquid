@@ -26,7 +26,6 @@
       <h1>{{ catalog_heading | escape }}</h1>
       {% if section.settings.use_collection_description and collection.handle != 'all' and collection.description != blank %}<div class="catalog__description b2b-rte">{{ collection.description }}</div>
       {% elsif section.settings.introduction != blank %}<div class="catalog__description b2b-rte">{{ section.settings.introduction }}</div>{% endif %}
-      {% if request.design_mode and settings.show_catalog_prices != true %}<p class="b2b-editor-note">Card prices are hidden. After confirming variant prices, enable Theme settings → Product catalog → Show agreed product prices on cards.</p>{% endif %}
     </header>
       <nav class="catalog-categories" aria-label="Product categories">
         <a href="{{ routes.all_products_collection_url }}" {% if collection.handle == 'all' %}aria-current="page"{% endif %}>All products</a>
@@ -94,7 +93,7 @@
     {% endif %}
     {% if collection.products.size > 0 %}
       <div class="catalog__grid" role="list">
-        {% for product in collection.products %}{% render 'catalog-product-card', card_product: product, card_index: forloop.index, card_label: section.settings.product_link_label, show_price: settings.show_catalog_prices, show_inventory_quantity: settings.show_inventory_quantity, low_stock_threshold: settings.low_stock_threshold %}{% endfor %}
+        {% for product in collection.products %}{% render 'catalog-product-card', card_product: product, card_index: forloop.index, card_label: section.settings.product_link_label, show_price: false, show_inventory_quantity: settings.show_inventory_quantity, low_stock_threshold: settings.low_stock_threshold %}{% endfor %}
       </div>
       {% if paginate.pages > 1 %}
         <nav class="catalog__pagination" aria-label="Catalog pages">

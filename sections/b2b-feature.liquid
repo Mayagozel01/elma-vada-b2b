@@ -17,7 +17,7 @@
         {% if section.settings.secondary_link != blank %}<a class="btn btn--outline" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label | escape }}</a>{% endif %}
       </div>
     </div>
-    {% render 'b2b-image', media_type: section.settings.media_type, video: section.settings.video, poster: section.settings.poster, photo: section.settings.image, alt: section.settings.image_alt, title: section.settings.heading, note: section.settings.photo_note %}
+    {% render 'b2b-image', media_type: section.settings.media_type, video: section.settings.video, poster: section.settings.poster, photo: section.settings.image, alt: section.settings.image_alt, title: section.settings.heading, note: section.settings.photo_note, person_name: section.settings.person_name, person_role: section.settings.person_role %}
   </div>
 </section>
 {% schema %}
@@ -81,6 +81,18 @@
       "type": "text",
       "id": "image_alt",
       "label": "Photo description"
+    },
+    {
+      "type": "text",
+      "id": "person_name",
+      "label": "Name below photo",
+      "info": "Leave blank to hide."
+    },
+    {
+      "type": "text",
+      "id": "person_role",
+      "label": "Job title below photo",
+      "info": "Shown below the name. Leave blank to hide."
     },
     {
       "type": "textarea",

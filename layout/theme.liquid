@@ -24,6 +24,13 @@
     {{ 'theme.css' | asset_url | stylesheet_tag }}
     {{ 'b2b-pages.css' | asset_url | stylesheet_tag }}
     {{ 'revision.css' | asset_url | stylesheet_tag }}
+    {% if template.name == 'page' and template.suffix == 'book-a-call' %}
+      {{ 'office-visit.css' | asset_url | stylesheet_tag }}
+      <script>
+        document.documentElement.dataset.consultation = new URLSearchParams(location.search).get('request') === 'in-person' || location.hash === '#OfficeVisitForm' ? 'office' : 'call';
+      </script>
+      <script src="{{ 'office-visit.js' | asset_url }}" defer></script>
+    {% endif %}
     {% if template.name == 'collection' or template.name == 'product' or template.name == 'cart' %}
       {{ 'commerce.css' | asset_url | stylesheet_tag }}
     {% endif %}

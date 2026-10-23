@@ -212,7 +212,7 @@
           "type": "question",
           "settings": {
             "question": "Can I review a mockup or sample first?",
-            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"
+            "answer": "<p>Get a free custom mockup before you order. Physical samples are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>. For an in-person review, <a href=\"/pages/book-a-call?request=in-person\">request an office visit</a> in Dallas–Fort Worth. Our representative comes to your office; the location and appointment details require confirmation.</p>"
           }
         },
         "question_4": {

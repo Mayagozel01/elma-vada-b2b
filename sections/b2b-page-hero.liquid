@@ -4,7 +4,7 @@
     assign has_video = true
   endif
 %}
-<section class="b2b-section{% if section.settings.compact %} ev-page-hero--compact{% endif %} b2b-section--{{ section.settings.color_scheme }}">
+<section class="b2b-section{% if section.settings.compact %} ev-page-hero--compact{% endif %} b2b-section--{{ section.settings.color_scheme }}"{% if template.suffix == 'book-a-call' %} data-consultation-call{% endif %}>
   <div class="container b2b-split b2b-hero{% if section.settings.show_image == false %} b2b-split--text-only{% elsif section.settings.image == blank and has_video == false and request.design_mode == false %} b2b-split--text-only{% endif %}">
     <div>
       {% if section.settings.eyebrow != blank %}<p class="b2b-eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}

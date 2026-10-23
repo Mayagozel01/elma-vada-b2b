@@ -1,2 +1,117 @@
-
-{"sections":{"hero":{"type":"b2b-page-hero","settings":{"eyebrow":"Elma Vada · Dallas, Texas","heading":"Get a free custom mockup","text":"<p>See a personalized gift concept before you order. Share your occasion, quantity and artwork when ready.</p>","show_image":false,"media_type":"image","image_alt":"","photo_note":"","color_scheme":"cream","button_label":"","button_link":"/pages/request-a-quote#ProjectForm","secondary_label":"","secondary_link":"/pages/our-work","compact":true}},"form":{"type":"b2b-quote","blocks":{"forms_inline_eDHNQp":{"type":"shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a","settings":{"form_id":"1155185","text_color":"#1E252B","button_background_color":"#1E252B","button_label_color":"#FFFFFF","links_color":"#846020","errors_color":"#B42318","text_alignment":"left","form_alignment":"center","padding_top":0,"padding_bottom":0,"padding_right":0,"padding_left":0}}},"block_order":["forms_inline_eDHNQp"],"settings":{"consultation_mode":false,"heading":"You can reduce the risk before committing.","text":"<p>Free mockup • 15-minute project call • physical sample where qualifying • in-person sample review for qualifying bulk projects.</p>","media_type":"image","image":"shopify://shop_images/personalized-gift-sample-bookmark-chopsticks-keychain-mockup..png","image_alt":"Personalized gift sample with an engraved metal bookmark, wooden chopsticks in a presentation case, wooden keychain and printed customization proof for client approval.","photo_note":"Один реальный готовый подарок рядом с согласованным эскизом. Не обязательно.","after_text":"<p>One human contact from quote to delivery. Free digital proof before production. PO-friendly ordering for approved accounts. Approved artwork retained for easy reorders.</p><p><a href=\"/pages/free-mockup\">Request a free mockup</a> or <a href=\"/pages/book-a-call?request=in-person\">request an in-person consultation</a>.</p>"}},"questions":{"type":"b2b-faq","blocks":{"question_1":{"type":"question","settings":{"question":"What information should I send for a quote?","answer":"<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"}},"question_2":{"type":"question","settings":{"question":"Can every gift have a different name?","answer":"<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"}},"question_3":{"type":"question","settings":{"question":"Can I review a mockup or sample first?","answer":"<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"}}},"block_order":["question_1","question_2","question_3"],"settings":{"heading":"What else would you like to know?","structured_data":true}},"meeting":{"type":"b2b-feature","settings":{"eyebrow":"","heading":"Meet With Us Face to Face","text":"<p>Planning gifts for your employees, clients, partners, or an upcoming event? Schedule a complimentary in-person consultation in the Dallas–Fort Worth area.</p><p>We’ll discuss your gifting needs, timeline, quantities, and personalization options. You’ll also receive a complimentary pen engraved with your name or company logo as a sample of our work.</p>","fine_print":"Visits are arranged by appointment. We will confirm the meeting details with you.","media_type":"image","image":"shopify://shop_images/consult-team-3.png","image_alt":"","photo_note":"Реальное фото Дарьи/места встречи и персонализированной ручки-образца.","show_address":true,"button_label":"Schedule an In-Person Consultation","button_link":"/pages/book-a-call?request=in-person","secondary_label":"","secondary_link":"","color_scheme":"cream"}}},"order":["hero","form","questions","meeting"]}
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "Get a free custom mockup",
+        "text": "<p>See a personalized gift concept before you order. Share your occasion, quantity and artwork when ready.</p>",
+        "show_image": false,
+        "media_type": "image",
+        "image_alt": "",
+        "photo_note": "",
+        "color_scheme": "cream",
+        "button_label": "",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "secondary_label": "",
+        "secondary_link": "/pages/our-work",
+        "compact": true
+      }
+    },
+    "form": {
+      "type": "b2b-quote",
+      "blocks": {
+        "forms_inline_eDHNQp": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "1155185",
+            "text_color": "#1E252B",
+            "button_background_color": "#1E252B",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#846020",
+            "errors_color": "#B42318",
+            "text_alignment": "left",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_eDHNQp"
+      ],
+      "settings": {
+        "consultation_mode": false,
+        "heading": "You can reduce the risk before committing.",
+        "text": "<p>Free mockup • 15-minute project call • physical sample where qualifying • office visits in Dallas–Fort Worth by appointment.</p>",
+        "media_type": "image",
+        "image": "shopify://shop_images/personalized-gift-sample-bookmark-chopsticks-keychain-mockup..png",
+        "image_alt": "Personalized gift sample with an engraved metal bookmark, wooden chopsticks in a presentation case, wooden keychain and printed customization proof for client approval.",
+        "photo_note": "Один реальный готовый подарок рядом с согласованным эскизом. Не обязательно.",
+        "after_text": "<p>One human contact from quote to delivery. Free digital proof before production. PO-friendly ordering for approved accounts. Approved artwork retained for easy reorders.</p><p><a href=\"/pages/free-mockup\">Request a free mockup</a> or <a href=\"/pages/book-a-call?request=in-person\">request an office visit</a>.</p>"
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>. For an in-person review, <a href=\"/pages/book-a-call?request=in-person\">request an office visit</a> in Dallas–Fort Worth. Our representative comes to your office; the location and appointment details require confirmation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3"
+      ],
+      "settings": {
+        "heading": "What else would you like to know?",
+        "structured_data": true
+      }
+    },
+    "meeting": {
+      "type": "b2b-feature",
+      "settings": {
+        "eyebrow": "",
+        "heading": "We Come to Your Office",
+        "text": "<p>Planning gifts for your employees, clients, partners, or an upcoming event? An Elma Vada representative can visit your office in the Dallas–Fort Worth area to discuss your project in person.</p><p>We’ll review your gifting needs, quantities, timeline, and personalization options, and bring samples for you to explore.</p><p>You’ll also receive a complimentary pen engraved with your name or company logo.</p>",
+        "fine_print": "Office visits are arranged by appointment. Send us your office address and preferred availability, and we’ll confirm the location and meeting details with you.",
+        "media_type": "image",
+        "image": "shopify://shop_images/consult-team-3.png",
+        "image_alt": "",
+        "photo_note": "Реальное фото Дарьи/места встречи и персонализированной ручки-образца.",
+        "show_address": false,
+        "button_label": "Request an Office Visit",
+        "button_link": "/pages/book-a-call?request=in-person",
+        "secondary_label": "",
+        "secondary_link": "",
+        "color_scheme": "cream"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "form",
+    "questions",
+    "meeting"
+  ]
+}

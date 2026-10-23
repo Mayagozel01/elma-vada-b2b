@@ -27,11 +27,22 @@
       alt="{{ photo_alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}"
       loading="{% if eager %}eager{% else %}lazy{% endif %}" {% if eager %}fetchpriority="high"{% endif %}
       style="object-position: {{ photo.presentation.focal_point | default: '50% 50%' }};">
+    {% if person_name != blank or person_role != blank %}
+      <figcaption class="b2b-person-caption">
+        {% if person_name != blank %}<p class="b2b-person-caption__name">{{ person_name | escape }}</p>{% endif %}
+        {% if person_role != blank %}<p class="b2b-person-caption__role">{{ person_role | escape }}</p>{% endif %}
+      </figcaption>
+    {% endif %}
   </figure>
 {% elsif fallback_asset != blank %}
   <figure class="b2b-media{% if fit == 'contain' %} b2b-media--contain{% endif %}">
     <img src="{{ fallback_asset | asset_url }}" alt="{{ alt | default: title | escape }}"
       width="1200" height="900" loading="{% if eager %}eager{% else %}lazy{% endif %}" {% if eager %}fetchpriority="high"{% endif %}>
+  </figure>
+{% elsif show_placeholder %}
+  <figure class="b2b-media b2b-media--placeholder" aria-label="{{ alt | default: title | default: 'Project image placeholder' | escape }}">
+    {{ 'image' | placeholder_svg_tag }}
+    {% if request.design_mode %}<figcaption>Выберите фотографию этого заказа</figcaption>{% endif %}
   </figure>
 {% elsif request.design_mode %}
   <div class="b2b-placeholder">

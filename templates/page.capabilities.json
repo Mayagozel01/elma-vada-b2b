@@ -1,1 +1,496 @@
-{"sections":{"hero":{"type":"b2b-page-hero","settings":{"eyebrow":"Elma Vada · Dallas, Texas","heading":"In-house laser engraving in Dallas","text":"<p>Elma Vada produces personalized gifts and awards using CO₂, fiber, UV and crystal laser engraving. Share your material, design and quantity so our Dallas team can recommend a suitable approach.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/elmavadastudio.png","image_alt":"Laser engraving workstations in the Elma Vada production space.","photo_note":"Реальная мастерская широким кадром; не использовать AI-фото как доказательство.","color_scheme":"cream","button_label":"Get a Free Mockup","button_link":"/pages/free-mockup","secondary_label":"View Our Work","secondary_link":"/pages/our-work","compact":false}},"equipment":{"type":"b2b-content","blocks":{"co2":{"type":"item","settings":{"title":"CO₂ Lasers ×3","eyebrow":"","text":"<p>Laser engraving for suitable wood, acrylic and leather products.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/CO2-lasers-elma-vada-engraving.png","image_alt":"CO₂ Laser Engraving","photo_note":"Фото реального изделия, 1200 × 900 px. Не размещайте неподтверждённые логотипы клиентов.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":true}},"fiber":{"type":"item","settings":{"title":"Fiber Lasers ×4","eyebrow":"","text":"<p>Engraving for compatible metal products and finishes.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/fiber-laser-metal-pen-engraving-process-elma-vada-dallas.jpg","image_alt":"Fiber Laser Engraving Dallas","photo_note":"Фото реального изделия, 1200 × 900 px. Не размещайте неподтверждённые логотипы клиентов.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"uv":{"type":"item","settings":{"title":"UV Lasers ×2","eyebrow":"","text":"<p>Fine-detail engraving on compatible materials.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/UV-lasers-elma-vada-engraving.png","image_alt":"UV Laser Engraving","photo_note":"Фото реального изделия, 1200 × 900 px. Не размещайте неподтверждённые логотипы клиентов.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"crystal":{"type":"item","settings":{"title":"3D Crystal Laser","eyebrow":"","text":"<p>Internal engraving for suitable crystal pieces.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/3d-crystal-laser-engraving-process-elma-vada-dallas.jpg","image_alt":"Glass & Crystal Engraving","photo_note":"Фото реального изделия, 1200 × 900 px. Не размещайте неподтверждённые логотипы клиентов.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["co2","fiber","uv","crystal"],"settings":{"eyebrow":"","heading":"Which engraving technologies do we use?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"white","require_photo":false,"bulk_quote":false,"button_label":"","button_link":""}},"examples":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Metal Engraving","eyebrow":"","text":"<p>Share the exact metal, coating and desired contrast so suitability can be checked.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/IMG_0121.webp","image_alt":"Close-up of a silver-tone pen with a gold-tone clip and engraved name.","photo_note":"Ваш станок для металла и готовый образец рядом.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Glass & Crystal Projects","eyebrow":"","text":"<p>The shape and composition of the piece influence the available engraving approach.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/engraved_glass.png","image_alt":"Close-up of laser engraving on a clear glass materials.","photo_note":"Ваше реальное оборудование для стекла/кристалла.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Wood & Acrylic Work","eyebrow":"","text":"<p>Discuss the material grade, artwork detail and desired finish before production.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/tell.jpg","image_alt":"Wooden pen with gold-tone trim beside a matching personalized wooden case.","photo_note":"Ваше оборудование и образцы дерева/акрила.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Proofing & Quality Review","eyebrow":"","text":"<p>Review the artwork, recipient information and finish at the appropriate stages.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/proofing-quality-review.png","image_alt":"Team member checking engraved names on finished pens before packing.","photo_note":"Сотрудник проверяет настоящий образец.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_3","item_2","item_4"],"settings":{"eyebrow":"","heading":"How do we approach different materials?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"cream","require_photo":false,"bulk_quote":false,"button_label":"","button_link":""}},"process":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Share the Brief","eyebrow":"","text":"<p>Tell us the occasion, recipients, quantity and target date.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/share.jpg","image_alt":"Professional flat lay of a personalized wooden pen and minimalist gift packaging beside a blank card for notes. Dallas. Personalized gift","photo_note":"","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Review the Direction","eyebrow":"","text":"<p>Discuss products and a digital mockup; ask about physical sample options.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/r.jpg","image_alt":"Personalized gift. Dallas. Close-up of a custom-engraved wooden guitar pick beside an illustrative engraving proof layout drawing for approval.","photo_note":"","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Approve the Details","eyebrow":"","text":"<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/rr.jpg","image_alt":"Personalized gift. Dallas.Detailed macro e-commerce photography of a personalized wooden item with precise laser-engraved typography approved for production.","photo_note":"","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Produce & Prepare","eyebrow":"","text":"<p>Production and packing follow the approved project scope.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/4_340b4643-a2c3-41dd-99fa-fae1032b69fe.jpg","image_alt":"Personalized gift. Dallas.Professional e-commerce product photography of a prepared batch of custom corporate gifts in neat eco-friendly kraft paper boxes tied with natural twine.","photo_note":"","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"How does the project come together?","text":"","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"white","require_photo":false,"bulk_quote":false,"button_label":"","button_link":""}},"materials":{"type":"b2b-content","blocks":{"item_1":{"type":"item","settings":{"title":"Metal","eyebrow":"","text":"<p>Tell us the metal type, surface coating and desired appearance.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/metal.png","image_alt":"Personalized gift displayed for metal.","photo_note":"Макро вашего образца металла с гравировкой.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"item_2":{"type":"item","settings":{"title":"Wood","eyebrow":"","text":"<p>Consider grain, tone and the size of the engraving.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/derevyannyy.png","image_alt":"Wooden pen beside a matching engraved presentation case.","photo_note":"Макро вашего образца дерева.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"item_3":{"type":"item","settings":{"title":"Acrylic","eyebrow":"","text":"<p>Discuss thickness, color and edge finish for the piece.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/steklyannyy.png","image_alt":"Personalized gift displayed for acrylic.`","photo_note":"Макро вашего образца акрила.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}},"item_4":{"type":"item","settings":{"title":"Glass & Crystal","eyebrow":"","text":"<p>Share the shape, dimensions and material specification for review.</p>","show_image":true,"media_type":"image","image":"shopify://shop_images/glass.png","image_alt":"Close-up of engraving on a clear glass gift.","photo_note":"Макро настоящей гравировки на стекле.","bulk_quote":false,"link_label":"","link":"","requires_approval":false,"approved":false}}},"block_order":["item_1","item_2","item_3","item_4"],"settings":{"eyebrow":"","heading":"Which material fits your idea?","text":"","layout":"grid","columns":4,"image_fit":"contain","color_scheme":"white","require_photo":false,"bulk_quote":false,"button_label":"","button_link":""}},"speed":{"type":"b2b-feature","settings":{"eyebrow":"","heading":"Fast, In-House Engraving","text":"<p>Small orders ready in as little as 1 business day.*</p><p>Up to 1,000 engraved pens produced in just 1 business day.*</p>","fine_print":"*Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability.","media_type":"video","video":"shopify://files/videos/Jewel wood2.mov","image_alt":"Laser beam engraving a wooden gift box inside an engraving machine.","photo_note":"Реальный процесс лазерной гравировки и готовая партия ручек.","show_address":false,"bulk_quote":false,"button_label":"Discuss Your Timeline","button_link":"/pages/request-a-quote#ProjectForm","secondary_label":"Request a Physical Sample","secondary_link":"/pages/request-a-quote?request=sample#ProjectForm","color_scheme":"cream"}},"questions":{"type":"b2b-faq","blocks":{"question_1":{"type":"question","settings":{"question":"What information should I send for a quote?","answer":"<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"}},"question_2":{"type":"question","settings":{"question":"Can every gift have a different name?","answer":"<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"}},"question_3":{"type":"question","settings":{"question":"Can I review a mockup or sample first?","answer":"<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"}},"question_4":{"type":"question","settings":{"question":"How long will my order take?","answer":"<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"}}},"block_order":["question_1","question_2","question_3","question_4"],"settings":{"heading":"What else would you like to know?","structured_data":true}},"cta":{"type":"b2b-content","settings":{"eyebrow":"","heading":"What do you have in mind?","text":"<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>","layout":"grid","columns":4,"image_fit":"cover","color_scheme":"navy","require_photo":false,"bulk_quote":false,"button_label":"Discuss Your Project","button_link":"/pages/request-a-quote#ProjectForm"}}},"order":["hero","equipment","examples","process","materials","speed","questions","cta"]}
+{
+  "sections": {
+    "hero": {
+      "type": "b2b-page-hero",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "In-house laser engraving in Dallas",
+        "text": "<p>Elma Vada produces personalized gifts and awards using CO₂, fiber, UV and crystal laser engraving. Share your material, design and quantity so our Dallas team can recommend a suitable approach.</p>",
+        "show_image": true,
+        "media_type": "image",
+        "image": "shopify://shop_images/elmavadastudio.png",
+        "image_alt": "Laser engraving workstations in the Elma Vada production space.",
+        "photo_note": "Реальная мастерская широким кадром; не использовать AI-фото как доказательство.",
+        "color_scheme": "cream",
+        "button_label": "Get a Free Mockup",
+        "button_link": "/pages/free-mockup",
+        "secondary_label": "View Our Work",
+        "secondary_link": "/pages/our-work",
+        "compact": false
+      }
+    },
+    "equipment": {
+      "type": "b2b-content",
+      "blocks": {
+        "co2": {
+          "type": "item",
+          "settings": {
+            "title": "CO₂ Lasers ×3",
+            "eyebrow": "",
+            "text": "<p>Laser engraving for suitable wood, acrylic and leather products.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/CO2-lasers-elma-vada-engraving.png",
+            "image_alt": "CO₂ Laser Engraving",
+            "photo_note": "Фото реального изделия, 1200 × 900 px. Не размещайте неподтверждённые логотипы клиентов.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": true
+          }
+        },
+        "fiber": {
+          "type": "item",
+          "settings": {
+            "title": "Fiber Lasers ×4",
+            "eyebrow": "",
+            "text": "<p>Engraving for compatible metal products and finishes.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/fiber-laser-metal-pen-engraving-process-elma-vada-dallas.jpg",
+            "image_alt": "Fiber Laser Engraving Dallas",
+            "photo_note": "Фото реального изделия, 1200 × 900 px. Не размещайте неподтверждённые логотипы клиентов.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "uv": {
+          "type": "item",
+          "settings": {
+            "title": "UV Lasers ×2",
+            "eyebrow": "",
+            "text": "<p>Fine-detail engraving on compatible materials.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/UV-lasers-elma-vada-engraving.png",
+            "image_alt": "UV Laser Engraving",
+            "photo_note": "Фото реального изделия, 1200 × 900 px. Не размещайте неподтверждённые логотипы клиентов.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "crystal": {
+          "type": "item",
+          "settings": {
+            "title": "3D Crystal Laser",
+            "eyebrow": "",
+            "text": "<p>Internal engraving for suitable crystal pieces.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/3d-crystal-laser-engraving-process-elma-vada-dallas.jpg",
+            "image_alt": "Glass & Crystal Engraving",
+            "photo_note": "Фото реального изделия, 1200 × 900 px. Не размещайте неподтверждённые логотипы клиентов.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "co2",
+        "fiber",
+        "uv",
+        "crystal"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "Which engraving technologies do we use?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "white",
+        "require_photo": false,
+        "bulk_quote": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "examples": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Metal Engraving",
+            "eyebrow": "",
+            "text": "<p>Share the exact metal, coating and desired contrast so suitability can be checked.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/IMG_0121.webp",
+            "image_alt": "Close-up of a silver-tone pen with a gold-tone clip and engraved name.",
+            "photo_note": "Ваш станок для металла и готовый образец рядом.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Glass & Crystal Projects",
+            "eyebrow": "",
+            "text": "<p>The shape and composition of the piece influence the available engraving approach.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/engraved_glass.png",
+            "image_alt": "Close-up of laser engraving on a clear glass materials.",
+            "photo_note": "Ваше реальное оборудование для стекла/кристалла.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Wood & Acrylic Work",
+            "eyebrow": "",
+            "text": "<p>Discuss the material grade, artwork detail and desired finish before production.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/tell.jpg",
+            "image_alt": "Wooden pen with gold-tone trim beside a matching personalized wooden case.",
+            "photo_note": "Ваше оборудование и образцы дерева/акрила.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Proofing & Quality Review",
+            "eyebrow": "",
+            "text": "<p>Review the artwork, recipient information and finish at the appropriate stages.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/proofing-quality-review.png",
+            "image_alt": "Team member checking engraved names on finished pens before packing.",
+            "photo_note": "Сотрудник проверяет настоящий образец.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_3",
+        "item_2",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "How do we approach different materials?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "cream",
+        "require_photo": false,
+        "bulk_quote": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "process": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Share the Brief",
+            "eyebrow": "",
+            "text": "<p>Tell us the occasion, recipients, quantity and target date.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/share.jpg",
+            "image_alt": "Professional flat lay of a personalized wooden pen and minimalist gift packaging beside a blank card for notes. Dallas. Personalized gift",
+            "photo_note": "",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Review the Direction",
+            "eyebrow": "",
+            "text": "<p>Discuss products and a digital mockup; ask about physical sample options.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/r.jpg",
+            "image_alt": "Personalized gift. Dallas. Close-up of a custom-engraved wooden guitar pick beside an illustrative engraving proof layout drawing for approval.",
+            "photo_note": "",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Approve the Details",
+            "eyebrow": "",
+            "text": "<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/rr.jpg",
+            "image_alt": "Personalized gift. Dallas.Detailed macro e-commerce photography of a personalized wooden item with precise laser-engraved typography approved for production.",
+            "photo_note": "",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Produce & Prepare",
+            "eyebrow": "",
+            "text": "<p>Production and packing follow the approved project scope.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/4_340b4643-a2c3-41dd-99fa-fae1032b69fe.jpg",
+            "image_alt": "Personalized gift. Dallas.Professional e-commerce product photography of a prepared batch of custom corporate gifts in neat eco-friendly kraft paper boxes tied with natural twine.",
+            "photo_note": "",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "How does the project come together?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "white",
+        "require_photo": false,
+        "bulk_quote": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "materials": {
+      "type": "b2b-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Metal",
+            "eyebrow": "",
+            "text": "<p>Tell us the metal type, surface coating and desired appearance.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/metal.png",
+            "image_alt": "Personalized gift displayed for metal.",
+            "photo_note": "Макро вашего образца металла с гравировкой.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Wood",
+            "eyebrow": "",
+            "text": "<p>Consider grain, tone and the size of the engraving.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/derevyannyy.png",
+            "image_alt": "Wooden pen beside a matching engraved presentation case.",
+            "photo_note": "Макро вашего образца дерева.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Acrylic",
+            "eyebrow": "",
+            "text": "<p>Discuss thickness, color and edge finish for the piece.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/steklyannyy.png",
+            "image_alt": "Personalized gift displayed for acrylic.`",
+            "photo_note": "Макро вашего образца акрила.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Glass & Crystal",
+            "eyebrow": "",
+            "text": "<p>Share the shape, dimensions and material specification for review.</p>",
+            "show_image": true,
+            "media_type": "image",
+            "image": "shopify://shop_images/glass.png",
+            "image_alt": "Close-up of engraving on a clear glass gift.",
+            "photo_note": "Макро настоящей гравировки на стекле.",
+            "bulk_quote": false,
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "Which material fits your idea?",
+        "text": "",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "contain",
+        "color_scheme": "white",
+        "require_photo": false,
+        "bulk_quote": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "speed": {
+      "type": "b2b-feature",
+      "settings": {
+        "eyebrow": "",
+        "heading": "Fast, In-House Engraving",
+        "text": "<p>Small orders ready in as little as 1 business day.*</p><p>Up to 1,000 engraved pens produced in just 1 business day.*</p>",
+        "fine_print": "*Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability.",
+        "media_type": "video",
+        "video": "shopify://files/videos/Jewel wood2.mov",
+        "image_alt": "Laser beam engraving a wooden gift box inside an engraving machine.",
+        "photo_note": "Реальный процесс лазерной гравировки и готовая партия ручек.",
+        "show_address": false,
+        "bulk_quote": false,
+        "button_label": "Discuss Your Timeline",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "secondary_label": "Request a Physical Sample",
+        "secondary_link": "/pages/request-a-quote?request=sample#ProjectForm",
+        "color_scheme": "cream"
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "What information should I send for a quote?",
+            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can every gift have a different name?",
+            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can I review a mockup or sample first?",
+            "answer": "<p>Get a free custom mockup before you order. Physical samples are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>. For an in-person review, <a href=\"/pages/book-a-call?request=in-person\">request an office visit</a> in Dallas–Fort Worth. Our representative comes to your office; the location and appointment details require confirmation.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "How long will my order take?",
+            "answer": "<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ],
+      "settings": {
+        "heading": "What else would you like to know?",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "b2b-content",
+      "settings": {
+        "eyebrow": "",
+        "heading": "What do you have in mind?",
+        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
+        "layout": "grid",
+        "columns": 4,
+        "image_fit": "cover",
+        "color_scheme": "navy",
+        "require_photo": false,
+        "bulk_quote": false,
+        "button_label": "Discuss Your Project",
+        "button_link": "/pages/request-a-quote#ProjectForm"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "equipment",
+    "examples",
+    "process",
+    "materials",
+    "speed",
+    "questions",
+    "cta"
+  ]
+}

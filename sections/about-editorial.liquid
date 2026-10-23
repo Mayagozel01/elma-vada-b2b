@@ -1,0 +1,81 @@
+{% comment %}About-only editorial content; existing shared sections remain unchanged.{% endcomment %}
+{% if template.name == 'page' and template.suffix == 'about' %}
+  {{ 'about-editorial.css' | asset_url | stylesheet_tag }}
+  <section class="b2b-section b2b-section--{{ section.settings.color_scheme }} about-editorial about-editorial--{{ section.settings.layout }}{% if section.settings.layout == 'purpose' %} about-purpose{% endif %}">
+    <div class="container">
+      {% if section.settings.layout == 'columns' %}
+        <div class="about-editorial__inner about-editorial__columns" style="--about-columns: {{ section.blocks.size | at_least: 1 }};">
+          {% for block in section.blocks %}
+            <article class="about-editorial__column" {{ block.shopify_attributes }}>
+              {% if block.settings.heading != blank %}<h2 class="about-editorial__heading">{{ block.settings.heading | escape }}</h2>{% endif %}
+              {% if block.settings.eyebrow != blank %}<p class="b2b-eyebrow about-editorial__eyebrow">{{ block.settings.eyebrow | escape }}</p>{% endif %}
+              {% if block.settings.text != blank %}<div class="b2b-rte about-editorial__text">{{ block.settings.text }}</div>{% endif %}
+            </article>
+          {% endfor %}
+        </div>
+      {% elsif section.settings.layout == 'purpose' %}
+        <div class="about-purpose__grid">
+          <div class="about-purpose__column about-purpose__mission">
+            {% if section.settings.heading != blank %}<h2 class="about-purpose__heading">{{ section.settings.heading | escape }}</h2>{% endif %}
+            {% if section.settings.text != blank %}<div class="b2b-rte about-purpose__text">{{ section.settings.text }}</div>{% endif %}
+          </div>
+          <div class="about-purpose__column about-purpose__vision">
+            {% if section.settings.vision_heading != blank %}<h2 class="about-purpose__heading">{{ section.settings.vision_heading | escape }}</h2>{% endif %}
+            {% if section.settings.vision_text != blank %}<div class="b2b-rte about-purpose__text">{{ section.settings.vision_text }}</div>{% endif %}
+          </div>
+        </div>
+      {% else %}
+        <div class="about-editorial__inner">
+          {% if section.settings.heading != blank %}<h2 class="about-editorial__heading">{{ section.settings.heading | escape }}</h2>{% endif %}
+          {% if section.settings.text != blank %}<div class="b2b-rte about-editorial__text">{{ section.settings.text }}</div>{% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </section>
+{% endif %}
+{% schema %}
+{
+  "name": "About editorial",
+  "enabled_on": {"templates": ["page"]},
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        {"value": "purpose", "label": "Mission & Vision — 40/60"},
+        {"value": "statement", "label": "Mission — statement"},
+        {"value": "split", "label": "Vision — heading beside text"},
+        {"value": "columns", "label": "Contribution & impact — two blocks"}
+      ],
+      "default": "statement"
+    },
+    {"type": "text", "id": "heading", "label": "Heading", "info": "Mission heading in the 40/60 layout. For Contribution & impact, edit the blocks below."},
+    {"type": "richtext", "id": "text", "label": "Text"},
+    {"type": "text", "id": "vision_heading", "label": "Vision heading", "info": "Used in the Mission & Vision — 40/60 layout."},
+    {"type": "richtext", "id": "vision_text", "label": "Vision text"},
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Background",
+      "options": [
+        {"value": "cream", "label": "Cream"},
+        {"value": "white", "label": "White"}
+      ],
+      "default": "cream"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "statement",
+      "name": "Contribution / impact",
+      "settings": [
+        {"type": "text", "id": "heading", "label": "Heading"},
+        {"type": "text", "id": "eyebrow", "label": "Subtitle"},
+        {"type": "richtext", "id": "text", "label": "Text"}
+      ]
+    }
+  ],
+  "max_blocks": 2
+}
+{% endschema %}

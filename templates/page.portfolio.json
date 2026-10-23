@@ -22,91 +22,111 @@
     "examples": {
       "type": "b2b-content",
       "blocks": {
-        "item_1": {
-          "type": "item",
+        "story_800_parker_pens": {
+          "type": "project_story",
           "settings": {
-            "title": "Engraved Glass Project",
-            "eyebrow": "",
-            "text": "<p>Add the approved client type, project need, quantity, material, production method and outcome before publishing this case.</p>",
-            "show_image": true,
+            "title": "800 Parker Pens for a Corporate Event",
+            "request": "A client needed 800 Parker pens for a corporate event.",
+            "our_work": "Our production team prepared the order in a couple of days. With the client located nearby, we delivered it directly to their door.",
+            "result": "The client later returned with another large order.",
             "media_type": "image",
-            "image": "shopify://shop_images/glassespacked.png",
-            "image_alt": "Wholesale custom engraved glassware and personalized  glasses with corporate gift packaging for bulk business orders and B2B clients in Dallas, Texas.",
-            "photo_note": "Общий кадр стеклянного изделия + детали гравировки.",
-            "bulk_quote": true,
-            "link_label": "Request a Similar Bulk Order",
-            "link": "/pages/request-a-quote#ProjectForm",
-            "requires_approval": true,
-            "approved": true
+            "image": "shopify://shop_images/elma-vada-studio-800-personalized-pens-bulk-order.png",
+            "video": "shopify://files/videos/engraved Parker jotter pens.MOV",
+            "image_alt": "Personalized black pens arranged in individual gift boxes, part of an 800-pen bulk order by Elma Vada Studio."
           }
         },
-        "item_2": {
-          "type": "item",
+        "story_74_engraved_pens": {
+          "type": "project_story",
           "settings": {
-            "title": "Individually Named Pen Batch",
-            "eyebrow": "",
-            "text": "<p>Add verified project details and explain how recipient personalization was organized.</p>",
-            "show_image": true,
-            "media_type": "image",
-            "image": "shopify://shop_images/our_work12.png",
-            "image_alt": "Bulk engraved pen gift sets with personalized metal cases for corporate gifts, client appreciation, employee recognition and events in Dallas, Texas.",
-            "photo_note": "Партия ручек с разными именами.",
-            "bulk_quote": true,
-            "link_label": "Request a Similar Bulk Order",
-            "link": "/pages/request-a-quote#ProjectForm",
-            "requires_approval": true,
-            "approved": true
+            "title": "74 Engraved Pens for an Iftar Gathering",
+            "request": "A client needed 74 Parker Frontier pens with Cyrillic engraving for an upcoming iftar gathering, with very little time to spare.",
+            "our_work": "We finalized the engraving details and completed production in one day.",
+            "result": "The pens were delivered before the client’s deadline. In their feedback, the client praised Daria for going above and beyond.",
+            "media_type": "video",
+            "video": "shopify://files/videos/engraved Parker jotter pens.MOV",
+            "image_alt": "Personalized black pens arranged in individual gift boxes, part of an 800-pen bulk order by Elma Vada Studio."
           }
         },
-        "item_3": {
-          "type": "item",
+        "story_75_walnut_chopstick_sets": {
+          "type": "project_story",
           "settings": {
-            "title": "Recognition Award Project",
-            "eyebrow": "",
-            "text": "<p>Describe the approved occasion, material choice and finished recognition piece.</p>",
-            "show_image": true,
+            "title": "75 Walnut Chopstick Sets for a Hotel Dinner",
+            "request": "A hospitality client ordered 75 walnut chopstick sets with presentation boxes and a logo for a corporate dinner.",
+            "our_work": "We personalized the sets with the client’s logo, ensuring the design fit the available engraving area.",
+            "result": "The client left a five-star review praising the quality and presentation.",
             "media_type": "image",
-            "image": "shopify://shop_images/upakovannyy.png",
-            "image_alt": "Custom engraved recognition gifts including personalized award pen sets, wooden keepsake boxes, and corporate appreciation pieces for employee milestones, business awards, and bulk B2B orders in Dallas, Texas.",
-            "photo_note": "Настоящая награда крупно и общий вид.",
-            "bulk_quote": false,
-            "link_label": "",
-            "link": "",
-            "requires_approval": true,
-            "approved": true
+            "image": "shopify://shop_images/laser-engraving-operator-personalized-gifts-production.png",
+            "image_alt": "Bulk walnut chopstick sets with presentation boxes and a logo for a corporate dinner. Elmavada studio"
           }
         },
-        "item_4": {
-          "type": "item",
+        "story_60_branded_gift_sets": {
+          "type": "project_story",
           "settings": {
-            "title": "Packing & Fulfillment Project",
-            "eyebrow": "",
-            "text": "<p>Describe the verified packing requirements and delivery scope without exposing recipient details.</p>",
-            "show_image": true,
+            "title": "60 Branded Gift Sets for a Law Firm",
+            "request": "A law firm ordered 60 walnut chopstick sets with boxes and a logo for a corporate event.",
+            "our_work": "We prepared the branded sets to the agreed design for the event.",
+            "result": "The client returned with an order for 20 Parker pen sets, continuing the relationship with a different gift selection.",
+            "media_type": "video",
+            "image": "shopify://shop_images/packed-chopsticks-v1.png",
+            "video": "shopify://files/videos/chopsticks.MOV",
+            "image_alt": ""
+          }
+        },
+        "story_130_bookmarks": {
+          "type": "project_story",
+          "settings": {
+            "title": "130 Bookmarks Shipped the Next Day",
+            "request": "A client ordered 130 bookmarks with a religious theme.",
+            "our_work": "When a checkout issue prevented the full quantity from being placed in one order, we coordinated two separate orders and shipped them together. The order was placed on August 12 and dispatched on August 13, 2025.",
+            "result": "The client praised our professionalism and was delighted with the order.",
+            "media_type": "video",
+            "video": "shopify://files/videos/Bookmark metal.mov",
+            "poster": "shopify://shop_images/elma-vada-engraved-metal-bookmark-cross-charm.png",
+            "image_alt": "Engraved metal bookmark with cross charm by Elma Vada Studio. DWF"
+          }
+        },
+        "story_2000_mojito_glasses": {
+          "type": "project_story",
+          "settings": {
+            "title": "2,000 Logo-Engraved Glasses for an Oil & Gas Company",
+            "industry": "Oil & Gas",
+            "product": "Logo-Engraved Mojito Glasses",
+            "quantity": "2,000",
+            "request": "An oil and gas company needed 2,000 mojito glasses engraved with its logo.",
+            "our_work": "We found a supplier who could ship and deliver the full quantity within one week. Engraving took another week, with two engravers working full shifts on the project while two other engravers continued handling other orders. The completed order was carefully checked before delivery.",
+            "result": "The order was delivered, and the client was pleased with the quality.",
             "media_type": "image",
-            "image": "shopify://shop_images/packed.png",
-            "image_alt": "Bulk custom engraved corporate gifts packed in presentation boxes with personalized glassware, pen sets, wooden keepsakes and protective shipping cartons for B2B fulfillment in Dallas, Texas.",
-            "photo_note": "Ваши реальные упакованные заказы или доставка.",
-            "bulk_quote": true,
-            "link_label": "Request a Similar Bulk Order",
-            "link": "/pages/request-a-quote#ProjectForm",
-            "requires_approval": true,
-            "approved": true
+            "image_alt": ""
+          }
+        },
+        "story_50_parker_pen_sets": {
+          "type": "project_story",
+          "settings": {
+            "title": "50 Parker Pen Sets for a Returning Client",
+            "request": "A returning client from a surgical institute needed another batch of 50 Parker pen sets.",
+            "our_work": "We discussed alternative pens and boxes, worked through several options, and agreed on the combination the client preferred.",
+            "result": "The order was placed on March 1 and dispatched on March 2, 2026. The client praised the quality of the materials and our communication.",
+            "media_type": "image",
+            "image": "shopify://shop_images/corporate-gift-order-packing-process-dallas.png",
+            "image_alt": "Close-up of a person holding a brown leather pen pouch with engraved metal pens beside a ribbon-wrapped white gift box, produced by Elma Vada corporate gift engraving studio in Dallas, Texas."
           }
         }
       },
       "block_order": [
-        "item_1",
-        "item_2",
-        "item_3",
-        "item_4"
+        "story_800_parker_pens",
+        "story_74_engraved_pens",
+        "story_75_walnut_chopstick_sets",
+        "story_60_branded_gift_sets",
+        "story_130_bookmarks",
+        "story_50_parker_pen_sets",
+        "story_2000_mojito_glasses"
       ],
       "settings": {
         "eyebrow": "",
         "heading": "Project stories",
         "text": "",
-        "layout": "grid",
-        "columns": 4,
+        "layout": "project_stories",
+        "columns": 2,
         "image_fit": "cover",
         "color_scheme": "cream",
         "require_photo": false,
@@ -127,6 +147,7 @@
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/Gemini_Generated_Image_fobqagfobqagfobq.jpg",
+            "image_asset": "",
             "image_alt": "Clear glass employee recognition award with custom laser engraving mounted on a walnut wooden base by Elma Vada Studio DFW.",
             "photo_note": "Реальное фото: Recognition award. Только с разрешением на публикацию.",
             "bulk_quote": false,
@@ -145,6 +166,7 @@
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/Gemini_Generated_Image_1fqh8j1fqh8j1fqh_3.jpg",
+            "image_asset": "",
             "image_alt": "Row of black pens with individual engraved names. Elma Vada Studio. Dallas",
             "photo_note": "Реальное фото: Named pen batch. Только с разрешением на публикацию.",
             "bulk_quote": false,
@@ -163,6 +185,7 @@
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/Gemini_Generated_Image_4s3i4e4s3i4e4s3i_2.jpg",
+            "image_asset": "",
             "image_alt": "Custom engraved wooden guitar picks made from walnut and olive wood for corporate events and musician gifts by Elma Vada Studio DFW",
             "photo_note": "Реальное фото: Engraved wooden piece. Только с разрешением на публикацию.",
             "bulk_quote": false,
@@ -179,8 +202,10 @@
             "eyebrow": "",
             "text": "",
             "show_image": true,
-            "media_type": "image",
+            "media_type": "video",
             "image": "shopify://shop_images/Gemini_Generated_Image_5v4r1o5v4r1o5v4r.jpg",
+            "image_asset": "",
+            "video": "shopify://files/videos/Bullet Bolt Action Pen Niko2.MOV",
             "image_alt": "Close-up of a silver-tone pen with a gold-tone clip and engraved name. Dallas. Elma Vada studio",
             "photo_note": "Реальное фото: Metal engraving detail. Только с разрешением на публикацию.",
             "bulk_quote": false,
@@ -199,6 +224,7 @@
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/Gemini_Generated_Image_4s3i4e4s3i4e4s3i_1.jpg",
+            "image_asset": "",
             "image_alt": "Personalized wooden chopsticks with custom laser engraving displayed with minimalist packaging for hospitality clients by Elma Vada Studio DFW.",
             "photo_note": "Реальное фото: Desk keepsake. Только с разрешением на публикацию.",
             "bulk_quote": false,
@@ -217,6 +243,7 @@
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/Gemini_Generated_Image_yuustryuustryuus.jpg",
+            "image_asset": "",
             "poster": "shopify://shop_images/Gemini_Generated_Image_yuustryuustryuus.jpg",
             "image_alt": "",
             "photo_note": "Реальное фото: Pen gift set. Только с разрешением на публикацию.",
@@ -236,6 +263,7 @@
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/Gemini_Generated_Image_5v4r1o5v4r1o5v4r_1.jpg",
+            "image_asset": "",
             "poster": "shopify://shop_images/Gemini_Generated_Image_5v4r1o5v4r1o5v4r_1.jpg",
             "image_alt": "",
             "photo_note": "Реальное фото: Glass engraving detail. Только с разрешением на публикацию.",
@@ -254,8 +282,9 @@
             "text": "",
             "show_image": true,
             "media_type": "image",
-            "image": "shopify://shop_images/Gemini_Generated_Image_5v4r1o5v4r1o5v4r_3.jpg",
-            "image_alt": "",
+            "image": "shopify://shop_images/medical-pen-set-open-case.jpg",
+            "image_asset": "",
+            "image_alt": "engraved medical pen elmavadastudio dwf",
             "photo_note": "Реальное фото: Personalized everyday pen. Только с разрешением на публикацию.",
             "bulk_quote": false,
             "link_label": "",
@@ -273,6 +302,7 @@
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/podruch.png",
+            "image_asset": "",
             "image_alt": "Personalized Parker pen sets with custom engraving and premium gift packaging for executive gifts, professional awards and corporate clients in Dallas, Texas.",
             "photo_note": "Реальное фото: Presentation packaging. Только с разрешением на публикацию.",
             "bulk_quote": false,
@@ -291,6 +321,7 @@
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/port3.png",
+            "image_asset": "",
             "image_alt": "Custom laser engraved wooden chopstick gift sets and personalized wooden keepsakes for corporate events, client gifts and wholesale B2B orders in Dallas, Texas.",
             "photo_note": "Реальное фото: Wood engraving detail. Только с разрешением на публикацию.",
             "bulk_quote": false,
@@ -309,6 +340,7 @@
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/Gemini_Generated_Image_7extzi7extzi7ext.jpg",
+            "image_asset": "",
             "image_alt": "Close-up of personalized engraving with recipient name on custom corporate gift, DFW branding studio",
             "photo_note": "Реальное фото: Recipient personalization. Только с разрешением на публикацию.",
             "bulk_quote": false,
@@ -327,6 +359,7 @@
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/upakovannye.png",
+            "image_asset": "",
             "image_alt": "Organized packing and fulfillment area with bulk personalized gift inventory and shipping cartons prepared for corporate and wholesale orders in Dallas, Texas.",
             "photo_note": "Реальное фото: Packed order. Только с разрешением на публикацию.",
             "bulk_quote": false,
@@ -386,7 +419,7 @@
           "type": "question",
           "settings": {
             "question": "Can I review a mockup or sample first?",
-            "answer": "<p>Get a free custom mockup before you order. Physical samples and in-person sample reviews are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>.</p>"
+            "answer": "<p>Get a free custom mockup before you order. Physical samples are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>. For an in-person review, <a href=\"/pages/book-a-call?request=in-person\">request an office visit</a> in Dallas–Fort Worth. Our representative comes to your office; the location and appointment details require confirmation.</p>"
           }
         },
         "question_4": {

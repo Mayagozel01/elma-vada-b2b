@@ -42,7 +42,7 @@
             "body_text": "Get a FREE custom mockup before you order.",
             "primary_cta_text": "Get a Free Mockup",
             "primary_cta_url": "/pages/free-mockup",
-            "secondary_cta_text": "Schedule a Consultation",
+            "secondary_cta_text": "Request a Project Call",
             "secondary_cta_url": "/pages/book-a-call",
             "badge_title": "Produced In-House",
             "badge_text": "In-house laser engraving · Dallas, Texas"
@@ -259,7 +259,7 @@
           "settings": {
             "title": "3. See the quality",
             "eyebrow": "",
-            "text": "<p>Physical sample or in-person review where qualifying.</p>",
+            "text": "<p>Physical samples where qualifying, or a sample review at your office in Dallas–Fort Worth by appointment.</p>",
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/see.webp",
@@ -696,15 +696,15 @@
       "custom_css": [],
       "settings": {
         "eyebrow": "",
-        "heading": "Meet With Us Face to Face",
-        "text": "<p>Planning gifts for your employees, clients, partners, or an upcoming event? Schedule a complimentary in-person consultation in the Dallas–Fort Worth area.</p><p>We’ll discuss your gifting needs, timeline, quantities, and personalization options. You’ll also receive a complimentary pen engraved with your name or company logo as a sample of our work.</p>",
-        "fine_print": "Visits are arranged by appointment. We will confirm the meeting details with you.",
+        "heading": "We Come to Your Office",
+        "text": "<p>Planning gifts for your employees, clients, partners, or an upcoming event? An Elma Vada representative can visit your office in the Dallas–Fort Worth area to discuss your project in person.</p><p>We’ll review your gifting needs, quantities, timeline, and personalization options, and bring samples for you to explore.</p><p>You’ll also receive a complimentary pen engraved with your name or company logo.</p>",
+        "fine_print": "Office visits are arranged by appointment. Send us your office address and preferred availability, and we’ll confirm the location and meeting details with you.",
         "media_type": "image",
         "image": "shopify://shop_images/creators_elma.png",
         "image_alt": "",
         "photo_note": "Реальное фото Дарьи/места встречи и персонализированной ручки-образца.",
-        "show_address": true,
-        "button_label": "Schedule an In-Person Consultation",
+        "show_address": false,
+        "button_label": "Request an Office Visit",
         "button_link": "/pages/book-a-call?request=in-person",
         "secondary_label": "",
         "secondary_link": "",
@@ -725,7 +725,7 @@
           "type": "question",
           "settings": {
             "question": "Can I see a mockup or sample first?",
-            "answer": "<p>Request a free custom mockup before ordering. Physical samples and in-person sample reviews are available for qualifying projects. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Ask about a sample</a>.</p>"
+            "answer": "<p>Request a free custom mockup before ordering. Physical samples are available for qualifying projects. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Ask about a sample</a>. For an in-person review, <a href=\"/pages/book-a-call?request=in-person\">request an office visit</a> in Dallas–Fort Worth. Our representative comes to your office; the location and appointment details require confirmation.</p>"
           }
         },
         "speed": {
@@ -738,8 +738,8 @@
         "meeting": {
           "type": "question",
           "settings": {
-            "question": "Can we meet in Dallas?",
-            "answer": "<p>Yes. Request an in-person consultation at 18383 Preston Rd, #202, Dallas, TX 75252. We will confirm availability. You’ll receive a complimentary personalized pen at the meeting.</p>"
+            "question": "Can you visit our office?",
+            "answer": "<p>Yes. An Elma Vada representative can visit your office in the Dallas–Fort Worth area to discuss your gifting project and show samples. Submit an office visit request with your address and preferred availability. We’ll confirm the location and appointment details with you.</p>"
           }
         }
       },

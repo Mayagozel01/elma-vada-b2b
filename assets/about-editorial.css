@@ -1,0 +1,216 @@
+/* Loaded only by the About editorial section. */
+.about-editorial {
+  padding-block: 24px;
+}
+
+/* Combined Mission & Vision only; Contribution and Social Impact are unchanged. */
+.about-editorial.about-purpose {
+  /* Neighbouring About sections add 20px: 36px + 20px = 56px of separation. */
+  padding-block: 36px;
+}
+
+.about-purpose > .container {
+  max-width: 1200px;
+  padding-inline: 24px;
+}
+
+.about-purpose .about-purpose__grid {
+  --about-purpose-gap: 56px;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: var(--about-purpose-gap);
+  align-items: start;
+}
+
+.about-purpose .about-purpose__grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(40% + var(--about-purpose-gap) * 0.1);
+  width: 1px;
+  background: var(--color-beige-dark);
+}
+
+.about-purpose .about-purpose__column {
+  min-width: 0;
+}
+
+.about-purpose .about-purpose__heading {
+  margin: 0 0 22px;
+  font-family: var(--font-heading);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about-purpose .about-purpose__text {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.about-purpose .about-purpose__text p {
+  margin: 0;
+}
+
+.about-purpose .about-purpose__text p + p {
+  margin-top: 20px;
+}
+
+.about-purpose .about-purpose__mission .about-purpose__text {
+  font-size: 23px;
+  line-height: 1.5;
+}
+
+.about-purpose .about-purpose__text strong {
+  font-weight: 700;
+}
+
+.about-purpose .about-purpose__vision .about-purpose__text {
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+@media (max-width: 899px) {
+  .about-editorial.about-purpose {
+    padding-block: 16px;
+  }
+
+  .about-purpose > .container {
+    padding-inline: 20px;
+  }
+
+  .about-purpose .about-purpose__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .about-purpose .about-purpose__grid::before {
+    content: none;
+  }
+
+  .about-purpose .about-purpose__vision {
+    position: relative;
+  }
+
+  .about-purpose .about-purpose__vision::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background: var(--color-beige-dark);
+  }
+
+  .about-purpose .about-purpose__heading {
+    font-size: 29px;
+  }
+
+  .about-purpose .about-purpose__mission .about-purpose__text {
+    font-size: 21px;
+  }
+
+  .about-purpose .about-purpose__vision .about-purpose__text {
+    font-size: 18px;
+  }
+}
+
+.about-editorial__inner {
+  border-top: 1px solid var(--color-beige-dark);
+  padding-top: 16px;
+}
+
+.about-editorial .about-editorial__heading {
+  margin: 0 0 18px;
+}
+
+.about-editorial__heading::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  margin-bottom: 14px;
+  background: var(--color-gold);
+}
+
+.about-editorial .about-editorial__text {
+  max-width: 68ch;
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-editorial__text p {
+  margin: 0;
+}
+
+.about-editorial__text p + p {
+  margin-top: 1em;
+}
+
+.about-editorial--statement .about-editorial__text {
+  max-width: 65ch;
+  font-size: clamp(20px, 1.6vw, 24px);
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.about-editorial--split .about-editorial__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: start;
+  gap: 40px;
+}
+
+.about-editorial__columns {
+  display: grid;
+  grid-template-columns: repeat(var(--about-columns, 2), minmax(0, 1fr));
+  align-items: start;
+  gap: 32px;
+}
+
+.about-editorial__column {
+  min-width: 0;
+}
+
+.about-editorial__column + .about-editorial__column {
+  border-left: 1px solid var(--color-beige-dark);
+  padding-left: 32px;
+}
+
+.about-editorial .about-editorial__eyebrow {
+  margin: -4px 0 16px;
+}
+
+@media (max-width: 767px) {
+  .about-editorial {
+    padding-block: 12px;
+  }
+
+  .about-editorial__inner {
+    padding-top: 12px;
+  }
+
+  .about-editorial--split .about-editorial__inner,
+  .about-editorial__columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .about-editorial .about-editorial__text {
+    font-size: 17px;
+  }
+
+  .about-editorial--statement .about-editorial__text {
+    font-size: 20px;
+  }
+
+  .about-editorial__column + .about-editorial__column {
+    border-left: 0;
+    border-top: 1px solid var(--color-beige-dark);
+    margin-top: 20px;
+    padding: 16px 0 0;
+  }
+}

@@ -96,9 +96,10 @@
     const controls = root.querySelector('[data-ev-controls]');
     const pauseButton = root.querySelector('[data-ev-pause]');
     const status = root.querySelector('[data-ev-status]');
-    let current = 0, timer = null, hovered = false, focused = false, visible = true;
+    let current = 0, timer = null, hovered = false, focused = false, visible = !('IntersectionObserver' in window);
     const isHomepageHero = root.classList.contains('ev-hero');
-    const shouldAutoplayVideo = () => isHomepageHero && !reduced.matches && !window.Shopify?.designMode;
+    const isLoopingPageVideo = root.dataset.loopVideo === 'true';
+    const shouldAutoplayVideo = () => (isHomepageHero || isLoopingPageVideo) && !reduced.matches && !window.Shopify?.designMode;
     let paused = root.dataset.autoplay !== 'true' || reduced.matches || !!window.Shopify?.designMode;
     const videos = [...root.querySelectorAll('video')];
     const manuallyPausedVideos = new Set();
@@ -171,10 +172,10 @@
         }
         syncPlayback();
       };
-      video.autoplay = shouldAutoplayVideo() && !slide.hidden;
-      if (video.autoplay) video.setAttribute('autoplay', '');
-      else video.removeAttribute('autoplay');
-      if (isHomepageHero) video.loop = true;
+      // Start in JavaScript when visible so offscreen videos do not download at once.
+      video.autoplay = false;
+      video.removeAttribute('autoplay');
+      if (isHomepageHero || isLoopingPageVideo) video.loop = true;
       video.defaultMuted = true;
       silence();
       if (toggle) {

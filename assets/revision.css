@@ -197,7 +197,7 @@ body {
   width: calc(var(--footer-logo-width, 380px) + 32px);
   max-width: 100%;
   padding: 16px;
-  background: var(--color-cream);
+  
 }
 .site-footer .ev-brand-logo--footer {
   display: block;

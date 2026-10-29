@@ -24,10 +24,12 @@
     {{ 'theme.css' | asset_url | stylesheet_tag }}
     {{ 'b2b-pages.css' | asset_url | stylesheet_tag }}
     {{ 'revision.css' | asset_url | stylesheet_tag }}
+    {{ 'bonus-popup.css' | asset_url | stylesheet_tag }}
     {% if template.name == 'page' and template.suffix == 'book-a-call' %}
       {{ 'office-visit.css' | asset_url | stylesheet_tag }}
+      {{ 'callback-request.css' | asset_url | stylesheet_tag }}
       <script>
-        document.documentElement.dataset.consultation = new URLSearchParams(location.search).get('request') === 'in-person' || location.hash === '#OfficeVisitForm' ? 'office' : 'call';
+        document.documentElement.dataset.consultation = new URLSearchParams(location.search).get('request') === 'in-person' || location.hash === '#OfficeVisitForm' || location.hash === '#OfficeVisitStatus' ? 'office' : 'call';
       </script>
       <script src="{{ 'office-visit.js' | asset_url }}" defer></script>
     {% endif %}

@@ -3,6 +3,10 @@
   padding-block: 24px;
 }
 
+.about-editorial[id] {
+  scroll-margin-top: calc(var(--anchor-header-height, 140px) + 20px);
+}
+
 /* Combined Mission & Vision only; Contribution and Social Impact are unchanged. */
 .about-editorial.about-purpose {
   /* Neighbouring About sections add 20px: 36px + 20px = 56px of separation. */

@@ -1,54 +1,102 @@
-/* Book a Call only. UI routing, never submission handling or synthetic success. */
+/* Book a Call only. UI routing; Shopify owns both native form submissions and results. */
 (() => {
   'use strict';
   const root = document.documentElement;
+  const submittedKey = 'elma-consultation-form';
   let visitorInteracted = false;
+
   ['pointerdown', 'keydown'].forEach(type => document.addEventListener(type, () => {
     visitorInteracted = true;
-  }, {once: true, capture: true}));
-  const serverStatus = () => document.querySelector('[data-office-visit] [data-office-status]');
-  function route() {
-    // Only Liquid creates the status. Neither query parameters nor a button click prove success.
-    const office = serverStatus() || new URLSearchParams(location.search).get('request') === 'in-person' || location.hash === '#OfficeVisitForm';
-    root.dataset.consultation = office ? 'office' : 'call';
+  }, { once: true, capture: true }));
+
+  const officeStatus = () => document.querySelector('[data-office-visit] [data-office-status]');
+  const callStatus = () => document.querySelector('[data-consultation-call] [data-call-status]');
+  const lastSubmitted = () => {
+    try { return sessionStorage.getItem(submittedKey); } catch { return null; }
+  };
+
+  function scenario() {
+    if (location.hash === '#OfficeVisitForm' || location.hash === '#OfficeVisitStatus') return 'office';
+    if (location.hash === '#CallRequestForm' || location.hash === '#CallRequestStatus') return 'call';
+    const requested = new URLSearchParams(location.search).get('request');
+    if (requested === 'in-person') return 'office';
+    if (requested === 'call') return 'call';
+    // Shopify can drop a custom query after a native form POST. The submit marker
+    // chooses which *server-rendered* result to show; it never creates a result.
+    if (officeStatus() || callStatus()) {
+      const previous = lastSubmitted();
+      if (previous === 'office' || previous === 'call') return previous;
+      if (officeStatus() && !callStatus()) return 'office';
+    }
+    return 'call';
   }
+
+  function route() {
+    const current = scenario();
+    root.dataset.consultation = current;
+    return current;
+  }
+
   function scrollToStatus(status) {
     const header = document.getElementById('SiteHeader');
     const offset = Math.max(0, header?.getBoundingClientRect().bottom || 0) + 16;
-    status.closest('[data-office-visit]').style.setProperty('--office-status-offset', `${offset}px`);
-    window.scrollTo({top: Math.max(0, window.scrollY + status.getBoundingClientRect().top - offset), behavior: 'instant'});
+    const section = status.closest('[data-office-visit], [data-consultation-call]');
+    section?.style.setProperty('--office-status-offset', `${offset}px`);
+    window.scrollTo({ top: Math.max(0, window.scrollY + status.getBoundingClientRect().top - offset), behavior: 'instant' });
   }
+
+  function alignCallAnchor() {
+    if (location.hash !== '#CallRequestForm') return;
+    const form = document.getElementById('CallRequestForm');
+    const wrapper = form?.closest('.callback-request__form-wrap');
+    if (!wrapper || root.dataset.consultation !== 'call') return;
+    const header = document.getElementById('SiteHeader');
+    const offset = Math.max(0, header?.getBoundingClientRect().bottom || 0) + 16;
+    wrapper.focus({ preventScroll: true });
+    requestAnimationFrame(() => {
+      if (document.activeElement !== wrapper) return;
+      window.scrollTo({ top: Math.max(0, window.scrollY + form.getBoundingClientRect().top - offset), behavior: 'instant' });
+    });
+  }
+
   function showServerResult() {
-    route();
-    const status = serverStatus();
-    if (!status) return;
-    // Shopify owns the redirect and its result parameters. Restore only our UI scenario,
-    // without a reload or an invented success flag, if Shopify dropped the custom query.
+    const current = route();
+    const status = current === 'office' ? officeStatus() : callStatus();
+    if (!status) { alignCallAnchor(); return; }
     const url = new URL(location.href);
-    if (url.searchParams.get('request') !== 'in-person') {
-      url.searchParams.set('request', 'in-person');
+    const requestValue = current === 'office' ? 'in-person' : 'call';
+    if (url.searchParams.get('request') !== requestValue) {
+      url.searchParams.set('request', requestValue);
       history.replaceState(history.state, '', url);
     }
-    status.focus({preventScroll: true});
+    try { sessionStorage.removeItem(submittedKey); } catch { /* Storage may be disabled. */ }
+    status.focus({ preventScroll: true });
     requestAnimationFrame(() => {
       if (document.activeElement === status) scrollToStatus(status);
     });
   }
+
+  document.addEventListener('submit', event => {
+    const current = event.target?.id === 'OfficeVisitForm' ? 'office' :
+      event.target?.id === 'CallRequestForm' ? 'call' : null;
+    if (!current) return;
+    try { sessionStorage.setItem(submittedKey, current); } catch { /* URL/hash still route the result. */ }
+  }, { capture: true });
+
   route();
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showServerResult, {once: true});
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showServerResult, { once: true });
   else showServerResult();
-  // Fonts, the logo and native fragment scrolling can settle after DOMContentLoaded.
-  // Do not steal focus or scroll after the visitor has moved on to another control.
+
   function realignFocusedStatus() {
-    const status = serverStatus();
+    const status = scenario() === 'office' ? officeStatus() : callStatus();
     if (status && document.activeElement === status) requestAnimationFrame(() => {
       if (document.activeElement === status) scrollToStatus(status);
     });
   }
+
   window.addEventListener('load', () => requestAnimationFrame(() => {
-    // Native fragment navigation may reset focus to <body> after the first focus.
     if (!visitorInteracted) showServerResult();
-  }), {once: true});
+  }), { once: true });
   document.fonts?.ready.then(realignFocusedStatus);
   window.addEventListener('resize', realignFocusedStatus);
   window.addEventListener('popstate', showServerResult);

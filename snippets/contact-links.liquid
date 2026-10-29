@@ -1,6 +1,10 @@
 {% liquid
   assign contact_phone = settings.business_phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-'
   assign wa_phone = settings.whatsapp_number | remove: '+' | remove: ' ' | remove: '(' | remove: ')' | remove: '-'
+  assign email_contact_href = settings.business_email | default: 'daria@elmavada.com' | prepend: 'mailto:'
+  if email_href != blank
+    assign email_contact_href = email_href
+  endif
 %}
 {% if settings.show_contact_bar %}
 <div class="ev-contact-links" aria-label="Contact our team">
@@ -9,6 +13,6 @@
     {% if settings.sms_enabled %}<a href="sms:{{ contact_phone | escape }}">Text Us</a>{% endif %}
   {% endif %}
   {% if wa_phone != blank %}<a href="https://wa.me/{{ wa_phone | escape }}?text={{ settings.whatsapp_message | url_encode }}" target="_blank" rel="noopener">WhatsApp</a>{% endif %}
-  <a href="mailto:{{ settings.business_email | default: 'daria@elmavada.com' | escape }}">Email Us</a>
+  <a href="{{ email_contact_href | escape }}">Email Us</a>
 </div>
 {% endif %}

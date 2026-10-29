@@ -1,0 +1,109 @@
+/* About hero only: individual team portraits and captions. */
+.about-team-hero .about-team-hero__layout {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(32px, 4vw, 64px);
+}
+
+.about-team-hero .about-team-hero__intro,
+.about-team-hero .about-team-hero__team {
+  min-width: 0;
+}
+
+.about-team-hero .about-team-hero__team-heading {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: clamp(26px, 2.4vw, 34px);
+  line-height: 1.2;
+}
+
+.about-team-hero .about-team-hero__members {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px 18px;
+  align-items: start;
+}
+
+.about-team-hero .about-team-hero__member {
+  min-width: 0;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.about-team-hero .about-team-hero__photo,
+.about-team-hero .about-team-hero__photo-placeholder {
+  display: block;
+  width: 112px;
+  height: 112px;
+  max-width: 100%;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.about-team-hero .about-team-hero__photo {
+  object-fit: cover;
+}
+
+.about-team-hero .about-team-hero__photo-placeholder {
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  background: var(--color-beige-dark);
+  color: var(--color-navy);
+  font: 12px/1.2 var(--font-body);
+}
+
+.about-team-hero .about-team-hero__photo-placeholder svg {
+  width: 40px;
+  height: 40px;
+}
+
+.about-team-hero .about-team-hero__photo-placeholder span {
+  display: block;
+}
+
+.about-team-hero .about-team-hero__name {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.about-team-hero .about-team-hero__role {
+  margin: 4px 0 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media (max-width: 1099px) {
+  .about-team-hero .about-team-hero__layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-team-hero .about-team-hero__members {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 12px;
+  }
+
+  .about-team-hero .about-team-hero__photo,
+  .about-team-hero .about-team-hero__photo-placeholder {
+    width: 96px;
+    height: 96px;
+  }
+
+  .about-team-hero .about-team-hero__name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 340px) {
+  .about-team-hero .about-team-hero__members {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

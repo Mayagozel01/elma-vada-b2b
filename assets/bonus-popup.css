@@ -1,0 +1,15 @@
+/* Shopify Forms popup 1210851 only. These custom properties reach its Shadow DOM. */
+#app-embed-container-1210851 {
+  --spacing-size-y: 22px !important;
+  --spacing-size-x: 24px !important;
+  --app-embed-padding-y: 12px !important;
+  --container-max-w: 450px !important;
+}
+
+@media (max-width: 490px) {
+  #app-embed-container-1210851 {
+    --spacing-size-y: 16px !important;
+    --spacing-size-x: 16px !important;
+    --app-embed-padding-y: 8px !important;
+  }
+}

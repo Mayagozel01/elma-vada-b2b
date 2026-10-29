@@ -26,9 +26,10 @@
         <p class="footer__tagline">
           {{ section.settings.tagline | default: 'Personalized corporate gifts and in-house laser engraving in Dallas–Fort Worth. From individual gifts to orders of 5,000+ units.' }}
         </p>
-        <a href="/pages/request-a-quote#ProjectForm" class="btn btn--gold" style="align-self: flex-start;">
-          Request a Quote
-        </a>
+        <div class="footer__actions">
+          <a href="/pages/request-a-quote#ProjectForm" class="btn btn--gold">Request a Quote</a>
+          <a href="/pages/book-a-call?request=call#CallRequestForm" class="btn btn--outline-light">Request a Call</a>
+        </div>
       </div>
 
       <!-- Solutions col -->
@@ -117,7 +118,7 @@
           <span class="footer__contact-value">{{ section.settings.orders_line_one | default: '1–5,000+ Units' }}<br>{{ section.settings.orders_line_two | default: 'Local & Nationwide Shipping' }}</span>
         </div>
 
-        {% render 'contact-links' %}
+        {% render 'contact-links', email_href: '/pages/request-a-quote#ProjectForm' %}
         <!-- Social -->
         <div style="display: flex; gap: var(--space-3); margin-top: var(--space-6);">
 
@@ -137,10 +138,11 @@
       <p class="footer__copyright">
         &copy; {{ 'now' | date: '%Y' }} Elma Vada Studio. All rights reserved. Local DFW production studio.
       </p>
-      <div style="display: flex; gap: var(--space-6);">
+      <div style="display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-6); max-width: 100%;">
         <a href="/policies/terms-of-service" class="footer__link" style="font-size: var(--fs-xs);">Terms</a>
         <a href="/policies/privacy-policy" class="footer__link" style="font-size: var(--fs-xs);">Privacy</a>
         <a href="/policies/shipping-policy" class="footer__link" style="font-size: var(--fs-xs);">Shipping</a>
+        <a href="{{ routes.all_products_collection_url }}#payment-policy" class="footer__link" style="font-size: var(--fs-xs);">Payment Policy</a>
       </div>
     </div>
 

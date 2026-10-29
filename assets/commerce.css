@@ -34,9 +34,12 @@
 .catalog-price-range label { flex: 1; min-width: 0; font-size: .8rem; }
 .catalog-price-range input { display: block; margin-top: .25rem; }
 .catalog__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.4rem; }
-.catalog-bulk { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-top: 3rem; padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid var(--color-beige-dark); background: #fff; }
-.catalog-bulk h2 { font-size: clamp(1.65rem, 3vw, 2.2rem); margin: .5rem 0 .75rem; }
-.catalog-bulk .btn { flex-shrink: 0; }
+.catalog .catalog-payment-policy { margin-top: 3rem; padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid var(--color-beige-dark); background: #fff; scroll-margin-top: calc(var(--anchor-header-height, 140px) + 20px); }
+.catalog .catalog-payment-policy__inner { max-width: 800px; margin-inline: auto; }
+.catalog .catalog-payment-policy h2 { margin: 0 0 20px; color: var(--color-navy); font-family: var(--font-heading); font-size: clamp(1.65rem, 3vw, 2.2rem); font-weight: 400; line-height: 1.2; }
+.catalog .catalog-payment-policy__text { color: var(--color-text-secondary); font-family: var(--font-body); font-size: clamp(16px, 1.25vw, 18px); line-height: 1.7; overflow-wrap: break-word; }
+.catalog .catalog-payment-policy__text p { margin: 0; }
+.catalog .catalog-payment-policy__text p + p { margin-top: 1em; }
 .product-detail { background: #fff; padding-block: clamp(1.5rem, 3vw, 3rem); }
 .product-detail__layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; }
 .product-gallery, .product-detail__summary { min-width: 0; }
@@ -105,7 +108,6 @@
   .catalog-tools__bar { align-items: stretch; flex-direction: column; }
   .catalog-sort { flex-wrap: wrap; }
   .catalog-sort select { flex: 1; }
-  .catalog-bulk { flex-direction: column; align-items: stretch; gap: 1.25rem; }
   .commerce-cart__item { grid-template-columns: 72px minmax(0, 1fr); gap: 1rem; }
   .commerce-cart__item img { width: 72px; height: 72px; }
   .commerce-cart__item .commerce-field { grid-column: 2; max-width: 120px; }

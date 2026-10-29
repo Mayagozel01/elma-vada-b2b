@@ -1,58 +1,5 @@
 {
   "sections": {
-    "hero": {
-      "type": "b2b-page-hero",
-      "settings": {
-        "eyebrow": "Elma Vada · Dallas, Texas",
-        "heading": "Request a Project Call",
-        "text": "<p>Tell us about your gifting project and include your preferred call availability in Project details. We’ll contact you to confirm a suitable time.</p>",
-        "show_image": false,
-        "media_type": "image",
-        "image_alt": "",
-        "photo_note": "",
-        "color_scheme": "cream",
-        "button_label": "",
-        "button_link": "/pages/request-a-quote#ProjectForm",
-        "secondary_label": "",
-        "secondary_link": "/pages/our-work",
-        "compact": true
-      }
-    },
-    "form": {
-      "type": "b2b-quote",
-      "blocks": {
-        "forms_inline_6KEyVr": {
-          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
-          "settings": {
-            "form_id": "1155185",
-            "text_color": "#1E252B",
-            "button_background_color": "#1E252B",
-            "button_label_color": "#FFFFFF",
-            "links_color": "#846020",
-            "errors_color": "#B42318",
-            "text_alignment": "left",
-            "form_alignment": "center",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_right": 0,
-            "padding_left": 0
-          }
-        }
-      },
-      "block_order": [
-        "forms_inline_6KEyVr"
-      ],
-      "settings": {
-        "consultation_mode": true,
-        "heading": "Let’s discuss your project",
-        "text": "<p>Use the form to request a project call. Include your preferred date, time and phone number in Project details. Submitting a request does not automatically book a call.</p>",
-        "media_type": "image",
-        "image": "shopify://shop_images/personalized-recognition-gifts-award-pen-tumbler-desk-organizer.png",
-        "image_alt": "Sample of personalized corporate gifts: engraved glass, tumbler, award, Parker pen, and wood holder, Elma Vada DFW",
-        "photo_note": "Один реальный готовый подарок рядом с согласованным эскизом. Не обязательно.",
-        "after_text": "<p>One human contact from quote to delivery. Free digital proof before production. PO-friendly ordering for approved accounts. Approved artwork retained for easy reorders.</p><p><a href=\"/pages/free-mockup\">Request a free mockup</a> or <a href=\"/pages/book-a-call?request=in-person\">request an office visit</a>.</p>"
-      }
-    },
     "questions": {
       "type": "b2b-faq",
       "blocks": {
@@ -115,12 +62,25 @@
         "success_message": "Thank you! We’ve received your office visit request. Our team will contact you to confirm the location, date and time.",
         "confirmation_note": "Submitting this request does not book an appointment. We’ll contact you to confirm the location, date and time."
       }
+    },
+    "call": {
+      "type": "callback-request",
+      "settings": {
+        "eyebrow": "Elma Vada · Dallas, Texas",
+        "heading": "Request a Call",
+        "text": "<p>Leave your contact details and a convenient time to reach you. Our team will contact you to discuss your project.</p>",
+        "time_hint": "Please include your time zone.",
+        "button_label": "Request a Call",
+        "confirmation_note": "Submitting this request does not book a confirmed appointment.",
+        "success_message": "Thank you! We’ve received your call request. Our team will contact you using the details you provided.",
+        "image": "shopify://shop_images/personalized-recognition-gifts-award-pen-tumbler-desk-organizer.png",
+        "image_alt": "Sample of personalized corporate gifts: engraved glass, tumbler, award, Parker pen, and wood holder, Elma Vada DFW"
+      }
     }
   },
   "order": [
     "office_visit",
-    "hero",
-    "form",
+    "call",
     "questions",
     "meeting"
   ]

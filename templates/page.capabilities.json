@@ -3,9 +3,9 @@
     "hero": {
       "type": "b2b-page-hero",
       "settings": {
-        "eyebrow": "Elma Vada · Dallas, Texas",
+        "eyebrow": "ELMA VADA · DALLAS, TEXAS",
         "heading": "In-house laser engraving in Dallas",
-        "text": "<p>Elma Vada produces personalized gifts and awards using CO₂, fiber, UV and crystal laser engraving. Share your material, design and quantity so our Dallas team can recommend a suitable approach.</p>",
+        "text": "<p>We personalize gifts and awards in our Dallas workshop using CO₂, fiber, UV and crystal laser engraving. Share your material, design and quantity so our team can recommend the right approach.</p><ul><li>Small orders ready in as little as 1 business day.*</li><li>Up to 1,000 engraved pens produced in just 1 business day.*</li></ul><p>*Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability.</p>",
         "show_image": true,
         "media_type": "image",
         "image": "shopify://shop_images/elmavadastudio.png",
@@ -407,9 +407,9 @@
       "type": "b2b-feature",
       "settings": {
         "eyebrow": "",
-        "heading": "Fast, In-House Engraving",
-        "text": "<p>Small orders ready in as little as 1 business day.*</p><p>Up to 1,000 engraved pens produced in just 1 business day.*</p>",
-        "fine_print": "*Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability.",
+        "heading": "See Our Engraving Process",
+        "text": "<p>Watch our equipment engrave a wooden piece in our Dallas workshop.</p>",
+        "fine_print": "",
         "media_type": "video",
         "video": "shopify://files/videos/Jewel wood2.mov",
         "image_alt": "Laser beam engraving a wooden gift box inside an engraving machine.",

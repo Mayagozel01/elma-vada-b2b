@@ -12,7 +12,8 @@
         "empty_text": "Please check back soon, or contact us to discuss your project.",
         "empty_button_label": "Request a Quote",
         "empty_button_link": "/pages/request-a-quote#ProjectForm",
-        "bulk_link": "/pages/request-a-quote#ProjectForm"
+        "payment_policy_heading": "Payment Policy",
+        "payment_policy_text": "<p>Payment in full is required before we begin production or fulfill an order. This applies to all orders, including personalized and custom engraved products.</p><p>We purchase materials and schedule production based on confirmed orders, so we’re unable to accept payment plans or release products before the full payment has been received. For larger orders, alternative payment terms may be considered only if agreed to in writing before the order is placed.</p><p>Your order is confirmed once payment has been received. Thank you for supporting our small business.</p>"
       }
     }
   },

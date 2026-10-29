@@ -1,5 +1,20 @@
 {%- liquid
   assign current_sort = collection.sort_by | default: collection.default_sort_by
+  assign allowed_default_sort = collection.default_sort_by
+  if allowed_default_sort == 'price-ascending' or allowed_default_sort == 'price-descending' or allowed_default_sort == blank
+    assign allowed_default_sort = 'manual'
+    for option in collection.sort_options
+      unless option.value == 'price-ascending' or option.value == 'price-descending'
+        assign allowed_default_sort = option.value
+        break
+      endunless
+    endfor
+  endif
+  assign price_sort_active = false
+  if current_sort == 'price-ascending' or current_sort == 'price-descending'
+    assign price_sort_active = true
+    assign current_sort = allowed_default_sort
+  endif
   assign category_menu = section.settings.category_menu | default: settings.catalog_category_menu
   assign catalog_heading = collection.title | default: section.settings.fallback_title
   if collection.handle == 'all'
@@ -8,17 +23,20 @@
   assign empty_button_link = section.settings.empty_button_link | default: '/pages/request-a-quote#ProjectForm'
   assign has_filters = false
   assign has_active_filters = false
-  if section.settings.show_filters and collection.filters.size > 0
-    assign has_filters = true
-  endif
   for filter in collection.filters
-    if filter.active_values.size > 0 or filter.min_value.value != nil or filter.max_value.value != nil
+    if filter.type == 'price_range'
+      continue
+    endif
+    if section.settings.show_filters
+      assign has_filters = true
+    endif
+    if filter.active_values.size > 0
       assign has_active_filters = true
     endif
   endfor
 -%}
 {% paginate collection.products by section.settings.products_per_page %}
-<section class="catalog b2b-section b2b-section--cream">
+<section class="catalog b2b-section b2b-section--cream" data-catalog data-default-sort="{{ allowed_default_sort | escape }}" data-price-sort-active="{{ price_sort_active }}">
   <div class="container">
     <nav class="commerce-breadcrumbs" aria-label="Breadcrumb"><a href="{{ routes.root_url }}">Home</a><span aria-hidden="true">/</span><span aria-current="page">{{ catalog_heading | escape }}</span></nav>
     <header class="catalog__header">
@@ -39,8 +57,8 @@
       </nav>
     <form action="{{ collection.url }}" method="get" class="catalog-tools">
       <div class="catalog-tools__bar">
-        <p>{{ collection.products_count }} {% if collection.products_count == 1 %}product{% else %}products{% endif %} · <a href="{{ routes.cart_url }}">View cart ({{ cart.item_count }})</a></p>
-        <div class="catalog-sort"><label for="CatalogSort-{{ section.id }}">Sort by</label><select name="sort_by" id="CatalogSort-{{ section.id }}">{% for option in collection.sort_options %}<option value="{{ option.value | escape }}" {% if option.value == current_sort %}selected{% endif %}>{{ option.name | escape }}</option>{% endfor %}</select><button class="btn btn--outline" type="submit">Apply</button></div>
+        <p>{{ collection.products_count }} {% if collection.products_count == 1 %}product{% else %}products{% endif %} · <a href="#payment-policy">Payment Policy</a></p>
+        <div class="catalog-sort"><label for="CatalogSort-{{ section.id }}">Sort by</label><select name="sort_by" id="CatalogSort-{{ section.id }}">{% for option in collection.sort_options %}{% unless option.value == 'price-ascending' or option.value == 'price-descending' %}<option value="{{ option.value | escape }}" {% if option.value == current_sort %}selected{% endif %}>{{ option.name | escape }}</option>{% endunless %}{% endfor %}</select><button class="btn btn--outline" type="submit">Apply</button></div>
       </div>
       {% if has_filters %}
         <details class="catalog-filters" {% if has_active_filters %}open{% endif %}>
@@ -48,6 +66,7 @@
           <p class="commerce-note catalog-inventory-note">Availability filters products that can be ordered, including items sold without tracked stock. Check the product page for the selected option's stock status.</p>
           <div class="catalog-filters__groups">
             {% for filter in collection.filters %}
+              {% if filter.type == 'price_range' %}{% continue %}{% endif %}
               {% assign filter_index = forloop.index %}
               <fieldset><legend>{{ filter.label | escape }}</legend>
                 {% case filter.type %}
@@ -58,12 +77,6 @@
                         <span>{{ filter_value.label | escape }} <small>({{ filter_value.count }})</small></span>
                       </label>
                     {% endfor %}
-                  {% when 'price_range' %}
-                    <p class="commerce-note">{{ cart.currency.iso_code | default: shop.currency }}</p>
-                    <div class="catalog-price-range">
-                      <label for="Filter-{{ section.id }}-{{ filter_index }}-min">From<input type="number" id="Filter-{{ section.id }}-{{ filter_index }}-min" name="{{ filter.min_value.param_name | escape }}" min="0" step="any" placeholder="0" {% if filter.min_value.value != nil %}value="{{ filter.min_value.value | divided_by: 100.0 }}"{% endif %}></label>
-                      <label for="Filter-{{ section.id }}-{{ filter_index }}-max">To<input type="number" id="Filter-{{ section.id }}-{{ filter_index }}-max" name="{{ filter.max_value.param_name | escape }}" min="0" step="any" placeholder="{{ filter.range_max | divided_by: 100.0 }}" {% if filter.max_value.value != nil %}value="{{ filter.max_value.value | divided_by: 100.0 }}"{% endif %}></label>
-                    </div>
                 {% endcase %}
               </fieldset>
             {% endfor %}
@@ -74,11 +87,8 @@
       {% if has_filters == false %}
         {% comment %}Retain active parameters when only sorting is displayed.{% endcomment %}
         {% for filter in collection.filters %}
+          {% if filter.type == 'price_range' %}{% continue %}{% endif %}
           {% for value in filter.active_values %}<input type="hidden" name="{{ value.param_name | escape }}" value="{{ value.value | escape }}">{% endfor %}
-          {% if filter.type == 'price_range' %}
-            {% if filter.min_value.value != nil %}<input type="hidden" name="{{ filter.min_value.param_name | escape }}" value="{{ filter.min_value.value | divided_by: 100.0 }}">{% endif %}
-            {% if filter.max_value.value != nil %}<input type="hidden" name="{{ filter.max_value.param_name | escape }}" value="{{ filter.max_value.value | divided_by: 100.0 }}">{% endif %}
-          {% endif %}
         {% endfor %}
       {% endif %}
     </form>
@@ -86,8 +96,8 @@
       <nav class="catalog-active-filters" aria-label="Applied filters">
         <a href="{{ collection.url }}?sort_by={{ current_sort | url_encode }}">Clear all filters</a>
         {% for filter in collection.filters %}
+          {% if filter.type == 'price_range' %}{% continue %}{% endif %}
           {% for value in filter.active_values %}<a href="{{ value.url_to_remove }}" aria-label="Remove {{ filter.label | escape }}: {{ value.label | escape }}">{{ value.label | escape }} <span aria-hidden="true">×</span></a>{% endfor %}
-          {% if filter.type == 'price_range' %}{% if filter.min_value.value != nil or filter.max_value.value != nil %}<a href="{{ filter.url_to_remove }}">Price: {{ filter.min_value.value | default: 0 | money }}–{{ filter.max_value.value | default: filter.range_max | money }} <span aria-hidden="true">×</span></a>{% endif %}{% endif %}
         {% endfor %}
       </nav>
     {% endif %}
@@ -107,12 +117,18 @@
     {% else %}
       <div class="catalog__empty"><h2>{{ section.settings.empty_heading | escape }}</h2><p>{{ section.settings.empty_text | escape }}</p>{% if section.settings.empty_button_label != blank %}<a href="{{ empty_button_link }}" class="btn btn--primary">{{ section.settings.empty_button_label | escape }}</a>{% endif %}</div>
     {% endif %}
-    {% if section.settings.bulk_heading != blank %}
-      <aside class="catalog-bulk"><div><p class="b2b-eyebrow">Corporate orders</p><h2>{{ section.settings.bulk_heading | escape }}</h2><div class="b2b-rte">{{ section.settings.bulk_text }}</div></div><a href="{{ section.settings.bulk_link | default: '/pages/request-a-quote#ProjectForm' }}" class="btn btn--primary">{{ section.settings.bulk_label | escape }}</a></aside>
+    {% if section.settings.payment_policy_heading != blank or section.settings.payment_policy_text != blank %}
+      <aside id="payment-policy" class="catalog-payment-policy"{% if section.settings.payment_policy_heading != blank %} aria-labelledby="PaymentPolicyHeading-{{ section.id }}"{% endif %}>
+        <div class="catalog-payment-policy__inner">
+          {% if section.settings.payment_policy_heading != blank %}<h2 id="PaymentPolicyHeading-{{ section.id }}">{{ section.settings.payment_policy_heading | escape }}</h2>{% endif %}
+          {% if section.settings.payment_policy_text != blank %}<div class="b2b-rte catalog-payment-policy__text">{{ section.settings.payment_policy_text }}</div>{% endif %}
+        </div>
+      </aside>
     {% endif %}
   </div>
 </section>
 {% endpaginate %}
+<script src="{{ 'catalog.js' | asset_url }}" defer="defer"></script>
 {% schema %}
 {
   "name": "Product catalog",
@@ -129,10 +145,8 @@
     {"type":"text","id":"empty_text","label":"Empty catalog text","default":"Please check back soon, or contact us to discuss your project."},
     {"type":"text","id":"empty_button_label","label":"Empty catalog button label","default":"Request a Quote"},
     {"type":"url","id":"empty_button_link","label":"Empty catalog button link"},
-    {"type":"text","id":"bulk_heading","label":"Corporate order heading","default":"Gifts for your team or clients?"},
-    {"type":"richtext","id":"bulk_text","label":"Corporate order text","default":"<p>Share your quantity, artwork and target date for a project-specific quote.</p>"},
-    {"type":"text","id":"bulk_label","label":"Corporate order button","default":"Request a Bulk Quote"},
-    {"type":"url","id":"bulk_link","label":"Corporate order link"}
+    {"type":"text","id":"payment_policy_heading","label":"Heading","default":"Payment Policy"},
+    {"type":"richtext","id":"payment_policy_text","label":"Policy text","default":"<p>Payment in full is required before we begin production or fulfill an order. This applies to all orders, including personalized and custom engraved products.</p><p>We purchase materials and schedule production based on confirmed orders, so we’re unable to accept payment plans or release products before the full payment has been received. For larger orders, alternative payment terms may be considered only if agreed to in writing before the order is placed.</p><p>Your order is confirmed once payment has been received. Thank you for supporting our small business.</p>"}
   ]
 }
 {% endschema %}

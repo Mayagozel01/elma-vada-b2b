@@ -2,19 +2,26 @@
   {{ 'about-core-values.css' | asset_url | stylesheet_tag }}
   <section class="b2b-section b2b-section--cream about-core-values">
     <div class="container">
-      {% if section.settings.heading != blank or section.settings.introduction != blank %}
-        <div class="about-core-values__header">
-          {% if section.settings.heading != blank %}<h2>{{ section.settings.heading | escape }}</h2>{% endif %}
-          {% if section.settings.introduction != blank %}<div class="b2b-rte about-core-values__introduction">{{ section.settings.introduction }}</div>{% endif %}
+      <div class="about-core-values__layout{% if section.settings.image != blank or request.design_mode %} about-core-values__layout--with-image{% endif %}">
+        {% if section.settings.image != blank or request.design_mode %}
+          {% render 'b2b-image', photo: section.settings.image, alt: section.settings.image_alt, title: section.settings.heading, note: section.settings.photo_note, sizes: '(min-width: 900px) 50vw, 100vw' %}
+        {% endif %}
+        <div class="about-core-values__content">
+          {% if section.settings.heading != blank or section.settings.introduction != blank %}
+            <div class="about-core-values__header">
+              {% if section.settings.heading != blank %}<h2>{{ section.settings.heading | escape }}</h2>{% endif %}
+              {% if section.settings.introduction != blank %}<div class="b2b-rte about-core-values__introduction">{{ section.settings.introduction }}</div>{% endif %}
+            </div>
+          {% endif %}
+          <div class="about-core-values__grid">
+            {% for block in section.blocks %}
+              <article class="about-core-values__item" {{ block.shopify_attributes }}>
+                {% if block.settings.title != blank %}<h3>{{ block.settings.title | escape }}</h3>{% endif %}
+                {% if block.settings.text != blank %}<div class="b2b-rte about-core-values__text">{{ block.settings.text }}</div>{% endif %}
+              </article>
+            {% endfor %}
+          </div>
         </div>
-      {% endif %}
-      <div class="about-core-values__grid">
-        {% for block in section.blocks %}
-          <article class="about-core-values__item" {{ block.shopify_attributes }}>
-            {% if block.settings.title != blank %}<h3>{{ block.settings.title | escape }}</h3>{% endif %}
-            {% if block.settings.text != blank %}<div class="b2b-rte about-core-values__text">{{ block.settings.text }}</div>{% endif %}
-          </article>
-        {% endfor %}
       </div>
     </div>
   </section>
@@ -36,7 +43,10 @@
       "id": "introduction",
       "label": "Introduction",
       "default": "<p>The principles that guide our craft, our service, and our team.</p>"
-    }
+    },
+    {"type": "image_picker", "id": "image", "label": "Team or workshop photo"},
+    {"type": "text", "id": "image_alt", "label": "Photo description (alt text)"},
+    {"type": "textarea", "id": "photo_note", "label": "Photo guidance (editor only)", "info": "Choose a real team or workshop photo. Empty image shows no photo on the storefront."}
   ],
   "blocks": [
     {

@@ -76,8 +76,8 @@
         {% endif %}
       {% endform %}
     {% endif %}
-    <p class="office-visit__note">Prefer a call? <a href="{{ routes.root_url }}pages/book-a-call?request=call">Request a project call</a>.</p>
-    <noscript><p class="office-visit__note">Use this form for an office visit. The separate project call form is also available below.</p></noscript>
+    <p class="office-visit__note">Prefer a call? <a href="/pages/book-a-call?request=call#CallRequestForm">Request a Call</a>.</p>
+    <noscript><p class="office-visit__note">Use this form for an office visit. The separate callback form is also available below.</p></noscript>
     {% if request.design_mode and section.blocks.size == 0 %}<p class="b2b-editor-note">Using Shopify’s native contact form. To use Shopify Forms, create a separate Office Visit inline form in Admin and add its app block here. Do not use quote Form ID 1155185.</p>{% endif %}
   </div>
 </section>

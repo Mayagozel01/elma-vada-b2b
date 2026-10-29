@@ -1,6 +1,9 @@
 /* Loaded only on Book a Call; never styles the existing quote app. */
 html[data-consultation="office"] [data-consultation-call],
 html[data-consultation="call"] [data-office-visit] { display: none; }
+/* With JavaScript disabled, a direct form anchor still selects the requested form. */
+html:not([data-consultation]):has(#OfficeVisitForm:target) [data-consultation-call],
+html:not([data-consultation]):has(#CallRequestForm:target) [data-office-visit] { display: none; }
 .office-visit { padding-block: 36px; }
 .office-visit > .container { max-width: 900px; }
 .office-visit__header { margin-bottom: 24px; }

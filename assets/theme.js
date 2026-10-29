@@ -53,6 +53,8 @@
       if (!compact) setMenuOpen(false);
       // The spacer and dropdown inherit the same measured height (including border).
       group.style.setProperty('--site-header-height', `${header.getBoundingClientRect().height}px`);
+      // About anchors also need clearance below the fixed header.
+      document.documentElement.style.setProperty('--anchor-header-height', `${header.getBoundingClientRect().height}px`);
     };
     const scheduleLayout = () => {
       if (!frame) frame = requestAnimationFrame(updateLayout);

@@ -1,7 +1,7 @@
 {% comment %}About-only editorial content; existing shared sections remain unchanged.{% endcomment %}
 {% if template.name == 'page' and template.suffix == 'about' %}
   {{ 'about-editorial.css' | asset_url | stylesheet_tag }}
-  <section class="b2b-section b2b-section--{{ section.settings.color_scheme }} about-editorial about-editorial--{{ section.settings.layout }}{% if section.settings.layout == 'purpose' %} about-purpose{% endif %}">
+  <section {% if section.settings.anchor_id != blank %}id="{{ section.settings.anchor_id | handleize }}"{% endif %} class="b2b-section b2b-section--{{ section.settings.color_scheme }} about-editorial about-editorial--{{ section.settings.layout }}{% if section.settings.layout == 'purpose' %} about-purpose{% endif %}">
     <div class="container">
       {% if section.settings.layout == 'columns' %}
         <div class="about-editorial__inner about-editorial__columns" style="--about-columns: {{ section.blocks.size | at_least: 1 }};">
@@ -38,6 +38,7 @@
   "name": "About editorial",
   "enabled_on": {"templates": ["page"]},
   "settings": [
+    {"type": "text", "id": "anchor_id", "label": "Anchor ID"},
     {
       "type": "select",
       "id": "layout",

@@ -1,0 +1,82 @@
+{% if template.name == 'page' and template.suffix == 'about' %}
+  {{ 'about-team-hero.css' | asset_url | stylesheet_tag }}
+  <section class="b2b-section b2b-section--{{ section.settings.color_scheme }} about-team-hero">
+    <div class="container b2b-split b2b-hero about-team-hero__layout">
+      <div class="about-team-hero__intro">
+        {% if section.settings.eyebrow != blank %}<p class="b2b-eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
+        <h1>{{ section.settings.heading | default: page.title | escape }}</h1>
+        {% if section.settings.text != blank %}<div class="b2b-rte">{{ section.settings.text }}</div>{% endif %}
+        <div class="b2b-actions">
+          {% if section.settings.button_label != blank and section.settings.button_link != blank %}<a class="btn btn--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a>{% endif %}
+          {% if section.settings.secondary_label != blank and section.settings.secondary_link != blank %}<a class="btn btn--outline" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label | escape }}</a>{% endif %}
+        </div>
+      </div>
+      <div class="about-team-hero__team">
+        {% if section.settings.team_heading != blank %}<h2 class="about-team-hero__team-heading">{{ section.settings.team_heading | escape }}</h2>{% endif %}
+        <div class="about-team-hero__members">
+          {% for block in section.blocks %}
+            {% if block.type == 'team_member' and block.settings.show_member %}
+              <article class="about-team-hero__member" {{ block.shopify_attributes }}>
+                {% if block.settings.photo != blank %}
+                  {% assign member_alt = block.settings.photo.alt | default: block.settings.name | default: 'Team member' %}
+                  <img class="about-team-hero__photo"
+                    src="{{ block.settings.photo | image_url: width: 320 }}"
+                    srcset="{{ block.settings.photo | image_url: width: 160 }} 160w, {{ block.settings.photo | image_url: width: 240 }} 240w, {{ block.settings.photo | image_url: width: 320 }} 320w"
+                    sizes="(min-width: 1200px) 112px, 96px"
+                    width="{{ block.settings.photo.width }}" height="{{ block.settings.photo.height }}"
+                    alt="{{ member_alt | escape }}" loading="lazy"
+                    style="object-position: {{ block.settings.photo.presentation.focal_point | default: '50% 50%' }};">
+                {% elsif request.design_mode %}
+                  <div class="about-team-hero__photo-placeholder" aria-label="Choose a photo for {{ block.settings.name | default: 'this team member' | escape }}">
+                    {{ 'image' | placeholder_svg_tag }}
+                    <span>Choose Photo</span>
+                  </div>
+                {% endif %}
+                {% if block.settings.name != blank %}<h3 class="about-team-hero__name">{{ block.settings.name | escape }}</h3>{% endif %}
+                {% if block.settings.role != blank %}<p class="about-team-hero__role">{{ block.settings.role | escape }}</p>{% endif %}
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "About team hero",
+  "tag": "section",
+  "limit": 1,
+  "enabled_on": {"templates": ["page"]},
+  "settings": [
+    {"type": "text", "id": "eyebrow", "label": "Eyebrow"},
+    {"type": "text", "id": "heading", "label": "Heading"},
+    {"type": "richtext", "id": "text", "label": "Introduction"},
+    {"type": "text", "id": "team_heading", "label": "Team heading", "default": "Meet Our Team"},
+    {"type": "select", "id": "color_scheme", "label": "Background", "options": [{"value": "cream", "label": "Cream"}, {"value": "navy", "label": "Dark"}, {"value": "white", "label": "White"}], "default": "cream"},
+    {"type": "text", "id": "button_label", "label": "Primary button"},
+    {"type": "url", "id": "button_link", "label": "Primary link"},
+    {"type": "text", "id": "secondary_label", "label": "Secondary button"},
+    {"type": "url", "id": "secondary_link", "label": "Secondary link"},
+    {"type": "header", "content": "Previous collage (not displayed)"},
+    {"type": "image_picker", "id": "image", "label": "Original team collage", "info": "Kept in theme settings for reference. Individual Team member photos are displayed instead."},
+    {"type": "text", "id": "image_alt", "label": "Original collage alt text"},
+    {"type": "textarea", "id": "photo_note", "label": "Original collage note"}
+  ],
+  "blocks": [
+    {
+      "type": "team_member",
+      "name": "Team member",
+      "settings": [
+        {"type": "image_picker", "id": "photo", "label": "Photo"},
+        {"type": "text", "id": "name", "label": "Name"},
+        {"type": "text", "id": "role", "label": "Role"},
+        {"type": "checkbox", "id": "show_member", "label": "Show member", "default": true}
+      ]
+    }
+  ],
+  "max_blocks": 50,
+  "presets": [{"name": "About team hero"}]
+}
+{% endschema %}

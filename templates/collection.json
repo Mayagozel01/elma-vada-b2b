@@ -1,14 +1,1 @@
-{
-  "sections": {
-    "main": {
-      "type": "catalog",
-      "settings": {
-        "empty_button_link": "/pages/request-a-quote#ProjectForm",
-        "bulk_link": "/pages/request-a-quote#ProjectForm"
-      }
-    }
-  },
-  "order": [
-    "main"
-  ]
-}
+{"sections":{"main":{"type":"catalog","settings":{"eyebrow":"Elma Vada Studio","fallback_title":"Shop personalized gifts","introduction":"<p>Explore personalized gifts for your team and clients. Choose a category or contact our studio to discuss a corporate order.</p>","use_collection_description":true,"category_menu":"","show_filters":true,"products_per_page":24,"product_link_label":"View product","empty_heading":"Products are coming soon","empty_text":"Please check back soon, or contact us to discuss your project.","empty_button_label":"Request a Quote","empty_button_link":"/pages/request-a-quote#ProjectForm","payment_policy_heading":"Payment Policy","payment_policy_text":"<p>Payment in full is required before we begin production or fulfill an order. This applies to all orders, including personalized and custom engraved products.</p><p>We purchase materials and schedule production based on confirmed orders, so we’re unable to accept payment plans or release products before the full payment has been received. For larger orders, alternative payment terms may be considered only if agreed to in writing before the order is placed.</p><p>Your order is confirmed once payment has been received. Thank you for supporting our small business.</p>"}}},"order":["main"]}

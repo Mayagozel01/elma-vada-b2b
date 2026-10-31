@@ -27,6 +27,41 @@
     }
   }
 
+  function revealPolicy(hash = window.location.hash) {
+    if (hash !== '#payment-policy' && hash !== '#return-policy') return;
+    const policy = document.getElementById(hash.slice(1));
+    if (!policy?.classList.contains('catalog-policy')) return;
+    policy.open = true;
+    requestAnimationFrame(() => {
+      const summary = policy.querySelector('summary');
+      if (!summary) return;
+      summary.focus({ preventScroll: true });
+      summary.scrollIntoView({ block: 'start', behavior: 'instant' });
+    });
+  }
+
   normalizeCatalogUrl();
-  document.addEventListener('shopify:section:load', normalizeCatalogUrl);
+  revealPolicy();
+  window.addEventListener('hashchange', () => revealPolicy());
+  document.addEventListener('click', event => {
+    const link = event.target.closest?.('a[href]');
+    if (!link) return;
+    const target = new URL(link.href);
+    if (target.origin === window.location.origin &&
+        target.pathname === window.location.pathname &&
+        target.search === window.location.search) {
+      revealPolicy(target.hash);
+      // The theme's general smooth-scroll handler prevents default on local # links.
+      // Keep the policy hash in the URL without changing any other anchor behavior.
+      if (event.defaultPrevented &&
+          (target.hash === '#payment-policy' || target.hash === '#return-policy') &&
+          target.hash !== window.location.hash) {
+        window.location.hash = target.hash;
+      }
+    }
+  });
+  document.addEventListener('shopify:section:load', event => {
+    normalizeCatalogUrl();
+    if (event.target.querySelector('.catalog-policies')) revealPolicy();
+  });
 })();

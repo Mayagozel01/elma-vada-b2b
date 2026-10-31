@@ -1,1 +1,28 @@
-{"sections":{"main":{"type":"catalog","settings":{"eyebrow":"Elma Vada Studio","fallback_title":"Shop personalized gifts","introduction":"<p>Explore personalized gifts for your team and clients. Choose a category or contact our studio to discuss a corporate order.</p>","use_collection_description":true,"category_menu":"","show_filters":true,"products_per_page":24,"product_link_label":"View product","empty_heading":"Products are coming soon","empty_text":"Please check back soon, or contact us to discuss your project.","empty_button_label":"Request a Quote","empty_button_link":"/pages/request-a-quote#ProjectForm","payment_policy_heading":"Payment Policy","payment_policy_text":"<p>Payment in full is required before we begin production or fulfill an order. This applies to all orders, including personalized and custom engraved products.</p><p>We purchase materials and schedule production based on confirmed orders, so we’re unable to accept payment plans or release products before the full payment has been received. For larger orders, alternative payment terms may be considered only if agreed to in writing before the order is placed.</p><p>Your order is confirmed once payment has been received. Thank you for supporting our small business.</p>"}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "catalog",
+      "settings": {
+        "eyebrow": "Elma Vada Studio",
+        "fallback_title": "Shop personalized gifts",
+        "introduction": "<p>Explore personalized gifts for your team and clients. Choose a category or contact our studio to discuss a corporate order.</p>",
+        "use_collection_description": true,
+        "category_menu": "",
+        "show_filters": true,
+        "products_per_page": 24,
+        "product_link_label": "View product",
+        "empty_heading": "Products are coming soon",
+        "empty_text": "Please check back soon, or contact us to discuss your project.",
+        "empty_button_label": "Request a Quote",
+        "empty_button_link": "/pages/request-a-quote#ProjectForm",
+        "payment_policy_heading": "Payment Policy",
+        "payment_policy_text": "<p>Payment in full is required before we begin production or fulfill an order. This applies to all orders, including personalized and custom engraved products.</p><p>We purchase materials and schedule production based on confirmed orders, so we’re unable to accept payment plans or release products before the full payment has been received. For larger orders, alternative payment terms may be considered only if agreed to in writing before the order is placed.</p><p>Your order is confirmed once payment has been received. Thank you for supporting our small business.</p>",
+        "return_policy_heading": "Return Policy",
+        "return_policy_text": "<h3>Personalized items</h3><p>Every personalized item is made especially for your order. We do not accept returns for a change of mind, a change in gifting plans, or errors in the engraving text provided by the customer.</p><h3>Damaged or incorrect items</h3><p>If your item arrives defective or damaged, has visible scratches, has a mechanical issue, or contains an engraving error made by our team, please contact us so we can make it right.</p><h3>How to report an issue</h3><p>Please contact us as soon as possible, preferably within 7 days of receiving your order. Send clear photos or a video showing the damage, defect, or engraving error so our team can review the issue.</p><h3>Refunds and replacements</h3><p>Once the issue is confirmed, we will offer a refund or replacement, depending on the circumstances and your preference. If only one component or part of your order is affected, we may replace that part rather than the entire set. For example, if the presentation box is damaged but the chopsticks are undamaged, we can send a replacement box.</p><p>Once approved, remaking an item typically takes 1–2 days. Shipping time is additional.</p><h3>Shipping costs</h3><p>We cover the shipping costs associated with resolving an issue caused by our error, including confirmed defects or damage on arrival.</p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

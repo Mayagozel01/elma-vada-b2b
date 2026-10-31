@@ -1,0 +1,198 @@
+/* Scoped to the Inside Our Workshop page section. */
+.our-workshop {
+  padding: 0;
+  overflow-wrap: anywhere;
+}
+
+.our-workshop > .container {
+  padding-block: clamp(36px, 5vw, 72px);
+}
+
+.our-workshop__hero {
+  max-width: 880px;
+}
+
+.our-workshop__hero h1 {
+  max-width: 18ch;
+  margin: 12px 0 20px;
+  font-size: clamp(38px, 5vw, 68px);
+  line-height: 1.06;
+}
+
+.our-workshop__introduction {
+  max-width: 760px;
+  font-size: clamp(17px, 1.4vw, 20px);
+}
+
+.our-workshop__benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: clamp(28px, 4vw, 48px) 0;
+  padding: 0;
+  border-block: 1px solid var(--color-beige-dark);
+}
+
+.our-workshop__benefits li {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  min-height: 68px;
+  padding: 14px clamp(16px, 2vw, 28px);
+  color: var(--color-navy);
+  font-size: clamp(15px, 1.35vw, 18px);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.our-workshop__benefits li:first-child {
+  padding-left: 0;
+}
+
+.our-workshop__benefits li + li {
+  border-left: 1px solid var(--color-beige-dark);
+}
+
+.our-workshop__video-section {
+  max-width: 1120px;
+  margin-inline: auto;
+}
+
+.our-workshop__player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--color-navy);
+}
+
+.our-workshop__player iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.our-workshop__playlist-fallback {
+  display: flex;
+  min-height: 160px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+  padding: clamp(24px, 5vw, 48px);
+  border: 1px solid var(--color-beige-dark);
+  background: #fff;
+  text-align: center;
+}
+
+.our-workshop__editor-note {
+  max-width: 620px;
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px dashed var(--color-gold);
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.our-workshop__video-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 20px;
+}
+
+.our-workshop__video-text {
+  max-width: 720px;
+  color: var(--color-text-secondary);
+}
+
+.our-workshop__video-text p {
+  margin: 0;
+}
+
+.our-workshop__video-footer .btn,
+.our-workshop__playlist-fallback .btn {
+  flex: 0 0 auto;
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+}
+
+.our-workshop__cta {
+  color: #fff;
+}
+
+.our-workshop__cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(28px, 5vw, 72px);
+  padding-block: clamp(36px, 5vw, 64px);
+}
+
+.our-workshop__cta-inner > div {
+  max-width: 760px;
+}
+
+.our-workshop__cta h2 {
+  margin: 0 0 14px;
+}
+
+.our-workshop__cta .b2b-rte p {
+  margin: 0;
+  color: #f4f2ed;
+}
+
+.our-workshop__cta .btn--primary {
+  flex: 0 0 auto;
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-navy);
+}
+
+.our-workshop a:focus-visible,
+.our-workshop iframe:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+  .our-workshop > .container {
+    padding-block: 32px;
+  }
+
+  .our-workshop__hero h1 {
+    font-size: clamp(36px, 11vw, 48px);
+  }
+
+  .our-workshop__benefits {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .our-workshop__benefits li,
+  .our-workshop__benefits li:first-child {
+    min-height: 56px;
+    padding: 12px 0;
+  }
+
+  .our-workshop__benefits li + li {
+    border-top: 1px solid var(--color-beige-dark);
+    border-left: 0;
+  }
+
+  .our-workshop__video-footer,
+  .our-workshop__cta-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .our-workshop__video-footer .btn,
+  .our-workshop__playlist-fallback .btn,
+  .our-workshop__cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

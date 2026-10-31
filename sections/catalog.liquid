@@ -57,7 +57,7 @@
       </nav>
     <form action="{{ collection.url }}" method="get" class="catalog-tools">
       <div class="catalog-tools__bar">
-        <p>{{ collection.products_count }} {% if collection.products_count == 1 %}product{% else %}products{% endif %} · <a href="#payment-policy">Payment Policy</a></p>
+        <p>{{ collection.products_count }} {% if collection.products_count == 1 %}product{% else %}products{% endif %} · <a href="#payment-policy">Payment Policy</a> · <a href="#return-policy">Return Policy</a></p>
         <div class="catalog-sort"><label for="CatalogSort-{{ section.id }}">Sort by</label><select name="sort_by" id="CatalogSort-{{ section.id }}">{% for option in collection.sort_options %}{% unless option.value == 'price-ascending' or option.value == 'price-descending' %}<option value="{{ option.value | escape }}" {% if option.value == current_sort %}selected{% endif %}>{{ option.name | escape }}</option>{% endunless %}{% endfor %}</select><button class="btn btn--outline" type="submit">Apply</button></div>
       </div>
       {% if has_filters %}
@@ -117,13 +117,21 @@
     {% else %}
       <div class="catalog__empty"><h2>{{ section.settings.empty_heading | escape }}</h2><p>{{ section.settings.empty_text | escape }}</p>{% if section.settings.empty_button_label != blank %}<a href="{{ empty_button_link }}" class="btn btn--primary">{{ section.settings.empty_button_label | escape }}</a>{% endif %}</div>
     {% endif %}
-    {% if section.settings.payment_policy_heading != blank or section.settings.payment_policy_text != blank %}
-      <aside id="payment-policy" class="catalog-payment-policy"{% if section.settings.payment_policy_heading != blank %} aria-labelledby="PaymentPolicyHeading-{{ section.id }}"{% endif %}>
-        <div class="catalog-payment-policy__inner">
-          {% if section.settings.payment_policy_heading != blank %}<h2 id="PaymentPolicyHeading-{{ section.id }}">{{ section.settings.payment_policy_heading | escape }}</h2>{% endif %}
-          {% if section.settings.payment_policy_text != blank %}<div class="b2b-rte catalog-payment-policy__text">{{ section.settings.payment_policy_text }}</div>{% endif %}
-        </div>
-      </aside>
+    {% if section.settings.payment_policy_heading != blank or section.settings.payment_policy_text != blank or section.settings.return_policy_heading != blank or section.settings.return_policy_text != blank %}
+      <section class="catalog-policies" aria-label="Store policies">
+        {% if section.settings.payment_policy_heading != blank or section.settings.payment_policy_text != blank %}
+          <details id="payment-policy" class="catalog-policy">
+            <summary class="catalog-policy__summary"><h2>{{ section.settings.payment_policy_heading | default: 'Payment Policy' | escape }}</h2></summary>
+            {% if section.settings.payment_policy_text != blank %}<div class="b2b-rte catalog-policy__text">{{ section.settings.payment_policy_text }}</div>{% endif %}
+          </details>
+        {% endif %}
+        {% if section.settings.return_policy_heading != blank or section.settings.return_policy_text != blank %}
+          <details id="return-policy" class="catalog-policy">
+            <summary class="catalog-policy__summary"><h2>{{ section.settings.return_policy_heading | default: 'Return Policy' | escape }}</h2></summary>
+            {% if section.settings.return_policy_text != blank %}<div class="b2b-rte catalog-policy__text">{{ section.settings.return_policy_text }}</div>{% endif %}
+          </details>
+        {% endif %}
+      </section>
     {% endif %}
   </div>
 </section>
@@ -145,8 +153,12 @@
     {"type":"text","id":"empty_text","label":"Empty catalog text","default":"Please check back soon, or contact us to discuss your project."},
     {"type":"text","id":"empty_button_label","label":"Empty catalog button label","default":"Request a Quote"},
     {"type":"url","id":"empty_button_link","label":"Empty catalog button link"},
+    {"type":"header","content":"Payment Policy"},
     {"type":"text","id":"payment_policy_heading","label":"Heading","default":"Payment Policy"},
-    {"type":"richtext","id":"payment_policy_text","label":"Policy text","default":"<p>Payment in full is required before we begin production or fulfill an order. This applies to all orders, including personalized and custom engraved products.</p><p>We purchase materials and schedule production based on confirmed orders, so we’re unable to accept payment plans or release products before the full payment has been received. For larger orders, alternative payment terms may be considered only if agreed to in writing before the order is placed.</p><p>Your order is confirmed once payment has been received. Thank you for supporting our small business.</p>"}
+    {"type":"richtext","id":"payment_policy_text","label":"Policy text","default":"<p>Payment in full is required before we begin production or fulfill an order. This applies to all orders, including personalized and custom engraved products.</p><p>We purchase materials and schedule production based on confirmed orders, so we’re unable to accept payment plans or release products before the full payment has been received. For larger orders, alternative payment terms may be considered only if agreed to in writing before the order is placed.</p><p>Your order is confirmed once payment has been received. Thank you for supporting our small business.</p>"},
+    {"type":"header","content":"Return Policy"},
+    {"type":"text","id":"return_policy_heading","label":"Heading","default":"Return Policy"},
+    {"type":"richtext","id":"return_policy_text","label":"Policy text","default":"<h3>Personalized items</h3><p>Every personalized item is made especially for your order. We do not accept returns for a change of mind, a change in gifting plans, or errors in the engraving text provided by the customer.</p><h3>Damaged or incorrect items</h3><p>If your item arrives defective or damaged, has visible scratches, has a mechanical issue, or contains an engraving error made by our team, please contact us so we can make it right.</p><h3>How to report an issue</h3><p>Please contact us as soon as possible, preferably within 7 days of receiving your order. Send clear photos or a video showing the damage, defect, or engraving error so our team can review the issue.</p><h3>Refunds and replacements</h3><p>Once the issue is confirmed, we will offer a refund or replacement, depending on the circumstances and your preference. If only one component or part of your order is affected, we may replace that part rather than the entire set. For example, if the presentation box is damaged but the chopsticks are undamaged, we can send a replacement box.</p><p>Once approved, remaking an item typically takes 1–2 days. Shipping time is additional.</p><h3>Shipping costs</h3><p>We cover the shipping costs associated with resolving an issue caused by our error, including confirmed defects or damage on arrival.</p>"}
   ]
 }
 {% endschema %}

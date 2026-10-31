@@ -96,18 +96,6 @@
 }
 @media (max-width: 480px) { .catalog__grid { grid-template-columns: minmax(0, 1fr); } }
 
-/* Header tablet fix — 2026-09-13 */
-@media (max-width: 1200px) {
-  .header__nav, .header__cta { display: none; }
-  .header__hamburger { display: flex; flex-shrink: 0; }
-  .header__inner { gap: 1rem; }
-  .header__logo { min-width: 0; flex: 0 0 auto; flex-shrink: 0; }
-  .header__logo-badge { flex-shrink: 0; }
-  .header__logo-text { min-width: 0; overflow-wrap: anywhere; }
-  .header__logo-sub { line-height: 1.35; }
-  .mobile-menu__link { overflow-wrap: anywhere; }
-}
-
 /* Hero text sizing and wrapping — 2026-09-13 */
 .hero-carousel__slide {
   grid-template-columns: minmax(0, 1fr);

@@ -37,19 +37,20 @@
       frame = 0;
       if (!group.isConnected) return;
       header.classList.remove('is-compact');
-      let compact = window.matchMedia('(max-width: 1200px)').matches;
-      if (!compact) {
-        const gap = parseFloat(getComputedStyle(inner).columnGap) || 0;
-        const navGap = parseFloat(getComputedStyle(nav).columnGap) || 0;
-        const links = [...nav.children];
-        // Right-aligned overflow can extend left and is not included in scrollWidth.
-        const navWidth = links.reduce((sum, link) => sum + link.getBoundingClientRect().width, 0) +
-          navGap * Math.max(0, links.length - 1);
-        const needed = logo.getBoundingClientRect().width + navWidth +
-          cta.getBoundingClientRect().width + gap * 2;
-        compact = needed > inner.clientWidth + 1;
-      }
+      const gap = parseFloat(getComputedStyle(inner).columnGap) || 0;
+      const navGap = parseFloat(getComputedStyle(nav).columnGap) || 0;
+      const links = [...nav.children];
+      // Measure every label at its full width, even when the flex row would shrink.
+      const navWidth = links.reduce((sum, link) => sum + link.getBoundingClientRect().width, 0) +
+        navGap * Math.max(0, links.length - 1);
+      const needed = logo.getBoundingClientRect().width + navWidth +
+        cta.getBoundingClientRect().width + gap * 2;
+      const compact = needed > inner.clientWidth + 1;
       header.classList.toggle('is-compact', compact);
+      if (compact && (nav.contains(document.activeElement) ||
+        (getComputedStyle(cta).display === 'none' && cta.contains(document.activeElement)))) {
+        hamburger.focus();
+      }
       if (!compact) setMenuOpen(false);
       // The spacer and dropdown inherit the same measured height (including border).
       group.style.setProperty('--site-header-height', `${header.getBoundingClientRect().height}px`);

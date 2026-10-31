@@ -4,18 +4,17 @@
       "type": "b2b-page-hero",
       "settings": {
         "eyebrow": "Elma Vada · Dallas, Texas",
-        "heading": "Recognition that grows with your team",
-        "text": "<p>Plan years-of-service awards, staff appreciation and named recognition pieces around an agreed design. Keep the message personal while making future orders easier to organize.</p>",
+        "heading": "Engraved recognition gifts and awards for government and public agencies",
+        "text": "<p>Elma Vada Studio provides individually engraved recognition gifts and awards for government and public agencies, with attention to budgets, deadlines, and purchasing requirements.</p>",
         "show_image": true,
         "media_type": "image",
-        "image": "shopify://shop_images/service-recognition-award-holder-keepsake-elma-vada-dfw.png",
-        "image_alt": "Clear circular award, engraved wooden desk holder and square keepsake box arranged on a light surface.",
-        "photo_note": "Линейка настоящих наград за стаж рядом друг с другом.",
+        "image_alt": "",
+        "photo_note": "Choose a new approved real photo of individually engraved recognition gifts or awards. Do not use agency logos, names, or identifiable information without permission.",
         "color_scheme": "cream",
-        "button_label": "Get a Free Mockup",
-        "button_link": "/pages/free-mockup",
-        "secondary_label": "View Our Work",
-        "secondary_link": "/pages/our-work",
+        "button_label": "Request a Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "secondary_label": "",
+        "secondary_link": "",
         "compact": false
       }
     },
@@ -27,7 +26,7 @@
           "settings": {
             "title": "Years-of-Service Awards",
             "eyebrow": "",
-            "text": "<p>Use a consistent visual family while changing the recipient and milestone.</p>",
+            "text": "<p>Recognize service milestones with a consistent award style while personalizing each recipient and year.</p>",
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/five-ten-fifteen-year-service-awards-elma-vada-dfw.png",
@@ -42,9 +41,9 @@
         "item_2": {
           "type": "item",
           "settings": {
-            "title": "Staff Appreciation",
+            "title": "Employee & Team Contributions",
             "eyebrow": "",
-            "text": "<p>Recognize the people whose work supports your organization every day.</p>",
+            "text": "<p>Thank employees and teams for contributions to the work of your agency or public organization.</p>",
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/personal-message-cube-v1.png",
@@ -59,9 +58,9 @@
         "item_3": {
           "type": "item",
           "settings": {
-            "title": "Professional Recognition",
+            "title": "Retirements & Career Milestones",
             "eyebrow": "",
-            "text": "<p>Plan appreciation events with clear names, artwork and presentation requirements.</p>",
+            "text": "<p>Mark a retirement, promotion, or career milestone with an engraved recognition piece.</p>",
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/professional-recognition-wooden-desk-holder-elma-vada-dfw.png",
@@ -76,9 +75,9 @@
         "item_4": {
           "type": "item",
           "settings": {
-            "title": "Donor & Named Recognition",
+            "title": "Public Service Recognition",
             "eyebrow": "",
-            "text": "<p>Discuss plaques and recognition pieces that fit your setting and approved wording.</p>",
+            "text": "<p>Prepare awards for service, contribution, and team achievement with approved names and wording.</p>",
             "show_image": true,
             "media_type": "image",
             "image": "shopify://shop_images/personalized-recognition-gifts-award-pen-tumbler-desk-organizer.png",
@@ -99,8 +98,8 @@
       ],
       "settings": {
         "eyebrow": "",
-        "heading": "What could your gift look like?",
-        "text": "",
+        "heading": "Recognition for service and contribution",
+        "text": "<p>Use individually engraved gifts and awards to recognize years of service, employee contributions, and team achievements.</p>",
         "layout": "grid",
         "columns": 4,
         "image_fit": "cover",
@@ -116,9 +115,9 @@
         "item_1": {
           "type": "item",
           "settings": {
-            "title": "Share the Brief",
+            "title": "Products & Quantity",
             "eyebrow": "",
-            "text": "<p>Tell us the occasion, recipients, quantity and target date.</p>",
+            "text": "<p>Tell us which gift or award types you are considering and the estimated quantity.</p>",
             "show_image": false,
             "media_type": "image",
             "image_alt": "",
@@ -132,9 +131,9 @@
         "item_2": {
           "type": "item",
           "settings": {
-            "title": "Review the Direction",
+            "title": "Names & Engraving",
             "eyebrow": "",
-            "text": "<p>Discuss products and a digital mockup; ask about physical sample options.</p>",
+            "text": "<p>Share recipient names and the text, dates, or wording needed for engraving.</p>",
             "show_image": false,
             "media_type": "image",
             "image_alt": "",
@@ -148,9 +147,9 @@
         "item_3": {
           "type": "item",
           "settings": {
-            "title": "Approve the Details",
+            "title": "Budget",
             "eyebrow": "",
-            "text": "<p>Confirm the quote, artwork, spelling, quantities and fulfillment plan.</p>",
+            "text": "<p>Include a budget range to help identify suitable recognition options.</p>",
             "show_image": false,
             "media_type": "image",
             "image_alt": "",
@@ -164,9 +163,25 @@
         "item_4": {
           "type": "item",
           "settings": {
-            "title": "Produce & Prepare",
+            "title": "Needed Date",
             "eyebrow": "",
-            "text": "<p>Production and packing follow the approved project scope.</p>",
+            "text": "<p>Let us know the date the gifts or awards are needed so timing can be discussed.</p>",
+            "show_image": false,
+            "media_type": "image",
+            "image_alt": "",
+            "photo_note": "",
+            "link_label": "",
+            "link": "",
+            "requires_approval": false,
+            "approved": false
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "title": "Purchasing Requirements",
+            "eyebrow": "",
+            "text": "<p>Include any purchasing requirements or documents that should be considered with the request.</p>",
             "show_image": false,
             "media_type": "image",
             "image_alt": "",
@@ -182,12 +197,13 @@
         "item_1",
         "item_2",
         "item_3",
-        "item_4"
+        "item_4",
+        "item_5"
       ],
       "settings": {
         "eyebrow": "",
-        "heading": "How does the project come together?",
-        "text": "",
+        "heading": "Prepare your request",
+        "text": "<p>Include these details so we can understand the scope of your recognition project.</p>",
         "layout": "grid",
         "columns": 4,
         "image_fit": "cover",
@@ -203,29 +219,29 @@
         "question_1": {
           "type": "question",
           "settings": {
-            "question": "What information should I send for a quote?",
-            "answer": "<p>Share the occasion, estimated quantity, target date, delivery location and any artwork you already have. A budget range helps narrow the options.</p>"
+            "question": "What should I include in a quote request?",
+            "answer": "<p>Share the product or award type, quantity, recipient names and engraving text, budget range, needed date, and any purchasing requirements.</p>"
           }
         },
         "question_2": {
           "type": "question",
           "settings": {
-            "question": "Can every gift have a different name?",
-            "answer": "<p>Include personalization requirements in your request. We will confirm the suitable product, method and recipient-list format for the project.</p>"
+            "question": "Can awards recognize different names and service years?",
+            "answer": "<p>Yes. Include the recipient list, names, service years, and engraving text in your request so the personalization can be discussed with the project details.</p>"
           }
         },
         "question_3": {
           "type": "question",
           "settings": {
-            "question": "Can I review a mockup or sample first?",
-            "answer": "<p>Get a free custom mockup before you order. Physical samples are available for qualifying projects; our team will confirm arrangements and any delivery cost. <a href=\"/pages/request-a-quote?request=sample#ProjectForm\">Request a sample</a>. For an in-person review, <a href=\"/pages/book-a-call?request=in-person\">request an office visit</a> in Dallas–Fort Worth. Our representative comes to your office; the location and appointment details require confirmation.</p>"
+            "question": "Can we share purchasing requirements?",
+            "answer": "<p>Yes. Include the requirements or documents with your request. We will review the project details and discuss the next step.</p>"
           }
         },
         "question_4": {
           "type": "question",
           "settings": {
-            "question": "How long will my order take?",
-            "answer": "<p>Small orders can be ready in as little as 1 business day. Turnaround time varies by product, quantity, design complexity, artwork approval, and inventory availability. Your quote will confirm the project schedule; shipping time is separate.</p>"
+            "question": "How is the needed date handled?",
+            "answer": "<p>Share the date the recognition gifts or awards are needed. Timing depends on the product, quantity, personalization details, and availability; the project schedule is discussed with the quote.</p>"
           }
         }
       },
@@ -239,29 +255,12 @@
         "heading": "What else would you like to know?",
         "structured_data": true
       }
-    },
-    "cta": {
-      "type": "b2b-content",
-      "settings": {
-        "eyebrow": "",
-        "heading": "What do you have in mind?",
-        "text": "<p>Tell us who the gift is for, your estimated quantity and your target date. We will help you define the next step.</p>",
-        "layout": "grid",
-        "columns": 4,
-        "image_fit": "cover",
-        "color_scheme": "navy",
-        "require_photo": false,
-        "button_label": "Get a Bulk Quote",
-        "button_link": "/pages/request-a-quote#ProjectForm",
-        "bulk_quote": true
-      }
     }
   },
   "order": [
     "hero",
     "examples",
     "process",
-    "questions",
-    "cta"
+    "questions"
   ]
 }

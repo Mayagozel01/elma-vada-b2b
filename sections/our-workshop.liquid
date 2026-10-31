@@ -1,0 +1,105 @@
+{% liquid
+  assign playlist_input = section.settings.playlist | strip
+  assign playlist_id = ''
+
+  if playlist_input != blank
+    if playlist_input contains 'list='
+      assign playlist_id = playlist_input | split: 'list=' | last | split: '&' | first | split: '#' | first | strip
+    elsif playlist_input contains '://' or playlist_input contains 'youtube.com' or playlist_input contains 'youtu.be'
+      assign playlist_id = ''
+    else
+      assign playlist_id = playlist_input | split: '&' | first | split: '#' | first | strip
+    endif
+  endif
+%}
+
+{{ 'our-workshop.css' | asset_url | stylesheet_tag }}
+
+<section class="our-workshop b2b-section b2b-section--cream">
+  <div class="container">
+    <header class="our-workshop__hero">
+      {% if section.settings.eyebrow != blank %}<p class="b2b-eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
+      <h1>{{ section.settings.heading | default: page.title | escape }}</h1>
+      {% if section.settings.introduction != blank %}<div class="b2b-rte our-workshop__introduction">{{ section.settings.introduction }}</div>{% endif %}
+    </header>
+
+    <ul class="our-workshop__benefits" aria-label="Workshop capabilities">
+      {% if section.settings.benefit_one != blank %}<li>{{ section.settings.benefit_one | escape }}</li>{% endif %}
+      {% if section.settings.benefit_two != blank %}<li>{{ section.settings.benefit_two | escape }}</li>{% endif %}
+      {% if section.settings.benefit_three != blank %}<li>{{ section.settings.benefit_three | escape }}</li>{% endif %}
+    </ul>
+
+    <div class="our-workshop__video-section">
+      {% if playlist_id != blank %}
+        <div class="our-workshop__player">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/videoseries?list={{ playlist_id | url_encode }}"
+            title="{{ section.settings.iframe_title | default: 'Inside Our Workshop video playlist' | escape }}"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      {% else %}
+        <div class="our-workshop__playlist-fallback">
+          {% if request.design_mode %}
+            <p class="our-workshop__editor-note">Add the URL or ID of the public “Inside Our Workshop” YouTube playlist in this section’s settings.</p>
+          {% endif %}
+          {% if section.settings.youtube_button_label != blank and section.settings.youtube_button_link != blank %}
+            <a class="btn btn--outline" href="{{ section.settings.youtube_button_link }}" target="_blank" rel="noopener noreferrer">{{ section.settings.youtube_button_label | escape }}</a>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="our-workshop__video-footer">
+        {% if section.settings.video_text != blank %}<div class="b2b-rte our-workshop__video-text">{{ section.settings.video_text }}</div>{% endif %}
+        {% if playlist_id != blank and section.settings.youtube_button_label != blank and section.settings.youtube_button_link != blank %}
+          <a class="btn btn--outline" href="{{ section.settings.youtube_button_link }}" target="_blank" rel="noopener noreferrer">{{ section.settings.youtube_button_label | escape }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="our-workshop__cta b2b-section--navy">
+    <div class="container our-workshop__cta-inner">
+      <div>
+        {% if section.settings.cta_heading != blank %}<h2>{{ section.settings.cta_heading | escape }}</h2>{% endif %}
+        {% if section.settings.cta_text != blank %}<div class="b2b-rte">{{ section.settings.cta_text }}</div>{% endif %}
+      </div>
+      {% if section.settings.cta_button_label != blank and section.settings.cta_button_link != blank %}
+        <a class="btn btn--primary" href="{{ section.settings.cta_button_link }}">{{ section.settings.cta_button_label | escape }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Inside Our Workshop",
+  "tag": "section",
+  "limit": 1,
+  "enabled_on": {"templates": ["page"]},
+  "settings": [
+    {"type":"header","content":"Page introduction"},
+    {"type":"text","id":"eyebrow","label":"Eyebrow","default":"INSIDE OUR WORKSHOP"},
+    {"type":"text","id":"heading","label":"H1","default":"See How We Create and Personalize Every Order"},
+    {"type":"richtext","id":"introduction","label":"Introduction","default":"<p>Take a look inside our Dallas–Fort Worth production process—from engraving and quality checks to packing finished orders for delivery.</p>"},
+    {"type":"header","content":"Workshop benefits"},
+    {"type":"text","id":"benefit_one","label":"Benefit 1","default":"In-house engraving"},
+    {"type":"text","id":"benefit_two","label":"Benefit 2","default":"Individual personalization"},
+    {"type":"text","id":"benefit_three","label":"Benefit 3","default":"Quality checks before delivery"},
+    {"type":"header","content":"YouTube playlist"},
+    {"type":"text","id":"playlist","label":"YouTube playlist URL or ID","info":"Paste the URL or ID of the public Inside Our Workshop playlist. Do not paste an individual video URL."},
+    {"type":"text","id":"iframe_title","label":"Video player title","default":"Inside Our Workshop — Elma Vada production playlist"},
+    {"type":"richtext","id":"video_text","label":"Text below video","default":"<p>Follow our workshop process on YouTube to see engraving, personalization, quality checks, and order preparation.</p>"},
+    {"type":"text","id":"youtube_button_label","label":"YouTube button label","default":"Visit Our YouTube Channel"},
+    {"type":"url","id":"youtube_button_link","label":"YouTube button link"},
+    {"type":"header","content":"Final call to action"},
+    {"type":"text","id":"cta_heading","label":"CTA heading","default":"Planning a Personalized Order?"},
+    {"type":"richtext","id":"cta_text","label":"CTA text","default":"<p>Tell us what you need, your quantity, and your timeline. Our team will help you plan the next steps.</p>"},
+    {"type":"text","id":"cta_button_label","label":"CTA button label","default":"Request a Quote"},
+    {"type":"url","id":"cta_button_link","label":"CTA button link"}
+  ],
+  "presets": [{"name":"Inside Our Workshop"}]
+}
+{% endschema %}

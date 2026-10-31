@@ -34,12 +34,22 @@
 .catalog-price-range label { flex: 1; min-width: 0; font-size: .8rem; }
 .catalog-price-range input { display: block; margin-top: .25rem; }
 .catalog__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.4rem; }
-.catalog .catalog-payment-policy { margin-top: 3rem; padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid var(--color-beige-dark); background: #fff; scroll-margin-top: calc(var(--anchor-header-height, 140px) + 20px); }
-.catalog .catalog-payment-policy__inner { max-width: 800px; margin-inline: auto; }
-.catalog .catalog-payment-policy h2 { margin: 0 0 20px; color: var(--color-navy); font-family: var(--font-heading); font-size: clamp(1.65rem, 3vw, 2.2rem); font-weight: 400; line-height: 1.2; }
-.catalog .catalog-payment-policy__text { color: var(--color-text-secondary); font-family: var(--font-body); font-size: clamp(16px, 1.25vw, 18px); line-height: 1.7; overflow-wrap: break-word; }
-.catalog .catalog-payment-policy__text p { margin: 0; }
-.catalog .catalog-payment-policy__text p + p { margin-top: 1em; }
+.catalog .catalog-policies { margin-top: 2.5rem; padding-inline: clamp(20px, 4vw, 48px); border: 1px solid var(--color-beige-dark); background: #fff; }
+.catalog .catalog-policy + .catalog-policy { border-top: 1px solid var(--color-beige-dark); }
+.catalog .catalog-policy,
+.catalog .catalog-policy__summary { scroll-margin-top: calc(var(--anchor-header-height, 140px) + 16px); }
+.catalog .catalog-policy__summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; max-width: 800px; min-height: 64px; margin-inline: auto; padding-block: 14px; list-style: none; cursor: pointer; }
+.catalog .catalog-policy__summary::-webkit-details-marker { display: none; }
+.catalog .catalog-policy__summary::marker { content: ''; }
+.catalog .catalog-policy__summary::after { content: '+'; flex: 0 0 auto; color: var(--color-navy); font: 400 27px/1 var(--font-body); }
+.catalog .catalog-policy[open] > .catalog-policy__summary::after { content: '−'; }
+.catalog .catalog-policy__summary:focus-visible { outline: 3px solid var(--color-gold); outline-offset: 3px; }
+.catalog .catalog-policy__summary h2 { margin: 0; color: var(--color-navy); font-family: var(--font-heading); font-size: clamp(21px, 2vw, 26px); font-weight: 400; line-height: 1.25; }
+.catalog .catalog-policy__text { max-width: 800px; margin-inline: auto; padding: 12px 0 24px; color: var(--color-text-secondary); font-family: var(--font-body); font-size: clamp(16px, 1.25vw, 18px); line-height: 1.7; overflow-wrap: anywhere; }
+.catalog .catalog-policy__text p { margin: 0; }
+.catalog .catalog-policy__text p + p { margin-top: 1em; }
+.catalog .catalog-policy__text h3 { margin: 1.3em 0 .3em; color: var(--color-navy); font-family: var(--font-heading); font-size: clamp(18px, 1.6vw, 22px); font-weight: 400; line-height: 1.3; }
+.catalog .catalog-policy__text h3:first-child { margin-top: 0; }
 .product-detail { background: #fff; padding-block: clamp(1.5rem, 3vw, 3rem); }
 .product-detail__layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 4rem); align-items: start; }
 .product-gallery, .product-detail__summary { min-width: 0; }

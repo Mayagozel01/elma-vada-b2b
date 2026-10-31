@@ -1,15 +1,30 @@
 /* Shopify Forms popup 1210851 only. These custom properties reach its Shadow DOM. */
 #app-embed-container-1210851 {
-  --spacing-size-y: 22px !important;
-  --spacing-size-x: 24px !important;
-  --app-embed-padding-y: 12px !important;
+  --spacing-size-y: 20px !important;
+  --spacing-size-x: 22px !important;
+  --forms-padding-top: 20px !important;
+  --forms-padding-right: 22px !important;
+  --forms-padding-bottom: 20px !important;
+  --forms-padding-left: 22px !important;
+  --app-embed-padding-y: 8px !important;
+  --form-field-padding: 14px !important;
   --container-max-w: 450px !important;
 }
 
 @media (max-width: 490px) {
   #app-embed-container-1210851 {
-    --spacing-size-y: 16px !important;
-    --spacing-size-x: 16px !important;
-    --app-embed-padding-y: 8px !important;
+    --spacing-size-y: 14px !important;
+    --spacing-size-x: 14px !important;
+    --forms-padding-top: 14px !important;
+    --forms-padding-right: 14px !important;
+    --forms-padding-bottom: 14px !important;
+    --forms-padding-left: 14px !important;
+    --app-embed-padding-y: 6px !important;
+    --container-max-w: min(450px, calc(100vw - 8px)) !important;
+    --min-form-width: min(335px, calc(100vw - 8px)) !important;
+    --form-field-padding: 13px !important;
+    --button-padding: 14px !important;
+    --forms-base-font-size: 16px !important;
+    --forms-body-font: normal 400 16px Arial, sans-serif !important;
   }
 }

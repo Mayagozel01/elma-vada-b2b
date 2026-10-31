@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "our-workshop",
+      "settings": {
+        "eyebrow": "INSIDE OUR WORKSHOP",
+        "heading": "See How We Create and Personalize Every Order",
+        "introduction": "<p>Take a look inside our Dallas–Fort Worth production process—from engraving and quality checks to packing finished orders for delivery.</p>",
+        "benefit_one": "In-house engraving",
+        "benefit_two": "Individual personalization",
+        "benefit_three": "Quality checks before delivery",
+        "playlist": "",
+        "iframe_title": "Inside Our Workshop — Elma Vada production playlist",
+        "video_text": "<p>Follow our workshop process on YouTube to see engraving, personalization, quality checks, and order preparation.</p>",
+        "youtube_button_label": "Visit Our YouTube Channel",
+        "youtube_button_link": "https://youtube.com/@engravedpens",
+        "cta_heading": "Planning a Personalized Order?",
+        "cta_text": "<p>Tell us what you need, your quantity, and your timeline. Our team will help you plan the next steps.</p>",
+        "cta_button_label": "Request a Quote",
+        "cta_button_link": "/pages/request-a-quote#ProjectForm"
+      }
+    }
+  },
+  "order": ["main"]
+}

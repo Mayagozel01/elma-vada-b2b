@@ -1,4 +1,4 @@
-/* Only the Book a Call callback section. */
+/* Only the Book a Call Google Appointment Schedule section. */
 .callback-request { padding-block: 36px; }
 .callback-request .callback-request__layout { max-width: 100%; }
 .callback-request__intro { margin-bottom: 24px; }
@@ -8,8 +8,7 @@
   line-height: 1.15;
   overflow-wrap: anywhere;
 }
-.callback-request__description { margin-bottom: 22px; }
-.callback-request__description p:last-child { margin-bottom: 0; }
+
 .callback-request__panel {
   display: grid;
   grid-template-columns: minmax(0, 45fr) minmax(0, 55fr);
@@ -26,34 +25,24 @@
 }
 .callback-request__panel--no-image .callback-request__form-wrap { grid-column: 1; }
 .callback-request__form-wrap:focus { outline: 2px solid var(--color-navy); outline-offset: 4px; }
-.callback-request__fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 16px; }
-.callback-request__field { min-width: 0; }
-.callback-request__field--wide { grid-column: 1 / -1; }
-.callback-request__field label { display: block; margin-bottom: 5px; font-weight: 600; }
-.callback-request__field input {
+.callback-request__description { margin-bottom: 20px; }
+.callback-request__description p:last-child { margin-bottom: 0; }
+
+.callback-request__booking {
+  min-width: 0;
+  min-height: 720px;
+  background: var(--color-white);
+}
+.callback-request__booking iframe {
   display: block;
   width: 100%;
-  min-width: 0;
-  min-height: 50px;
-  padding: 10px 12px;
-  border: 1px solid var(--color-beige-dark);
-  border-radius: 0;
+  height: 720px;
+  border: 0;
   background: var(--color-white);
-  color: var(--color-navy);
-  font: 16px/1.5 var(--font-body);
 }
-.callback-request__field input[aria-invalid="true"] { border-color: #B42318; }
-.callback-request__hint { margin: 5px 0 0; font-size: var(--fs-sm); line-height: 1.5; }
-.callback-request__form-wrap .btn {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  min-height: 50px;
-  max-width: 100%;
-  margin-top: 18px;
-  white-space: normal;
-}
-.callback-request__note { margin: 12px 0 0; font-size: var(--fs-sm); line-height: 1.5; }
+.callback-request__booking > .btn { width: 100%; justify-content: center; }
+.callback-request #CallRequestForm { scroll-margin-top: calc(var(--anchor-header-height, 140px) + 20px); }
+
 .callback-request__media {
   position: relative;
   grid-column: 1;
@@ -71,31 +60,33 @@
   object-fit: contain;
   object-position: center;
 }
-.callback-request #CallRequestForm,
-.callback-request__status { scroll-margin-top: calc(var(--anchor-header-height, 140px) + 20px); }
-.callback-request__status {
-  padding: 20px;
-  border: 1px solid var(--color-gold);
-  border-left-width: 4px;
-  background: var(--color-cream);
-  color: var(--color-navy);
-  font-size: 18px;
-  line-height: 1.6;
-  overflow-wrap: anywhere;
-}
-.callback-request__status--error { margin-bottom: 20px; border-color: #B42318; }
-.callback-request__status:focus { outline: 2px solid var(--color-navy); outline-offset: 4px; }
-.callback-request__status ul { list-style: disc; padding-left: 20px; }
+
 @media (max-width: 900px) {
   .callback-request__panel { display: flex; flex-direction: column; }
   .callback-request__form-wrap { order: 1; padding: 24px; }
   .callback-request__media { order: 2; min-height: 0; }
   .callback-request__media img { position: static; width: 100%; height: auto; }
 }
+
+/* Google's scheduler is cross-origin, so its height can't be measured.
+   On phones it switches to a stacked layout (date strip + slot list) that is
+   much taller, so the frame bleeds to the panel edges and grows with the
+   viewport instead of trapping the user in a short nested scroll area. */
 @media (max-width: 639px) {
   .callback-request { padding-block: 24px; }
   .callback-request__intro { margin-bottom: 20px; }
   .callback-request__intro h1 { font-size: clamp(30px, 8vw, 38px); }
-  .callback-request__form-wrap { padding: 20px; }
-  .callback-request__fields { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  /* Google's slot column has a fixed min width that clips at ~320px,
+     so give the panel the full viewport width. */
+  .callback-request__panel {
+    margin-inline: calc(-1 * var(--container-padding));
+    border-inline: 0;
+  }
+  .callback-request__form-wrap { padding: 20px 0 0; }
+  .callback-request__description { padding-inline: 16px; }
+  .callback-request__booking,
+  .callback-request__booking iframe {
+    min-height: 0;
+    height: max(760px, calc(100svh - var(--anchor-header-height, 80px)));
+  }
 }

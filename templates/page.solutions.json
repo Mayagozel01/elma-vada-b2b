@@ -16,7 +16,8 @@
         "button_link": "/pages/free-mockup",
         "secondary_label": "View Our Work",
         "secondary_link": "/pages/our-work",
-        "compact": false
+        "compact": false,
+        "text_top": true
       }
     },
     "examples": {

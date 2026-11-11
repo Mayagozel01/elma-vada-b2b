@@ -13,18 +13,21 @@
 
 @media (max-width: 490px) {
   #app-embed-container-1210851 {
-    --spacing-size-y: 14px !important;
-    --spacing-size-x: 14px !important;
-    --forms-padding-top: 14px !important;
+    --spacing-size-y: 12px !important;
+    --spacing-size-x: 12px !important;
+    --forms-padding-top: 12px !important;
     --forms-padding-right: 14px !important;
-    --forms-padding-bottom: 14px !important;
+    --forms-padding-bottom: 12px !important;
     --forms-padding-left: 14px !important;
     --app-embed-padding-y: 6px !important;
     --container-max-w: min(450px, calc(100vw - 8px)) !important;
     --min-form-width: min(335px, calc(100vw - 8px)) !important;
-    --form-field-padding: 13px !important;
-    --button-padding: 14px !important;
-    --forms-base-font-size: 16px !important;
-    --forms-body-font: normal 400 16px Arial, sans-serif !important;
+    --form-field-padding: 10px !important;
+    --button-padding: 10px !important;
+    --forms-base-font-size: 12px !important;
+    --forms-body-font: normal 400 12px Arial, sans-serif !important;
+    --forms-heading-font-size: 16px !important;
+    --forms-heading-font: normal 700 16px Arial, sans-serif !important;
+    --heading-font-size: 15px !important;
   }
 }

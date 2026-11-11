@@ -29,6 +29,17 @@
     <div class="header__cta"><a href="/pages/book-a-call?request=call#CallRequestForm" class="btn btn--outline header__call">Request a Call</a><a href="{{ section.settings.cta_url | default: '/pages/request-a-quote#ProjectForm' }}" class="btn btn--primary">{{ section.settings.cta_label | default: 'Request a Quote' }}</a></div>
     <button class="header__hamburger" id="MobileMenuToggle" aria-expanded="false" aria-controls="MobileMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div></div>
+  {%- assign trust_text = settings.header_trust_text | strip -%}
+  {%- assign trust_moq = settings.header_trust_moq_text | strip -%}
+  {%- assign trust_processing = settings.header_trust_processing_text | strip -%}
+  {%- assign trust_note = settings.header_trust_processing_note | strip -%}
+  {%- capture trust_items -%}
+    {%- if trust_text != blank -%}<span class="ev-header-trust__item ev-header-trust__item--lead">{{ trust_text | escape }}</span>{%- endif -%}
+    {%- if trust_moq != blank -%}<span class="ev-header-trust__item">{{ trust_moq | escape }}</span>{%- endif -%}
+    {%- if trust_processing != blank -%}<span class="ev-header-trust__item">{{ trust_processing | escape }}</span>{%- endif -%}
+    {%- if trust_note != blank -%}<span class="ev-header-trust__note">{{ trust_note | escape }}</span>{%- endif -%}
+  {%- endcapture -%}
+  {%- if settings.show_header_trust and trust_items != blank -%}<div class="ev-header-trust">{{ trust_items }}</div>{%- endif -%}
 </header>
 <nav class="mobile-menu" id="MobileMenu" aria-label="Mobile navigation">
   {%- if main_menu != blank -%}
@@ -63,5 +74,4 @@
 {"type":"link_list","id":"menu","label":"Main menu"},{"type":"text","id":"logo_badge","label":"Logo badge","default":"EV"},{"type":"text","id":"logo_name","label":"Logo name","default":"Elma Vada"},{"type":"text","id":"logo_subtitle","label":"Logo subtitle","default":"Studio"},{"type":"text","id":"cta_label","label":"CTA label","default":"Request a Quote"},{"type":"url","id":"cta_url","label":"CTA link"}]}
 {% endschema %}
 
-{% if settings.show_header_trust %}<div class="ev-header-trust">{{ settings.header_trust_text | escape }}</div>{% endif %}
 </div>

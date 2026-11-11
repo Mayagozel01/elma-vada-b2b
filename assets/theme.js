@@ -206,7 +206,8 @@
       const target = document.getElementById(decodeURIComponent(href.slice(1)));
       if (target) {
         e.preventDefault();
-        const top = target.getBoundingClientRect().top + window.scrollY - 88;
+        const headerBottom = document.getElementById('SiteHeader')?.getBoundingClientRect().bottom || 72;
+        const top = target.getBoundingClientRect().top + window.scrollY - headerBottom - 16;
         window.scrollTo({ top, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
       }
     });

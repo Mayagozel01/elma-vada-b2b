@@ -12,18 +12,23 @@
 <section class="ev-hero{% if media_count == 0 %} ev-hero--text-only{% endif %}" data-ev-hero data-autoplay="{{ section.settings.autoplay }}" data-interval="{{ section.settings.autoplay_speed | times: 1000 }}" aria-label="{{ section.settings.carousel_label | escape }}">
   <div class="container ev-hero__grid">
     <div class="ev-hero__copy">
-      <p class="b2b-eyebrow">{{ lead.settings.eyebrow | default: 'Personalized Corporate Gifts & Laser Engraving' | escape }}</p>
-      <h1>{{ lead.settings.heading | default: 'Corporate Gifts Made Personal' | escape }}</h1>
+      <p class="b2b-eyebrow">{{ lead.settings.eyebrow | default: 'LASER ENGRAVING STUDIO · SERVING DALLAS–FORT WORTH, TEXAS' | escape }}</p>
+      <h1>{{ lead.settings.heading | default: 'Engraved Corporate Gifts, Personalized for Every Recipient' | escape }}</h1>
       {% if lead.settings.subheading != blank %}<p class="ev-hero__intro">{{ lead.settings.subheading | escape }}</p>{% endif %}
       {% if lead.settings.body_text != blank %}<p>{{ lead.settings.body_text | escape }}</p>{% endif %}
       {% if lead.settings.bulk_quote %}{% render 'bulk-order-note' %}{% endif %}
+      {% if section.settings.benefit_1 != blank or section.settings.benefit_2 != blank %}
+        <ul class="ev-hero__benefits">
+          {% if section.settings.benefit_1 != blank %}<li>{{ section.settings.benefit_1 | escape }}</li>{% endif %}
+          {% if section.settings.benefit_2 != blank %}<li>{{ section.settings.benefit_2 | escape }}</li>{% endif %}
+        </ul>
+      {% endif %}
       <div class="b2b-actions">
-        <a class="btn btn--primary" {% if lead.settings.bulk_quote %}data-ev-bulk-cta="{{ section.id }}:primary"{% if request.page_type == 'index' %} data-ev-bulk-pulse{% endif %}{% endif %} href="{{ lead.settings.primary_cta_url | default: '/pages/free-mockup' }}">{{ lead.settings.primary_cta_text | default: 'Get a Free Mockup' | escape }}</a>
-        <a class="btn btn--outline" href="{{ lead.settings.secondary_cta_url | default: '/pages/book-a-call' }}">{{ lead.settings.secondary_cta_text | default: 'Schedule a Consultation' | escape }}</a>
+        <a class="btn btn--primary" {% if lead.settings.bulk_quote %}data-ev-bulk-cta="{{ section.id }}:primary"{% if request.page_type == 'index' %} data-ev-bulk-pulse{% endif %}{% endif %} href="{{ lead.settings.primary_cta_url | default: '/pages/request-a-quote#ProjectForm' }}">{{ lead.settings.primary_cta_text | default: 'Get a Free Mockup' | escape }}</a>
+        <a class="btn btn--outline" href="{{ lead.settings.secondary_cta_url | default: '/collections/all' }}">{{ lead.settings.secondary_cta_text | default: 'See Pricing' | escape }}</a>
       </div>
-      {% if section.settings.price_line != blank %}<p class="ev-hero__details">{{ section.settings.price_line | escape }}</p>{% endif %}
-      <p class="ev-hero__details">{{ section.settings.form_hint | escape }}</p>
-      {% render 'contact-links' %}
+      {% if section.settings.trust_line != blank %}<p class="ev-hero__trust">{{ section.settings.trust_line | escape }}</p>{% endif %}
+      {% if section.settings.footnote != blank %}<p class="ev-hero__footnote">{{ section.settings.footnote | escape }}</p>{% endif %}
     </div>
     {% if media_count > 0 %}
       <div class="ev-hero__media" role="group" aria-roledescription="carousel" aria-label="Gift and engraving media">
@@ -88,6 +93,12 @@
     {% endif %}
   </div>
 </section>
+{% stylesheet %}
+  .ev-hero__benefits { display: grid; gap: .45rem; margin: 1.1rem 0 0; padding: 0; list-style: none; font-weight: 600; line-height: 1.45; }
+  .ev-hero__benefits + .b2b-actions { margin-top: 1.4rem; }
+  .ev-hero__trust { margin: 1.1rem 0 0; font-size: .9rem; font-weight: 600; }
+  .ev-hero__footnote { margin: .6rem 0 0; font-size: .8rem; line-height: 1.5; opacity: .85; }
+{% endstylesheet %}
 {% schema %}
 {
   "name": "Hero — photos & video",
@@ -115,19 +126,31 @@
     },
     {
       "type": "text",
-      "id": "price_line",
-      "label": "Price and quantity",
-      "default": "Custom engraved gifts from $9.99 to $119.99 · 1–5K+ units per order"
+      "id": "benefit_1",
+      "label": "Benefit 1",
+      "default": "✓ Approve your sample Monday — delivered to your office Wednesday, free*"
     },
     {
       "type": "text",
-      "id": "form_hint",
-      "label": "Form hint",
-      "default": "Start with a short request — tell us your occasion, quantity and idea."
+      "id": "benefit_2",
+      "label": "Benefit 2",
+      "default": "✓ No MOQ · 1 to 5,000+ pieces · from $9.99 per gift"
+    },
+    {
+      "type": "text",
+      "id": "trust_line",
+      "label": "Trust line",
+      "default": "110,000+ orders shipped · 5+ years in business"
+    },
+    {
+      "type": "textarea",
+      "id": "footnote",
+      "label": "Footnote",
+      "default": "* 1 business day production after proof approval, then next-business-day delivery to your office. Production time applies to orders of up to 1,000 pens, 600 chopsticks, 300 drinkware pieces, or 50 awards. Office delivery: Dallas–Fort Worth for orders of 100+ pieces; Houston, Austin and Oklahoma City for orders of 1,000+ pieces."
     },
     {
       "type": "paragraph",
-      "content": "The first slide supplies permanent text and buttons. All slides supply photos/videos. Empty media are hidden from customers."
+      "content": "The first slide supplies the eyebrow, headline, description and buttons. All slides supply photos/videos. Empty media are hidden from customers."
     }
   ],
   "blocks": [
@@ -204,19 +227,19 @@
           "type": "text",
           "id": "eyebrow",
           "label": "Eyebrow",
-          "default": "Personalized Corporate Gifts & Laser Engraving"
+          "default": "LASER ENGRAVING STUDIO · SERVING DALLAS–FORT WORTH, TEXAS"
         },
         {
           "type": "text",
           "id": "heading",
-          "label": "Heading",
-          "default": "Corporate Gifts Made Personal"
+          "label": "Heading (H1)",
+          "default": "Engraved Corporate Gifts, Personalized for Every Recipient"
         },
         {
           "type": "textarea",
           "id": "subheading",
-          "label": "Subheading",
-          "default": "Personalized gifts for milestone celebrations, employee recognition, client appreciation, and company events."
+          "label": "Description",
+          "default": "Employee service awards, client gifts and executive gifts — each engraved with the recipient's name, made in our Plano studio, and proofed before production."
         },
         {
           "type": "textarea",
@@ -245,12 +268,13 @@
           "type": "text",
           "id": "secondary_cta_text",
           "label": "Secondary button text",
-          "default": "Schedule a Consultation"
+          "default": "See Pricing"
         },
         {
           "type": "url",
           "id": "secondary_cta_url",
-          "label": "Secondary button link"
+          "label": "Secondary button link",
+          "default": "/collections/all"
         },
         {
           "type": "text",

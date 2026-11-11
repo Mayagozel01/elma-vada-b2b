@@ -120,7 +120,13 @@ body {
   min-width: 0;
   max-width: 100%;
 }
-.ev-header-trust { padding: .5rem 1rem; text-align: center; background: #1e252b; color: #fff; font-size: .8rem; overflow-wrap: anywhere; }
+/* The strip lives inside the fixed header, so theme.js measures it with the header. */
+.site-header-group:has(.ev-header-trust) { --header-trust-reserve: 33px; }
+:where(:target) { scroll-margin-top: calc(var(--anchor-header-height, 140px) + 16px); }
+.ev-header-trust { --trust-gap: .6rem; display: flex; flex-wrap: wrap; justify-content: center; gap: .1rem var(--trust-gap); padding: .5rem 1rem; text-align: center; background: #1e252b; color: #fff; font-size: .8rem; line-height: 1.3; overflow-wrap: anywhere; }
+.ev-header-trust__item { min-width: 0; }
+.ev-header-trust__item + .ev-header-trust__item::before { content: "·"; margin-right: var(--trust-gap); }
+.ev-header-trust__note { flex-basis: 100%; min-width: 0; font-size: .72rem; }
 .ev-hero { background: var(--color-cream); }
 .ev-hero__grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 0; align-items: center; min-height: 0; max-width: none; padding: 0; }
 .ev-hero__copy { align-self: center; padding: clamp(2rem,4vw,4rem); }
@@ -165,13 +171,14 @@ body {
 .ev-stats strong { display: block; font-size: clamp(1.7rem,3vw,2.7rem); color: var(--color-gold); overflow-wrap: anywhere; }
 .ev-stats span { display: block; font-size: .85rem; margin-top: .4rem; }
 .ev-trust { background: #fff; }
+.ev-trust__inner a { color: inherit; text-decoration: none; }
 .ev-trust__inner { display: flex; justify-content: center; flex-wrap: wrap; gap: .75rem 2rem; padding-top: 1rem; padding-bottom: 1rem; color: var(--color-navy); }
 .ev-fine-print { font-size: .9rem; line-height: 1.65; margin-top: 1rem; color: inherit; }
 .ev-feature-address { margin-top: 1rem; }
 .ev-page-hero--compact { padding: 1.5rem 0 .75rem; }
 .ev-page-hero--compact h1 { font-size: clamp(1.65rem,3vw,2.6rem); margin: .5rem 0 .75rem; }
 .ev-page-hero--compact .b2b-actions:empty { display: none; }
-.ev-quote-section { padding-top: 1rem; scroll-margin-top: 88px; }
+.ev-quote-section { padding-top: 1rem; scroll-margin-top: calc(var(--anchor-header-height, 140px) + 16px); }
 .ev-quote__main { grid-column: 2; grid-row: 1; }
 .ev-quote__aside { grid-column: 1; grid-row: 1; }
 .ev-quote-section .b2b-quote { gap: clamp(1.5rem, 4vw, 3.5rem); }
@@ -234,7 +241,11 @@ body {
   .ev-hero__controls { right: 1rem; bottom: 1rem; max-width: calc(100% - 2rem); }
   .content-for-layout :is(p, h1, h2, h3, h4, a, label, button, summary, td, th) { overflow-wrap: anywhere; }
   .ev-stats { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  .ev-header-trust { font-size: .72rem; }
+  .site-header-group:has(.ev-header-trust) { --header-trust-reserve: 43px; }
+  .ev-header-trust { --trust-gap: .45rem; padding: .3rem .75rem; font-size: .72rem; }
+  .ev-header-trust__item--lead { flex-basis: 100%; }
+  .ev-header-trust__item--lead + .ev-header-trust__item::before { content: none; }
+  .ev-header-trust__note { font-size: .68rem; }
   .ev-hero .b2b-actions { gap: .65rem; margin-top: 1rem; }
   .ev-hero .btn { width: 100%; font-size: .8rem; padding: .85rem 1rem; }
   .footer__bottom { flex-wrap: wrap; gap: 1rem; }
@@ -243,3 +254,6 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* Keep the card link arrow with its label on Industries. */
+.page-page-industries .b2b-card .b2b-link { white-space: nowrap; }

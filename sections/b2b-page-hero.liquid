@@ -5,7 +5,7 @@
   endif
 %}
 <section class="b2b-section{% if section.settings.compact %} ev-page-hero--compact{% endif %} b2b-section--{{ section.settings.color_scheme }}"{% if template.suffix == 'book-a-call' %} data-consultation-call{% endif %}>
-  <div class="container b2b-split b2b-hero{% if section.settings.show_image == false %} b2b-split--text-only{% elsif section.settings.image == blank and has_video == false and request.design_mode == false %} b2b-split--text-only{% endif %}">
+  <div class="container b2b-split b2b-hero{% if section.settings.text_top %} b2b-hero--text-top{% endif %}{% if section.settings.show_image == false %} b2b-split--text-only{% elsif section.settings.image == blank and has_video == false and request.design_mode == false %} b2b-split--text-only{% endif %}">
     <div>
       {% if section.settings.eyebrow != blank %}<p class="b2b-eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
       <h1>{{ section.settings.heading | default: page.title | escape }}</h1>
@@ -18,6 +18,9 @@
     {% if section.settings.show_image %}{% render 'b2b-image', media_type: section.settings.media_type, video: section.settings.video, poster: section.settings.poster, photo: section.settings.image, alt: section.settings.image_alt, title: section.settings.heading, note: section.settings.photo_note, eager: true %}{% endif %}
   </div>
 </section>
+{% stylesheet %}
+  @media (min-width: 641px) { .b2b-split.b2b-hero--text-top { align-items: start; } }
+{% endstylesheet %}
 {% schema %}
 {
   "name": "B2B page hero",
@@ -141,6 +144,13 @@
       "type": "checkbox",
       "id": "compact",
       "label": "Compact intro (forms)",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "text_top",
+      "label": "Align text to the top of the photo",
+      "info": "Desktop only. Use when the photo is tall and the text sits too low.",
       "default": false
     }
   ],

@@ -1,0 +1,162 @@
+{% liquid
+  assign layout = section.settings.layout
+  assign list_tag = 'div'
+  assign item_tag = 'article'
+  assign list_class = 'procurement-content__items'
+  case layout
+    when 'photo_cards'
+      assign list_class = 'b2b-grid'
+    when 'steps'
+      assign list_tag = 'ol'
+      assign item_tag = 'li'
+    when 'list'
+      assign list_tag = 'ul'
+      assign list_class = 'procurement-content__list'
+  endcase
+  assign columns = section.blocks.size | at_most: 4 | at_least: 2
+  if section.blocks.size == 6 or section.blocks.size == 9
+    assign columns = 3
+  endif
+  assign show_primary = false
+  if section.settings.button_label != blank and section.settings.button_link != blank
+    assign show_primary = true
+  endif
+  assign show_secondary = false
+  if section.settings.secondary_label != blank and section.settings.secondary_link != blank
+    assign show_secondary = true
+  endif
+%}
+<section class="b2b-section b2b-section--{{ section.settings.color_scheme }} procurement-content">
+  <div class="container">
+    {% if section.settings.heading != blank or section.settings.text != blank %}
+      <div class="b2b-header{% if section.blocks.size == 0 %} procurement-content__header--flush{% endif %}">
+        {% if section.settings.heading != blank %}<h2>{{ section.settings.heading | escape }}</h2>{% endif %}
+        {% if section.settings.text != blank %}<div class="b2b-rte">{{ section.settings.text }}</div>{% endif %}
+      </div>
+    {% endif %}
+
+    {% if section.blocks.size > 0 %}
+      <{{ list_tag }} class="{{ list_class }}"{% if layout == 'photo_cards' %} style="--b2b-columns: {{ columns }};"{% elsif list_tag != 'div' %} role="list"{% endif %}>
+        {% for block in section.blocks %}
+          {% if layout == 'list' %}
+            {% if block.settings.title != blank %}<li {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</li>{% endif %}
+          {% else %}
+            <{{ item_tag }} class="b2b-card{% if layout != 'photo_cards' or block.settings.image == blank and block.settings.image_asset == blank and request.design_mode == false %} b2b-card--text-only{% endif %}" {{ block.shopify_attributes }}>
+              {% if layout == 'photo_cards' %}{% render 'b2b-image', photo: block.settings.image, fallback_asset: block.settings.image_asset, alt: block.settings.image_alt, title: block.settings.title, note: block.settings.photo_note, fit: section.settings.image_fit, sizes: '(min-width: 990px) 25vw, (min-width: 641px) 50vw, 100vw' %}{% endif %}
+              <div class="b2b-card__body">
+                {% if layout == 'steps' %}<span class="procurement-content__step" aria-hidden="true">{{ forloop.index }}</span>{% endif %}
+                {% if block.settings.title != blank %}<h3>{{ block.settings.title | escape }}</h3>{% endif %}
+                <div class="b2b-rte">{{ block.settings.text }}</div>
+              </div>
+            </{{ item_tag }}>
+          {% endif %}
+        {% endfor %}
+      </{{ list_tag }}>
+    {% endif %}
+
+    {% if section.settings.closing_text != blank %}<div class="b2b-rte procurement-content__closing">{{ section.settings.closing_text }}</div>{% endif %}
+
+    {% if show_primary or show_secondary %}
+      <div class="b2b-actions procurement-content__actions">
+        {% if show_primary %}<a class="btn btn--{{ section.settings.button_style }}" href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a>{% endif %}
+        {% if show_secondary %}<a class="btn btn--outline" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label | escape }}</a>{% endif %}
+      </div>
+    {% endif %}
+
+    {% if section.settings.signature != blank %}<p class="procurement-content__signature">{{ section.settings.signature | escape }}</p>{% endif %}
+  </div>
+</section>
+
+{% stylesheet %}
+  .procurement-content .b2b-card__body { padding: 1.25rem; }
+  .procurement-content .b2b-card h3 { margin: 0 0 .6rem; font-size: 1.25rem; }
+  .procurement-content .b2b-card .b2b-rte { line-height: 1.6; }
+  .procurement-content .procurement-content__header--flush { margin-bottom: 0; }
+  .procurement-content .b2b-header:has(+ .procurement-content__list) { margin-bottom: 1rem; }
+  .procurement-content__items { display: flex; flex-wrap: wrap; gap: 1.4rem; margin: 0; padding: 0; list-style: none; }
+  .procurement-content__items > * { flex: 1 1 calc(33.333% - 1.4rem); min-width: min(100%, 260px); }
+  .procurement-content__step { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; margin-bottom: .6rem; background: var(--color-navy); color: var(--color-white); font-weight: 700; line-height: 1; }
+  .procurement-content__list { display: grid; gap: .6rem; max-width: 640px; margin: 0 auto; padding-left: 1.4rem; list-style: disc; line-height: 1.6; }
+  .procurement-content__closing { max-width: 800px; margin: 1.5rem auto 0; text-align: center; }
+  .procurement-content__actions { justify-content: center; }
+  .procurement-content__signature { margin: 1.25rem 0 0; color: inherit; font-size: .9rem; text-align: center; }
+  @media (max-width: 640px) {
+    .procurement-content__items > * { flex-basis: 100%; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Procurement content",
+  "enabled_on": {"templates": ["page"]},
+  "settings": [
+    {"type": "text", "id": "heading", "label": "Heading"},
+    {"type": "richtext", "id": "text", "label": "Introduction"},
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Items layout",
+      "options": [
+        {"value": "photo_cards", "label": "Photo cards"},
+        {"value": "text_cards", "label": "Text cards"},
+        {"value": "steps", "label": "Numbered steps"},
+        {"value": "list", "label": "Simple bullet list"}
+      ],
+      "default": "photo_cards"
+    },
+    {
+      "type": "select",
+      "id": "image_fit",
+      "label": "Photo crop",
+      "options": [
+        {"value": "cover", "label": "Fill frame"},
+        {"value": "contain", "label": "Show whole product"}
+      ],
+      "default": "cover"
+    },
+    {"type": "richtext", "id": "closing_text", "label": "Text below items"},
+    {"type": "text", "id": "button_label", "label": "Button text"},
+    {"type": "url", "id": "button_link", "label": "Button link"},
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "options": [
+        {"value": "primary", "label": "Primary"},
+        {"value": "outline", "label": "Outline"}
+      ],
+      "default": "primary"
+    },
+    {"type": "text", "id": "secondary_label", "label": "Second button text", "info": "Shown only when both text and link are filled in."},
+    {"type": "url", "id": "secondary_link", "label": "Second button link"},
+    {"type": "text", "id": "signature", "label": "Signature below button"},
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Background",
+      "options": [
+        {"value": "cream", "label": "Cream"},
+        {"value": "navy", "label": "Dark"},
+        {"value": "white", "label": "White"}
+      ],
+      "default": "white"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {"type": "text", "id": "title", "label": "Title", "info": "In the simple bullet list layout this is the list line."},
+        {"type": "richtext", "id": "text", "label": "Text", "info": "Not used in the simple bullet list layout."},
+        {"type": "image_picker", "id": "image", "label": "Photo", "info": "Photo cards layout only. Optional. Upload a real Elma Vada photo, ideally 4:3, and keep the original engraving and product details. See the photo brief below."},
+        {"type": "text", "id": "image_asset", "label": "Bundled photo filename", "info": "Optional photo included in the theme. Choose a Photo above to replace it, or clear this field to remove it."},
+        {"type": "text", "id": "image_alt", "label": "Photo description (alt)"},
+        {"type": "textarea", "id": "photo_note", "label": "Photo brief (editor only)"}
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [{"name": "Procurement content", "blocks": [{"type": "item"}, {"type": "item"}, {"type": "item"}]}]
+}
+{% endschema %}

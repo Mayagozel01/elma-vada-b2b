@@ -1,0 +1,431 @@
+{
+  "sections": {
+    "hero": {
+      "type": "procurement-hero",
+      "settings": {
+        "eyebrow": "COMPANY MILESTONES · CORPORATE GIFTING",
+        "heading": "Custom Company Anniversary Gifts & Engraved Keepsakes",
+        "text": "<p>Celebrate your company's story with personalized gifts and engraved keepsakes for employees, clients, partners, and special guests. From a 10-year anniversary to a major company milestone, Elma Vada Studio helps you create meaningful gifts that commemorate the occasion.</p>",
+        "image_alt": "",
+        "photo_note": "Upload a real photo of a premium assortment of Elma Vada engraved company gifts. Recommended aspect ratio: 4:3 or square. Preserve the original product proportions, materials and engraving.",
+        "button_label": "Request an Anniversary Gift Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "secondary_label": "Explore Our Products",
+        "secondary_link": "/collections/all",
+        "color_scheme": "cream"
+      }
+    },
+    "milestones": {
+      "type": "procurement-content",
+      "settings": {
+        "heading": "Make Your Company's Anniversary Memorable",
+        "text": "<p>A company anniversary is an opportunity to recognize the people, partnerships, and achievements behind your business. Personalized gifts can help mark the occasion and create a lasting reminder of the celebration.</p>",
+        "layout": "photo_cards",
+        "image_fit": "cover",
+        "closing_text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "white"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "10th Anniversary",
+            "text": "<p>Celebrate a decade of growth and achievement.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real photo of an engraved Elma Vada award or commemorative item suited to the 10th anniversary milestone. Use a different photo from the other cards. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "15th Anniversary",
+            "text": "<p>Recognize the relationships and successes built over fifteen years.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real photo of an engraved Elma Vada award or commemorative item suited to the 15th anniversary milestone. Use a different photo from the other cards. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "20th Anniversary",
+            "text": "<p>Honor two decades of company history and progress.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real photo of an engraved Elma Vada award or commemorative item suited to the 20th anniversary milestone. Use a different photo from the other cards. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "25th Anniversary & Beyond",
+            "text": "<p>Create keepsakes for significant business milestones.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real photo of an engraved Elma Vada award or commemorative item suited to the 25th anniversary and later milestone. Use a different photo from the other cards. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "ideas": {
+      "type": "procurement-content",
+      "settings": {
+        "heading": "Personalized Gift Ideas for Company Anniversaries",
+        "text": "",
+        "layout": "photo_cards",
+        "image_fit": "cover",
+        "closing_text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "cream"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Engraved Pens",
+            "text": "<p>Personalized metal pens with company logos, anniversary dates, or recipient names.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of an engraved pen. Do not reuse a photo from another card. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Glass & Crystal Awards",
+            "text": "<p>Engraved awards and recognition pieces for company celebrations.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of an engraved glass or crystal award. Do not reuse a photo from another card. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Custom Drinkware",
+            "text": "<p>Personalized cups and drinkware featuring company branding or anniversary artwork.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of engraved drinkware. Do not reuse a photo from another card. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Engraved Keychains",
+            "text": "<p>Compact keepsakes for employees, customers, and event guests.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of an engraved keychain. Do not reuse a photo from another card. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "title": "Executive Gifts",
+            "text": "<p>Personalized gifts for company leadership, partners, and VIP guests.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of an engraved executive gift. Do not reuse a photo from another card. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_6": {
+          "type": "item",
+          "settings": {
+            "title": "Anniversary Gift Sets",
+            "text": "<p>Coordinated gift combinations for company celebrations, subject to product availability.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of a real coordinated gift set. Do not reuse a photo from another card. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5",
+        "item_6"
+      ]
+    },
+    "audiences": {
+      "type": "procurement-content",
+      "settings": {
+        "heading": "Anniversary Gifts for Every Part of Your Business",
+        "text": "",
+        "layout": "text_cards",
+        "image_fit": "cover",
+        "closing_text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "white"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Employees & Teams",
+            "text": "<p>Thank the people who contributed to your company's success.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Clients & Customers",
+            "text": "<p>Celebrate the relationships that helped your business grow.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Business Partners",
+            "text": "<p>Recognize important collaborations and long-term partnerships.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Executives & Founders",
+            "text": "<p>Commemorate company leadership and founding milestones.</p>",
+            "image_alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "personalization": {
+      "type": "procurement-content",
+      "settings": {
+        "heading": "Make Every Gift Part of Your Company's Story",
+        "text": "<p>Commemorate your company anniversary with personalized engraving designed around your brand and milestone. Engraving suitability and available personalization depend on the selected product.</p>",
+        "layout": "photo_cards",
+        "image_fit": "cover",
+        "closing_text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "cream"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Company Logo",
+            "text": "<p>Add your logo to compatible products.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of a close-up of a real company logo engraving. Do not reuse a photo from another card. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Anniversary Year or Date",
+            "text": "<p>Mark the milestone year or celebration date.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of a close-up of a real engraved year or date. Do not reuse a photo from another card. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Employee or Recipient Names",
+            "text": "<p>Add individual names to compatible products.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of a close-up of a real engraved name (use names only with permission). Do not reuse a photo from another card. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Custom Commemorative Messages",
+            "text": "<p>Include a short anniversary message on compatible engraving designs.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of a close-up of a real engraved commemorative message. Do not reuse a photo from another card. Recommended aspect ratio: 4:3. Preserve the original product proportions, materials, engraving and packaging."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "process": {
+      "type": "procurement-content",
+      "settings": {
+        "heading": "From Anniversary Idea to Finished Gift",
+        "text": "",
+        "layout": "steps",
+        "image_fit": "cover",
+        "closing_text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "white"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Share Your Occasion",
+            "text": "<p>Tell us your company anniversary, gift recipients, quantity, budget, and required date.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Choose Your Products",
+            "text": "<p>Select suitable products from our available catalog.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Review Your Design",
+            "text": "<p>Share your logo, dates, names, or anniversary message and review the proposed engraving.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Approve Production",
+            "text": "<p>Confirm the design and order details before production begins.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "title": "Receive Your Gifts",
+            "text": "<p>Your completed order is prepared for the agreed fulfillment or shipping arrangements.</p>",
+            "image_alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5"
+      ]
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "Can you create gifts for a company's 10th or 15th anniversary?",
+            "answer": "<p>Yes. We offer personalized engraving for a range of company milestones, including 10th, 15th, 20th, and 25th anniversaries.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can we engrave our company logo?",
+            "answer": "<p>Yes, on compatible products. We review the artwork and selected material before confirming engraving details.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Can each gift include a recipient's name?",
+            "answer": "<p>Personalized names can be added to compatible products, depending on the engraving area and design.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "Can we order gifts for a large company event?",
+            "answer": "<p>We work with corporate orders of different sizes. Share your quantity and deadline so we can confirm availability and production details.</p>"
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "question": "Can you help us choose anniversary gifts?",
+            "answer": "<p>Yes. Tell us about your recipients, budget, and occasion, and we can discuss suitable products.</p>"
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "question": "Can we request a custom anniversary message?",
+            "answer": "<p>Yes. Anniversary dates, milestones, and commemorative text can be incorporated into compatible engraving designs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "procurement-content",
+      "settings": {
+        "heading": "Let's Create Gifts Worth Remembering",
+        "text": "<p>Planning a company anniversary? Tell us about your celebration and we'll help you explore personalized gift options.</p>",
+        "layout": "text_cards",
+        "image_fit": "cover",
+        "closing_text": "",
+        "button_label": "Request a Custom Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "navy"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "milestones",
+    "ideas",
+    "audiences",
+    "personalization",
+    "process",
+    "questions",
+    "cta"
+  ]
+}

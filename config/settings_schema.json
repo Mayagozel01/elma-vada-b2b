@@ -213,6 +213,24 @@
         "id": "header_trust_text",
         "label": "Header trust text",
         "default": "5+ years of experience · 110,000+ happy customers"
+      },
+      {
+        "type": "text",
+        "id": "header_trust_moq_text",
+        "label": "Header trust text — MOQ",
+        "default": "No MOQ"
+      },
+      {
+        "type": "text",
+        "id": "header_trust_processing_text",
+        "label": "Header trust text — processing time",
+        "default": "1 business day processing time*"
+      },
+      {
+        "type": "text",
+        "id": "header_trust_processing_note",
+        "label": "Processing time footnote (optional)",
+        "info": "Explains the asterisk. Shown under the strip texts; leave empty to hide."
       }
     ]
   },

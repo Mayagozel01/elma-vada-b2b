@@ -1,0 +1,343 @@
+{
+  "sections": {
+    "hero": {
+      "type": "procurement-hero",
+      "settings": {
+        "eyebrow": "",
+        "heading": "Custom Years of Service Awards & Personalized Employee Recognition Gifts",
+        "text": "<p>Recognize the employees who help your organization grow with custom-engraved years of service awards and meaningful employee gifts. Personalize awards, Parker pens, and business card holders with names, service milestones, company logos, and appreciation messages.</p>",
+        "image_alt": "",
+        "photo_note": "Upload a real Elma Vada photo of a personalized service award, or of an award and a Parker pen together. Recommended aspect ratio: 4:3 or square. Preserve the original engraving and product details.",
+        "button_label": "Get a Free Mockup",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "secondary_label": "",
+        "secondary_link": "",
+        "color_scheme": "cream"
+      }
+    },
+    "products": {
+      "type": "procurement-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Custom Engraved Service Awards",
+            "text": "<p>Personalized recognition awards with employee names, service milestones, company branding, and appreciation messages.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of an engraved award (crystal, acrylic or another available material). Recommended aspect ratio: 4:3. Preserve the original engraving and product details."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Personalized Parker Pens",
+            "text": "<p>Engraved Parker Jotter, Frontier, fountain pens, and other available styles for professional employee recognition.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of an engraved Parker pen in its original presentation box. Recommended aspect ratio: 4:3. Preserve the original engraving and product details."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Engraved Business Card Holders",
+            "text": "<p>Professional personalized accessories for employee milestones and corporate recognition.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of an engraved business card holder. Recommended aspect ratio: 4:3. Preserve the original engraving and product details."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ],
+      "settings": {
+        "heading": "Choose the Right Years of Service Award or Gift",
+        "text": "",
+        "layout": "photo_cards",
+        "image_fit": "cover",
+        "closing_text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "white"
+      }
+    },
+    "personalization": {
+      "type": "text-examples-photo",
+      "blocks": {
+        "example_1": {
+          "type": "example",
+          "settings": {
+            "text": "Thank You for 5 Years of Service"
+          }
+        },
+        "example_2": {
+          "type": "example",
+          "settings": {
+            "text": "Celebrating 10 Years of Dedication"
+          }
+        },
+        "example_3": {
+          "type": "example",
+          "settings": {
+            "text": "In Recognition of 15 Years of Outstanding Service"
+          }
+        },
+        "example_4": {
+          "type": "example",
+          "settings": {
+            "text": "Thank You for 20 Years of Commitment and Excellence"
+          }
+        },
+        "example_5": {
+          "type": "example",
+          "settings": {
+            "text": "With Appreciation for Your Years of Service"
+          }
+        }
+      },
+      "settings": {
+        "heading": "Personalized Engraving for Every Milestone",
+        "text": "<p>Personalize gifts with recipient names, milestone years, dates, company logos, and custom messages, so each employee receives a gift made for their own milestone.</p>",
+        "examples_label": "Example engraving wording",
+        "note": "<p>Engraving options depend on the selected product and the available engraving area.</p>",
+        "image_alt": "",
+        "photo_note": "Upload a close-up photo of real Elma Vada engraving that shows an actual employee name or service message. Recommended aspect ratio: 4:3. Use names only with permission.",
+        "image_position": "right",
+        "color_scheme": "cream"
+      },
+      "block_order": [
+        "example_1",
+        "example_2",
+        "example_3",
+        "example_4",
+        "example_5"
+      ]
+    },
+    "packaging": {
+      "type": "text-examples-photo",
+      "settings": {
+        "heading": "Gift-Ready Packaging",
+        "text": "<p>Many awards and pens include standard packaging, and upgraded gift presentation may be available upon request.</p><p>Tell us how the gifts will be presented and we will confirm the packaging options for your selected products with your quote.</p>",
+        "examples_label": "",
+        "note": "",
+        "image_alt": "",
+        "photo_note": "Upload a real photo of Elma Vada standard gift packaging, or of verified premium packaging. Recommended aspect ratio: 4:3. Do not show packaging that is not offered.",
+        "image_position": "left",
+        "color_scheme": "white"
+      }
+    },
+    "milestones": {
+      "type": "procurement-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "5 Years of Service",
+            "text": "<p>A personalized Parker pen or business card holder is a thoughtful way to mark a first milestone, engraved with the employee’s name and years of service.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of a product suited to a 5-year milestone, such as a Parker pen or business card holder. Recommended aspect ratio: 4:3. Preserve the original engraving and product details."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "10 Years of Service",
+            "text": "<p>Consider an engraved award, or a Parker pen in a presentation box, with a short message of appreciation for a decade of dedication.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of a product suited to a 10-year milestone, such as an engraved award or Parker pen. Recommended aspect ratio: 4:3. Preserve the original engraving and product details."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "15 & 20 Years of Service",
+            "text": "<p>Pair an engraved award with a personalized pen or desk accessory to give longer service a more distinctive presentation.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of a product suited to a 15 or 20-year milestone, such as an award with a pen. Recommended aspect ratio: 4:3. Preserve the original engraving and product details."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "25+ Years of Service & Retirement",
+            "text": "<p>Recognize a career with a custom engraved award that includes the employee’s name, years of service, and a personal message of thanks.</p>",
+            "image_alt": "",
+            "photo_note": "Upload a real Elma Vada photo of a product suited to a long-service or retirement milestone, such as an engraved award. Recommended aspect ratio: 4:3. Preserve the original engraving and product details."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "heading": "Recognition Gifts for Different Career Milestones",
+        "text": "",
+        "layout": "photo_cards",
+        "image_fit": "cover",
+        "closing_text": "<p>These are suggestions, not fixed packages. Planning a recurring program? See our <a href=\"/pages/milestone-program\">Milestone Program</a>, or explore more <a href=\"/pages/employee-recognition\">employee recognition gifts</a>.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "cream"
+      }
+    },
+    "how_to_order": {
+      "type": "procurement-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Tell Us About Your Recognition Project",
+            "text": "<p>Share the milestones you want to recognize, the number of employees, product ideas, your company logo and the date you need the gifts.</p>"
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Choose Your Gifts",
+            "text": "<p>Select awards, Parker pens, business card holders, or a combination. We can help you match products to each milestone.</p>"
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Review Your Design",
+            "text": "<p>We prepare a free digital mockup showing names, service years, messages and logo placement for your review.</p>"
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Approve Your Order",
+            "text": "<p>Approve the final design and details. Production begins after approval and payment.</p>"
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "title": "Production & Fulfillment",
+            "text": "<p>We engrave and prepare your order for delivery. Production and delivery timing is confirmed with your quote.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5"
+      ],
+      "settings": {
+        "heading": "How to Order",
+        "text": "",
+        "layout": "steps",
+        "image_fit": "cover",
+        "closing_text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "white"
+      }
+    },
+    "questions": {
+      "type": "b2b-faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "Can every award have a different employee name?",
+            "answer": "<p>Yes. Eligible products can carry individual names, service years or messages within one coordinated order. Send your recipient list and the wording you want for each person. Engraving options depend on the selected product and the available engraving area.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Can I add our company logo?",
+            "answer": "<p>Yes, on compatible products. You can upload your logo with your quote request, and we review the artwork and engraving placement before production. A free digital mockup shows the design for your approval.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Do you offer gifts for different service milestones?",
+            "answer": "<p>Yes. You can personalize awards, Parker pens and business card holders for milestones such as 5, 10, 15, 20 and 25+ years of service, or for retirement. The suggestions on this page are starting points, not fixed packages.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "Do awards and Parker pens come with gift boxes?",
+            "answer": "<p>Many awards and Parker pens include standard packaging, and upgraded gift presentation may be available upon request. We confirm the packaging for your selected products with your quote.</p>"
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "question": "Can we order recognition gifts for multiple employees?",
+            "answer": "<p>Yes. Send your recipient list with names, milestone years and any wording for each person, along with the products you are considering. We will confirm quantities, pricing and details with your quote.</p>"
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "question": "How far in advance should we order?",
+            "answer": "<p>Timing depends on the product, quantity, engraving details, artwork approval and inventory availability. Share the date you need the gifts when you request a quote, and we will confirm the project schedule with it. Shipping time is separate.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "procurement-content",
+      "settings": {
+        "heading": "Make Every Year of Service Worth Celebrating",
+        "text": "<p>Show employees how much their dedication means with personalized recognition gifts made for their milestones.</p>",
+        "layout": "text_cards",
+        "image_fit": "cover",
+        "closing_text": "",
+        "button_label": "Request a Custom Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "navy"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "products",
+    "personalization",
+    "packaging",
+    "milestones",
+    "how_to_order",
+    "questions",
+    "cta"
+  ]
+}

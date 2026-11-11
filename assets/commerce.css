@@ -92,7 +92,7 @@
 .product-quote { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1fr); gap: 3rem; margin-top: 3rem; padding: clamp(1.25rem, 3vw, 2.5rem); background: var(--color-cream); }
 .product-quote__intro h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
 .product-quote__intro p { font-size: .9rem; }
-.product-quote__form { scroll-margin-top: 100px; min-width: 0; }
+.product-quote__form { scroll-margin-top: calc(var(--anchor-header-height, 140px) + 16px); min-width: 0; }
 .product-quote__context { margin-bottom: 1rem; overflow-wrap: anywhere; }
 .product-quote__context > p:first-child { font-weight: 600; }
 .product-quote__context .btn { margin-block: .75rem; }

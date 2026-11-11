@@ -1,0 +1,76 @@
+<section class="b2b-section b2b-section--{{ section.settings.color_scheme }}">
+  <div class="container b2b-split text-photo-split{% if section.settings.image == blank and request.design_mode == false %} b2b-split--text-only{% endif %}{% if section.settings.image_position == 'left' %} text-photo-split--reverse{% endif %}">
+    <div>
+      {% if section.settings.heading != blank %}<h2>{{ section.settings.heading | escape }}</h2>{% endif %}
+      {% if section.settings.text != blank %}<div class="b2b-rte">{{ section.settings.text }}</div>{% endif %}
+      {% if section.blocks.size > 0 %}
+        {% if section.settings.examples_label != blank %}<h3>{{ section.settings.examples_label | escape }}</h3>{% endif %}
+        <ul class="text-photo-split__examples" role="list">
+          {% for block in section.blocks %}
+            {% if block.settings.text != blank %}<li {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</li>{% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if section.settings.note != blank %}<div class="b2b-rte text-photo-split__note">{{ section.settings.note }}</div>{% endif %}
+    </div>
+    {% render 'b2b-image', photo: section.settings.image, alt: section.settings.image_alt, title: section.settings.heading, note: section.settings.photo_note, sizes: '(min-width: 990px) 45vw, 100vw' %}
+  </div>
+</section>
+
+{% stylesheet %}
+  .text-photo-split__examples { display: grid; gap: .6rem; margin: 0; padding: 0; list-style: none; }
+  .text-photo-split__examples li { padding: .7rem 1rem; border: 1px solid var(--color-beige-dark); border-left: 3px solid var(--color-gold); background: var(--color-white); color: var(--color-navy); line-height: 1.5; overflow-wrap: anywhere; }
+  .text-photo-split h3 { margin: 1.4rem 0 .8rem; font-size: 1.25rem; }
+  .text-photo-split__note { margin-top: 1rem; }
+  @media (min-width: 641px) {
+    .text-photo-split--reverse > :first-child { order: 2; }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Text, examples & photo",
+  "enabled_on": {"templates": ["page"]},
+  "settings": [
+    {"type": "text", "id": "heading", "label": "Heading"},
+    {"type": "richtext", "id": "text", "label": "Introduction"},
+    {"type": "text", "id": "examples_label", "label": "Examples heading", "info": "Shown above the example lines. Leave empty to hide."},
+    {"type": "richtext", "id": "note", "label": "Note below examples"},
+    {"type": "image_picker", "id": "image", "label": "Photo", "info": "Optional. Upload a real Elma Vada photo, ideally 4:3, and keep the original engraving and product details. Without a photo the text is centered. See the photo brief below."},
+    {"type": "text", "id": "image_alt", "label": "Photo description (alt)", "info": "Describe only what is visible. Leave empty to use the heading."},
+    {"type": "textarea", "id": "photo_note", "label": "Photo brief (editor only)", "info": "Shown only in the theme editor, in the empty photo area."},
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Photo position on desktop",
+      "options": [
+        {"value": "right", "label": "Right"},
+        {"value": "left", "label": "Left"}
+      ],
+      "default": "right"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Background",
+      "options": [
+        {"value": "cream", "label": "Cream"},
+        {"value": "navy", "label": "Dark"},
+        {"value": "white", "label": "White"}
+      ],
+      "default": "white"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "example",
+      "name": "Example line",
+      "settings": [
+        {"type": "text", "id": "text", "label": "Text", "default": "Thank You for 5 Years of Service"}
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [{"name": "Text, examples & photo", "blocks": [{"type": "example"}, {"type": "example"}]}]
+}
+{% endschema %}

@@ -1,0 +1,40 @@
+{%- liquid
+  assign banner_alt = section.settings.image_alt | default: section.settings.image.alt
+-%}
+<section class="products-intro">
+  <div class="products-intro__inner">
+    {% if section.settings.link != blank %}<a class="products-intro__link" href="{{ section.settings.link }}">{% endif %}
+    <picture class="products-intro__picture">
+      {% if section.settings.mobile_image != blank %}
+        <source media="(max-width: 639px)" srcset="{{ section.settings.mobile_image | image_url: width: 750 }} 750w, {{ section.settings.mobile_image | image_url: width: 1200 }} 1200w" sizes="100vw">
+      {% endif %}
+      {% if section.settings.image != blank %}
+        {{ section.settings.image | image_url: width: 3360 | image_tag: widths: '750, 1100, 1500, 2000, 2400, 3360', sizes: '100vw', alt: banner_alt, class: 'products-intro__image', loading: 'eager' }}
+      {% else %}
+        <img class="products-intro__image" src="{{ 'products-intro-banner.webp' | asset_url }}" alt="{{ banner_alt | escape }}" width="3360" height="840">
+      {% endif %}
+    </picture>
+    {% if section.settings.link != blank %}</a>{% endif %}
+  </div>
+</section>
+
+{% stylesheet %}
+  .products-intro { padding: 0; margin: 0; }
+  .products-intro__link,
+  .products-intro__picture { display: block; }
+  .products-intro__image { display: block; width: 100%; height: auto; }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Products intro banner",
+  "enabled_on": {"templates": ["collection"]},
+  "settings": [
+    {"type": "image_picker", "id": "image", "label": "Banner image", "info": "Leave empty to use the built-in Parker Pen banner. Recommended ratio 4:1."},
+    {"type": "image_picker", "id": "mobile_image", "label": "Mobile image (optional)", "info": "Shown on screens up to 639px. A taller crop keeps the text readable on phones."},
+    {"type": "text", "id": "image_alt", "label": "Image description (alt)", "default": "Leave a lasting impression with a gift that's both useful and meaningful. Make your congratulations and appreciation timeless with our enduring engraving. Write your next life chapter with a Parker Pen – sleek design, smooth ink, and an inspirational message. “Every story deserves to be written.” – Daria"},
+    {"type": "url", "id": "link", "label": "Link (optional)"}
+  ],
+  "presets": [{"name": "Products intro banner"}]
+}
+{% endschema %}

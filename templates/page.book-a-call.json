@@ -68,11 +68,11 @@
       "settings": {
         "eyebrow": "Elma Vada · Dallas, Texas",
         "heading": "Request a Call",
-        "text": "<p>Leave your contact details and a convenient time to reach you. Our team will contact you to discuss your project.</p>",
-        "time_hint": "Please include your time zone.",
-        "button_label": "Request a Call",
-        "confirmation_note": "Submitting this request does not book a confirmed appointment.",
-        "success_message": "Thank you! We’ve received your call request. Our team will contact you using the details you provided.",
+        "text": "<p>Select a time that works for you, then enter your contact details and discussion topic in the booking form.</p>",
+        "booking_url": "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0U4Oa89u1HQUhcqMlBIHrilmpMLY2qpxEfmd6l6GSdxeaxAtHWvbKErmCxk3f6_Fe5oXE6c4x1",
+        "booking_frame_title": "Book a 15-minute consultation with Elma Vada",
+        "booking_fallback_label": "Open booking calendar",
+        "booking_fallback_url": "https://calendar.app.google/avbG35vjXtAqKM5p7",
         "image": "shopify://shop_images/personalized-recognition-gifts-award-pen-tumbler-desk-organizer.png",
         "image_alt": "Sample of personalized corporate gifts: engraved glass, tumbler, award, Parker pen, and wood holder, Elma Vada DFW"
       }

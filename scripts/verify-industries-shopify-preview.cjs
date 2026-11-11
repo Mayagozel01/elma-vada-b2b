@@ -28,7 +28,7 @@ async function main() {
     assert.equal(await page.evaluate(() => window.Shopify?.theme?.id), themeId, 'Requested unpublished theme must remain active');
     assert.equal((await page.locator('h1').textContent()).trim(), 'What does gifting need to do for your business?');
     const cardTitles = await page.locator('.b2b-card h3').allTextContents();
-    for (const title of ['Marketing & HR Teams', 'Education & Community Organizations', 'Real Estate & Client Services', 'Hospitality & Events', 'Military & Law Enforcement', 'Direct Sales & Distributed Teams', 'Healthcare & Medical Practices', 'Executive & Administrative Teams']) {
+    for (const title of ['Marketing & HR Teams', 'Education & Government Procurement', 'Real Estate & Client Services', 'Hospitality & Events', 'Military & Law Enforcement', 'Direct Sales & Distributed Teams', 'Healthcare & Medical Practices', 'Executive & Administrative Teams']) {
       assert(cardTitles.includes(title), `Missing card: ${title}`);
     }
     assert.equal(await page.getByText('Where would you like to go next?').count(), 0);

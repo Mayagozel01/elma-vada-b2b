@@ -153,7 +153,7 @@
 | Video cover (optional) (poster) | Не заполнено | Обложка видео: чёткий кадр того же ролика. Пустое поле использует превью видео. |
 | Photo description (alt) (image_alt) | Не заполнено | Опишите только видимое на английском. Для видео это описание сюжета; отдельного SEO/AEO alt нет. |
 | Photo brief (editor only) (photo_note) | Награда с именем и годами стажа. | Подсказка редактору, посетители её не видят. Это задание на съёмку, а не alt. |
-| Link text (link_label) | Explore this service | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
+| Link text (link_label) | See service award options | Проверьте видимый текст по требованиям Дарии: personalized gifts, лазерная гравировка, Dallas–Fort Worth, актуальные условия. |
 | Link (link) | /pages/service-awards | Откройте ссылку как посетитель; она должна вести на нужную страницу или форму без 404. |
 | Require approval before publishing (case studies) (requires_approval) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |
 | Facts and publication permission confirmed (approved) | false | Кейсы показывайте после подтверждения фактов и разрешения на публикацию. |

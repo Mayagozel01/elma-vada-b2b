@@ -1,5 +1,11 @@
 {
   "sections": {
+    "intro_banner": {
+      "type": "products-intro-banner",
+      "settings": {
+        "image_alt": "Leave a lasting impression with a gift that's both useful and meaningful. Make your congratulations and appreciation timeless with our enduring engraving. Write your next life chapter with a Parker Pen – sleek design, smooth ink, and an inspirational message. “Every story deserves to be written.” – Daria"
+      }
+    },
     "main": {
       "type": "catalog",
       "settings": {
@@ -23,6 +29,7 @@
     }
   },
   "order": [
+    "intro_banner",
     "main"
   ]
 }

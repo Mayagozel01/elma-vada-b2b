@@ -1,92 +1,91 @@
 {
   "sections": {
     "hero": {
-      "type": "b2b-page-hero",
+      "type": "procurement-hero",
+      "blocks": {
+        "highlight_1": {
+          "type": "highlight",
+          "settings": {
+            "text": "In-house engraving in DFW"
+          }
+        },
+        "highlight_2": {
+          "type": "highlight",
+          "settings": {
+            "text": "Individual names & organization logos"
+          }
+        },
+        "highlight_3": {
+          "type": "highlight",
+          "settings": {
+            "text": "Itemized quotes"
+          }
+        },
+        "highlight_4": {
+          "type": "highlight",
+          "settings": {
+            "text": "Nationwide shipping"
+          }
+        }
+      },
+      "block_order": [
+        "highlight_1",
+        "highlight_2",
+        "highlight_3",
+        "highlight_4"
+      ],
       "settings": {
-        "eyebrow": "Elma Vada · Dallas, Texas",
-        "heading": "Engraved recognition gifts and awards for government and public agencies",
-        "text": "<p>Elma Vada Studio provides individually engraved recognition gifts and awards for government and public agencies, with attention to budgets, deadlines, and purchasing requirements.</p>",
-        "show_image": true,
-        "media_type": "image",
+        "eyebrow": "Education & Government Procurement",
+        "heading": "Custom Engraved Awards & Gifts for Schools and Public Agencies",
+        "text": "<p>Elma Vada Studio provides custom engraved awards, personalized pens, glassware and promotional products for schools, universities, government agencies and community organizations.</p><p>With in-house laser engraving in Dallas–Fort Worth, Texas, we help coordinate organization logos, individual names, quantities and delivery requirements for recognition programs and public-sector purchasing.</p><p>Planning an appreciation event or preparing a formal purchasing request? Send us your project details or RFQ/RFP requirements for review.</p>",
         "image_alt": "",
-        "photo_note": "Choose a new approved real photo of individually engraved recognition gifts or awards. Do not use agency logos, names, or identifiable information without permission.",
-        "color_scheme": "cream",
-        "button_label": "Request a Quote",
+        "photo_note": "Choose an approved real photo of engraved awards or gifts. Do not use school or agency logos, names, or identifiable information without permission.",
+        "button_label": "Request a Procurement Quote",
         "button_link": "/pages/request-a-quote#ProjectForm",
-        "secondary_label": "",
-        "secondary_link": "",
-        "compact": false
+        "secondary_label": "Explore Products",
+        "secondary_link": "/collections/all",
+        "color_scheme": "cream"
       }
     },
-    "examples": {
-      "type": "b2b-content",
+    "scenarios": {
+      "type": "procurement-content",
       "blocks": {
         "item_1": {
           "type": "item",
           "settings": {
-            "title": "Years-of-Service Awards",
-            "eyebrow": "",
-            "text": "<p>Recognize service milestones with a consistent award style while personalizing each recipient and year.</p>",
-            "show_image": true,
-            "media_type": "image",
-            "image": "shopify://shop_images/five-ten-fifteen-year-service-awards-elma-vada-dfw.png",
-            "image_alt": "Three clear circular awards on wooden bases engraved with 5, 10 and 15 years of service.",
-            "photo_note": "Две-три награды за разные годы стажа.",
-            "link_label": "",
-            "link": "",
-            "requires_approval": false,
-            "approved": false
+            "title": "Teacher & Staff Appreciation",
+            "text": "<p>Personalized pens, bookmarks, drinkware and gift sets for Teacher Appreciation Week, administrative professionals and campus-wide staff recognition.</p>",
+            "image_alt": "Black pen with gold-tone trim beside an open black presentation case.",
+            "image": "shopify://shop_images/IMG_4625.jpg"
           }
         },
         "item_2": {
           "type": "item",
           "settings": {
-            "title": "Employee & Team Contributions",
-            "eyebrow": "",
-            "text": "<p>Thank employees and teams for contributions to the work of your agency or public organization.</p>",
-            "show_image": true,
-            "media_type": "image",
-            "image": "shopify://shop_images/personal-message-cube-v1.png",
-            "image_alt": "Wooden cube engraved with You Make a Difference and Thank You on adjacent faces.",
-            "photo_note": "Именной подарок сотруднику.",
-            "link_label": "",
-            "link": "",
-            "requires_approval": false,
-            "approved": false
+            "title": "Student & Academic Recognition",
+            "text": "<p>Engraved awards and keepsakes for graduation, academic achievement, athletic programs and student milestones, personalized with recipient names and your institution’s identity.</p>",
+            "image_alt": "Engraved Parker pen in an open gold-tone case with a personalized congratulations message.",
+            "image": "shopify://shop_images/Executive_Gifts.jpg"
           }
         },
         "item_3": {
           "type": "item",
           "settings": {
-            "title": "Retirements & Career Milestones",
-            "eyebrow": "",
-            "text": "<p>Mark a retirement, promotion, or career milestone with an engraved recognition piece.</p>",
-            "show_image": true,
-            "media_type": "image",
-            "image": "shopify://shop_images/professional-recognition-wooden-desk-holder-elma-vada-dfw.png",
-            "image_alt": "Wooden desk holder with an open top and engraved Alex Morgan and Team Lead lettering.",
-            "photo_note": "Готовые награды для профессионального события.",
-            "link_label": "",
-            "link": "",
-            "requires_approval": false,
-            "approved": false
+            "title": "Employee Service & Retirement",
+            "text": "<p>Recognition awards and gifts for years of service, promotions, retirement and public service contributions. Include names, titles, service years and a personal message.</p>",
+            "image_alt": "Two black pens with gold-tone trim in an open brown presentation case.",
+            "image": "shopify://shop_images/para.jpg",
+            "photo_note": "Replace with a real photo of a years-of-service or retirement award when one is available."
           }
         },
         "item_4": {
           "type": "item",
           "settings": {
-            "title": "Public Service Recognition",
-            "eyebrow": "",
-            "text": "<p>Prepare awards for service, contribution, and team achievement with approved names and wording.</p>",
-            "show_image": true,
-            "media_type": "image",
-            "image": "shopify://shop_images/personalized-recognition-gifts-award-pen-tumbler-desk-organizer.png",
-            "image_alt": "Personalized recognition gifts including an engraved glass award, custom tumbler, Parker pen in a presentation case, engraved desk organizer and personalized glass gift on a white background.",
-            "photo_note": "Табличка благодарности, имя только с разрешением.",
-            "link_label": "",
-            "link": "",
-            "requires_approval": false,
-            "approved": false
+            "title": "Donor, Volunteer & Community Recognition",
+            "text": "<p>Thank donors, volunteers, speakers and community partners with engraved awards and gifts for appreciation events, conferences and outreach programs.</p>",
+            "image_alt": "Gift bag, ribbon-tied box and personalized pen presented as a gift set.",
+            "image": "shopify://shop_images/gift.jpg",
+            "photo_note": "Replace with a real photo of a donor or volunteer recognition piece when one is available."
           }
         }
       },
@@ -97,99 +96,122 @@
         "item_4"
       ],
       "settings": {
-        "eyebrow": "",
-        "heading": "Recognition for service and contribution",
-        "text": "<p>Use individually engraved gifts and awards to recognize years of service, employee contributions, and team achievements.</p>",
-        "layout": "grid",
-        "columns": 4,
+        "heading": "Awards and Gifts for Your Program",
+        "text": "",
+        "layout": "photo_cards",
         "image_fit": "cover",
-        "color_scheme": "cream",
-        "require_photo": false,
+        "closing_text": "",
         "button_label": "",
-        "button_link": ""
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "white"
       }
     },
-    "process": {
-      "type": "b2b-content",
+    "products": {
+      "type": "procurement-content",
       "blocks": {
         "item_1": {
           "type": "item",
           "settings": {
-            "title": "Products & Quantity",
-            "eyebrow": "",
-            "text": "<p>Tell us which gift or award types you are considering and the estimated quantity.</p>",
-            "show_image": false,
-            "media_type": "image",
-            "image_alt": "",
-            "photo_note": "",
-            "link_label": "",
-            "link": "",
-            "requires_approval": false,
-            "approved": false
+            "title": "Awards & Recognition Pieces",
+            "text": "<p>Acrylic awards and engraved keepsakes for individual achievements and organized recognition programs.</p>",
+            "image_alt": "Clear circular Retirement Appreciation Award set in a curved wooden base.",
+            "image_asset": "procurement-appreciation-award.webp"
           }
         },
         "item_2": {
           "type": "item",
           "settings": {
-            "title": "Names & Engraving",
-            "eyebrow": "",
-            "text": "<p>Share recipient names and the text, dates, or wording needed for engraving.</p>",
-            "show_image": false,
-            "media_type": "image",
-            "image_alt": "",
-            "photo_note": "",
-            "link_label": "",
-            "link": "",
-            "requires_approval": false,
-            "approved": false
+            "title": "Pens & Writing Sets",
+            "text": "<p>Metal and wooden pens, Parker pens and writing sets with organization logos and individual names.</p>",
+            "image_alt": "Three wooden pen cases engraved with the same team name, each holding a personalized wooden pen.",
+            "image_asset": "industries-distributed.webp"
           }
         },
         "item_3": {
           "type": "item",
           "settings": {
-            "title": "Budget",
-            "eyebrow": "",
-            "text": "<p>Include a budget range to help identify suitable recognition options.</p>",
-            "show_image": false,
-            "media_type": "image",
+            "title": "Glassware & Drinkware",
+            "text": "<p>Personalized glasses, drinkware and gift sets for appreciation events and organizational milestones.</p>",
             "image_alt": "",
-            "photo_note": "",
-            "link_label": "",
-            "link": "",
-            "requires_approval": false,
-            "approved": false
+            "photo_note": "Add a real camera photo of engraved glassware or drinkware. No confirmed real photo exists in the project yet."
           }
         },
         "item_4": {
           "type": "item",
           "settings": {
-            "title": "Needed Date",
-            "eyebrow": "",
-            "text": "<p>Let us know the date the gifts or awards are needed so timing can be discussed.</p>",
-            "show_image": false,
-            "media_type": "image",
-            "image_alt": "",
-            "photo_note": "",
-            "link_label": "",
-            "link": "",
-            "requires_approval": false,
-            "approved": false
+            "title": "Desk Accessories & Promotional Products",
+            "text": "<p>Bookmarks, business card holders, wooden accessories and branded items for conferences, outreach and office use.</p>",
+            "image_alt": "Wooden keychain with a leather strap, engraved with a house emblem and a family name.",
+            "image_asset": "procurement-wood-keychain.webp"
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "heading": "Choose Your Products",
+        "text": "",
+        "layout": "photo_cards",
+        "image_fit": "cover",
+        "closing_text": "<p>Product availability, materials and suitable personalization methods are confirmed with your quote. If you need an item outside the catalog, send your specifications for a sourcing review.</p>",
+        "button_label": "Browse Products",
+        "button_link": "/collections/all",
+        "button_style": "outline",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "cream"
+      }
+    },
+    "purchasing": {
+      "type": "procurement-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "RFQs, RFPs & Invitations to Bid",
+            "text": "<p>We welcome purchasing inquiries and formal solicitations for products within our capabilities. Tell us the specifications, quantities, submission deadline and required documents so we can assess the opportunity.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Itemized Quotes",
+            "text": "<p>We provide quotations with product details, quantities, personalization options and unit pricing to support purchasing review. Include your budget range and required delivery date.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Purchase Orders",
+            "text": "<p>Purchase orders are subject to review. Full payment is required before production unless alternative terms have been agreed in writing.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Vendor Documents & Tax-Exempt Orders",
+            "text": "<p>Business information and W-9 are available for vendor review. We support qualifying tax-exempt purchases with appropriate documentation and review additional registration requirements for each opportunity.</p>",
+            "image_alt": ""
           }
         },
         "item_5": {
           "type": "item",
           "settings": {
-            "title": "Purchasing Requirements",
-            "eyebrow": "",
-            "text": "<p>Include any purchasing requirements or documents that should be considered with the request.</p>",
-            "show_image": false,
-            "media_type": "image",
-            "image_alt": "",
-            "photo_note": "",
-            "link_label": "",
-            "link": "",
-            "requires_approval": false,
-            "approved": false
+            "title": "Production & Delivery Planning",
+            "text": "<p>Production schedules depend on product availability, quantity and artwork approval. Tell us your event date and delivery destinations; requests for multiple campuses or offices are reviewed during quotation.</p>",
+            "image_alt": ""
           }
         }
       },
@@ -201,16 +223,150 @@
         "item_5"
       ],
       "settings": {
-        "eyebrow": "",
-        "heading": "Prepare your request",
-        "text": "<p>Include these details so we can understand the scope of your recognition project.</p>",
-        "layout": "grid",
-        "columns": 4,
+        "heading": "Purchasing Support for Schools and Public Agencies",
+        "text": "",
+        "layout": "text_cards",
         "image_fit": "cover",
-        "color_scheme": "white",
-        "require_photo": false,
+        "closing_text": "",
         "button_label": "",
-        "button_link": ""
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "Download Capability Statement",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "white"
+      }
+    },
+    "who": {
+      "type": "procurement-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "School districts, charter schools and private schools.",
+            "text": "",
+            "image_alt": ""
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Colleges, universities and community colleges.",
+            "text": "",
+            "image_alt": ""
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "City, county and other public agencies.",
+            "text": "",
+            "image_alt": ""
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Libraries, parks and community programs.",
+            "text": "",
+            "image_alt": ""
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "title": "Educational foundations, nonprofits and volunteer organizations.",
+            "text": "",
+            "image_alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5"
+      ],
+      "settings": {
+        "heading": "Who We Work With",
+        "text": "<p>We welcome inquiries from:</p>",
+        "layout": "list",
+        "image_fit": "cover",
+        "closing_text": "<p>Whether you need one retirement gift or a coordinated recognition program, share your requirements so we can review suitable options.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "cream"
+      }
+    },
+    "quote": {
+      "type": "procurement-content",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "title": "Products and quantities",
+            "text": "<p>The items you need and estimated order size.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "title": "Logos and personalization",
+            "text": "<p>Artwork, recipient names, titles, dates and engraving text.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "title": "Budget and specifications",
+            "text": "<p>Preferred materials, budget range and any required product details.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "title": "Required date and destinations",
+            "text": "<p>Event date, delivery deadline and shipping locations.</p>",
+            "image_alt": ""
+          }
+        },
+        "item_5": {
+          "type": "item",
+          "settings": {
+            "title": "Purchasing requirements",
+            "text": "<p>RFQ/RFP details, submission deadlines, vendor registration instructions or purchase order requirements.</p>",
+            "image_alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4",
+        "item_5"
+      ],
+      "settings": {
+        "heading": "Request a Quote for Your Project",
+        "text": "<p>Please include:</p>",
+        "layout": "steps",
+        "image_fit": "cover",
+        "closing_text": "<p>We will review your request and confirm suitable products, pricing, production timing and next steps.</p>",
+        "button_label": "Request a Procurement Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "",
+        "color_scheme": "white"
       }
     },
     "questions": {
@@ -219,29 +375,43 @@
         "question_1": {
           "type": "question",
           "settings": {
-            "question": "What should I include in a quote request?",
-            "answer": "<p>Share the product or award type, quantity, recipient names and engraving text, budget range, needed date, and any purchasing requirements.</p>"
+            "question": "Can each item have a different name?",
+            "answer": "<p>Yes. Eligible products can carry individual names, titles, service years or recognition messages within one coordinated order. Send your recipient list and personalization requirements.</p>"
           }
         },
         "question_2": {
           "type": "question",
           "settings": {
-            "question": "Can awards recognize different names and service years?",
-            "answer": "<p>Yes. Include the recipient list, names, service years, and engraving text in your request so the personalization can be discussed with the project details.</p>"
+            "question": "Can you engrave our school or agency logo?",
+            "answer": "<p>Yes, on compatible products. We review the artwork, engraving placement and design details before production. Digital proofs can be provided for approval.</p>"
           }
         },
         "question_3": {
           "type": "question",
           "settings": {
-            "question": "Can we share purchasing requirements?",
-            "answer": "<p>Yes. Include the requirements or documents with your request. We will review the project details and discuss the next step.</p>"
+            "question": "Is there a minimum order quantity?",
+            "answer": "<p>Many products are available without a minimum order quantity. Specialty items, larger orders and custom sourcing projects are quoted according to availability and specifications.</p>"
           }
         },
         "question_4": {
           "type": "question",
           "settings": {
-            "question": "How is the needed date handled?",
-            "answer": "<p>Share the date the recognition gifts or awards are needed. Timing depends on the product, quantity, personalization details, and availability; the project schedule is discussed with the quote.</p>"
+            "question": "Can you respond to our RFQ or RFP?",
+            "answer": "<p>We review solicitations relevant to our products and services. Send the requirements and deadline so we can determine whether we can submit a suitable quotation or proposal.</p>"
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "question": "How long will production take?",
+            "answer": "<p>Timing depends on the products, quantity, inventory and artwork approval. Production and shipping schedules are confirmed with your quote; share your required delivery date when you contact us.</p>"
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "question": "Can you deliver to several campuses or offices?",
+            "answer": "<p>We can review requests for multiple delivery locations. Include the quantities for each destination so packaging, shipping and associated costs can be included in your quote.</p>"
           }
         }
       },
@@ -249,18 +419,41 @@
         "question_1",
         "question_2",
         "question_3",
-        "question_4"
+        "question_4",
+        "question_5",
+        "question_6"
       ],
       "settings": {
-        "heading": "What else would you like to know?",
+        "heading": "Frequently Asked Questions",
         "structured_data": true
+      }
+    },
+    "cta": {
+      "type": "procurement-content",
+      "settings": {
+        "heading": "Tell Us What You Are Planning",
+        "text": "<p>From teacher appreciation gifts to public service awards, Elma Vada Studio can help you explore products and personalization for your organization.</p><p>Send your project details or purchasing requirements to start the conversation.</p>",
+        "layout": "text_cards",
+        "image_fit": "cover",
+        "closing_text": "",
+        "button_label": "Request a Procurement Quote",
+        "button_link": "/pages/request-a-quote#ProjectForm",
+        "button_style": "primary",
+        "secondary_label": "",
+        "secondary_link": "",
+        "signature": "Elma Vada Studio LLC · Dallas–Fort Worth, Texas",
+        "color_scheme": "navy"
       }
     }
   },
   "order": [
     "hero",
-    "examples",
-    "process",
-    "questions"
+    "scenarios",
+    "products",
+    "purchasing",
+    "who",
+    "quote",
+    "questions",
+    "cta"
   ]
 }

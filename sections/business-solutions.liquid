@@ -1,7 +1,7 @@
 <section class="section bg-navy" id="BusinessSolutions"><div class="container">
   <div style="text-align: center; max-width: 700px; margin: 0 auto 3.5rem;"><h2 class="section-title" style="color: #fff;">{{ section.settings.heading }}</h2><p class="section-subtitle" style="color: rgba(255,255,255,0.7); font-size: 1.125rem;">{{ section.settings.subheading }}</p></div>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.5rem;">
-    {%- for block in section.blocks -%}<div class="card" {{ block.shopify_attributes }} style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 2rem;">{% render 'b2b-image', media_type: block.settings.media_type, video: block.settings.video, poster: block.settings.poster, photo: block.settings.image, alt: block.settings.image_alt, title: block.settings.title, note: 'Реальное фото подарка для этого повода, без текста поверх изображения.' %}<h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-bottom: 0.75rem;">{{ block.settings.title }}</h3><p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">{{ block.settings.text }}</p>{% if block.settings.link != blank %}<a href="{{ block.settings.link }}" style="color: var(--color-gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;">{{ block.settings.link_label }} →</a>{% endif %}</div>{%- endfor -%}
+    {%- for block in section.blocks -%}<div class="card" {{ block.shopify_attributes }} style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 2rem;">{%- assign has_video = false -%}{%- if block.settings.media_type == 'video' and block.settings.video != blank -%}{%- assign has_video = true -%}{%- endif -%}{% if block.settings.neutral_media and block.settings.image == blank and has_video == false %}<div class="b2b-media" aria-hidden="true" style="aspect-ratio: 4 / 3; background: rgba(255,255,255,0.06);"></div>{% else %}{% render 'b2b-image', media_type: block.settings.media_type, video: block.settings.video, poster: block.settings.poster, photo: block.settings.image, alt: block.settings.image_alt, title: block.settings.title, note: 'Реальное фото подарка для этого повода, без текста поверх изображения.' %}{% endif %}<h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-bottom: 0.75rem;">{{ block.settings.title }}</h3><p style="color: rgba(255,255,255,0.6); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">{{ block.settings.text }}</p>{% if block.settings.link != blank %}<a href="{{ block.settings.link }}" style="color: var(--color-gold); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;">{{ block.settings.link_label }}&nbsp;→</a>{% endif %}</div>{%- endfor -%}
   </div>
 </div></section>
 {% schema %}
@@ -85,6 +85,12 @@
           "type": "text",
           "id": "image_alt",
           "label": "Photo description"
+        },
+        {
+          "type": "checkbox",
+          "id": "neutral_media",
+          "label": "Show neutral area when there is no photo",
+          "default": false
         }
       ]
     }

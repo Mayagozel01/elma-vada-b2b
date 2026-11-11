@@ -10,7 +10,7 @@
 .site-header-group {
     --header-active-logo-width: var(--header-logo-width, 200px);
     /* Reserve the image's natural height before the first layout measurement. */
-    --site-header-height: calc(var(--header-active-logo-width) / var(--header-logo-ratio, 1) + 17px);
+    --site-header-height: calc(var(--header-active-logo-width) / var(--header-logo-ratio, 1) + 17px + var(--header-trust-reserve, 0px));
 }
 
 .site-header {

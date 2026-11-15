@@ -27,6 +27,10 @@
       {%- endif -%}
     </nav>
     <div class="header__cta"><a href="/pages/book-a-call?request=call#CallRequestForm" class="btn btn--outline header__call">Request a Call</a><a href="{{ section.settings.cta_url | default: '/pages/request-a-quote#ProjectForm' }}" class="btn btn--primary">{{ section.settings.cta_label | default: 'Request a Quote' }}</a></div>
+    <a class="header__cart" href="{{ routes.cart_url }}" data-header-cart data-cart-json-url="{{ routes.cart_url }}.js" aria-label="Cart, {{ cart.item_count }} {% if cart.item_count == 1 %}item{% else %}items{% endif %}">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3h2l2.4 12h11.2l2-8H6"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+      <span>Cart</span><span class="header__cart-count" data-cart-count aria-hidden="true">{{ cart.item_count }}</span>
+    </a>
     <button class="header__hamburger" id="MobileMenuToggle" aria-expanded="false" aria-controls="MobileMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div></div>
   {%- assign trust_text = settings.header_trust_text | strip -%}
@@ -52,6 +56,7 @@
   {% render 'contact-links' %}
 </nav>
 <div class="site-header-spacer" aria-hidden="true"></div>
+<script src="{{ 'cart.js' | asset_url }}" defer></script>
 {% schema %}
 {"name":"Header","settings":[
 {"type":"header","content":"Logo image — left block"},

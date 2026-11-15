@@ -1,0 +1,21 @@
+{%- comment -%}
+  Exact option values only: never infer from the product title or a generic "None".
+  Additional opt-out values can be configured per product without changing variants.
+{%- endcomment -%}
+{%- liquid
+  assign disabled = false
+  assign standard_values = 'no engraving|without engraving|unengraved|no personalization|without personalization|без гравировки' | split: '|'
+  for option in engraving_variant.options
+    assign normalized_option = option | strip | downcase
+    if standard_values contains normalized_option
+      assign disabled = true
+    endif
+    for value in engraving_product.metafields.custom.personalization_no_engraving_values.value
+      assign normalized_value = value | strip | downcase
+      if normalized_value != blank and normalized_option == normalized_value
+        assign disabled = true
+      endif
+    endfor
+  endfor
+  echo disabled
+-%}

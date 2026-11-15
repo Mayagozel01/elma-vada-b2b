@@ -15,6 +15,7 @@
     const logo = group.querySelector('.header__logo');
     const nav = group.querySelector('.header__nav');
     const cta = group.querySelector('.header__cta');
+    const cart = group.querySelector('[data-header-cart]');
     const hamburger = group.querySelector('.header__hamburger');
     const mobileMenu = group.querySelector('.mobile-menu');
     if (!header || !inner || !logo || !nav || !cta || !hamburger || !mobileMenu) return;
@@ -44,7 +45,7 @@
       const navWidth = links.reduce((sum, link) => sum + link.getBoundingClientRect().width, 0) +
         navGap * Math.max(0, links.length - 1);
       const needed = logo.getBoundingClientRect().width + navWidth +
-        cta.getBoundingClientRect().width + gap * 2;
+        cta.getBoundingClientRect().width + (cart?.getBoundingClientRect().width || 0) + gap * (cart ? 3 : 2);
       const compact = needed > inner.clientWidth + 1;
       header.classList.toggle('is-compact', compact);
       if (compact && (nav.contains(document.activeElement) ||
@@ -63,6 +64,8 @@
     const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
     const observer = new ResizeObserver(scheduleLayout);
     observer.observe(header);
+    if (cart) observer.observe(cart);
+    document.addEventListener('elma:cart-updated', scheduleLayout, {signal});
     window.addEventListener('resize', scheduleLayout, { passive: true, signal });
     window.addEventListener('scroll', onScroll, { passive: true, signal });
     logo.querySelector('img')?.addEventListener('load', scheduleLayout, { signal });

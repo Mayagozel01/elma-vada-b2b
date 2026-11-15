@@ -36,6 +36,63 @@
     {% if template.name == 'collection' or template.name == 'product' or template.name == 'cart' %}
       {{ 'commerce.css' | asset_url | stylesheet_tag }}
     {% endif %}
+    {% if request.page_type == 'page' and page.handle == 'our-work' %}
+<script>
+(() => {
+  const phrase = 'the pens were more than what i expected';
+
+  function patch(utils) {
+    if (!utils || typeof utils.getReviews !== 'function') return utils;
+    if (utils.getReviews.elmaFiltered) return utils;
+
+    const original = utils.getReviews;
+
+    async function filteredReviews(params, settings) {
+      const reviews = await original.call(this, params, settings);
+
+      if (params.carousel_type !== 'cards' || !Array.isArray(reviews)) {
+        return reviews;
+      }
+
+      return reviews.filter(review => {
+        const html = String(review.body_html || review.body || '');
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        const text = (doc.body.textContent || '')
+          .replace(/\s+/g, ' ')
+          .trim()
+          .toLowerCase();
+
+        return !text.includes(phrase);
+      });
+    }
+
+    filteredReviews.elmaFiltered = true;
+    utils.getReviews = filteredReviews;
+    return utils;
+  }
+
+  if (window.jdgmCarouselUtils) {
+    patch(window.jdgmCarouselUtils);
+  } else {
+    Object.defineProperty(window, 'jdgmCarouselUtils', {
+      configurable: true,
+      enumerable: true,
+      get() {
+        return undefined;
+      },
+      set(value) {
+        Object.defineProperty(window, 'jdgmCarouselUtils', {
+          value: patch(value),
+          writable: true,
+          configurable: true,
+          enumerable: true
+        });
+      }
+    });
+  }
+})();
+</script>
+{% endif %}
   </head>
 
   <body class="page-{{ template.name }}{% if template.suffix %}-{{ template.suffix }}{% endif %}">

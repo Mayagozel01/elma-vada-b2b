@@ -6,7 +6,10 @@
   if section.settings.enable_personalization and product.metafields.custom.personalization_enabled.value == true
     assign personalization = true
   endif
+  assign personalization_required = product.metafields.custom.personalization_required.value
+  assign personalization_max_length = product.metafields.custom.personalization_max_length.value | default: 0 | plus: 0
 -%}
+{%- capture selected_engraving_disabled -%}{%- render 'engraving-disabled', engraving_variant: selected_variant, engraving_product: product -%}{%- endcapture -%}
 <section class="product-detail b2b-section" data-product-detail>
   <div class="container">
     <nav class="commerce-breadcrumbs" aria-label="Breadcrumb">
@@ -59,10 +62,11 @@
           {% if form.errors %}<div class="commerce-message" role="alert">{{ form.errors | default_errors }}</div>{% endif %}
           <div class="commerce-field" {% if product.has_only_default_variant %}hidden{% endif %}>
             <label for="ProductVariant-{{ section.id }}">{{ section.settings.variant_label | escape }}</label>
-            <select id="ProductVariant-{{ section.id }}" name="id" data-variant-select>
+            <select id="ProductVariant-{{ section.id }}" name="id" data-variant-select {% if personalization %}disabled{% endif %}>
               {% for variant in product.variants %}
                 {% capture variant_stock_status %}{% render 'inventory-status', inventory_variant: variant, show_inventory_quantity: settings.show_inventory_quantity, low_stock_threshold: settings.low_stock_threshold %}{% endcapture %}
                 <option value="{{ variant.id }}" {% if variant.id == selected_variant.id %}selected{% endif %}
+                  data-engraving-disabled="{% render 'engraving-disabled', engraving_variant: variant, engraving_product: product %}"
                   data-price="{{ variant.price | money | escape }}" data-compare="{{ variant.compare_at_price | money | escape }}"
                   data-on-sale="{% if variant.compare_at_price > variant.price %}true{% else %}false{% endif %}"
                   data-stock-status="{{ variant_stock_status | strip | escape }}"
@@ -72,17 +76,26 @@
                 </option>
               {% endfor %}
             </select>
+            {% if personalization %}<input type="hidden" name="id" value="{{ selected_variant.id }}" data-variant-fallback>{% endif %}
           </div>
           <div class="commerce-field">
             <label for="ProductQuantity-{{ section.id }}">Quantity</label>
             <input id="ProductQuantity-{{ section.id }}" name="quantity" type="number" value="{{ selected_variant.quantity_rule.min | default: 1 }}" min="{{ selected_variant.quantity_rule.min | default: 1 }}" step="{{ selected_variant.quantity_rule.increment | default: 1 }}" {% if selected_variant.quantity_rule.max != blank %}max="{{ selected_variant.quantity_rule.max }}"{% endif %} data-product-quantity>
           </div>
           {% if personalization %}
-            <div class="commerce-field product-personalization">
-              <label for="ProductEngraving-{{ section.id }}">{{ section.settings.personalization_label | escape }}</label>
-              <input type="text" id="ProductEngraving-{{ section.id }}" name="properties[Engraving text]" maxlength="{{ section.settings.personalization_limit }}" aria-describedby="ProductEngravingHelp-{{ section.id }}" data-engraving-text>
-              {% if product.metafields.custom.personalization_note.value != blank %}<p id="ProductEngravingHelp-{{ section.id }}" class="commerce-note">{{ product.metafields.custom.personalization_note.value | escape }}</p>
-              {% else %}<p id="ProductEngravingHelp-{{ section.id }}" class="commerce-note">Enter the text exactly as you would like it engraved. For logos or different names across a batch, request a bulk quote.</p>{% endif %}
+            <div class="commerce-field product-personalization" data-personalization {% if selected_engraving_disabled == 'true' %}hidden{% endif %}>
+              <label for="ProductEngraving-{{ section.id }}">Engraving text</label>
+              <input type="text" id="ProductEngraving-{{ section.id }}" name="properties[Engraving text]"
+                placeholder="Enter the name or text to engrave" autocomplete="off" autocapitalize="off" spellcheck="false"
+                {% if personalization_max_length > 0 %}maxlength="{{ personalization_max_length }}" data-max-length="{{ personalization_max_length }}"{% endif %}
+                {% if selected_engraving_disabled == 'true' %}disabled{% elsif personalization_required == true %}required{% endif %}
+                data-required="{% if personalization_required == true %}true{% else %}false{% endif %}"
+                aria-describedby="ProductEngravingHelp-{{ section.id }} ProductEngravingRules-{{ section.id }} ProductEngravingBatch-{{ section.id }} ProductEngravingError-{{ section.id }}{% if product.metafields.custom.personalization_note.value != blank %} ProductEngravingNote-{{ section.id }}{% endif %}" data-engraving-text>
+              <p id="ProductEngravingHelp-{{ section.id }}" class="commerce-note">Please check spelling and capitalization before adding to cart.</p>
+              <p id="ProductEngravingRules-{{ section.id }}" class="commerce-note">{% if personalization_required == true %}Required for engraving.{% else %}Optional.{% endif %}{% if personalization_max_length > 0 %} Maximum {{ personalization_max_length }} characters.{% endif %}</p>
+              <p id="ProductEngravingBatch-{{ section.id }}" class="commerce-note">If you order more than one unit, this text will be engraved on every unit in this cart item. For different names, use {% if section.settings.show_bulk_quote %}<a href="#ProductQuote-{{ section.id }}">Request a Bulk Quote</a>{% else %}Request a Bulk Quote{% endif %}.</p>
+              {% if product.metafields.custom.personalization_note.value != blank %}<p id="ProductEngravingNote-{{ section.id }}" class="commerce-note">{{ product.metafields.custom.personalization_note.value | escape }}</p>{% endif %}
+              <p id="ProductEngravingError-{{ section.id }}" class="commerce-note product-personalization__error" data-engraving-error role="alert" hidden></p>
             </div>
           {% endif %}
           {% if product.requires_selling_plan %}
@@ -91,7 +104,7 @@
           <button type="submit" class="btn btn--primary" data-add-to-cart data-purchase-label="{{ section.settings.buy_label | escape }}" {% if selected_variant.available == false or product.requires_selling_plan %}disabled{% endif %} data-subscription-only="{{ product.requires_selling_plan }}">{% if product.requires_selling_plan %}Contact us to order{% elsif selected_variant.available %}{{ section.settings.buy_label | escape }}{% else %}Sold out{% endif %}</button>
           <input type="hidden" name="return_to" value="{{ routes.cart_url }}">
           <noscript>
-            <p class="commerce-note">To refresh the price and availability, open a variant below.</p>
+            <p class="commerce-note">{% if personalization %}Choose a variant below before adding to cart. The page will reload with its engraving options, price and availability.{% else %}To refresh the price and availability, open a variant below.{% endif %}</p>
             {% for variant in product.variants %}<a class="product-variant-fallback" href="{{ product.url }}?variant={{ variant.id }}">{{ variant.title | escape }} — {{ variant.price | money }}</a>{% endfor %}
           </noscript>
         {% endform %}
@@ -171,9 +184,7 @@
   "settings": [
     {"type":"text","id":"variant_label","label":"Variant label","default":"Color / options"},
     {"type":"text","id":"buy_label","label":"Purchase button","default":"Add to cart"},
-    {"type":"checkbox","id":"enable_personalization","label":"Allow engraving text field","default":true,"info":"Only appears when this product's custom.personalization_enabled metafield is true. Set its price and engraving terms first."},
-    {"type":"text","id":"personalization_label","label":"Personalization label","default":"Engraving text (optional)"},
-    {"type":"range","id":"personalization_limit","label":"Maximum engraving characters","min":20,"max":200,"step":10,"default":80},
+    {"type":"checkbox","id":"enable_personalization","label":"Allow engraving text field","default":true,"info":"Requires custom.personalization_enabled = true on the product. Configure custom.personalization_required and custom.personalization_max_length per product; no default character limit."},
     {"type":"checkbox","id":"show_bulk_quote","label":"Show corporate quote form","default":true},
     {"type":"text","id":"bulk_heading","label":"Corporate callout heading","default":"Ordering for your team?"},
     {"type":"richtext","id":"bulk_text","label":"Corporate callout text","default":"<p>For batch personalization, company logos or custom packaging, request a project-specific quote.</p>"},

@@ -1,4 +1,4 @@
-/* Product gallery, variant state and copyable Shopify Forms context. */
+/* Product gallery, variant state, engraving validation and Shopify Forms context. */
 (() => {
   'use strict';
   const mounted = new Map();
@@ -9,6 +9,9 @@
     const on = (element, event, callback) => element?.addEventListener(event, callback, {signal: abort.signal});
     const variantSelect = root.querySelector('[data-variant-select]');
     const quantity = root.querySelector('[data-product-quantity]');
+    const engraving = root.querySelector('[data-engraving-text]');
+    const personalization = root.querySelector('[data-personalization]');
+    const engravingError = root.querySelector('[data-engraving-error]');
     const quoteContext = root.querySelector('[data-quote-context]');
     const copyProductDetails = root.querySelector('[data-copy-product-details]');
     const copyProductStatus = root.querySelector('[data-copy-product-status]');
@@ -18,6 +21,34 @@
     const dialog = root.querySelector('[data-product-lightbox]');
     let lightboxOpener;
 
+    function validateEngraving(showError = false) {
+      if (!engraving) return true;
+      let message = '';
+      if (!engraving.disabled) {
+        const maximum = Number(engraving.dataset.maxLength) || 0;
+        if (engraving.required && !engraving.value.trim()) {
+          message = 'Please enter the name or text to engrave.';
+        } else if (maximum > 0 && engraving.value.length > maximum) {
+          message = 'Please use ' + maximum + ' characters or fewer for engraving.';
+        }
+      }
+      engraving.setCustomValidity(message);
+      const visible = showError && Boolean(message);
+      engravingError.textContent = visible ? message : '';
+      engravingError.hidden = !visible;
+      if (visible) engraving.setAttribute('aria-invalid', 'true');
+      else engraving.removeAttribute('aria-invalid');
+      return !message;
+    }
+    function syncEngraving(option) {
+      if (!engraving) return;
+      const disabled = option.dataset.engravingDisabled === 'true';
+      personalization.hidden = disabled;
+      engraving.disabled = disabled;
+      engraving.required = !disabled && engraving.dataset.required === 'true';
+      // Preserve the draft while excluding it from the native POST for opt-out variants.
+      validateEngraving(!engravingError.hidden);
+    }
     function showImage(id) {
       if (!id || !slides.some(slide => slide.dataset.galleryImage === id)) return;
       slides.forEach(slide => { slide.hidden = slide.dataset.galleryImage !== id; });
@@ -70,6 +101,7 @@
       quantity.value = String(value);
       showImage(option.dataset.image);
       syncQuote();
+      syncEngraving(option);
       if (updateUrl) {
         const url = new URL(window.location.href);
         url.searchParams.set('variant', option.value);
@@ -78,6 +110,27 @@
     }
     const buy = root.querySelector('[data-add-to-cart]');
     if (buy) buy.dataset.buyLabel = buy.dataset.purchaseLabel || 'Add to cart';
+    const variantFallback = root.querySelector('[data-variant-fallback]');
+    if (variantFallback) {
+      variantSelect.disabled = false;
+      variantFallback.disabled = true;
+    }
+    if (engraving) {
+      // Validate the whole value instead of silently truncating a pasted name.
+      // The Liquid maxlength remains a native fallback when JavaScript is unavailable.
+      engraving.removeAttribute('maxlength');
+      on(engraving, 'input', () => validateEngraving(true));
+      on(engraving, 'invalid', () => validateEngraving(true));
+      on(engraving.form, 'submit', event => {
+        syncEngraving(variantSelect.selectedOptions[0]);
+        if (!validateEngraving(true)) {
+          event.preventDefault();
+          engraving.reportValidity();
+          engraving.focus();
+        }
+        // Successful submissions stay native: id, quantity and ALL properties are sent.
+      });
+    }
     on(variantSelect, 'change', () => updateVariant());
     on(quantity, 'input', syncQuote);
     on(root.querySelector('[data-bulk-link]'), 'click', syncQuote);
@@ -124,6 +177,7 @@
         updateVariant(false);
       }
     });
+    on(window, 'pageshow', () => updateVariant(false));
     updateVariant(false);
     mounted.set(root, () => { if (dialog?.open) dialog.close(); abort.abort(); });
   }

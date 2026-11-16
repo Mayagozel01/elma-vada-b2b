@@ -66,6 +66,14 @@
     ]
   },
   {
+    "name": "Gift offers & quantity savings",
+    "settings": [
+      {"type":"checkbox","id":"enable_product_gift_offers","label":"Show product gift offers","default":false,"info":"Requires custom.gift_offers on products and configured, enabled gift offers."},
+      {"type":"checkbox","id":"enable_cart_gift_offers","label":"Enable cart gift offers","default":false,"info":"First move the existing Shopify Forms popup off the cart in Apps > Forms. Includes one automatic opening per tab session after 5 seconds."},
+      {"type":"checkbox","id":"enable_volume_pricing","label":"Show quantity savings profiles","default":false,"info":"Enable only after matching Shopify discounts have been configured and verified. The theme does not apply discounts."}
+    ]
+  },
+  {
     "name": "Favicon",
     "settings": [
       {

@@ -1,0 +1,27 @@
+{%- if settings.enable_product_gift_offers and product.metafields.custom.gift_offers.value != blank -%}
+  {%- capture cards -%}
+    {%- assign seen = '|' -%}
+    {%- for offer in product.metafields.custom.gift_offers.value -%}
+      {%- assign token = offer.variant.value.id | prepend: '|' | append: '|' -%}
+      {%- unless seen contains token -%}
+        {%- capture eligible_variants -%}
+          {%- for variant in product.variants -%}
+            {%- capture eligible -%}{%- render 'gift-offer-eligible', offer: offer, base_product: product, base_variant: variant -%}{%- endcapture -%}
+            {%- if eligible == 'true' and variant.available -%}|{{ variant.id }}|{%- endif -%}
+          {%- endfor -%}
+        {%- endcapture -%}
+        {%- if eligible_variants != blank -%}
+          {%- render 'gift-offer-card', offer: offer, eligible_variants: eligible_variants -%}
+          {%- assign seen = seen | append: token -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- if cards != blank -%}
+    <fieldset class="gift-offers" data-product-offers hidden>
+      <legend>Complete your gift</legend>
+      <p class="commerce-note">Choose any extras and their quantities. Only selected extras will be added.</p>
+      {{ cards }}
+    </fieldset>
+  {%- endif -%}
+{%- endif -%}

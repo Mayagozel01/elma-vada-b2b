@@ -1,0 +1,1 @@
+{%- for item in cart.items -%}{{ item.key | escape }}:{{ item.quantity }};{%- endfor -%}|{{ cart.total_price }}|{{ cart.currency.iso_code }}

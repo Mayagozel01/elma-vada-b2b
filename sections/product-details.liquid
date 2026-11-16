@@ -66,6 +66,7 @@
               {% for variant in product.variants %}
                 {% capture variant_stock_status %}{% render 'inventory-status', inventory_variant: variant, show_inventory_quantity: settings.show_inventory_quantity, low_stock_threshold: settings.low_stock_threshold %}{% endcapture %}
                 <option value="{{ variant.id }}" {% if variant.id == selected_variant.id %}selected{% endif %}
+                  data-gift-addon="{{ variant.metafields.custom.is_gift_addon.value | default: false }}"
                   data-engraving-disabled="{% render 'engraving-disabled', engraving_variant: variant, engraving_product: product %}"
                   data-price="{{ variant.price | money | escape }}" data-compare="{{ variant.compare_at_price | money | escape }}"
                   data-on-sale="{% if variant.compare_at_price > variant.price %}true{% else %}false{% endif %}"
@@ -101,6 +102,10 @@
           {% if product.requires_selling_plan %}
             <p class="commerce-message">This product requires a subscription. Contact us to discuss ordering options.</p>
           {% endif %}
+          {% render 'product-volume-pricing', product: product, selected_variant: selected_variant, cart: cart, settings: settings %}
+          {% render 'product-gift-offers', product: product, settings: settings %}
+          <div class="commerce-message" data-add-message role="alert" tabindex="-1" hidden><p data-add-error-text></p><a href="{{ routes.cart_url }}">Review cart</a></div>
+          <span hidden data-product-cart-routes data-add-url="{{ routes.cart_add_url }}.js" data-cart-url="{{ routes.cart_url }}"></span>
           <button type="submit" class="btn btn--primary" data-add-to-cart data-purchase-label="{{ section.settings.buy_label | escape }}" {% if selected_variant.available == false or product.requires_selling_plan %}disabled{% endif %} data-subscription-only="{{ product.requires_selling_plan }}">{% if product.requires_selling_plan %}Contact us to order{% elsif selected_variant.available %}{{ section.settings.buy_label | escape }}{% else %}Sold out{% endif %}</button>
           <input type="hidden" name="return_to" value="{{ routes.cart_url }}">
           <noscript>

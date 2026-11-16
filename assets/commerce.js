@@ -19,7 +19,40 @@
     const slides = [...root.querySelectorAll('[data-gallery-image]')];
     const thumbs = [...root.querySelectorAll('[data-gallery-thumb]')];
     const dialog = root.querySelector('[data-product-lightbox]');
+    const offers = root.querySelector('[data-product-offers]');
+    const volume = root.querySelector('[data-volume-pricing]');
+    const purchaseForm = root.querySelector('.product-purchase');
     let lightboxOpener;
+
+    function syncExtras(option) {
+      if (window.elmaCart?.isLocked()) return;
+      if (offers) {
+        let visible = false;
+        offers.querySelectorAll('[data-gift-offer]').forEach(card => {
+          const eligible = card.dataset.eligibleVariants.includes('|' + option.value + '|');
+          card.hidden = !eligible;
+          const choice = card.querySelector('[data-offer-choice]');
+          if (!eligible) choice.checked = false;
+          choice.disabled = !eligible;
+          card.querySelector('[data-offer-quantity]').disabled = !eligible || !choice.checked;
+          visible ||= eligible;
+        });
+        offers.hidden = !visible || !window.elmaCart;
+      }
+      if (volume) {
+        volume.hidden = option.dataset.giftAddon === 'true';
+        const count = Number(volume.dataset.existingQuantity) + (Number(quantity.value) || 0);
+        const rows = [...volume.querySelectorAll('[data-volume-tier]')];
+        const active = rows.filter(row => count >= Number(row.dataset.volumeTier)).at(-1);
+        rows.forEach(row => {
+          if (row === active) row.setAttribute('aria-current', 'true');
+          else row.removeAttribute('aria-current');
+        });
+        const summary = volume.querySelector('[data-volume-summary]');
+        summary.textContent = 'With this addition: ' + count + (count === 1 ? ' unit' : ' units') + ' of this product.';
+        summary.hidden = false;
+      }
+    }
 
     function validateEngraving(showError = false) {
       if (!engraving) return true;
@@ -71,6 +104,7 @@
       }
     }
     function updateVariant(updateUrl = true) {
+      if (window.elmaCart?.isLocked()) return;
       const option = variantSelect?.selectedOptions[0];
       if (!option) return;
       const available = option.dataset.available === 'true';
@@ -102,6 +136,7 @@
       showImage(option.dataset.image);
       syncQuote();
       syncEngraving(option);
+      syncExtras(option);
       if (updateUrl) {
         const url = new URL(window.location.href);
         url.searchParams.set('variant', option.value);
@@ -121,18 +156,56 @@
       engraving.removeAttribute('maxlength');
       on(engraving, 'input', () => validateEngraving(true));
       on(engraving, 'invalid', () => validateEngraving(true));
-      on(engraving.form, 'submit', event => {
-        syncEngraving(variantSelect.selectedOptions[0]);
-        if (!validateEngraving(true)) {
-          event.preventDefault();
-          engraving.reportValidity();
-          engraving.focus();
-        }
-        // Successful submissions stay native: id, quantity and ALL properties are sent.
-      });
     }
+    // Extend the existing submit path, including its engraving validation.
+    // With no selected extras, retain the native product POST.
+    on(purchaseForm, 'submit', event => {
+      if (window.elmaCart?.isLocked()) { event.preventDefault(); return; }
+      const option = variantSelect.selectedOptions[0];
+      syncEngraving(option);
+      if (!validateEngraving(true)) {
+        event.preventDefault();
+        engraving.reportValidity();
+        engraving.focus();
+        return;
+      }
+      if (!purchaseForm.reportValidity()) { event.preventDefault(); return; }
+      const selected = [...(offers?.querySelectorAll('[data-gift-offer]') || [])].filter(card =>
+        !card.hidden && card.querySelector('[data-offer-choice]').checked && !card.querySelector('[data-offer-choice]').disabled);
+      if (!selected.length) {
+        window.elmaCart?.lockNative();
+        return;
+      }
+      event.preventDefault();
+      if (!window.elmaCart || option.dataset.available !== 'true' || buy.dataset.subscriptionOnly === 'true') return;
+      const data = new FormData(purchaseForm);
+      const properties = Object.create(null);
+      for (const [key, value] of data) {
+        const property = key.match(/^properties\[(.+)\]$/);
+        if (property) {
+          // File personalizations need a separate multipart flow; never drop them.
+          if (typeof value !== 'string') {
+            const message = purchaseForm.querySelector('[data-add-message]');
+            message.querySelector('[data-add-error-text]').textContent = 'Please add this personalized product first, then choose extras in your cart.';
+            message.hidden = false;
+            message.focus();
+            return;
+          }
+          properties[property[1]] = value;
+        }
+      }
+      const main = {id: data.get('id'), quantity: Number(data.get('quantity')), properties};
+      if (data.get('selling_plan')) main.selling_plan = data.get('selling_plan');
+      const items = [main, ...selected.map(card => ({
+        id: card.dataset.variantId, quantity: Number(card.querySelector('[data-offer-quantity]').value),
+        properties: {_elma_gift_offer: 'true'}
+      }))];
+      const routes = root.querySelector('[data-product-cart-routes]').dataset;
+      window.elmaCart.addItems({form: purchaseForm, endpoint: routes.addUrl, items, cartUrl: routes.cartUrl});
+    });
+    on(offers, 'change', () => syncExtras(variantSelect.selectedOptions[0]));
     on(variantSelect, 'change', () => updateVariant());
-    on(quantity, 'input', syncQuote);
+    on(quantity, 'input', () => { syncQuote(); syncExtras(variantSelect.selectedOptions[0]); });
     on(root.querySelector('[data-bulk-link]'), 'click', syncQuote);
     on(copyProductDetails, 'click', async () => {
       syncQuote();
@@ -177,7 +250,7 @@
         updateVariant(false);
       }
     });
-    on(window, 'pageshow', () => updateVariant(false));
+    on(window, 'pageshow', () => { if (!window.elmaCart?.isLocked()) updateVariant(false); });
     updateVariant(false);
     mounted.set(root, () => { if (dialog?.open) dialog.close(); abort.abort(); });
   }

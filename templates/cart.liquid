@@ -2,6 +2,7 @@
   <div class="container">
     <nav class="commerce-breadcrumbs" aria-label="Breadcrumb"><a href="{{ routes.all_products_collection_url }}">Catalog</a><span aria-hidden="true">/</span><span aria-current="page">Cart</span></nav>
     <h1>Your cart</h1>
+    {% render 'cart-gift-offers', cart: cart, settings: settings, routes: routes %}
     {% if cart.item_count > 0 %}
       <form action="{{ routes.cart_url }}" method="post" data-cart-form
         data-cart-update-url="{{ routes.cart_update_url }}.js" data-cart-change-url="{{ routes.cart_change_url }}.js">

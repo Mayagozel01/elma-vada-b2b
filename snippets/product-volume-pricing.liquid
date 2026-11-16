@@ -1,0 +1,38 @@
+{%- liquid
+  assign profile = product.metafields.custom.volume_profile.value
+  assign valid = false
+  if settings.enable_volume_pricing and profile.enabled.value == true and profile.tiers.value.size > 0
+    assign valid = true
+  endif
+  assign previous_minimum = 0
+  assign previous_discount = 0
+  for tier in profile.tiers.value
+    assign minimum = tier.minimum | plus: 0
+    assign whole_minimum = minimum | floor
+    assign discount = tier.percent_off | plus: 0
+    if minimum != tier.minimum or discount != tier.percent_off or minimum != whole_minimum or minimum <= previous_minimum or discount <= previous_discount or discount >= 100
+      assign valid = false
+    endif
+    assign previous_minimum = minimum
+    assign previous_discount = discount
+  endfor
+  assign existing_quantity = 0
+  for item in cart.items
+    if item.product.id == product.id
+      unless item.variant.metafields.custom.is_gift_addon.value == true or item.properties._elma_gift_offer == 'true'
+        assign existing_quantity = existing_quantity | plus: item.quantity
+      endunless
+    endif
+  endfor
+-%}
+{%- if valid -%}
+  <aside class="volume-pricing" data-volume-pricing data-existing-quantity="{{ existing_quantity }}" {% if selected_variant.metafields.custom.is_gift_addon.value == true %}hidden{% endif %}>
+    <h2>Buy more, save more</h2>
+    <table><caption class="visually-hidden">Quantity discounts for this product</caption><thead><tr><th scope="col">Quantity</th><th scope="col">Savings</th></tr></thead><tbody>
+      {% for tier in profile.tiers.value %}<tr data-volume-tier="{{ tier.minimum }}"><th scope="row">{{ tier.minimum }}+</th><td>{{ tier.percent_off }}% off</td></tr>{% endfor %}
+    </tbody></table>
+    <p class="commerce-note">Different engraving texts count together for this product. Extras do not count.</p>
+    <p class="commerce-note" data-volume-summary aria-live="polite" hidden></p>
+    <p class="commerce-note">Discounts are confirmed in your cart and at checkout.</p>
+  </aside>
+{%- endif -%}

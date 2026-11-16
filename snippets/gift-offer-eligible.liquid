@@ -1,0 +1,42 @@
+{%- comment -%}
+  Shared product/cart eligibility. Unconfigured packaging is deliberately unknown.
+  An add-on variant must be explicitly classified in Admin; properties never price it.
+{%- endcomment -%}
+{%- liquid
+  assign eligible = true
+  assign addon = offer.variant.value
+  assign addon_product = addon.product
+  assign photo = offer.image.value | default: addon.featured_image | default: addon_product.featured_image
+  if offer.enabled.value != true or addon == blank or addon.available != true or photo == blank
+    assign eligible = false
+  endif
+  if addon.metafields.custom.is_gift_addon.value != true or base_variant.metafields.custom.is_gift_addon.value == true
+    assign eligible = false
+  endif
+  if addon_product.requires_selling_plan or base_product.requires_selling_plan or addon.id == base_variant.id
+    assign eligible = false
+  endif
+  if offer.kind.value == 'gift_box'
+    assign box_included = base_variant.metafields.custom.includes_gift_box.value
+    if box_included == nil
+      assign box_included = base_product.metafields.custom.includes_gift_box.value
+    endif
+    unless box_included == false
+      assign eligible = false
+    endunless
+  elsif offer.kind.value != 'other'
+    assign eligible = false
+  endif
+  if addon_product.metafields.custom.personalization_enabled.value == true or addon_product.metafields.custom.personalization_required.value == true
+    capture engraving_disabled
+      render 'engraving-disabled', engraving_variant: addon, engraving_product: addon_product
+    endcapture
+    unless engraving_disabled == 'true'
+      assign eligible = false
+    endunless
+  endif
+  if addon.metafields.custom.requires_personalization.value == true
+    assign eligible = false
+  endif
+  echo eligible
+-%}

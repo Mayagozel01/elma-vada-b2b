@@ -42,10 +42,78 @@
   function lockForm(form) {
     locked = true;
     countRequest?.abort();
+    document.dispatchEvent(new CustomEvent('elma:cart-busy'));
     form.setAttribute('aria-busy', 'true');
     form.querySelectorAll('input, button').forEach(control => { control.disabled = true; });
     form.querySelectorAll('[data-cart-remove]').forEach(link => link.setAttribute('aria-disabled', 'true'));
   }
+
+  // One mutation lock for the cart, the product form and gift offers. A failed
+  // response can follow a partial Shopify mutation, so only a fresh GET unlocks.
+  window.elmaCart = {
+    isLocked: () => locked,
+    lockNative() {
+      if (locked) return false;
+      locked = true;
+      countRequest?.abort();
+      document.dispatchEvent(new CustomEvent('elma:cart-busy'));
+      return true;
+    },
+    async addItems({form, endpoint, items, cartUrl}) {
+      if (locked || !items.length) return false;
+      lockForm(form);
+      if (cartForm() && cartForm() !== form) lockForm(cartForm());
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 20000);
+      const message = form.querySelector('[data-add-message]');
+      if (message) message.hidden = true;
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST', credentials: 'same-origin', redirect: 'error',
+          headers: {'Content-Type': 'application/json', Accept: 'application/json'},
+          body: JSON.stringify({items}), signal: controller.signal
+        });
+        const added = await response.json();
+        const confirmedItems = Array.isArray(added.items) && items.every(item => added.items.some(line =>
+          String(line.variant_id || line.id) === String(item.id) && Number.isInteger(line.quantity) && line.quantity >= item.quantity));
+        if (!response.ok || !confirmedItems) {
+          throw new Error(typeof added.description === 'string' ? added.description : 'Please review your cart.');
+        }
+        const confirmation = await fetch(cartUrl + '.js', {
+          credentials: 'same-origin', cache: 'no-store', redirect: 'error',
+          headers: {Accept: 'application/json'}, signal: controller.signal
+        });
+        if (!confirmation.ok) throw new Error('Please review your cart.');
+        const cart = await confirmation.json();
+        if (!Array.isArray(cart.items) || !Number.isInteger(cart.item_count) || cart.item_count < 0) {
+          throw new Error('Please review your cart.');
+        }
+        updateCount(cart.item_count);
+        window.location.replace(cartUrl);
+        return true;
+      } catch (error) {
+        if (message) {
+          const detail = error.name === 'AbortError' ? 'The request timed out.' : error.message;
+          message.querySelector('[data-add-error-text]').textContent =
+            'We could not confirm all additions. ' + detail + ' Your cart may have changed. Review it before trying again.';
+          message.hidden = false;
+          message.focus();
+        }
+        // The modal can be closed, but checkout and all mutations remain locked.
+        const cartMessage = cartForm()?.querySelector('[data-cart-message]');
+        if (cartMessage) {
+          cartMessage.querySelector('[data-cart-error-text]').textContent =
+            'We could not confirm all additions. Reload the cart before continuing.';
+          cartMessage.hidden = false;
+        }
+        return false;
+      } finally {
+        clearTimeout(timeout);
+        form.removeAttribute('aria-busy');
+        cartForm()?.removeAttribute('aria-busy');
+      }
+    }
+  };
 
   async function mutate(form, endpoint, payload) {
     if (locked) return;
@@ -91,7 +159,7 @@
     if (event.submitter?.name === 'checkout') {
       // Shopify's documented POST /cart with name=checkout also saves unsaved quantities.
       // Do not disable successful controls or reconstruct this request in JavaScript.
-      locked = true;
+      window.elmaCart.lockNative();
       return;
     }
     event.preventDefault();
@@ -122,6 +190,7 @@
     if (!event.persisted) return;
     const form = cartForm();
     if (form) window.location.replace(form.action);
+    else if (locked) window.location.replace(window.location.href);
     else refreshCount();
   });
   document.addEventListener('visibilitychange', () => {

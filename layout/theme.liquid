@@ -36,6 +36,9 @@
     {% if template.name == 'collection' or template.name == 'product' or template.name == 'cart' %}
       {{ 'commerce.css' | asset_url | stylesheet_tag }}
     {% endif %}
+    {% if template.name == 'product' or template.name == 'cart' %}
+      {{ 'gift-offers.css' | asset_url | stylesheet_tag }}
+    {% endif %}
     {% if request.page_type == 'page' and page.handle == 'our-work' %}
 <script>
 (() => {
@@ -109,5 +112,6 @@
     <script src="{{ 'revision.js' | asset_url }}" defer></script>
     <script src="{{ 'bonus-popup.js' | asset_url }}" defer></script>
     {% if template.name == 'product' %}<script src="{{ 'commerce.js' | asset_url }}" defer></script>{% endif %}
+    {% if template.name == 'cart' and settings.enable_cart_gift_offers %}<script src="{{ 'gift-offers.js' | asset_url }}" defer></script>{% endif %}
   </body>
 </html>

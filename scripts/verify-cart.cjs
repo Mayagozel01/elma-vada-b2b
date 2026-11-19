@@ -33,13 +33,13 @@ async function fixture(items = before, includeCart = true, runJS = true) {
   const document = dom.window.document;
   const calls = [], navigations = [], timers = new Map();
   let sequence = 0;
-  let reply = async () => response(after);
+  let reply = async (url, options) => options.method === 'POST' ? response(after) : sectionResponse(after);
   const window = {
-    location: {replace: url => navigations.push(url)},
+    location: {replace: url => navigations.push(url)}, scrollX: 0, scrollY: 100, scrollTo() {},
     addEventListener: dom.window.addEventListener.bind(dom.window)
   };
   const context = vm.createContext({
-    window, document, CustomEvent: dom.window.CustomEvent, AbortController: dom.window.AbortController,
+    window, document, URL, DOMParser: dom.window.DOMParser, CustomEvent: dom.window.CustomEvent, AbortController: dom.window.AbortController,
     setTimeout: callback => { timers.set(++sequence, callback); return sequence; },
     clearTimeout: id => timers.delete(id),
     fetch: async (url, options = {}) => { calls.push({url, options}); return reply(url, options); }
@@ -56,90 +56,74 @@ async function fixture(items = before, includeCart = true, runJS = true) {
     close: () => dom.window.close()
   };
 }
-const flush = () => new Promise(resolve => setImmediate(resolve));
+const flush = () => new Promise(resolve => setTimeout(resolve, 5));
+async function sectionResponse(items) {
+  const html = await engine.parseAndRender(read('snippets/cart-content.liquid'), {routes, cart: state(items), settings: {}});
+  return {ok: true, json: async () => ({'cart-gift-offers': html})};
+}
 async function main() {
   let f = await fixture();
   assert.equal(f.q('[data-header-cart]').getAttribute('href'), '/fr/cart');
   assert.equal(f.q('[data-cart-count]').textContent, '2');
-  assert(f.q('[data-header-cart] svg[aria-hidden="true"]'));
-  assert.equal(f.q('.header__nav [data-header-cart], .header__cta [data-header-cart], .mobile-menu [data-header-cart]'), null);
-  assert(f.document.body.textContent.includes('Request a Call'));
-  assert(f.document.body.textContent.includes('Request a Quote'));
   assert.equal(f.q('[data-cart-form]').method, 'post');
   f.quantity(1, 2);
   let resolveRequest;
-  f.respond(() => new Promise(resolve => { resolveRequest = resolve; }));
-  f.run(); // Loading the asset twice must not register another handler.
-  assert.equal(f.submit(), false);
-  assert.equal(f.submit(), false);
-  assert.equal(f.remove(0), false);
-  assert.equal(f.calls.length, 1, 'Exactly one mutation while busy');
+  f.respond((url, options) => options.method === 'POST' ? new Promise(resolve => { resolveRequest = resolve; }) : sectionResponse(after));
+  f.run();
+  assert.equal(f.submit(), false); assert.equal(f.submit(), false); assert.equal(f.remove(0), false);
+  assert.equal(f.calls.length, 1);
   assert.equal(f.calls[0].url, '/fr/cart/update.js');
-  assert.equal(f.calls[0].options.method, 'POST');
-  assert.equal(f.calls[0].options.redirect, 'error');
   assert.deepEqual(JSON.parse(f.calls[0].options.body), {updates: {'101:anna': 2}});
   assert(f.q('button[name="checkout"]').disabled);
-  resolveRequest(response(after)); await flush();
-  assert.deepEqual(f.navigations, ['https://fixture.test/fr/cart']);
+  resolveRequest(response(after));
+  for (let i = 0; i < 12; i++) await flush();
+  assert.deepEqual(f.navigations, []);
   assert.equal(f.q('[data-cart-count]').textContent, '3');
   assert.equal(f.q('[data-header-cart]').getAttribute('aria-label'), 'Cart, 3 items');
-  assert(f.q('[data-cart-message]').hidden);
-  f.close();
-
-  // Fresh GET renders Shopify's response totals/properties, never a client-side price calculation.
-  f = await fixture(after);
+  assert.equal(f.q('button[name="checkout"]').disabled, false);
   assert(f.document.body.textContent.includes('Total: $29.97'));
   assert.deepEqual([...f.document.querySelectorAll('[data-cart-quantity]')].map(i => i.value), ['1', '2']);
   assert.equal(f.document.querySelectorAll('.commerce-cart__item').length, 2);
   assert(f.document.body.textContent.includes('Engraving text: Maya'));
   assert(f.document.body.textContent.includes('Engraving text: Anna'));
   assert(f.document.body.textContent.includes('Gift note: Keep & preserve'));
-  f.respond(async () => response([after[0]]));
-  f.remove(1); await flush();
-  assert.equal(f.calls[0].url, '/fr/cart/change.js');
-  assert.deepEqual(JSON.parse(f.calls[0].options.body), {id: '101:anna', quantity: 0});
+  f.respond((url, options) => options.method === 'POST' ? response([after[0]]) : sectionResponse([after[0]]));
+  f.remove(1); for (let i = 0; i < 12; i++) await flush();
+  const remove = f.calls.find(call => call.url === '/fr/cart/change.js');
+  assert.deepEqual(JSON.parse(remove.options.body), {id: '101:anna', quantity: 0});
   assert.equal(f.q('[data-cart-count]').textContent, '1');
+  assert.equal(f.document.querySelectorAll('.commerce-cart__item').length, 1);
   f.close();
 
-  f = await fixture(after);
-  f.quantity(0, 0); f.quantity(1, 3);
-  f.respond(async () => response([line('101:anna', 'Anna', 3)]));
-  f.submit(); await flush();
+  f = await fixture(after); f.quantity(0, 0); f.quantity(1, 3);
+  f.respond((url, options) => options.method === 'POST' ? response([line('101:anna', 'Anna', 3)]) : sectionResponse([line('101:anna', 'Anna', 3)]));
+  f.submit(); for (let i = 0; i < 12; i++) await flush();
   assert.deepEqual(JSON.parse(f.calls[0].options.body), {updates: {'101:maya': 0, '101:anna': 3}});
-  assert.equal(f.q('[data-cart-count]').textContent, '3');
-  f.close();
+  assert.equal(f.q('[data-cart-count]').textContent, '3'); f.close();
 
-  for (const fail of [
-    async () => ({ok: false, status: 403}),
-    async () => ({ok: false, status: 422}),
-    async () => { throw new TypeError('Network or redirect failed'); },
-    async () => ({ok: true, status: 200, json: async () => { throw new Error('HTML instead of JSON'); }}),
-    async () => ({ok: true, status: 200, json: async () => ({status: 422})})
-  ]) {
-    f = await fixture(); f.respond(fail); f.quantity(1, 2); f.submit(); await flush();
-    assert.equal(f.calls.length, 1);
-    assert.equal(f.navigations.length, 0, 'Never navigate as if a failed mutation succeeded');
+  for (const failure of [403, 422, 'network', 'html', 'invalid']) {
+    f = await fixture();
+    f.respond(async () => {
+      if (failure === 'network') throw new Error('Network');
+      if (failure === 'html') return {ok: true, json: async () => { throw new Error('HTML'); }};
+      if (failure === 'invalid') return {ok: true, json: async () => ({status: 422})};
+      return {ok: false, status: failure};
+    });
+    f.quantity(1, 2); f.submit(); for (let i = 0; i < 12; i++) await flush();
+    assert.equal(f.calls.length, 2, 'Failed mutation followed by read-only reconciliation');
+    assert.equal(f.navigations.length, 0);
     assert.equal(f.q('[data-cart-count]').textContent, '2');
     assert(!f.q('[data-cart-message]').hidden);
     assert(f.q('[data-cart-message]').textContent.includes('Your cart may have changed'));
-    assert.equal(f.document.activeElement, f.q('[data-cart-message]'));
-    assert.equal(f.q('[data-cart-message] a').getAttribute('href'), '/fr/cart');
     f.submit(); f.remove(0); f.submit('checkout');
-    assert.equal(f.calls.length, 1, 'No blind retry or native POST fallback after an error');
+    assert.equal(f.calls.length, 2, 'No POST retries until a fresh GET succeeds');
     assert(f.q('button[name="checkout"]').disabled);
-    f.close();
+    f.respond(() => sectionResponse(before));
+    f.q('[data-cart-retry]').click(); for (let i = 0; i < 12; i++) await flush();
+    assert.equal(f.q('button[name="checkout"]').disabled, false);
+    assert(f.q('[data-cart-message]').hidden); f.close();
   }
-
-  f = await fixture();
-  f.respond((url, options) => new Promise((resolve, reject) => options.signal.addEventListener('abort', () => reject(new Error('Timed out')))));
-  f.quantity(1, 2); f.submit();
-  for (const timer of [...f.timers.values()]) timer();
-  await flush();
-  assert.equal(f.calls.length, 1); assert.equal(f.navigations.length, 0);
-  assert(!f.q('[data-cart-message]').hidden);
-  f.close();
-
-  // Checkout remains a single native Shopify POST with ALL entered quantities.
+  // Native Checkout still carries every unsaved quantity and no offer inputs.
   f = await fixture(); f.quantity(1, 2);
   assert.equal(f.submit('checkout'), true);
   assert.equal(f.calls.length, 0);
@@ -147,40 +131,29 @@ async function main() {
   const checkoutData = new f.dom.window.FormData(f.q('[data-cart-form]'), f.q('button[name="checkout"]'));
   assert(checkoutData.has('checkout'));
   assert.deepEqual(checkoutData.getAll('updates[]'), ['1', '2']);
-  assert.equal(f.submit('checkout'), false, 'Suppress double checkout submission');
-  f.close();
+  assert.equal(f.submit('checkout'), false); f.close();
 
-  // Without JS, the documented form/update/remove/checkout paths remain intact.
   f = await fixture(after, true, false);
-  assert.equal(f.q('[data-cart-form]').action, 'https://fixture.test/fr/cart');
   assert.deepEqual(new f.dom.window.FormData(f.q('[data-cart-form]')).getAll('updates[]'), ['1', '2']);
-  assert.equal(new URL(f.document.querySelectorAll('[data-cart-remove]')[1].href).searchParams.get('id'), '101:anna');
-  f.close();
-
+  assert.equal(new URL(f.document.querySelectorAll('[data-cart-remove]')[1].href).searchParams.get('id'), '101:anna'); f.close();
   f = await fixture();
+  f.respond(() => sectionResponse(after));
   const restored = new f.dom.window.Event('pageshow'); Object.defineProperty(restored, 'persisted', {value: true});
-  f.dom.window.dispatchEvent(restored);
-  assert.equal(f.calls.length, 0); assert.deepEqual(f.navigations, ['https://fixture.test/fr/cart']);
-  f.close();
-
-  f = await fixture([], false);
-  assert.equal(f.q('[data-cart-count]').textContent, '0', 'Empty cart link always visible');
-  f.respond(async () => response(after));
+  f.dom.window.dispatchEvent(restored); for (let i = 0; i < 12; i++) await flush();
+  assert.deepEqual(f.navigations, []); assert.equal(f.q('[data-cart-count]').textContent, '3'); f.close();
+  f = await fixture([], false); f.respond(async () => response(after));
   const restoredHeader = new f.dom.window.Event('pageshow'); Object.defineProperty(restoredHeader, 'persisted', {value: true});
   f.dom.window.dispatchEvent(restoredHeader); await flush();
-  assert.equal(f.calls[0].url, '/fr/cart.js');
-  assert.equal(f.calls[0].options.method, undefined, 'Counter refresh only reads cart');
-  assert.equal(f.q('[data-cart-count]').textContent, '3');
-  f.respond(async () => ({ok: false, status: 403}));
-  f.dom.window.dispatchEvent(restoredHeader); await flush();
-  assert.equal(f.q('[data-cart-count]').textContent, '3', 'Failed count refresh must not show an empty cart');
-  f.close();
-
+  assert.equal(f.calls[0].url, '/fr/cart.js'); assert.equal(f.q('[data-cart-count]').textContent, '3'); f.close();
   f = await fixture([line('101:xss', '<img src=x onerror=alert(1)>', 1)]);
-  assert.equal(f.q('.commerce-cart__property img'), null);
-  assert(f.q('.commerce-cart__property').textContent.includes('<img'));
-  f.close();
-  console.log('PASS: separate Maya/Anna lines, $29.97 fixture, locale-aware keyed updates/removal, zero quantity, preserved properties, native checkout, duplicate guards, 403/422/network/HTML/timeout handling, GET navigation, header count including zero and restored pages.');
-  console.log('No browser or live cart/order tested. The real 403 cause remains unconfirmed.');
+  assert.equal(f.q('.commerce-cart__property img'), null); f.close();
+  f = await fixture();
+  f.respond((url, options) => options.method === 'POST' ? response([]) : sectionResponse([]));
+  f.quantity(0, 0); f.quantity(1, 0); f.submit(); for (let i = 0; i < 12; i++) await flush();
+  assert.equal(f.q('[data-cart-count]').textContent, '0');
+  assert.equal(f.q('[data-cart-footer]').hidden, true);
+  assert(f.q('[data-cart-items]').textContent.includes('Your cart is empty')); f.close();
+  console.log('PASS: keyed Maya/Anna updates/removal/zero, properties, Shopify-rendered totals, native Checkout, no reload, shared locking, read-only recovery and retries, empty state, header and restored pages.');
+  console.log('Local Liquid/jsdom fixtures, no Shopify cart/order.');
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });

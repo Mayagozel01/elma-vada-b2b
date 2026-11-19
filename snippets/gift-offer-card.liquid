@@ -4,15 +4,16 @@
   assign title = offer.title.value | default: addon.product.title
 -%}
 <article class="gift-offer" data-gift-offer data-variant-id="{{ addon.id }}"
-  data-offer-revision="{{ addon.price }}:{{ addon.quantity_rule.min | default: 1 }}:{{ addon.quantity_rule.increment | default: 1 }}:{{ addon.quantity_rule.max }}"
-  {% if eligible_variants != blank %}data-eligible-variants="{{ eligible_variants | escape }}"{% endif %}
-  {% if parent_label != blank %}data-parent-label="{{ parent_label | escape }}"{% endif %}>
+  data-offer-revision="{{ addon.price }}:{{ addon.quantity_rule.min | default: 1 }}:{{ addon.quantity_rule.increment | default: 1 }}:{{ addon.quantity_rule.max }}">
   <img src="{{ photo | image_url: width: 200 }}" alt="{{ photo.alt | default: title | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy">
   <div class="gift-offer__details">
-    <label class="gift-offer__choice"><input type="checkbox" data-offer-choice><span>{{ title | escape }}</span></label>
+    <h3>{{ title | escape }}</h3>
     {% unless addon.product.has_only_default_variant %}<p class="commerce-note">{{ addon.title | escape }}</p>{% endunless %}
     <p class="gift-offer__price">{{ addon.price | money }} <span class="commerce-note">each</span></p>
-    <p class="commerce-note" data-offer-parents hidden></p>
-    <label class="gift-offer__quantity">Quantity <input type="number" data-offer-quantity value="{{ addon.quantity_rule.min | default: 1 }}" min="{{ addon.quantity_rule.min | default: 1 }}" step="{{ addon.quantity_rule.increment | default: 1 }}" {% if addon.quantity_rule.max != blank %}max="{{ addon.quantity_rule.max }}"{% endif %} required disabled></label>
+    {% if parent_label != blank %}<p class="commerce-note" data-offer-parents>Pairs with: {{ parent_label | escape }}</p>{% endif %}
+    <label class="gift-offer__quantity">Quantity <input type="number" form="CartGiftOfferInputs" data-offer-quantity value="1" min="1" step="{{ addon.quantity_rule.increment | default: 1 }}" {% if addon.quantity_rule.max != blank %}max="{{ addon.quantity_rule.max }}"{% endif %} required disabled></label>
+    <button type="button" class="btn btn--outline" data-offer-add disabled>Add to cart</button>
+    <p class="commerce-message" data-offer-error role="alert" hidden></p>
+    <p class="commerce-note" data-offer-result role="status" hidden></p>
   </div>
 </article>

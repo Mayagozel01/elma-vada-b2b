@@ -1,5 +1,5 @@
 {%- comment -%}
-  Shared product/cart eligibility. Unconfigured packaging is deliberately unknown.
+  Cart offer eligibility. Unconfigured packaging is deliberately unknown.
   An add-on variant must be explicitly classified in Admin; properties never price it.
 {%- endcomment -%}
 {%- liquid
@@ -11,6 +11,9 @@
     assign eligible = false
   endif
   if addon.metafields.custom.is_gift_addon.value != true or base_variant.metafields.custom.is_gift_addon.value == true
+    assign eligible = false
+  endif
+  if addon.quantity_rule.min > 1 or addon.quantity_rule.max == 0
     assign eligible = false
   endif
   if addon_product.requires_selling_plan or base_product.requires_selling_plan or addon.id == base_variant.id

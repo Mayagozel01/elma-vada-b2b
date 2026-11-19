@@ -1,6 +1,32 @@
-/* Scoped theme components. Shopify Forms owns its existing popup and teaser. */
+/* Theme-scoped components; existing Shopify Forms styles are untouched. */
 .gift-offers, .volume-pricing { min-width: 0; margin: 0; padding: 1rem; border: 1px solid var(--color-beige-dark); background: var(--color-cream); }
-.gift-offers legend, .volume-pricing h2 { padding: 0 .35rem; font-family: var(--font-heading, Georgia, serif); font-size: 1.4rem; color: var(--color-navy); }
+.cart-gift-offers { min-width: 0; margin-block: 1.25rem; }
+.gift-offers__heading { display: flex; align-items: center; justify-content: space-between; gap: .75rem; flex-wrap: wrap; }
+.gift-offers h2, .volume-pricing h2 { margin: 0; font-family: var(--font-heading, Georgia, serif); font-size: 1.4rem; color: var(--color-navy); }
+.gift-offers-open { padding: .5rem 0; min-height: 44px; border: 0; background: transparent; color: var(--color-navy); font: inherit; font-size: .8rem; text-decoration: underline; text-underline-offset: .2em; cursor: pointer; }
+.gift-offers-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.gift-offer { display: grid; grid-template-columns: 64px minmax(0, 1fr); align-items: start; gap: .75rem; padding-block: 1rem; min-width: 0; border-top: 1px solid var(--color-beige-dark); }
+.gift-offer img { width: 64px; height: 64px; object-fit: contain; background: #fff; }
+.gift-offer__details { min-width: 0; overflow-wrap: anywhere; }
+.gift-offer h3 { margin: 0 0 .35rem; font-size: 1rem; line-height: 1.35; }
+.gift-offer__price { margin-block: .25rem; font-weight: 600; }
+.gift-offer__quantity { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin-block: .6rem; font-size: .85rem; }
+.gift-offer__quantity input { box-sizing: border-box; width: 76px; max-width: 100%; min-height: 44px; padding: .5rem; border: 1px solid var(--color-beige-dark); background: #fff; font: inherit; font-size: 16px; }
+.gift-offer .btn { width: 100%; min-height: 44px; padding: .65rem .5rem; font-size: .85rem; white-space: normal; }
+.cart-gift-offers button[aria-disabled="true"], .cart-gift-offers button:disabled, .gift-offer input:disabled { opacity: .65; cursor: default; }
+.gift-offers-dialog { box-sizing: border-box; position: fixed; inset: 0; margin: auto; width: min(600px, calc(100vw - 24px)); max-width: calc(100vw - 24px); max-height: calc(100vh - 24px); max-height: calc(100dvh - 24px); padding: 0; border: 1px solid var(--color-beige-dark); background: var(--color-cream); color: var(--color-navy); overflow: hidden; }
+.gift-offers-dialog[open] { display: flex; flex-direction: column; }
+.gift-offers-dialog::backdrop { background: #1e252bb3; }
+.gift-offers-dialog__header { display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex: 0 0 auto; padding: .75rem 1rem; }
+.gift-offers-dialog h2 { margin: 0; font-size: 1.6rem; }
+.gift-offers-dialog__close { flex: 0 0 44px; width: 44px; height: 44px; border: 0; background: transparent; color: inherit; font-size: 1.8rem; cursor: pointer; }
+.gift-offers-dialog__body { min-height: 0; padding: 0 1rem; overflow-y: auto; overscroll-behavior: contain; }
+.gift-offers-dialog__footer { flex: 0 0 auto; padding: .75rem 1rem; border-top: 1px solid var(--color-beige-dark); }
+.gift-offers-dialog__footer .btn { width: 100%; min-height: 44px; }
+.cart-gift-offers [hidden], .volume-pricing[hidden], [data-cart-footer][hidden] { display: none !important; }
+.cart-gift-offers :focus-visible { outline: 3px solid var(--color-gold); outline-offset: 3px; }
+[data-cart-items], [data-cart-footer], .cart-gift-offers { overflow-anchor: none; }
+.volume-pricing h2 { padding: 0 .35rem; font-family: var(--font-heading, Georgia, serif); font-size: 1.4rem; color: var(--color-navy); }
 .gift-offer { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 1rem; padding-block: 1rem; border-top: 1px solid var(--color-beige-dark); }
 .gift-offer img { width: 76px; height: 76px; object-fit: contain; background: #fff; }
 .gift-offer__details { min-width: 0; overflow-wrap: anywhere; }
@@ -27,4 +53,8 @@
 .volume-pricing caption { text-align: left; padding-bottom: .5rem; font-size: .8rem; }
 .volume-pricing th, .volume-pricing td { padding: .5rem; border-bottom: 1px solid var(--color-beige-dark); }
 .volume-pricing tr[aria-current="true"] { outline: 2px solid var(--color-gold); outline-offset: -2px; }
-@media (max-width: 480px) { .gift-offers-dialog { padding-inline: 1rem; } }
+@media (max-width: 900px) { .gift-offers-grid { grid-template-columns: 1fr; gap: 0; } }
+@media (max-width: 480px) { .gift-offers-dialog h2 { font-size: 1.3rem; } }
+
+.gift-offers-checkout-link { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: .2em; }
+#CartCheckout { scroll-margin-top: 120px; }

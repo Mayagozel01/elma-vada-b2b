@@ -1,0 +1,24 @@
+{%- assign offered_ids = '|' -%}
+{%- assign offer_count = 0 -%}
+{%- for item in cart.items -%}
+  {%- unless item.variant.metafields.custom.is_gift_addon.value == true or item.properties._elma_gift_offer == 'true' -%}
+    {%- capture parent_label -%}{{ item.product.title }}{% unless item.product.has_only_default_variant %} — {{ item.variant.title }}{% endunless %}{%- endcapture -%}
+    {%- for offer in item.product.metafields.custom.gift_offers.value -%}
+      {%- capture offer_id -%}|{{ offer.variant.value.id }}|{%- endcapture -%}
+      {%- unless offered_ids contains offer_id -%}
+        {%- capture eligible -%}{% render 'gift-offer-eligible', offer: offer, base_product: item.product, base_variant: item.variant %}{%- endcapture -%}
+        {%- assign already_in_cart = false -%}
+        {%- for other_item in cart.items -%}
+          {%- if other_item.variant.id == offer.variant.value.id -%}{%- assign already_in_cart = true -%}{%- endif -%}
+        {%- endfor -%}
+        {%- if eligible == 'true' and already_in_cart == false -%}
+          {%- assign offered_ids = offered_ids | append: offer_id -%}
+          {%- assign offer_count = offer_count | plus: 1 -%}
+          {%- if limit == nil or offer_count <= limit -%}
+            {% render 'gift-offer-card', offer: offer, parent_label: parent_label %}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  {%- endunless -%}
+{%- endfor -%}

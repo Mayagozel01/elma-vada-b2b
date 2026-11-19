@@ -1,34 +1,23 @@
 {% if settings.enable_cart_gift_offers %}
-  <div class="cart-gift-offers" data-cart-offers data-section-id="cart-gift-offers" data-cart-url="{{ routes.cart_url }}" data-add-url="{{ routes.cart_add_url }}.js"
-    data-cart-count="{{ cart.item_count }}" data-cart-fingerprint="{% render 'cart-fingerprint', cart: cart %}">
-    <template data-offer-candidates>
-      {% for item in cart.items %}
-        {% unless item.variant.metafields.custom.is_gift_addon.value == true or item.properties._elma_gift_offer == 'true' %}
-          {% capture parent_label %}{{ item.product.title }}{% unless item.product.has_only_default_variant %} — {{ item.variant.title }}{% endunless %}{% endcapture %}
-          {% for offer in item.product.metafields.custom.gift_offers.value %}
-            {% capture eligible %}{% render 'gift-offer-eligible', offer: offer, base_product: item.product, base_variant: item.variant %}{% endcapture %}
-            {% assign already_in_cart = false %}
-            {% for other_item in cart.items %}
-              {% if other_item.variant.id == offer.variant.value.id %}{% assign already_in_cart = true %}{% endif %}
-            {% endfor %}
-            {% if eligible == 'true' and already_in_cart == false %}
-              {% render 'gift-offer-card', offer: offer, parent_label: parent_label %}
-            {% endif %}
-          {% endfor %}
-        {% endunless %}
-      {% endfor %}
-    </template>
-    <button type="button" class="gift-offers-notice" data-offers-open aria-haspopup="dialog" aria-controls="CartGiftOffersDialog" hidden><span>Complete your gift</span><span aria-hidden="true">Explore extras →</span></button>
+  {% capture candidates %}{% render 'gift-offer-candidates', cart: cart %}{% endcapture %}
+  <div class="cart-gift-offers" data-cart-offers data-cart-url="{{ routes.cart_url }}" data-add-url="{{ routes.cart_add_url }}.js"
+    data-auto-open="{% if settings.auto_open_cart_gift_offers == false %}false{% else %}true{% endif %}" data-delay="{{ settings.cart_gift_offers_delay | default: 5 }}">
+    <template data-offer-candidates>{{ candidates }}</template>
+    <section class="gift-offers" data-offers-panel aria-labelledby="CartGiftOffersHeading" {% if candidates == blank %}hidden{% endif %}>
+      <div class="gift-offers__heading"><h2 id="CartGiftOffersHeading">Complete your gift</h2><button type="button" class="gift-offers-open" data-offers-open aria-haspopup="dialog" aria-controls="CartGiftOffersDialog" hidden>View gift offers</button></div>
+      <p class="commerce-note">Selected to complement your order.</p>
+      <div class="gift-offers-grid" data-offers-list>{% render 'gift-offer-candidates', cart: cart, limit: 3 %}</div>
+      <noscript><p class="commerce-note">Enable JavaScript to add these extras from your cart.</p></noscript>
+    </section>
     <p class="commerce-message" data-offers-status role="status" tabindex="-1" hidden></p>
-    <dialog class="gift-offers-dialog" id="CartGiftOffersDialog" data-offers-dialog aria-labelledby="CartGiftOffersTitle">
-      <button type="button" class="gift-offers-dialog__close" data-offers-close aria-label="Close gift offers" autofocus>×</button>
-      <h2 id="CartGiftOffersTitle">Complete your gift</h2>
-      <p class="commerce-note">Choose extras for the gifts in your cart.</p>
-      <form data-cart-offers-form>
+    <dialog class="gift-offers-dialog" id="CartGiftOffersDialog" data-offers-dialog aria-labelledby="CartGiftOffersTitle" aria-describedby="CartGiftOffersDescription">
+      <div class="gift-offers-dialog__header"><h2 id="CartGiftOffersTitle">Complete your gift</h2><button type="button" class="gift-offers-dialog__close" data-offers-close aria-label="Close gift offers" autofocus>×</button></div>
+      <div class="gift-offers-dialog__body">
+        <p class="commerce-note" id="CartGiftOffersDescription">Selected to complement your order.</p>
         <div data-offers-list></div>
-        <div class="commerce-message" data-add-message role="alert" tabindex="-1" hidden><p data-add-error-text></p><a href="{{ routes.cart_url }}">Review cart</a></div>
-        <button type="submit" class="btn btn--primary" data-offers-add disabled>Add to cart</button>
-      </form>
+        <p class="commerce-message" data-dialog-status role="status" hidden></p>
+      </div>
+      <div class="gift-offers-dialog__footer"><button type="button" class="btn btn--outline" data-offers-close>Continue to cart</button></div>
     </dialog>
   </div>
 {% endif %}
